@@ -12,13 +12,12 @@
 	<p id="demo"></p>
 	<script type="text/javascript">
 		//--- TABLES ---//
-		console.log("test");
 		fetch("./feh_skills.json")
 		.then(response => {
 		   return response.json();
 		})
 		.then(jsondata => console.log(jsondata));
-		document.getElementById("txtDisp").innerHTML = "test";
+		document.getElementById("demo").innerHTML = "test";
 
 	</script> 
 </body>
