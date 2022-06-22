@@ -12,12 +12,8 @@
 	<p id="demo"></p>
 	<script type="text/javascript">
 		//--- TABLES ---//
-		fetch("./feh_skills.json")
-		.then(response => {
-		   return response.json();
-		})
-		.then(jsondata => console.log(jsondata));
-		document.getElementById("demo").innerHTML = "test";
+		const jsonData= require('./students.json'); 
+		console.log(jsonData);
 
 	</script> 
 </body>
