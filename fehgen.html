@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+
+<body>
+	<div class="grid-container">
+		<div class="head">Fire Emblem Heroes: Seasonal Alt Generator</div>
+		<div class="main" id="txtDisp"></div>  
+		<div class="btn" id="optnDisp"></div>
+	</div>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		//--- TABLES ---//
+		fetch("./feh_skills.json")
+		.then(response => {
+		   return response.json();
+		})
+		.then(jsondata => console.log(jsondata));
+
+	</script> 
+</body>

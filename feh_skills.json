@@ -1,0 +1,577 @@
+[
+ {
+   "effect": "Accelerates Special trigger (cooldown count-1)",
+   "tags": "innate",
+   "weight": 7
+ },
+ {
+   "effect": "boosts unit's <STATS> by number of allies with HP ≥ <PERCENT> × <INT> (max 3 allies)",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "boosts unit's <STATS> by number of allies within 2 spaces × <INT> (max 3 allies)",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "boosts unit's <STATS> by number of foes within 2 spaces × <INT> (max 3 foes)",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "Calculates damage using the lower of foe's Def or Res",
+   "tags": "innate,during_combat,combat_start",
+   "weight": 3
+ },
+ {
+   "effect": "Deals +<BINT> damage when Special triggers",
+   "tags": "innate,during_combat",
+   "weight": 3
+ },
+ {
+   "effect": "deals <BINT> damage to allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals <BINT> damage to nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals <BINT> damage to unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals <BINT> damage to unit and allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals <BINT> damage to unit and nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals <INT> damage to unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "deals damage = <PERCENT> of foe's <STAT> per unit's attack",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "deals damage = <PERCENT> of unit's <STAT> minus foe's <STAT2> per unit's attack",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "deals damage = <PERCENT> of unit's <STAT> per unit's attack",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "disables non-Special skills that \"reduce damage by X%\"",
+   "tags": "innate,during_combat",
+   "weight": 3
+ },
+ {
+   "effect": "Effective against <CLASS>",
+   "tags": "innate",
+   "weight": 3
+ },
+ {
+   "effect": "enables <CANTO>",
+   "tags": "innate,combat_end",
+   "weight": 5
+ },
+ {
+   "effect": "foe cannot counterattack",
+   "tags": "innate,unit_initiates",
+   "weight": 3
+ },
+ {
+   "effect": "foe cannot make a follow-up attack",
+   "tags": "innate,during_combat,combat_start",
+   "weight": 7
+ },
+ {
+   "effect": "grants <+STATS> and <BONUS> to target ally for 1 turn",
+   "tags": "assist",
+   "weight": 2
+ },
+ {
+   "effect": "grants <+STATS> and <BONUS> to unit and target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to allies in cardinal directions of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to allies in cardinal directions of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to allies within <INT> spaces of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to allies within <INT> spaces of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to ally with the highest <STAT>",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to ally with the lowest <STAT>",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to unit",
+   "tags": "during_combat,combat_start",
+   "weight": 7
+ },
+ {
+   "effect": "grants <+STATS> to unit and allies for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to unit and allies in cardinal directions of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to unit and allies within 2 spaces of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 2
+ },
+ {
+   "effect": "grants <+STATS> to unit and target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "grants <+STATS> to unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to allies for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to allies in cardinal directions of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to allies within <INT> spaces of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to ally with the highest <STAT>",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to ally with the lowest <STAT>",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to unit and allies for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to unit and allies in cardinal directions of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to unit and allies within <INT> spaces of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to unit and target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "grants <BONUS> to unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "Grants bonus to <STATS> = current bonus on each of unit's stats (Calculates each stat bonus independently)",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "Grants bonus to <STATS> during combat = current penalty on each of unit's stats × 2 (calculates each stat bonus independently)",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "Grants bonus to unit’s <STAT> = total bonuses on <EITHER>",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "Grants bonus to unit’s <STAT> = total penalties on <EITHER>",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "grants bonus to unit's <STATS> = <BINT> - number of foes who have already acted × <INT2> (max 3 foes)",
+   "tags": "foe_initiates",
+   "weight": 1
+ },
+ {
+   "effect": "grants bonus to unit's <STATS> = <INT> + number of allies who have already acted × <INT2> (max 3 allies)",
+   "tags": "unit_initiates",
+   "weight": 1
+ },
+ {
+   "effect": "Grants Special cooldown charge +1 per foe's attack",
+   "tags": "during_combat,innate",
+   "weight": 3
+ },
+ {
+   "effect": "grants Special cooldown charge +1 per unit's attack",
+   "tags": "during_combat",
+   "weight": 3
+ },
+ {
+   "effect": "grants Special cooldown count-<INT>",
+   "tags": "combat_end,turn_start",
+   "weight": 2
+ },
+ {
+   "effect": "If <EITHER>'s <STAT> ≥ foe's <STAT2>+<INT>, deals +<INT2> damage per unit's attack",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "If a skill compares unit's <STAT> to a foe's or ally's <STAT>, treats unit's <STAT> as if granted +<BINT>",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes in cardinal directions from target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes in cardinal directions from unit or target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes in cardinal directions of unit for 1 turn",
+   "tags": "turn_start",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes in cardinal directions of unit whose <STAT>+1 <= unit's <STAT> for 1 turn",
+   "tags": "turn_start",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes within <INT> spaces of target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on foes within <INT> spaces of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on nearest foes within <INT> spaces of target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on unit and allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <PENALTY> on unit and nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foe",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foe and foes within <INT> spaces of foe through their next actions",
+   "tags": "combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes in cardinal directions from target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes in cardinal directions from unit or target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes in cardinal directions of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes in cardinal directions of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes in cardinal directions of unit whose <STAT>+1 <= unit's <STAT> for 1 turn",
+   "tags": "turn_start",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes within <INT> spaces of target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes within <INT> spaces of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes within <INT> spaces of unit during combat",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes within <INT> spaces of unit for 1 turn",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on foes within <INT> spaces of unit through their next actions",
+   "tags": "turn_start,combat_end",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on nearest foes within <INT> spaces of target ally for 1 turn",
+   "tags": "assist",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on unit and allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts <-STATS> on unit and nearest allies within <INT> spaces of unit",
+   "tags": "negative",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts penalty on foe’s <STAT> = total bonuses on <EITHER>",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "inflicts penalty on foe’s <STAT> = total penalties on <EITHER>",
+   "tags": "during_combat,combat_start",
+   "weight": 1
+ },
+ {
+   "effect": "Neutralizes \"effective against <UNITCLASS>\" bonuses",
+   "tags": "innate",
+   "weight": 1
+ },
+ {
+   "effect": "neutralizes effects that grant \"Special cooldown charge +X\" to foe or inflict \"Special cooldown charge -X\" on unit",
+   "tags": "during_combat",
+   "weight": 3
+ },
+ {
+   "effect": "neutralizes effects that guarantee foe's follow-up attacks",
+   "tags": "innate,combat_start,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks",
+   "tags": "innate,combat_start,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "neutralizes effects that prevent unit's follow-up attacks",
+   "tags": "innate,combat_start,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "neutralizes foe's bonuses",
+   "tags": "during_combat,combat_start",
+   "weight": 3
+ },
+ {
+   "effect": "neutralizes penalties on unit",
+   "tags": "during_combat,combat_start",
+   "weight": 3
+ },
+ {
+   "effect": "prevents foe's Specials that are triggered by unit's attack",
+   "tags": "innate,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "Reduces damage from <CLASS> foe's consecutive attacks by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Reduces damage from <CLASS> foe's first attack by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Reduces damage from <CLASS> foe's second attack by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "reduces damage from attacks during combat and from area-of-effect Specials by percentage = number of allies with HP ≥ <PERCENT> × <BINT> (max 3  allies)",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Reduces damage from foe's consecutive attacks by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Reduces damage from foe's first attack by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "reduces damage from foe's first attack by X% (X = unit's max Special cooldown count value × <BINT>)",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Reduces damage from foe's second attack by <PERCENT>",
+   "tags": "innate,during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "restores <INT> HP to unit per unit's attack",
+   "tags": "during_combat",
+   "weight": 2
+ },
+ {
+   "effect": "restores HP to unit = <PERCENT> of foe's <STAT> per unit's attack",
+   "tags": "during_combat",
+   "weight": 1
+ },
+ {
+   "effect": "Unit and foe cannot counterattack",
+   "tags": "innate",
+   "weight": 2
+ },
+ {
+   "effect": "unit attacks twice",
+   "tags": "innate,during_combat",
+   "weight": 3
+ },
+ {
+   "effect": "unit can counterattack before foe's first attack",
+   "tags": "combat_start,foe_initiates",
+   "weight": 3
+ },
+ {
+   "effect": "unit can counterattack regardless of foe's range",
+   "tags": "innate,combat_start,foe_initiates",
+   "weight": 3
+ },
+ {
+   "effect": "unit makes a guaranteed follow-up attack",
+   "tags": "innate,during_combat,combat_start",
+   "weight": 3
+ },
+ {
+   "effect": "unit makes a guaranteed follow-up attack and foe cannot",
+   "tags": "during_combat,combat_start",
+   "weight": 3
+ },
+ {
+   "effect": "unit recovers <BINT> HP",
+   "tags": "turn_start,combat_end",
+   "weight": 2
+ }
+]
