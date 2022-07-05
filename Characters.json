@@ -1,0 +1,3014 @@
+[
+  {
+    Hero: "Abel: The Panther",
+    Filename: "Abel.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Aelfric: Custodian Monk",
+    Filename: "Aelfric.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Alfonse: Prince of Askr",
+    Filename: "Alfonse.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Alm: Hero of Prophecy",
+    Filename: "Alm.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Altena: Luminous Rider",
+    Filename: "Altena.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Altina: Dawn's Trueblade",
+    Filename: "Altina.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Amelia: Rose of the War",
+    Filename: "Amelia.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Anna: Commander",
+    Filename: "Anna.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Anna: Secret Seller",
+    Filename: "Anna2.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Annand: Knight-Defender",
+    Filename: "Annand.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Annette: Overachiever",
+    Filename: "Annette.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Arden: Strong and Tough",
+    Filename: "Arden.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Ares: Black Knight",
+    Filename: "Ares.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Arete: Requiem's Beauty",
+    Filename: "Arete.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Arthur: Furious Mage",
+    Filename: "Arthur.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Arthur: Hapless Hero",
+    Filename: "Arthur2.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Artur: Silver Saint",
+    Filename: "Artur.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Arvis: Emperor of Flame",
+    Filename: "Arvis.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Asbel: Windswept Youth",
+    Filename: "Asbel.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Ash: Retainer to Askr",
+    Filename: "Ash.png",
+    Race: "Beast",
+    Game: "FE0"
+  },
+  {
+    Hero: "Ashe: Arrow of Justice",
+    Filename: "Ashe.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Ashera: Order Goddess",
+    Filename: "Ashera.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Ashnard: Mad King",
+    Filename: "Ashnard.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Astram: Midia's Hero",
+    Filename: "Astram.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Astrid: Resolute Damsel",
+    Filename: "Astrid.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Athena: Borderland Sword",
+    Filename: "Athena.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "August: Astute Tactician",
+    Filename: "August.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Aversa: Dark One",
+    Filename: "Aversa.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Ayra: Astra's Wielder",
+    Filename: "Ayra.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Azama: Carefree Monk",
+    Filename: "Azama.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Azelle: Youthful Flame",
+    Filename: "Azelle.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Azura: Lady of the Lake",
+    Filename: "Azura.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Balthus: King of Grappling",
+    Filename: "Balthus.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Bantu: Tiki's Guardian",
+    Filename: "Bantu.png",
+    Race: "Dragon",
+    Game: "FE1"
+  },
+  {
+    Hero: "Barst: The Hatchet",
+    Filename: "Barst.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Bartre: Fearless Warrior",
+    Filename: "Bartre.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Basilio: Feroxi West-Khan",
+    Filename: "Basilio.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Benny: Sensitive Soul",
+    Filename: "Benny.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Berkut: Prideful Prince",
+    Filename: "Berkut.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Bernadetta: Eternal Loner",
+    Filename: "Bernadetta.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Bertram: Dread Cavalier",
+    Filename: "Bertram.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Beruka: Quiet Assassin",
+    Filename: "Beruka.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Black Knight: Sinister General",
+    Filename: "Black.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Boey: Skillful Survivor",
+    Filename: "Boey.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Boyd: Future Great",
+    Filename: "Boyd.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Brady: Daunting Priest",
+    Filename: "Brady.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Bramimond: The Enigma",
+    Filename: "Bramimond.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Brigid: Orgahil Pirate",
+    Filename: "Brigid.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Brunnya: Devoted General",
+    Filename: "Brunnya.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Bruno: Masked Knight",
+    Filename: "Bruno.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Byleth: Proven Professor",
+    Filename: "Byleth.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Byleth: Tested Professor",
+    Filename: "Byleth2.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Caeda: Talys's Heart",
+    Filename: "Caeda.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Caellach: Tiger Eye",
+    Filename: "Caellach.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Cain: The Bull",
+    Filename: "Cain.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Caineghis: Gallia's Lion King",
+    Filename: "Caineghis.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Camilla: Bewitching Beauty",
+    Filename: "Camilla.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Camus: Sable Knight",
+    Filename: "Camus.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Canas: Wisdom Seeker",
+    Filename: "Canas.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Caspar: Summer Intensity",
+    Filename: "Caspar.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Cath: Master Thief",
+    Filename: "Cath.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Catherine: Thunder Knight",
+    Filename: "Catherine.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Catria: Middle Whitewing",
+    Filename: "Catria.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Catria: Mild Middle Sister",
+    Filename: "Catria2.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Cecilia: Etrurian General",
+    Filename: "Cecilia.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Ced: Hero on the Wind",
+    Filename: "Ced.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Celica: Caring Princess",
+    Filename: "Celica.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Chad: Lycian Wildcat",
+    Filename: "Chad.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Charlotte: Wily Warrior",
+    Filename: "Charlotte.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Cherche: Wyvern Friend",
+    Filename: "Cherche.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Chrom: Exalted Prince",
+    Filename: "Chrom.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Clair: Highborn Flier",
+    Filename: "Clair.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Clarine: Refined Noble",
+    Filename: "Clarine.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Clarisse: Sniper in the Dark",
+    Filename: "Clarisse.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Claude: The Schemer",
+    Filename: "Claude.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Clive: Idealistic Knight",
+    Filename: "Clive.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Colm: Capable Thief",
+    Filename: "Colm.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Conrad: Masked Knight",
+    Filename: "Conrad.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Constance: Fallen Noble",
+    Filename: "Constance.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Cordelia: Knight Paragon",
+    Filename: "Cordelia.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Cormag: Aloof Lanceman",
+    Filename: "Cormag.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Corrin: Fateful Prince",
+    Filename: "Corrin.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Corrin: Fateful Princess",
+    Filename: "Corrin2.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Cynthia: Hero Chaser",
+    Filename: "Cynthia.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Dagr: Sun's Radiance",
+    Filename: "Dagr.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Darros: Seawalker",
+    Filename: "Darros.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Death Knight: The Reaper",
+    Filename: "Death.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Dedue: Dimitri's Vassal",
+    Filename: "Dedue.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Deen: Bladed Sandstorm",
+    Filename: "Deen.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Deirdre: Lady of the Forest",
+    Filename: "Deirdre.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Delthea: Free Spirit",
+    Filename: "Delthea.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Dheginsea: Harvest Goldoan",
+    Filename: "Dheginsea.png",
+    Race: "Dragon",
+    Game: "FE10"
+  },
+  {
+    Hero: "Dieck: Wounded Tiger",
+    Filename: "Dieck.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Dimitri: The Protector",
+    Filename: "Dimitri.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Díthorba: Cutting Knight",
+    Filename: "Dithorba.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Donnel: Village Hero",
+    Filename: "Donnel.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Dorcas: Serene Warrior",
+    Filename: "Dorcas.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Dorothea: Mystical Songstress",
+    Filename: "Dorothea.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Dozla: Steady Axe",
+    Filename: "Dozla.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Draug: Gentle Giant",
+    Filename: "Draug.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Duessel: Obsidian",
+    Filename: "Duessel.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Duma: God of Strength",
+    Filename: "Duma.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Echidna: Unyielding Idealist",
+    Filename: "Echidna.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Edelgard: The Future",
+    Filename: "Edelgard.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Effie: Army of One",
+    Filename: "Effie.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Eir: Merciful Death",
+    Filename: "Eir.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Eirika: Restoration Lady",
+    Filename: "Eirika.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Eitri: Youthful Sage",
+    Filename: "Eitri.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Eldigan: Lionheart",
+    Filename: "Eldigan.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Eleonora: Shooting Starlet",
+    Filename: "Eleonora.png",
+    Race: "Human",
+    Game: "FEE"
+  },
+  {
+    Hero: "Elimine: Scouring Saint",
+    Filename: "Elimine.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Elincia: Lost Princess",
+    Filename: "Elincia.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Elise: Budding Flower",
+    Filename: "Elise.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Eliwood: Knight of Lycia",
+    Filename: "Eliwood.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Emmeryn: Gentle Exalt",
+    Filename: "Emmeryn.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Ena: Autumn Tactician",
+    Filename: "Ena.png",
+    Race: "Dragon",
+    Game: "FE10"
+  },
+  {
+    Hero: "Ephraim: Restoration Lord",
+    Filename: "Ephraim.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Eremiya: Bishop of Woe",
+    Filename: "Eremiya.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Erinys: Earnest Knight",
+    Filename: "Erinys.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Erk: Studious Mage",
+    Filename: "Erk.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Est: Junior Whitewing",
+    Filename: "Est.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Ethlyn: Spirited Princess",
+    Filename: "Ethlyn.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Ewan: Eager Student",
+    Filename: "Ewan.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Eyvel: Mistress of Fiana",
+    Filename: "Eyvel.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Fae: Divine Dragon",
+    Filename: "Fae.png",
+    Race: "Dragon",
+    Game: "FE6"
+  },
+  {
+    Hero: "Fáfnir: Fresh Ambition",
+    Filename: "Fafnir.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Farina: The Great Wing",
+    Filename: "Farina.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Faye: Devoted Heart",
+    Filename: "Faye.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Felicia: Maid Mayhem",
+    Filename: "Felicia.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Felix: Icy Gift Giver",
+    Filename: "Felix.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Ferdinand: Noblest of Nobles",
+    Filename: "Ferdinand.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Fernand: Traitorous Knight",
+    Filename: "Fernand.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Finn: Lance of Legend",
+    Filename: "Finn.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Fiora: Airborne Warrior",
+    Filename: "Fiora.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Fir: Sword Student",
+    Filename: "Fir.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Fjorm: Princess of Ice",
+    Filename: "Fjorm.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Flame Emperor: Bringer of War",
+    Filename: "Flame.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Flavia: Feroxi East-Khan",
+    Filename: "Flavia.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Flayn: Playing Innocent",
+    Filename: "Flayn.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Flora: Cold as Ice",
+    Filename: "Flora.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Florina: Lovely Flier",
+    Filename: "Florina.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Forrest: Fashion Forward",
+    Filename: "Forrest.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Forsyth: Loyal Lieutenant",
+    Filename: "Forsyth.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Frederick: Polite Knight",
+    Filename: "Frederick.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Freyja: Lady of Nightmare",
+    Filename: "Freyja.png",
+    Race: "Beast",
+    Game: "FE0"
+  },
+  {
+    Hero: "Freyr: Estival Dreams",
+    Filename: "Freyr.png",
+    Race: "Beast",
+    Game: "FE0"
+  },
+  {
+    Hero: "Gaius: Candy Stealer",
+    Filename: "Gaius.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Galle: Azure Rider",
+    Filename: "Galle.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Galzus: Dark Blade of Od",
+    Filename: "Galzus.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Gangrel: Plegia's Mad King",
+    Filename: "Gangrel.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Garon: King of Nohr",
+    Filename: "Garon.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Gatekeeper: Nothing to Report",
+    Filename: "Gatekeeper.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Gatrie: Armored Amour",
+    Filename: "Gatrie.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Geese: A Life at Sea",
+    Filename: "Geese.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Genny: Endearing Ally",
+    Filename: "Genny.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Gerik: Desert Tiger",
+    Filename: "Gerik.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Gerome: Masked Rider",
+    Filename: "Gerome.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Gharnef: Dark Pontifex",
+    Filename: "Gharnef.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Gonzalez: Kindly Bandit",
+    Filename: "Gonzalez.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Gordin: Altean Archer",
+    Filename: "Gordin.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Gray: Wry Comrade",
+    Filename: "Gray.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Greil: Heroic Exemplar",
+    Filename: "Greil.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Guinivere: Princess of Bern",
+    Filename: "Guinivere.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Gunnthrá: Voice of Dreams",
+    Filename: "Gunnthra.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Gunter: Inveterate Soldier",
+    Filename: "Gunter.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Gustav: Sovereign Slain",
+    Filename: "Gustav.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Guy: Kutolah Blade",
+    Filename: "Guy.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Gwendolyn: Adorable Knight",
+    Filename: "Gwendolyn.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Haar: Black Tempest",
+    Filename: "Haar.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Hana: Focused Samurai",
+    Filename: "Hana.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Hapi: Drawn-Out Sigh",
+    Filename: "Hapi.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Hardin: Dark Emperor",
+    Filename: "Hardin.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Hawkeye: Desert Guardian",
+    Filename: "Hawkeye.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Heath: Wandering Knight",
+    Filename: "Heath.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Hector: General of Ostia",
+    Filename: "Hector.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Hel: Death Sovereign",
+    Filename: "Hel.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Helbindi: Savage Scourge",
+    Filename: "Helbindi.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Henriette: Overflowing Love",
+    Filename: "Henriette.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Henry: Twisted Mind",
+    Filename: "Henry.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Hilda: Idle Maiden",
+    Filename: "Hilda.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Hilda: Queen of Friege",
+    Filename: "Hilda2.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Hinata: Wild Samurai",
+    Filename: "Hinata.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Hinoka: Warrior Princess",
+    Filename: "Hinoka.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Hríd: Icy Blade",
+    Filename: "Hrid.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Hubert: Sinister Servant",
+    Filename: "Hubert.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Hugh: Worldly Mage",
+    Filename: "Hugh.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Iago: Nohr's Tactician",
+    Filename: "Iago.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Idunn: Dark Priestess",
+    Filename: "Idunn.png",
+    Race: "Dragon",
+    Game: "FE6"
+  },
+  {
+    Hero: "Ignatz: Snowscape Artist",
+    Filename: "Ignatz.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Igrene: Nabata Protector",
+    Filename: "Igrene.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Ike: Vanguard Legend",
+    Filename: "Ike.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Ike: Young Mercenary",
+    Filename: "Ike2.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Ilyana: Hungering Mage",
+    Filename: "Ilyana.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Ingrid: Galatea's Heir",
+    Filename: "Ingrid.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Inigo: Flower Picker",
+    Filename: "Inigo.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Innes: Regal Strategician",
+    Filename: "Innes.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Ishtar: Thunder Goddess",
+    Filename: "Ishtar.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Itsuki: Finding a Path",
+    Filename: "Itsuki.png",
+    Race: "Human",
+    Game: "FEE"
+  },
+  {
+    Hero: "Jaffar: Angel of Death",
+    Filename: "Jaffar.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Jagen: Veteran Knight",
+    Filename: "Jagen.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Jakob: Devoted Servant",
+    Filename: "Jakob.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Jamke: Prince of Verdane",
+    Filename: "Jamke.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Jeorge: Perfect Shot",
+    Filename: "Jeorge.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Jill: Fiery Dracoknight",
+    Filename: "Jill.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Jorge: Traveling Peddler",
+    Filename: "Jorge.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Joshua: Tempest King",
+    Filename: "Joshua.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Julia: Naga's Blood",
+    Filename: "Julia.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Julian: Tender Thief",
+    Filename: "Julian.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Julius: Scion of Darkness",
+    Filename: "Julius.png",
+    Race: "Dragon",
+    Game: "FE4"
+  },
+  {
+    Hero: "Juno: Legendary Flightleader",
+    Filename: "Juno.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Kaden: Kitsune Braggart",
+    Filename: "Kaden.png",
+    Race: "Beast",
+    Game: "FE14"
+  },
+  {
+    Hero: "Kagero: Honorable Ninja",
+    Filename: "Kagero.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Kana: Dragon Princess",
+    Filename: "Kana.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Kana: Dragon Spawn",
+    Filename: "Kana2.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Karel: Sword Demon",
+    Filename: "Karel.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Karin: Driven Knight",
+    Filename: "Karin.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Karla: Sword Vassal",
+    Filename: "Karla.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Katarina: Wayward One",
+    Filename: "Katarina.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Kaze: Easygoing Ninja",
+    Filename: "Kaze.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Keaton: Lupine Collector",
+    Filename: "Keaton.png",
+    Race: "Beast",
+    Game: "FE14"
+  },
+  {
+    Hero: "Kempf: Conniving General",
+    Filename: "Kempf.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Kent: Crimson Shield",
+    Filename: "Kent.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Kiria: Cool Façade",
+    Filename: "Kiria.png",
+    Race: "Human",
+    Game: "FEE"
+  },
+  {
+    Hero: "Kjelle: Fair Fighter",
+    Filename: "Kjelle.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Klein: Silver Nobleman",
+    Filename: "Klein.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Kliff: Curious Spirit",
+    Filename: "Kliff.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Knoll: Darkness Watcher",
+    Filename: "Knoll.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Kris: Unknown Hero",
+    Filename: "Kris.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Kris: Unsung Hero",
+    Filename: "Kris2.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Kronya: Gleaming Blade",
+    Filename: "Kronya.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Kurthnaga: Autumn Goldoan",
+    Filename: "Kurthnaga.png",
+    Race: "Dragon",
+    Game: "FE10"
+  },
+  {
+    Hero: "Kyza: Tiger of Fortune",
+    Filename: "Kyza.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "L'Arachel: Princess of Light",
+    Filename: "Lachesis.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Lachesis: Lionheart's Sister",
+    Filename: "Laegjarn.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Laegjarn: Sheathed Steel",
+    Filename: "Laevatein.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Laevatein: Searing Steel",
+    Filename: "LArachel.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Larcei: Keen Kin",
+    Filename: "Larcei.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Larum: Sprightly Dancer",
+    Filename: "Larum.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Laslow: Dancing Duelist",
+    Filename: "Laslow.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Leanne: Forest's Song",
+    Filename: "Leanne.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Legault: The Hurricane",
+    Filename: "Legault.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Legion: Masked Maniac",
+    Filename: "Legion.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Leif: Prince of Leonster",
+    Filename: "Leif.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Leila: Rose amid Fangs",
+    Filename: "Leila.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Lena: Tender Angel",
+    Filename: "Lena.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Lene: Yearning Dancer",
+    Filename: "Lene.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Leo: Sorcerous Prince",
+    Filename: "Leo.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Leon: True of Heart",
+    Filename: "Leon.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Leonie: Relentless Rays",
+    Filename: "Leonie.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Lethe: Gallia's Valkyrie",
+    Filename: "Lethe.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Letizia: Curse Director",
+    Filename: "Letizia.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Lewyn: Guiding Breeze",
+    Filename: "Lewyn.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Lex: Young Blade",
+    Filename: "Lex.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Libra: Fetching Friar",
+    Filename: "Libra.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Líf: Lethal Swordsman",
+    Filename: "Lif.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Lifis: Terror of Iz",
+    Filename: "Lifis.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Lilina: Delightful Noble",
+    Filename: "Lilina.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Lilith: Astral Daughter",
+    Filename: "Lilith.png",
+    Race: "Dragon",
+    Game: "FE14"
+  },
+  {
+    Hero: "Limstella: Living Construct",
+    Filename: "Limstella.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Linde: Light Mage",
+    Filename: "Linde.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Linhardt: Hevring's Heir",
+    Filename: "Linhardt.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Linus: Mad Dog",
+    Filename: "Linus.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Lissa: Sprightly Cleric",
+    Filename: "Lissa.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Lloyd: White Wolf",
+    Filename: "Lloyd.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Loki: The Trickster",
+    Filename: "Loki.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Lon'qu: Solitary Blade",
+    Filename: "Lonqu.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Lorenz: Noble of the Red Rose",
+    Filename: "Lorenz.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Louise: Lady of Violets",
+    Filename: "Louise.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Lucina: Future Witness",
+    Filename: "Lucina.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Lucius: The Light",
+    Filename: "Lucius.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Lugh: Anima Child",
+    Filename: "Lugh.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Lukas: Sharp Soldier",
+    Filename: "Lukas.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Luke: Rowdy Squire",
+    Filename: "Luke.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Lute: Prodigy",
+    Filename: "Lute.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Luthier: Odd Wayfarer",
+    Filename: "Luthier.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Lyn: Lady of the Plains",
+    Filename: "Lyn.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Lyon: Shadow Prince",
+    Filename: "Lyon.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Lyre: Lap Cat of Luxury",
+    Filename: "Lyre.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Lysithea: Child Prodigy",
+    Filename: "Lysithea.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Mae: Bundle of Energy",
+    Filename: "Mae.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Malice: Deft Sellsword",
+    Filename: "Malice.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Mamori: Microwavin' Idol",
+    Filename: "Mamori.png",
+    Race: "Human",
+    Game: "FEE"
+  },
+  {
+    Hero: "Manuela: Silver Caroler",
+    Filename: "Manuela.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Marcia: Petulant Knight",
+    Filename: "Marcia.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Mareeta: Sword of Stars",
+    Filename: "Mareeta.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Maria: Minerva's Sister",
+    Filename: "Maria.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Marianne: Adopted Daughter",
+    Filename: "Marianne.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Maribelle: Dire Damsel",
+    Filename: "Maribelle.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Marisa: Crimson Flash",
+    Filename: "Marisa.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Marth: Altean Prince",
+    Filename: "Marth.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Marth: Enigmatic Blade",
+    Filename: "Marth2.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Mathilda: Legendary Knight",
+    Filename: "Mathilda.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Matthew: Faithful Spy",
+    Filename: "Matthew.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Medeus: Earth-Dragon King",
+    Filename: "Medeus.png",
+    Race: "Dragon",
+    Game: "FE1"
+  },
+  {
+    Hero: "Melady: Crimson Rider",
+    Filename: "Melady.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Mercedes: Kindly Devotee",
+    Filename: "Mercedes.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Merlinus: Pherae's Clerk",
+    Filename: "Merlinus.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Merric: Wind Mage",
+    Filename: "Merric.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Mia: Lady of Blades",
+    Filename: "Mia.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Mia: Aspiring Lady of the Blades",
+    Filename: "Mia2.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Micaiah: Priestess of Dawn",
+    Filename: "Micaiah.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Michalis: Ambitious King",
+    Filename: "Michalis.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Midori: Reliable Chemist",
+    Filename: "Midori.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Mikoto: Caring Mother",
+    Filename: "Mikoto.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Mila: Goddess of Love",
+    Filename: "Mila.png",
+    Race: "Dragon",
+    Game: "FE2"
+  },
+  {
+    Hero: "Minerva: Red Dragoon",
+    Filename: "Minerva.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Mirabilis: Daydream",
+    Filename: "Mirabilis.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Miranda: Willful Princess",
+    Filename: "Miranda.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Miriel: Rapier Intellect",
+    Filename: "Miriel.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Mist: Helpful Sister",
+    Filename: "Mist.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Mordecai: Kindhearted Tiger",
+    Filename: "Mordecai.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Morgan: Lad from Afar",
+    Filename: "Morgan.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Morgan: Lass from Afar",
+    Filename: "Morgan2.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Muarim: Raw Instinct",
+    Filename: "Muarim.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Múspell: Flame God",
+    Filename: "Muspell.png",
+    Race: "Dragon",
+    Game: "FE0"
+  },
+  {
+    Hero: "Mustafa: Plegian Champion",
+    Filename: "Mustafa.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Myrrh: Great Dragon",
+    Filename: "Myrrh.png",
+    Race: "Dragon",
+    Game: "FE8"
+  },
+  {
+    Hero: "Naesala: Sky's Shadow",
+    Filename: "Naesala.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Naga: Dragon Divinity",
+    Filename: "Naga.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Nagi: Dragon Avatar",
+    Filename: "Nagi.png",
+    Race: "Dragon",
+    Game: "FE3"
+  },
+  {
+    Hero: "Nah: Little Miss",
+    Filename: "Nah.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Nailah: Unflinching Eye",
+    Filename: "Nailah.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Nanna: Nordion Princess",
+    Filename: "Nanna.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Narcian: Wyvern General",
+    Filename: "Narcian.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Natasha: Sacred Healer",
+    Filename: "Natasha.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Navarre: Scarlet Sword",
+    Filename: "Navarre.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Neimi: Tearful Archer",
+    Filename: "Neimi.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Nemesis: King of Liberation",
+    Filename: "Nemesis.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Nephenee: Fierce Halberdier",
+    Filename: "Nephenee.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Nifl: God of Ice",
+    Filename: "Nifl.png",
+    Race: "Dragon",
+    Game: "FE0"
+  },
+  {
+    Hero: "Niime: Mountain Hermit",
+    Filename: "Niime.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Niles: Cruel to Be Kind",
+    Filename: "Niles.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Nils: Bright Bard",
+    Filename: "Nils.png",
+    Race: "Dragon",
+    Game: "FE7"
+  },
+  {
+    Hero: "Nina: Eye Spy",
+    Filename: "Nina.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Ninian: Oracle of Destiny",
+    Filename: "Ninian.png",
+    Race: "Dragon",
+    Game: "FE7"
+  },
+  {
+    Hero: "Nino: Pious Mage",
+    Filename: "Nino.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Noire: Shade Seeker",
+    Filename: "Noire.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Norne: The Volunteer",
+    Filename: "Norne.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Nótt: Moon's Elegance",
+    Filename: "Nott.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Nowi: Eternal Youth",
+    Filename: "Nowi.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Nyx: Rulebreaker Mage",
+    Filename: "Nyx.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Oboro: Fierce Fighter",
+    Filename: "Oboro.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Odin: Potent Force",
+    Filename: "Odin.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Ogma: Loyal Blade",
+    Filename: "Ogma.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Oliver: Admirer of Beauty",
+    Filename: "Oliver.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Olivia: Blushing Beauty",
+    Filename: "Olivia.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Olwen: Blue Mage Knight",
+    Filename: "Olwen.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Ophelia: Dramatic Heroine",
+    Filename: "Ophelia.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Orochi: Merry Diviner",
+    Filename: "Orochi.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Orson: Passion's Folly",
+    Filename: "Orson.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Oscar: Agile Horseman",
+    Filename: "Oscar.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Osian: Scolded Soldier",
+    Filename: "Osian.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Ótr: Kingsbrother",
+    Filename: "Otr.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Owain: Chosen One",
+    Filename: "Owain.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Palla: Eldest Whitewing",
+    Filename: "Palla.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Palla: Kind Eldest Sister",
+    Filename: "Palla2.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Panne: Proud Taguel",
+    Filename: "Panne.png",
+    Race: "Beast",
+    Game: "FE13"
+  },
+  {
+    Hero: "Pelleas: Ashnard's Orphan",
+    Filename: "Pelleas.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Pent: Mage General",
+    Filename: "Pent.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Peony: Sweet Dream",
+    Filename: "Peony.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Perceval: Knightly Ideal",
+    Filename: "Perceval.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Peri: Playful Slayer",
+    Filename: "Peri.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Petra: Princess of Brigid",
+    Filename: "Petra.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Petrine: Icy Flame-Lancer",
+    Filename: "Petrine.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Phina: Roving Dancer",
+    Filename: "Phina.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Plumeria: Lewd Dream",
+    Filename: "Plumeria.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Priam: Radiant Hero",
+    Filename: "Priam.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Priscilla: Delicate Princess",
+    Filename: "Priscilla.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Python: Apathetic Archer",
+    Filename: "Python.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Quan: Luminous Lancer",
+    Filename: "Quan.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Rafiel: Blessed Wings",
+    Filename: "Rafiel.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Raigh: Dark Child",
+    Filename: "Raigh.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Ranulf: Friend of Nations",
+    Filename: "Ranulf.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Raphael: Muscle-Monger",
+    Filename: "Raphael.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Rath: Wolf of Sacae",
+    Filename: "Rath.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Raven: Peerless Fighter",
+    Filename: "Raven.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Rebecca: Wildflower",
+    Filename: "Rebecca.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Reginn: Bearing Hope",
+    Filename: "Reginn.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Reinhardt: Thunder's Fist",
+    Filename: "Reinhardt.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Rennac: Rich 'Merchant'",
+    Filename: "Rennac.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Reyson: White Prince",
+    Filename: "Reyson.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Rhajat: Black Magician",
+    Filename: "Rhajat.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Rhea: Immaculate One",
+    Filename: "Rhea.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Rhys: Gentle Basker",
+    Filename: "Rhys.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Riev: Blood Beryl",
+    Filename: "Riev.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Rinea: Reminiscent Belle",
+    Filename: "Rinea.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Rinkah: Scion of Flame",
+    Filename: "Rinkah.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Robin: Fell Reincarnation",
+    Filename: "Robin.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Robin: Fell Vessel",
+    Filename: "Robin2.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Robin: High Deliverer",
+    Filename: "Robin3.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Robin: Mystery Tactician",
+    Filename: "Robin4.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Roderick: Steady Squire",
+    Filename: "Roderick.png",
+    Race: "Human",
+    Game: "FE3"
+  },
+  {
+    Hero: "Rolf: Faithful Student",
+    Filename: "Rolf.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Ronan: Villager of Iz",
+    Filename: "Ronan.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Roshea: Coyote's Faithful",
+    Filename: "Roshea.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Ross: His Father's Son",
+    Filename: "Ross.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Roy: Young Lion",
+    Filename: "Roy.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Rudolf: Emperor of Rigel",
+    Filename: "Rudolf.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Rutger: Lone Swordsman",
+    Filename: "Rutger.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Ryoma: Peerless Samurai",
+    Filename: "Ryoma.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Saber: Driven Mercenary",
+    Filename: "Saber.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Saias: Bishop of Flame",
+    Filename: "Saias.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Sain: Green Lance",
+    Filename: "Sain.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Saizo: Angry Ninja",
+    Filename: "Saizo.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Sakura: Loving Priestess",
+    Filename: "Sakura.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Saleh: Vernal Sage",
+    Filename: "Saleh.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Salem: Dark Sage",
+    Filename: "Salem.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Sanaki: Holy Empress",
+    Filename: "Sanaki.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Sanaki: Begnion's Apostle",
+    Filename: "Sanaki2.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Sara: Lady of Loptr",
+    Filename: "Sara.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Saul: Minister of Love",
+    Filename: "Saul.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Say'ri: Chon'sin's Blade",
+    Filename: "Sayri.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Scáthach: Astra's Wake",
+    Filename: "Scathach.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Sedgar: Coyote's Dutiful",
+    Filename: "Sedgar.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Seiros: Saint of Legend",
+    Filename: "Seiros.png",
+    Race: "Dragon",
+    Game: "FE16"
+  },
+  {
+    Hero: "Selena: Cutting Wit",
+    Filename: "Selena.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Selena: Fluorspar",
+    Filename: "Selena2.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Seliph: Heir of Light",
+    Filename: "Seliph.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Selkie: Free Spirit",
+    Filename: "Selkie.png",
+    Race: "Beast",
+    Game: "FE14"
+  },
+  {
+    Hero: "Sephiran: Begnion's Sovereign",
+    Filename: "Sephiran.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Serra: Outspoken Cleric",
+    Filename: "Serra.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Seteth: Seiros Adherent",
+    Filename: "Seteth.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Seth: Silver Knight",
+    Filename: "Seth.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Setsuna: Absent Archer",
+    Filename: "Setsuna.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Severa: Secret Dreamer",
+    Filename: "Severa.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Shamir: Archer Apart",
+    Filename: "Shamir.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Shanna: Sprightly Flier",
+    Filename: "Shanna.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Shannan: Wielder of Astra",
+    Filename: "Shannan.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Sharena: Princess of Askr",
+    Filename: "Sharena.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Sheena: Princess of Gra",
+    Filename: "Sheena.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Shigure: Uplifting Artist",
+    Filename: "Shigure.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Shinon: Scathing Archer",
+    Filename: "Shinon.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Shiro: Raw Talent",
+    Filename: "Shiro.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Siegbert: Future King",
+    Filename: "Siegbert.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Sigrun: Loyal Protector",
+    Filename: "Sigrun.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Sigurd: Holy Knight",
+    Filename: "Sigurd.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Silas: Loyal Knight",
+    Filename: "Silas.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Silque: Adherent of Mila",
+    Filename: "Silque.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Silvia: Traveling Dancer",
+    Filename: "Silvia.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Sirius: Mysterious Knight",
+    Filename: "Sirius.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Soleil: Adorable Adorer",
+    Filename: "Soleil.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Solon: Church Shadow",
+    Filename: "Solon.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Sonia: Inhuman Beauty",
+    Filename: "Sonia.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Sonya: Vengeful Mage",
+    Filename: "Sonya.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Sophia: Nabata Prophet",
+    Filename: "Sophia.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Soren: Shrewd Strategist",
+    Filename: "Soren.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Sothe: Zephyr",
+    Filename: "Sothe.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Sothis: Girl on the Throne",
+    Filename: "Sothis.png",
+    Race: "Dragon",
+    Game: "FE16"
+  },
+  {
+    Hero: "Stahl: Viridian Knight",
+    Filename: "Stahl.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Subaki: Perfect Expert",
+    Filename: "Subaki.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Sue: Doe of the Plains",
+    Filename: "Sue.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Sully: Crimson Knight",
+    Filename: "Sully.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Sumia: Maid of Flowers",
+    Filename: "Sumia.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Surtr: Ruler of Flame",
+    Filename: "Surtr.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Sylvain: Sincerest of Knights",
+    Filename: "Sylvain.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Tailtiu: Thunder Noble",
+    Filename: "Tailtiu.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Takumi: Wild Card",
+    Filename: "Takumi.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Tana: Winged Princess",
+    Filename: "Tana.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Tanith: Bright Blade",
+    Filename: "Tanith.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Tanya: Dagdar's Kid",
+    Filename: "Tanya.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Tatiana: Devoted Saint",
+    Filename: "Tatiana.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Tethys: Beloved Dancer",
+    Filename: "Tethys.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Tharja: Dark Shadow",
+    Filename: "Tharja.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Thea: Stormy Flier",
+    Filename: "Thea.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Thórr: War God",
+    Filename: "Thorr.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Thrasir: Omnicidal Witch",
+    Filename: "Thrasir.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Tibarn: Lord of the Air",
+    Filename: "Tibarn.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Tiki: Dragon Scion",
+    Filename: "Tiki.png",
+    Race: "Dragon",
+    Game: "FE1"
+  },
+  {
+    Hero: "Tiki: Naga's Voice",
+    Filename: "Tiki2.png",
+    Race: "Dragon",
+    Game: "FE13"
+  },
+  {
+    Hero: "Tine: Rumbling Thunder",
+    Filename: "Tine.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Titania: Mighty Mercenary",
+    Filename: "Titania.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Tobin: The Clueless One",
+    Filename: "Tobin.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Travant: King of Thracia",
+    Filename: "Travant.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Triandra: Nightmare",
+    Filename: "Triandra.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Tsubasa: Madcap Idol",
+    Filename: "Tsubasa.png",
+    Race: "Human",
+    Game: "FEE"
+  },
+  {
+    Hero: "Ullr: The Bowmaster",
+    Filename: "Ullr.png",
+    Race: "Human",
+    Game: "FE4"
+  },
+  {
+    Hero: "Ursula: Blue Crow",
+    Filename: "Ursula.png",
+    Race: "Human",
+    Game: "FE7"
+  },
+  {
+    Hero: "Valbar: Open and Honest",
+    Filename: "Valbar.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Valter: Dark Moonstone",
+    Filename: "Valter.png",
+    Race: "Human",
+    Game: "FE8"
+  },
+  {
+    Hero: "Veld: Manfroy's Rock",
+    Filename: "Veld.png",
+    Race: "Human",
+    Game: "FE5"
+  },
+  {
+    Hero: "Velouria: Wolf Cub",
+    Filename: "Velouria.png",
+    Race: "Beast",
+    Game: "FE14"
+  },
+  {
+    Hero: "Veronica: Emblian Princess",
+    Filename: "Veronica.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Vika: Liberation's Talon",
+    Filename: "Vika.png",
+    Race: "Beast",
+    Game: "FE10"
+  },
+  {
+    Hero: "Virion: Elite Archer",
+    Filename: "Virion.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Volke: Man of Mysteries",
+    Filename: "Volke.png",
+    Race: "Human",
+    Game: "FE9"
+  },
+  {
+    Hero: "Vyland: Coyote's Justice",
+    Filename: "Vyland.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Walhart: The Conqueror",
+    Filename: "Walhart.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Wolf: Coyote's Loyal",
+    Filename: "Wolf.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Wolt: Dutiful Archer",
+    Filename: "Wolt.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Wrys: Kindly Priest",
+    Filename: "Wrys.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Xander: Paragon Knight",
+    Filename: "Xander.png",
+    Race: "Human",
+    Game: "FE14"
+  },
+  {
+    Hero: "Xane: Shape-Shifter",
+    Filename: "Xane.png",
+    Race: "Human",
+    Game: "FE1"
+  },
+  {
+    Hero: "Yarne: Timid Taguel",
+    Filename: "Yarne.png",
+    Race: "Beast",
+    Game: "FE13"
+  },
+  {
+    Hero: "Yen'fay: Blade Legend",
+    Filename: "Yenfay.png",
+    Race: "Human",
+    Game: "FE13"
+  },
+  {
+    Hero: "Ylgr: Fresh Snowfall",
+    Filename: "Ylgr.png",
+    Race: "Human",
+    Game: "FE0"
+  },
+  {
+    Hero: "Yune: Chaos Goddess",
+    Filename: "Yune.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Yuri: Ashen Valiant",
+    Filename: "Yuri.png",
+    Race: "Human",
+    Game: "FE16"
+  },
+  {
+    Hero: "Zeke: Past Unknown",
+    Filename: "Zeke.png",
+    Race: "Human",
+    Game: "FE2"
+  },
+  {
+    Hero: "Zelgius: Jet-Black General",
+    Filename: "Zelgius.png",
+    Race: "Human",
+    Game: "FE10"
+  },
+  {
+    Hero: "Zelot: Leader of Knights",
+    Filename: "Zelot.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Zephiel: The Liberator",
+    Filename: "Zephiel.png",
+    Race: "Human",
+    Game: "FE6"
+  },
+  {
+    Hero: "Zihark: Blade of Unity",
+    Filename: "Zihark.png",
+    Race: "Human",
+    Game: "FE9"
+  }
+]
