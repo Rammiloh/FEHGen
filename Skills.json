@@ -1,0 +1,3166 @@
+[
+  {
+    Skill: "AR-D <2STATS> 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "AR-D <2STATS> 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "AR-O <2STATS> 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "AR-O <2STATS> 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ashera's Chosen",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Bond 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Bond 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Unity",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Catch 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Inf,Arm"
+  },
+  {
+    Skill: "<2STATS> Catch 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Arm"
+  },
+  {
+    Skill: "<2STATS> Form 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Ideal 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Cav,Fly"
+  },
+  {
+    Skill: "<2STATS> Ideal 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Cav,Fly"
+  },
+  {
+    Skill: "<2STATS> Push 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Push 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Solo 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Solo 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "HP/Atk 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "HP/Def 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "HP/Spd 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "HP/Res 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<CLASSDUEL> 3",
+    Slot: "A",
+    Exclusivity: "N",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<CLASSDUEL> 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Blade Session 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Bonus Doubler 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Swift Sparrow 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Sturdy Blow 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Mirror Strike 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Steady Blow 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Swift Strike 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Bracing Blow 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Steady Impact",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Staff"
+  },
+  {
+    Skill: "Mirror Impact",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Staff"
+  },
+  {
+    Skill: "Sturdy Impact",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Staff"
+  },
+  {
+    Skill: "Swift Sparrow 3",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<2NAMEEP> Stance 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<2NAMEEP> Stance 3",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Brazen <2STATS> 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Brazen <2STATS> 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Close Counter",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close"
+  },
+  {
+    Skill: "Close Def 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Close Def 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Close Foil",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close"
+  },
+  {
+    Skill: "Close Reversal",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close"
+  },
+  {
+    Skill: "Close Salvo",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close"
+  },
+  {
+    Skill: "Close Ward",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close"
+  },
+  {
+    Skill: "<1NAMEPP> Blow 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Darting Blow 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Death Blow 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<1NAMEEP> Breath",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: "Cav,Fly,Ranged"
+  },
+  {
+    Skill: "<1STAT> +3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Defiant <1STAT> 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Distant Counter",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Dart",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Def 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Distant Def 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Distant Foil",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Pressure",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Stance",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Storm",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Distant Ward",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Dragonscale",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Dragonskin II",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Dragonskin",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Dragoon Shield",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<ELEMENT> Boost 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Flashing Blade 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Cav,Fly,Staff"
+  },
+  {
+    Skill: "Flashing Blade 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Cav,Fly,Staff"
+  },
+  {
+    Skill: "Heavy Blade 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Heavy Blade 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Fort. Def/Res 2",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fort. Def/Res 3",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fortress Def 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fortress Res 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fury 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Fury 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Grani's Shield",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Fly"
+  },
+  {
+    Skill: "HP +5",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Iote's Shield",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Laws of Sacae II",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Laws of Sacae",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Life and Death 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Life and Death 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Ostian Counter",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Scendscale",
+    Slot: "A",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Shield Session 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sorcery Blade 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Tome,Dragon,Beast,Staff"
+  },
+  {
+    Skill: "<1NAMEEP> Stance 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<1NAMEEP> Stance 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Still Water 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Still Water 4",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sturdy Surge",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Surge Sparrow",
+    Slot: "A",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Svalinn Shield",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Triangle Adept 3",
+    Slot: "A",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Colorless"
+  },
+  {
+    Skill: "<2S> Far Trace 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Arm,Close"
+  },
+  {
+    Skill: "<2S> Near Trace 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Arm,Ranged"
+  },
+  {
+    Skill: "Aerobatics 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Armored Wall",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Assured Rebirth",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<1STAT> Cantrip 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<2STATS> Link 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<2STATS> Ruse 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Arm,Fly,Staff"
+  },
+  {
+    Skill: "<2STATS> Snag 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Inf,Arm,Staff"
+  },
+  {
+    Skill: "<1STAT> Feint 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Atrocity",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<MELEE>breaker 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "<TOME>breaker 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Belief in Love",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Beorc's Blessing",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Binding Necklace",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Binding Shield II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Binding Shield",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Black Eagle Rule",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<DANCE>",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Blue Lion Rule",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Bold Fighter 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "<MISSILE>breaker 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Brash Assault 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Bushido II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Bushido",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Cancel Affinity 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged,Staff"
+  },
+  {
+    Skill: "Chill <1STAT> 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Chill <2STATS> 2",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Chilling Seal II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Chilling Seal",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Chivalry",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Close Call 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    Skill: "Crafty Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Crusader's Ward",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Daring Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Dazzling Staff 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Wrathful Staff 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Deadly Balance",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Desperation 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Detailed Report",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Disarm Trap 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Bow,Staff"
+  },
+  {
+    Skill: "Dive Bomb 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav,Ranged"
+  },
+  {
+    Skill: "Divine Receation",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Double Lion",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Drag Back",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Dragon Wall 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Dragon's Ire 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Dragon's Wrath 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Dull Close 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Dull Ranged 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Escape Route 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Even Follow-Up 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Even Pulse Tie 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Fly"
+  },
+  {
+    Skill: "Odd Pulse Tie 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Fly"
+  },
+  {
+    Skill: "Faithful Loyalty",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fallen Star",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Flier Formation 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Flow Flight 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Flow Force 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Flow Guard 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Flow Refresh 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Follow-Up Ring",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Freezing Seal II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Freezing Seal",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Frenzy 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    Skill: "Guard 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Guard Bearing 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Hardy Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly,Ranged"
+  },
+  {
+    Skill: "Hit and Run",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Hoðr's Zeal",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Holy War's End",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Killing Intent",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Knock Back",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Light and Dark",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Live for Bounty",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Live for Honor",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Live to Serve 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Lull <2STATS> 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Arm,Fly"
+  },
+  {
+    Skill: "Lunar Brace II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Lunar Brace",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Lunge",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Moon-Twin Wing",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Moonlight Bangle",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Murderous Lion",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Mystic Boost 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Null C-Disrupt",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Null Follow-Up",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Obstruct 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Odd Follow-Up 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Pass 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Pegasus Flight 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Poison Strike 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Prescience",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Quick Riposte 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Raging Storm",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Recover Ring",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Renewal 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Repel 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    Skill: "S Drink",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sabotage <1STAT> 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sacae's Blessing",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Savvy Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Seal <1STAT> 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Seal <2STATS> 2",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Shield Pulse 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Cav,Fly,Ranged"
+  },
+  {
+    Skill: "Slick Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Solar Brace II",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Solar Brace",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Soul of Zofia",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Tempo 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Special Fighter 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Special Spiral 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Cav,Fly,Staff"
+  },
+  {
+    Skill: "Spurn 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    Skill: "Sudden Panic 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav"
+  },
+  {
+    Skill: "Sun-Twin Wing",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "True Dragon Wall",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Vantage 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Vengeful Fighter 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Warp Powder",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Wary Fighter 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Watersweep 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Wily Fighter 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Windsweep 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Wings of Mercy 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Wrath 3",
+    Slot: "B",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Cav,Fly,Ranged"
+  },
+  {
+    Skill: "Wyvern Flight 3",
+    Slot: "B",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav,Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "Yngvi Ascendant",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Yune's Whispers",
+    Slot: "B",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2S> Far Save 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "<2S> Near Save 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Air Orders 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Armor March 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Armored Stride 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly,Ranged,Dragon"
+  },
+  {
+    Skill: "Assault Troop 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Ranged,Beast,Dragon"
+  },
+  {
+    Skill: "<2STATS> Gap 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Menace",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Oath 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Arm,Cav"
+  },
+  {
+    Skill: "<2STATS> Rein 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "<1STAT> Opening 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "<1STAT> Ploy 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "<2STATS> Hold",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "<1STAT> Smoke 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Atk Smoke 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Spd Smoke 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "<1STAT> Tactic 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "<WEAPON> Exp. 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "<WEAPON> Valor 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Blue Feud 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Red"
+  },
+  {
+    Skill: "Green Feud 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Blue"
+  },
+  {
+    Skill: "C Feud 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Red Feud 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Green"
+  },
+  {
+    Skill: "Breath of Life 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Canto Control 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Chaos Named",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Close Guard 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Cross Spur <1STAT>",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Darkling Guardian",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Divine Fang",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Domain of Flame",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Domain of Ice",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Drive <1STAT> 2",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Even <1STAT> Wave 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Odd <1STAT> Wave 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Even Recovery 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Odd Recovery 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Even Tempest 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Ranged"
+  },
+  {
+    Skill: "Odd Tempest 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Ranged"
+  },
+  {
+    Skill: "Faith in Humanity",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fatal Smoke 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Flier Guidance 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Fortify Armor",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Fortify Beasts",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Dragon,Ranged"
+  },
+  {
+    Skill: "Fortify Cavalry",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Fly"
+  },
+  {
+    Skill: "Fortify Dragons",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Fortify Fliers",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Fortify Def 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fortify Def 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fortify Res 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fortify Res 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Glare",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Goad Armor",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Goad Beasts",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Dragon,Ranged"
+  },
+  {
+    Skill: "Goad Cavalry",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Fly"
+  },
+  {
+    Skill: "Goad Dragons",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Goad Fliers",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Goddess Bearer",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ground Orders 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Guidance 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Holy Ground",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Hone Armor",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Hone Beasts",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Dragon,Ranged"
+  },
+  {
+    Skill: "Hone Cavalry",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Fly"
+  },
+  {
+    Skill: "Hone Dragons",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Hone Fliers",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Hone Atk 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Hone Atk 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Hone Spd 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Hone Spd 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Human Virtue",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Impenetrable Dark",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Inevitable Death",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Inf. Hexblade 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Missile,Staff,Close"
+  },
+  {
+    Skill: "Infantry Breath 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Infantry Flash 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Infantry Pulse 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Infantry Rush 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Joint Dist. Guard",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Joint Close Guard",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Joint Drive <1STAT>",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Joint Hone <1STAT>",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Mila's Turnwheel",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Opening Retainer",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Order's Restraint",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ostia's Pulse II",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ostia's Pulse",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Panic Ploy 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Panic Smoke 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Pulse Smoke 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rouse <2STATS> 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: "Arm,Fly"
+  },
+  {
+    Skill: "Rouse <2STATS> 4",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: "Arm,Fly"
+  },
+  {
+    Skill: "Savage Blow 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Solitary Dream",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sparkling Boost+",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sparkling Boost",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Spur <1STAT> 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Spur <2STATS> 2",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Stall Ploy 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Surtr's Menace",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Surtr's Portent",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Threaten <1STAT> 3",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: ""
+  },
+  {
+    Skill: "Threat. <2STATS> 2",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Threat. <2STATS> 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 4,
+    Restrictions: ""
+  },
+  {
+    Skill: "Time's Pulse 3",
+    Slot: "C",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly"
+  },
+  {
+    Skill: "Upheaval+",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Upheaval",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Vision of Arcadia",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ward Armor",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Cav,Fly"
+  },
+  {
+    Skill: "Ward Beasts",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Dragon,Ranged"
+  },
+  {
+    Skill: "Ward Cavalry",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Fly"
+  },
+  {
+    Skill: "Ward Dragons",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Melee,Beast,Ranged"
+  },
+  {
+    Skill: "Ward Fliers",
+    Slot: "C",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Inf,Arm,Cav"
+  },
+  {
+    Skill: "Wings of Light",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "With Everyone! II",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "With Everyone!",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Worldbreaker",
+    Slot: "C",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ardent Sacrifice",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Call to Flame",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Dance",
+    Slot: "Assist",
+    Exclusivity: "D",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Draw Back",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Foul Play",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Frightful Dream",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Future Vision II",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Future Vision",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Gentle Dream",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Gray Waves II",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Gray Waves",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Harsh Command",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Harsh Command+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Maiden's Solace",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Martyr+",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Nudge+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Physic+",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Pivot",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Play",
+    Slot: "Assist",
+    Exclusivity: "D",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rally <2STATS>+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 3,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rally <2STATS>",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 3,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rally <1STAT>",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rally Up <1STAT>+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rally Up <1STAT>",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 2,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Reciprocal Aid",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Recover+",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Rehabilitate+",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Reposition",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Rescue+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Restore+",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Return+",
+    Slot: "Assist",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Sacrifice",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Shove",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Sing",
+    Slot: "Assist",
+    Exclusivity: "D",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Smite",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Swap",
+    Slot: "Assist",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Sweet Dreams",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "To Change Fate!",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Whimsical Dream",
+    Slot: "Assist",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Aegis",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Aether",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Astra",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Black Luna",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Blazing Flame",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Blazing Light",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Blazing Thunder",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Blazing Wind",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Blue Flame",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Bonfire",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Brutal Shell",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Deadeye",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Dagger,Staff"
+  },
+  {
+    Skill: "Deluge Balm+",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Draconic Aura",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Dragon Fang",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Earthfire Balm+",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Earthwater Balm+",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Escutcheon",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Fire Emblem",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Fireflood Balm+",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Galeforce",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Ranged,Dragon"
+  },
+  {
+    Skill: "Gifted Magic",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Glacies",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Glimmer",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Growing Flame",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Growing Light",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Growing Thunder",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Growing Wind",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Heavenly Light",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Hero's Blood",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Holy-Knight Aura",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ice Mirror",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ice Mirror II",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Iceberg",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Ignis",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Imbue",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Imperial Astra",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Kindled-Fire Balm",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Lethality",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Bow,Staff"
+  },
+  {
+    Skill: "Life Unending",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Luna",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Lunar Flash",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Mayhem Aether",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Miracle",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Moonbow",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Negating Fang",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Njörun's Zeal",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Noontime",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Open the Future",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Pavise",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Radiant Aether",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Radiant Aether II",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Regnal Astra",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Reprisal",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Requiem Dance",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Righteous Wind",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Ruptured Sky",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sacred Cowl",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Ranged"
+  },
+  {
+    Skill: "Seiðr Shell",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Shining Emblem",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sirius",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Sol",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Solid-Earth Balm",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Still-Water Balm",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Sublime Heaven",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Swift-Winds Balm",
+    Slot: "Special",
+    Exclusivity: "C",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  },
+  {
+    Skill: "Twin Blades",
+    Slot: "Special",
+    Exclusivity: "Prf",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Umbra Calamity",
+    Slot: "Special",
+    Exclusivity: "N",
+    Weight: 1,
+    Restrictions: ""
+  },
+  {
+    Skill: "Vengeance",
+    Slot: "Special",
+    Exclusivity: "C,R",
+    Weight: 1,
+    Restrictions: "Staff"
+  },
+  {
+    Skill: "Vital Astra",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    Skill: "Windfire Balm+",
+    Slot: "Special",
+    Exclusivity: "R",
+    Weight: 1,
+    Restrictions: "Close,Tome,Missile"
+  }
+]
