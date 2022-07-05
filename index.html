@@ -94,9 +94,16 @@
 
 <p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 <script>
-$.getJSON("https://rammiloh.github.io/FEH-Alt-Generator/Classes.json", function(data){
-      console.log(data);
-});
+  fetch("./Classes.json")
+    .then(response => {
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+    });
+//$.getJSON("https://rammiloh.github.io/FEH-Alt-Generator/Classes.json", function(data){
+//      console.log(data);
+//});
         </script>
       </section>
     </div>
