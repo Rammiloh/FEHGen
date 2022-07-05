@@ -1,0 +1,237 @@
+[
+  {
+    effect: "unit's HP ≥ <PERCENT>",
+    tags: "turn_start,combat_start,combat_end",
+    weight: 10
+  },
+  {
+    effect: "unit's HP ≤ <PERCENT>",
+    tags: "turn_start,combat_start,combat_end",
+    weight: 7
+  },
+  {
+    effect: "unit's HP = 100%",
+    tags: "turn_start,combat_start",
+    weight: 3
+  },
+  {
+    effect: "unit's HP < 100%",
+    tags: "turn_start,combat_start",
+    weight: 3
+  },
+  {
+    effect: "foe's HP ≥ <PERCENT>",
+    tags: "combat_start",
+    weight: 4
+  },
+  {
+    effect: "foe's HP ≤ <PERCENT>",
+    tags: "combat_start",
+    weight: 3
+  },
+  {
+    effect: "foe's HP = 100%",
+    tags: "combat_start",
+    weight: 4
+  },
+  {
+    effect: "foe's HP < 100%",
+    tags: "combat_start",
+    weight: 3
+  },
+  {
+    effect: "<EITHER>'s <STAT> ≥ foe's <STAT2>+<INT>",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "【Bonus】is active on unit",
+    tags: "turn_start,combat_start,combat_end",
+    weight: 4
+  },
+  {
+    effect: "【Bonus】is active on foe",
+    tags: "combat_start,during_combat",
+    weight: 4
+  },
+  {
+    effect: "unit's <STAT> > foe's <STAT2>",
+    tags: "combat_start,during_combat",
+    weight: 2
+  },
+  {
+    effect: "unit's <STAT> > foe's <STAT>",
+    tags: "combat_start,during_combat",
+    weight: 5
+  },
+  {
+    effect: "unit is within 2 spaces of an ally",
+    tags: "turn_start,combat_start,during_combat,combat_end",
+    weight: 7
+  },
+  {
+    effect: "unit is within <INT> spaces of an ally",
+    tags: "turn_start,combat_start,during_combat,combat_end",
+    weight: 3
+  },
+  {
+    effect: "unit is adjacent to an ally",
+    tags: "turn_start,combat_start,during_combat,combat_end",
+    weight: 3
+  },
+  {
+    effect: "unit is not adjacent to an ally",
+    tags: "turn_start,combat_start,during_combat,combat_end",
+    weight: 4
+  },
+  {
+    effect: "【Bonus】 or 【Penalty】 is active on unit",
+    tags: "combat_start,during_combat",
+    weight: 2
+  },
+  {
+    effect: "【Penalty】 is active on foe",
+    tags: "combat_start,during_combat",
+    weight: 2
+  },
+  {
+    effect: "【Penalty】 is active on unit",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 3
+  },
+  {
+    effect: "it is an odd-numbered turn",
+    tags: "combat_start,during_combat,combat_end",
+    weight: 1
+  },
+  {
+    effect: "it is an even-numbered turn",
+    tags: "combat_start,during_combat,combat_end",
+    weight: 1
+  },
+  {
+    effect: "During unit's first combat in player phase or enemy phase",
+    tags: "during_combat",
+    weight: 3
+  },
+  {
+    effect: "unit's Special deals damage before or during combat",
+    tags: "during_combat",
+    weight: 1
+  },
+  {
+    effect: "the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit)",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "foe is <CLASS>",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "foe is <CLASS> or <CLASS2>",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "【Penalty】is active on any foes within 3 columns centered on unit",
+    tags: "turn_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "【Bonus】is active on any foes within 3 columns centered on unit",
+    tags: "turn_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "【Bonus】is active on any allies within 3 columns centered on unit",
+    tags: "turn_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "【Penalty】is active on any allies within 3 columns centered on unit",
+    tags: "turn_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit has been enhanced using Dragonflowers two or more times",
+    tags: "during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit attacked",
+    tags: "during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit has weapon-triangle advantage",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit has weapon-triangle disadvantage",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "foe's range = 1",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "foe's range = 2",
+    tags: "combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "during turns 1 through 4",
+    tags: "during_combat",
+    weight: 1
+  },
+  {
+    effect: "during turns 1 through <INT>",
+    tags: "during_combat",
+    weight: 1
+  },
+  {
+    effect: "current turn is turn <INT> or later",
+    tags: "turn_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "number of living foes > number of living allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "number of living foes < number of living allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "number of living foes ≥ number of living allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "number of living foes ≤  number of living allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit is adjacent to an odd number of allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit is adjacent to an even number of allies",
+    tags: "turn_start,combat_start,during_combat",
+    weight: 1
+  },
+  {
+    effect: "unit's Special reduces damage taken during combat",
+    tags: "combat_start,during_combat",
+    weight: 1
+  }
+]
