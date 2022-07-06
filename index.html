@@ -99,6 +99,8 @@ async function caller(jsonFile) {
 async function loadAllJSONs(){
 	console.log("Characters");
 	charactersJSON = await caller("./Characters.json");
+	console.log("SeasonalThemes");
+	themesJSON = await caller("./SeasonalThemes.json");
 	console.log("Skills");
 	skillsJSON = await caller("./Skills.json");
 	console.log("Classes");
