@@ -114,6 +114,7 @@ async function loadAllJSONs(){
 
 async function GenerateCharacter(season,game)
 {
+	console.log("Checkpoint1");
 	hero = ChooseRandom(charactersJSON);
 	//
 	if(game != "") //If a game is given as a parameter, we only want characters from said game
@@ -123,6 +124,7 @@ async function GenerateCharacter(season,game)
 			hero = ChooseRandom(charactersJSON);
 	}
 	
+	console.log("Checkpoint2");
 	//The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
 	heroName = hero.Hero.substring(0,hero.Hero.indexOf(":"));
 	heroTitle = hero.Hero.substring(hero.Hero.indexOf(":")+2).split(" ");
@@ -159,6 +161,7 @@ async function GenerateCharacter(season,game)
 	}
 
 	console.log(heroName + ": " + heroTitle.join(" "));
+	return;
 }
 
 async function RunGenerator()
