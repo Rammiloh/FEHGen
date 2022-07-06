@@ -19,14 +19,13 @@ async function caller(jsonFile) {
 	return json;
 }
 
-var charactersJSON = caller("./Characters.json");
-var themesJSON = caller("./SeasonalThemes.json");
-var skillsJSON = caller("./Skills.json");
-var statsJSON = caller("./Classes.json");
-var conditionsJSON = caller("./WeaponConditions.json");
-var effectsJSON = caller("./WeaponEffects.json");
+var charactersJSON = caller("/Characters.json");
+var themesJSON = caller("/SeasonalThemes.json");
+var skillsJSON = caller("/Skills.json");
+var statsJSON = caller("/Classes.json");
+var conditionsJSON = caller("/WeaponConditions.json");
+var effectsJSON = caller("/WeaponEffects.json");
 
-//document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${charactersJSON[0].Filename}" /> </div>`;
 
 
 function GenerateCharacter(season,game)
