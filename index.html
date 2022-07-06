@@ -95,7 +95,17 @@
 <p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 <script>
   var chars = [];
-  fetch("./Characters.json")
+  async getJSON() {
+    return fetch("./Characters.json")
+        .then((response)=>response.json())
+        .then((responseJson)=>{return responseJson});
+  }
+  async caller() {
+    const json = await this.getJSON();  // command waits until completion
+    console.log(json[0].Filename);            // hello is now available
+  }
+  caller();
+  /*fetch("./Characters.json")
     .then(response => {
         return response.json();
     })
@@ -103,7 +113,7 @@
         chars.push(data);
         console.log(chars[0].Filename);
         console.log(data);
-    });
+    });*/
 //$.getJSON("https://rammiloh.github.io/FEH-Alt-Generator/Classes.json", function(data){
 //      console.log(data);
 //});
