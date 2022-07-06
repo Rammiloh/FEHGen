@@ -78,7 +78,7 @@
   async function caller() {
     json = await this.getJSON();  // command waits until completion
     console.log(json[0].Filename);            // hello is now available
-    document.getElementById("generatedUnit");.innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/" + json[0].Filename /> </div>`;
+    document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/" + json[0].Filename /> </div>`;
   }
   caller();
   
