@@ -1,237 +1,237 @@
 [
   {
-    effect: "unit's HP ≥ <PERCENT>",
-    tags: "turn_start,combat_start,combat_end",
-    weight: 10
+    "Effect": "unit's HP ≥ <PERCENT>",
+    "Tags": "turn_start,combat_start,combat_end",
+    "Weight": 10
   },
   {
-    effect: "unit's HP ≤ <PERCENT>",
-    tags: "turn_start,combat_start,combat_end",
-    weight: 7
+    "Effect": "unit's HP ≤ <PERCENT>",
+    "Tags": "turn_start,combat_start,combat_end",
+    "Weight": 7
   },
   {
-    effect: "unit's HP = 100%",
-    tags: "turn_start,combat_start",
-    weight: 3
+    "Effect": "unit's HP = 100%",
+    "Tags": "turn_start,combat_start",
+    "Weight": 3
   },
   {
-    effect: "unit's HP < 100%",
-    tags: "turn_start,combat_start",
-    weight: 3
+    "Effect": "unit's HP < 100%",
+    "Tags": "turn_start,combat_start",
+    "Weight": 3
   },
   {
-    effect: "foe's HP ≥ <PERCENT>",
-    tags: "combat_start",
-    weight: 4
+    "Effect": "foe's HP ≥ <PERCENT>",
+    "Tags": "combat_start",
+    "Weight": 4
   },
   {
-    effect: "foe's HP ≤ <PERCENT>",
-    tags: "combat_start",
-    weight: 3
+    "Effect": "foe's HP ≤ <PERCENT>",
+    "Tags": "combat_start",
+    "Weight": 3
   },
   {
-    effect: "foe's HP = 100%",
-    tags: "combat_start",
-    weight: 4
+    "Effect": "foe's HP = 100%",
+    "Tags": "combat_start",
+    "Weight": 4
   },
   {
-    effect: "foe's HP < 100%",
-    tags: "combat_start",
-    weight: 3
+    "Effect": "foe's HP < 100%",
+    "Tags": "combat_start",
+    "Weight": 3
   },
   {
-    effect: "<EITHER>'s <STAT> ≥ foe's <STAT2>+<INT>",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "<EITHER>'s <STAT> ≥ foe's <STAT2>+<INT>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "【Bonus】is active on unit",
-    tags: "turn_start,combat_start,combat_end",
-    weight: 4
+    "Effect": "【Bonus】is active on unit",
+    "Tags": "turn_start,combat_start,combat_end",
+    "Weight": 4
   },
   {
-    effect: "【Bonus】is active on foe",
-    tags: "combat_start,during_combat",
-    weight: 4
+    "Effect": "【Bonus】is active on foe",
+    "Tags": "combat_start,during_combat",
+    "Weight": 4
   },
   {
-    effect: "unit's <STAT> > foe's <STAT2>",
-    tags: "combat_start,during_combat",
-    weight: 2
+    "Effect": "unit's <STAT> > foe's <STAT2>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 2
   },
   {
-    effect: "unit's <STAT> > foe's <STAT>",
-    tags: "combat_start,during_combat",
-    weight: 5
+    "Effect": "unit's <STAT> > foe's <STAT>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 5
   },
   {
-    effect: "unit is within 2 spaces of an ally",
-    tags: "turn_start,combat_start,during_combat,combat_end",
-    weight: 7
+    "Effect": "unit is within 2 spaces of an ally",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 7
   },
   {
-    effect: "unit is within <INT> spaces of an ally",
-    tags: "turn_start,combat_start,during_combat,combat_end",
-    weight: 3
+    "Effect": "unit is within <INT> spaces of an ally",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 3
   },
   {
-    effect: "unit is adjacent to an ally",
-    tags: "turn_start,combat_start,during_combat,combat_end",
-    weight: 3
+    "Effect": "unit is adjacent to an ally",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 3
   },
   {
-    effect: "unit is not adjacent to an ally",
-    tags: "turn_start,combat_start,during_combat,combat_end",
-    weight: 4
+    "Effect": "unit is not adjacent to an ally",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 4
   },
   {
-    effect: "【Bonus】 or 【Penalty】 is active on unit",
-    tags: "combat_start,during_combat",
-    weight: 2
+    "Effect": "【Bonus】 or 【Penalty】 is active on unit",
+    "Tags": "combat_start,during_combat",
+    "Weight": 2
   },
   {
-    effect: "【Penalty】 is active on foe",
-    tags: "combat_start,during_combat",
-    weight: 2
+    "Effect": "【Penalty】 is active on foe",
+    "Tags": "combat_start,during_combat",
+    "Weight": 2
   },
   {
-    effect: "【Penalty】 is active on unit",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 3
+    "Effect": "【Penalty】 is active on unit",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 3
   },
   {
-    effect: "it is an odd-numbered turn",
-    tags: "combat_start,during_combat,combat_end",
-    weight: 1
+    "Effect": "it is an odd-numbered turn",
+    "Tags": "combat_start,during_combat,combat_end",
+    "Weight": 1
   },
   {
-    effect: "it is an even-numbered turn",
-    tags: "combat_start,during_combat,combat_end",
-    weight: 1
+    "Effect": "it is an even-numbered turn",
+    "Tags": "combat_start,during_combat,combat_end",
+    "Weight": 1
   },
   {
-    effect: "During unit's first combat in player phase or enemy phase",
-    tags: "during_combat",
-    weight: 3
+    "Effect": "During unit's first combat in player phase or enemy phase",
+    "Tags": "during_combat",
+    "Weight": 3
   },
   {
-    effect: "unit's Special deals damage before or during combat",
-    tags: "during_combat",
-    weight: 1
+    "Effect": "unit's Special deals damage before or during combat",
+    "Tags": "during_combat",
+    "Weight": 1
   },
   {
-    effect: "the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit)",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "foe is <CLASS>",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "foe is <CLASS>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "foe is <CLASS> or <CLASS2>",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "foe is <CLASS> or <CLASS2>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "【Penalty】is active on any foes within 3 columns centered on unit",
-    tags: "turn_start,during_combat",
-    weight: 1
+    "Effect": "【Penalty】is active on any foes within 3 columns centered on unit",
+    "Tags": "turn_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "【Bonus】is active on any foes within 3 columns centered on unit",
-    tags: "turn_start,during_combat",
-    weight: 1
+    "Effect": "【Bonus】is active on any foes within 3 columns centered on unit",
+    "Tags": "turn_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "【Bonus】is active on any allies within 3 columns centered on unit",
-    tags: "turn_start,during_combat",
-    weight: 1
+    "Effect": "【Bonus】is active on any allies within 3 columns centered on unit",
+    "Tags": "turn_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "【Penalty】is active on any allies within 3 columns centered on unit",
-    tags: "turn_start,during_combat",
-    weight: 1
+    "Effect": "【Penalty】is active on any allies within 3 columns centered on unit",
+    "Tags": "turn_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit has been enhanced using Dragonflowers two or more times",
-    tags: "during_combat",
-    weight: 1
+    "Effect": "unit has been enhanced using Dragonflowers two or more times",
+    "Tags": "during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit attacked",
-    tags: "during_combat",
-    weight: 1
+    "Effect": "unit attacked",
+    "Tags": "during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit has weapon-triangle advantage",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "unit has weapon-triangle advantage",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit has weapon-triangle disadvantage",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "unit has weapon-triangle disadvantage",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "foe's range = 1",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "foe's range = 1",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "foe's range = 2",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "foe's range = 2",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "during turns 1 through 4",
-    tags: "during_combat",
-    weight: 1
+    "Effect": "during turns 1 through 4",
+    "Tags": "during_combat",
+    "Weight": 1
   },
   {
-    effect: "during turns 1 through <INT>",
-    tags: "during_combat",
-    weight: 1
+    "Effect": "during turns 1 through <INT>",
+    "Tags": "during_combat",
+    "Weight": 1
   },
   {
-    effect: "current turn is turn <INT> or later",
-    tags: "turn_start,during_combat",
-    weight: 1
+    "Effect": "current turn is turn <INT> or later",
+    "Tags": "turn_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "number of living foes > number of living allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "number of living foes > number of living allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "number of living foes < number of living allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "number of living foes < number of living allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "number of living foes ≥ number of living allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "number of living foes ≥ number of living allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "number of living foes ≤  number of living allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "number of living foes ≤  number of living allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit is adjacent to an odd number of allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "unit is adjacent to an odd number of allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit is adjacent to an even number of allies",
-    tags: "turn_start,combat_start,during_combat",
-    weight: 1
+    "Effect": "unit is adjacent to an even number of allies",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
   },
   {
-    effect: "unit's Special reduces damage taken during combat",
-    tags: "combat_start,during_combat",
-    weight: 1
+    "Effect": "unit's Special reduces damage taken during combat",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   }
 ]
