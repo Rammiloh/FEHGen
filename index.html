@@ -117,12 +117,6 @@ function GenerateCharacter(season,game)
 	console.log("Checkpoint1");
 	hero = ChooseRandom(charactersJSON);
 	//
-	if(game != "") //If a game is given as a parameter, we only want characters from said game
-	{
-		//This is bad and should be rewritten
-		while(game != hero.Game)
-			hero = ChooseRandom(charactersJSON);
-	}
 	
 	console.log("Checkpoint2");
 	//The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
@@ -170,7 +164,7 @@ async function RunGenerator()
 	var theme = ChooseRandom(themesJSON);
 	console.log("~" + theme.Event + "~");
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	
+	GenerateCharacter(game,theme);
 }
 RunGenerator();
   /*function GetRandom(min, max) 
