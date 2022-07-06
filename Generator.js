@@ -14,7 +14,7 @@ return fetch(jsonFile)
 	.then((responseJson)=>{return responseJson});
 }
 async function caller(jsonFile) {
-	var json = await this.getJSON();
+	var json = await this.getJSON(jsonFile);
 	console.log(json[0].Filename);
 	return json;
 }
