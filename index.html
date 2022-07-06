@@ -86,7 +86,6 @@ return fetch(jsonFile)
 }
 async function caller(jsonFile) {
 	var json = await this.getJSON(jsonFile);
-	console.log(json[0].Filename);
 	return json;
 }
 
@@ -148,10 +147,10 @@ function GenerateCharacter(season,game)
 	console.log(heroName + ": " + heroTitle.join(" "));
 }
 
-//var theme = ChooseRandom(themesJSON);
-//console.log("~" + theme.Event + "~");
+var theme = ChooseRandom(themesJSON);
+console.log("~" + theme.Event + "~");
 var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-//GetHero(game,theme);
+GetHero(game,theme);
   /*function GetRandom(min, max) 
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
