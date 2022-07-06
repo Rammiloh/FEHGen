@@ -70,7 +70,14 @@
 
         
         <script>
-          function ChooseRandom(list) //Get a random item from the list
+var charactersJSON;
+var themesJSON;
+var skillsJSON;
+var statsJSON;
+var conditionsJSON;
+var effectsJSON;
+
+function ChooseRandom(list) //Get a random item from the list
 {
 	return list[Math.floor(Math.random() * list.length)];
 }
@@ -89,16 +96,17 @@ async function caller(jsonFile) {
 	return json;
 }
 
-var charactersJSON = caller("./Characters.json");
-var themesJSON = caller("./SeasonalThemes.json");
-var skillsJSON = caller("./Skills.json");
-var statsJSON = caller("./Classes.json");
-var conditionsJSON = caller("./WeaponConditions.json");
-var effectsJSON = caller("./WeaponEffects.json");
+async function loadAllJSONs(){
+	charactersJSON = await caller("./Characters.json");
+	themesJSON = await caller("./SeasonalThemes.json");
+	skillsJSON = await caller("./Skills.json");
+	statsJSON = await caller("./Classes.json");
+	conditionsJSON = await caller("./WeaponConditions.json");
+	effectsJSON = await caller("./WeaponEffects.json");
 
+}
 
-
-function GenerateCharacter(season,game)
+async function GenerateCharacter(season,game)
 {
 	hero = ChooseRandom(charactersJSON);
 	//
@@ -147,10 +155,15 @@ function GenerateCharacter(season,game)
 	console.log(heroName + ": " + heroTitle.join(" "));
 }
 
-var theme = ChooseRandom(themesJSON);
-console.log("~" + theme.Event + "~");
-var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-GetHero(game,theme);
+async function RunGenerator()
+{
+	await loadAllJSONs();
+	var theme = ChooseRandom(themesJSON);
+	console.log("~" + theme.Event + "~");
+	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
+	await GenerateCharacter(game,theme);
+}
+await RunGenerator();
   /*function GetRandom(min, max) 
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
