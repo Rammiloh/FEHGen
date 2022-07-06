@@ -26,7 +26,7 @@ var statsJSON = caller("./Classes.json");
 var conditionsJSON = caller("./WeaponConditions.json");
 var effectsJSON = caller("./WeaponEffects.json");
 
-document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${json[0].Filename}" /> </div>`;
+//document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${charactersJSON[0].Filename}" /> </div>`;
 
 
 function GenerateCharacter(season,game)
@@ -78,7 +78,7 @@ function GenerateCharacter(season,game)
 	console.log(heroName + ": " + heroTitle.join(" "));
 }
 
-var theme = ChooseRandom(themesJSON);
-console.log("~" + theme.Event + "~");
+//var theme = ChooseRandom(themesJSON);
+//console.log("~" + theme.Event + "~");
 var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-GetHero(game,theme);
+//GetHero(game,theme);
