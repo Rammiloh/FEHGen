@@ -120,7 +120,7 @@ async function GenerateCharacter(season,game)
 	{
 		//This is bad and should be rewritten
 		while(game != hero.Game)
-			hero = ChooseRandom(heroes);
+			hero = ChooseRandom(charactersJSON);
 	}
 	
 	//The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
