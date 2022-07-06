@@ -61,7 +61,8 @@
 
 <p>You can use the <a href="https://github.com/Rammiloh/FEH-Alt-Generator/edit/gh-pages/index.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
 
-<div id="generatedUnit" class="px-3 py-3"></div>
+	      <div id="generatedUnit" class="px-3 py-3"></div>
+	      <div id="generatedTitle" class="my-3"></div>
 <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
 
 <h3 id="support-or-contact">Support or Contact</h3>
@@ -160,7 +161,12 @@ function GenerateCharacter(theme,game)
 	}
 
 	console.log(heroName + ": " + heroTitle.join(" "));
-	return;
+	var fullTitle = heroName + ": " + heroTitle.join(" ");
+	var gennedCharacter = {
+		Title: fullTitle;
+		Filename: hero.Filename;
+	}
+	return gennedCharacter;
 }
 
 async function RunGenerator()
@@ -169,7 +175,9 @@ async function RunGenerator()
 	var theme = ChooseRandom(themesJSON);
 	console.log("~" + theme.Event + "~");
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	GenerateCharacter(theme,game);
+	var character = GenerateCharacter(theme,game);
+	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
+	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
