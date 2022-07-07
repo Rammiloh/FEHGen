@@ -57,9 +57,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2 id="welcome-to-github-pages">Welcome to my fuckin alt generator</h2>
-
-<p>You can use the <a href="https://github.com/Rammiloh/FEH-Alt-Generator/edit/gh-pages/index.md">editor on GitHub</a> to maintain and preview the content for your website in Markdown files.</p>
+        <h2 id="seasonal-theme"></h2>
 
 	      <div id="generatedUnit" class="px-3 py-3"></div>
 	      <div id="generatedTitle" class="my-3"></div>
@@ -68,8 +66,6 @@
 <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
 
 <h3 id="support-or-contact">Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out our <a href="https://docs.github.com/categories/github-pages-basics/">documentation</a> or <a href="https://support.github.com/contact">contact support</a> and we’ll help you sort it out.</p>
 
         
         <script>
@@ -344,6 +340,7 @@ async function RunGenerator()
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
 	document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
+	document.getElementById("seasonal-theme").innerHTML = `${theme.event}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
