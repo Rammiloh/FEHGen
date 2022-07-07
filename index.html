@@ -63,8 +63,12 @@
 	      <div id="generatedTitle" class="my-3"></div>
 	      <div id="generatedClass" class="my-3"></div>
 	      <div id="generatedStats" class="my-3"></div>
-	      <div id="generatedSkills" class="my-3"></div>
-<p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
+	      <div id="generatedAssistSkill" class="my-3"></div>
+	      <div id="generatedSpecialSkill" class="my-3"></div>
+	      <div id="generatedASkill" class="my-3"></div>
+	      <div id="generatedBSkill" class="my-3"></div>
+	      <div id="generatedCSkill" class="my-3"></div>
+<!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
 
 <h3 id="support-or-contact">Support or Contact</h3>
 
@@ -524,7 +528,11 @@ async function RunGenerator()
 	document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
 	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
-	document.getElementById("generatedSkills").innerHTML = `${skills}`;
+	document.getElementById("generatedAssistSkill").innerHTML = `${skills[3]}`;
+	document.getElementById("generatedSpecialSkill").innerHTML = `${skills[4]}`;
+	document.getElementById("generatedASkill").innerHTML = `${skills[0]}`;
+	document.getElementById("generatedBSkill").innerHTML = `${skills[1]}`;
+	document.getElementById("generatedCSkill").innerHTML = `${skills[2]}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
