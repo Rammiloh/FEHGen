@@ -63,6 +63,7 @@
 	      <div id="generatedTitle" class="my-3"></div>
 	      <div id="generatedClass" class="my-3"></div>
 	      <div id="generatedStats" class="my-3"></div>
+	      <div id="generatedSkills" class="my-3"></div>
 <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
 
 <h3 id="support-or-contact">Support or Contact</h3>
@@ -327,6 +328,173 @@ function GenerateStats(character)
 	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
 	return stats;
 }	
+	
+//=================================GENERATE SKILLS================================
+const rareASkills = [];
+const commonASkills = [];
+const allASkills = [];
+
+const rareBSkills = [];
+const commonBSkills = [];
+const allBSkills = [];
+
+const rareCSkills = [];
+const commonCSkills = [];
+const allCSkills = [];
+
+const rareAssistSkills = [];
+const commonAssistSkills = [];
+const allAssistSkills = [];
+
+const rareSpecialSkills = [];
+const commonSpecialSkills = [];
+const allSpecialSkills = [];	
+
+function SortSkillJSONIntoLists()
+{
+	allSkills.forEach(function(entry) {
+		FillList(entry,rareASkills,"A","R");
+		FillList(entry,commonASkills,"A","C");
+		FillList(entry,allASkills,"A","");
+		
+		FillList(entry,rareBSkills,"B","R");
+		FillList(entry,commonBSkills,"B","C");
+		FillList(entry,allBSkills,"B","");
+		
+		FillList(entry,rareCSkills,"C","R");
+		FillList(entry,commonCSkills,"C","C");
+		FillList(entry,allCSkills,"C","");
+		
+		FillList(entry,rareAssistSkills,"Assist","R");
+		FillList(entry,commonAssistSkills,"Assist","C");
+		FillList(entry,allAssistSkills,"Assist","");
+		
+		FillList(entry,rareSpecialSkills,"Special","R");
+		FillList(entry,commonSpecialSkills,"Special","C");
+		FillList(entry,allSpecialSkills,"Special","");
+	});
+}
+
+function CheckSkillForTags(skill,tags)
+{
+	//console.log("CheckSkillForTags: " + skill + ", " + tags);
+	var invalid = false;
+	for (let i = 0; i < tags.length; i++) {
+		//console.log("Skill: " + skill + ", tags: " + tags);
+		if(skill.includes(tags[i]))
+			invalid = true;
+	};
+	return invalid;
+}	
+		
+function FillInWords(skill,colour,weapon,move)
+{
+	skill = skill.replaceAll("<1STAT>",ChooseRandom(["Atk","Spd","Def","Res"]));
+	
+	skill = skill.replaceAll("<2STATS>",ChooseRandom(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]));
+	
+	skill = skill.replaceAll("<2S>",ChooseRandom(["A/S","A/D","A/R","S/D","S/R","D/R"]));
+	
+	skill = skill.replaceAll("<2NAMEEP>",ChooseRandom(["Kestrel","Sturdy","Mirror","Steady","Swift","Bracing"]));
+	skill = skill.replaceAll("Steady Stance","Steady Posture");
+	
+	skill = skill.replaceAll("<1NAMEEP>",ChooseRandom(["Fierce","Darting","Steady","Warding"]));
+	
+	skill = skill.replaceAll("<1NAMEPP>",ChooseRandom(["Death","Darting","Warding","Armored"]));
+	
+	skill = skill.replaceAll("<ELEMENT>",ChooseRandom(["Fire","Wind","Water","Earth"]));
+	
+	skill = skill.replaceAll("<CLASSDUEL>",colour.charAt(0) + " Duel " + move);
+	
+	if(move == "Flying")
+		skill = skill.replaceAll("<MISSILE>","Dagger");
+	else
+		skill = skill.replaceAll("<MISSILE>",ChooseRandom(["Bow","Dagger"]));
+	
+	if(colour == "Red")
+	{
+		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Axe"]));
+		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","G. Tome"]));
+	}
+	else if(colour == "Blue")
+	{
+		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Lance"]));
+		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","B. Tome"]));
+	}
+	else if(colour == "Green")
+	{
+		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Axe","Lance"]));
+		skill = skill.replaceAll("<TOME>",ChooseRandom(["G. Tome","B. Tome"]));
+	}
+	else if(colour == "Colorless")
+	{
+		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Axe","Lance"]));
+		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","G. Tome","B. Tome"]));
+	}
+	
+	skill = skill.replaceAll("<DANCE>",ChooseRandom(["Caldera"]));
+	
+	skill = skill.replaceAll("<WEAPON>",weapon);
+	
+	return skill;
+}
+		
+function GenerateSkills(character,rarityInt)
+{
+	move = character.Movement;
+	weapon = character.Weapon;
+	var rarity = "C";
+	if(rarityInt > 1) rarity = "R";
+	var tags = weapon.Tags;
+	
+	tags.push(move.Tag);
+	
+	var skills;
+	var skill;
+	var unitSkills = [];
+	
+	skills = (rarity == "C") ? commonASkills : rareASkills;
+	do {
+		skill = ChooseRandom(skills);
+	} while (CheckSkillForTags(skill.Restrictions,tags));
+	unitSkills.push(skill.Skill);
+	
+	skills = (rarity == "C") ? commonBSkills : rareBSkills;
+	do {
+		skill = ChooseRandom(skills);
+	} while (CheckSkillForTags(skill.Restrictions,tags));
+	unitSkills.push(skill.Skill);
+	
+	skills = (rarity == "C") ? commonCSkills : rareCSkills;
+	do {
+		skill = ChooseRandom(skills);
+	} while (CheckSkillForTags(skill.Restrictions,tags));
+	unitSkills.push(skill.Skill);
+	
+	skills = (rarity == "C") ? commonAssistSkills : rareAssistSkills;
+	do {
+		skill = ChooseRandom(skills);
+	} while (CheckSkillForTags(skill.Restrictions,tags));
+	unitSkills.push(skill.Skill);
+	
+	skills = (rarity == "C") ? commonSpecialSkills : rareSpecialSkills;
+	do {
+		skill = ChooseRandom(skills);
+	} while (CheckSkillForTags(skill.Restrictions,tags));
+	unitSkills.push(skill.Skill);
+	
+	for(let i = 0; i < unitSkills.length; i++) {
+		unitSkills[i] = FillInWords(unitSkills[i],tags[0],weapon,move);
+	});
+	console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
+	return unitSkills;
+}
+		
+
+//=================================GENERATE WEAPON================================
+		
+		
+//=================================PUT IT ALL TOGETHER================================
 		
 async function RunGenerator()
 {
@@ -336,11 +504,15 @@ async function RunGenerator()
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
 	var character = GenerateCharacter(theme,game);
 	var stats = GenerateStats(character);
+	var rarity = GetRandom(0,4);
+	SortSkillJSONIntoLists();
+	var skills = GenerateSkills(character,rarity);
 	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
 	document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
 	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
+	document.getElementById("generatedSkills").innerHTML = `${skills}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
