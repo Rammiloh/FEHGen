@@ -349,7 +349,19 @@ const allAssistSkills = [];
 const rareSpecialSkills = [];
 const commonSpecialSkills = [];
 const allSpecialSkills = [];	
-
+		
+function FillList(entry, list, slot, rarity)
+{
+	if(entry.Slot == slot && entry.Exclusivity.includes(rarity)){
+		var weightCount = entry.Weight;
+		while (weightCount > 0){
+			list.push(entry);
+			weightCount-=1;
+		}
+	}
+	return list;
+}
+		
 function SortSkillJSONIntoLists()
 {
 	skillsJSON.forEach(function(entry) {
