@@ -63,6 +63,7 @@
 
 	      <div id="generatedUnit" class="px-3 py-3"></div>
 	      <div id="generatedTitle" class="my-3"></div>
+	      <div id="generatedStats" class="my-3"></div>
 <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
 
 <h3 id="support-or-contact">Support or Contact</h3>
@@ -91,58 +92,71 @@ function GetRandom(min, max) //Get random integer between min and max, inclusive
 const moveTypes = [
 	{
 		Movement: "Infantry",
-		Tag: "Inf"
+		Tag: "Inf",
+		Index: 0
 	},
 	{
 		Movement: "Armored",
-		Tag: "Arm"
+		Tag: "Arm",
+		Index: 1
 	},
 	{
 		Movement: "Cavalry",
-		Tag: "Cav"
+		Tag: "Cav",
+		Index: 2
 	},
 	{
 		Movement: "Flier",
-		Tag: "Fly"
+		Tag: "Fly",
+		Index: 3
 	}
 ];
 
 const weaponTypes = [
 	{
 		Weapon: "Sword",
-		Tags: ["Red","Close","Melee"]
+		Tags: ["Red","Close","Melee"],
+		Index: 0
 	},
 	{
 		Weapon: "Lance",
-		Tags: ["Blue","Close","Melee"]
+		Tags: ["Blue","Close","Melee"],
+		Index: 0
 	},
 	{
 		Weapon: "Axe",
-		Tags: ["Green","Close","Melee"]
+		Tags: ["Green","Close","Melee"],
+		Index: 0
 	},
 	{
 		Weapon: "Dragon",
-		Tags: ["Random","Close","Dragon"]
+		Tags: ["Random","Close","Dragon"],
+		Index: 4
 	},
 	{
 		Weapon: "Beast",
-		Tags: ["Random","Close","Beast"]
+		Tags: ["Random","Close","Beast"],
+		Index: 5
 	},
 	{
 		Weapon: "Tome",
-		Tags: ["Random","Tome","Ranged"]
+		Tags: ["Random","Tome","Ranged"],
+		Index: 1
 	},
 	{
 		Weapon: "Bow",
-		Tags: ["Random","Bow","Missile","Ranged"]
+		Tags: ["Random","Bow","Missile","Ranged"],
+		Index: 2
 	},
 	{
 		Weapon: "Dagger",
-		Tags: ["Random","Dagger","Missile","Ranged"]
+		Tags: ["Random","Dagger","Missile","Ranged"],
+		Index: 2
 	},
 	{
 		Weapon: "Staff",
-		Tags: ["Colorless","Staff","Ranged"]
+		Tags: ["Colorless","Staff","Ranged"],
+		Index: 3
 	}
 ];
 
@@ -254,7 +268,65 @@ function RandomiseGrowths(growths,numberOfIterations)
 	return growths;
 }
 		
-		
+function GenerateStats(character)
+{
+	var wpnIndex = character.Weapon.Index;
+	var mvmIndex = character.Movement.Index;
+	
+	var classIndex = wpnIndex + (mvmIndex*4);
+	var thisClass = statsJSON[classIndex];
+	
+	let sum = 0;
+
+	for (let i = 0; i < thisClass.MinStats.length; i++) {
+		sum += thisClass.MinStats[i];
+	}
+	var points = ChooseRandom(thisClass.BST) - sum;
+	var rates = [0,0,0,0,0];
+	var stats = thisClass.MinStats;
+	var ratesMax = 0;
+	for (let i = 0; i < rates.length; i++) {
+		rates[i] = thisClass.MaxStats[i] - thisClass.MinStats[i];
+		ratesMax += rates[i];
+	}
+	for (let i = 0; i < rates.length; i++) {
+		rates[i] = rates[i]/ratesMax;
+	}
+	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+
+
+	rates = RandomiseGrowths(rates,5);
+
+	if(thisClass.Weapon == "Melee" && thisClass.Class == "Armor")
+	{
+		//Arden's HP is a statistical outlier, so we have to cut Armored Melee units' HP growth in half to compensate
+		var subtraction = Math.random()*rates[0]/2;
+		rates[0] -= subtraction;
+		rates[ChooseRandom([1,2,3,4])] += subtraction;
+		console.log("Reduced HP growth by " + subtraction);
+	}
+	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+
+	for (let i = 1; i < rates.length; i++) {
+		rates[i] = rates[i] + rates[i-1];
+	}
+	console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
+
+	while(points > 0)
+	{
+		chosenStat = Math.random();
+		for (let i = 0; i < rates.length; i++) {
+			if(chosenStat < rates[i] && stats[i] < thisClass.MaxStats[i]) 
+			{
+				stats[i] += 1;
+				points -= 1;
+				break;
+			}
+		}
+	}
+	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
+	return stats;
+}	
 		
 async function RunGenerator()
 {
@@ -263,8 +335,10 @@ async function RunGenerator()
 	console.log("~" + theme.Event + "~");
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
 	var character = GenerateCharacter(theme,game);
+	var stats = GenerateStats(character);
 	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
+	document.getElementById("generatedStats").innerHTML = `${stats}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
