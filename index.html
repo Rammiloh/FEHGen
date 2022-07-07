@@ -63,6 +63,7 @@
 
 	      <div id="generatedUnit" class="px-3 py-3"></div>
 	      <div id="generatedTitle" class="my-3"></div>
+	      <div id="generatedClass" class="my-3"></div>
 	      <div id="generatedStats" class="my-3"></div>
 <p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p>
 
@@ -238,7 +239,10 @@ function GenerateCharacter(theme,game)
 	console.log(heroName + ": " + heroTitle.join(" "));
 	var fullTitle = heroName + ": " + heroTitle.join(" ");
 	var mvmnt = ChooseRandom(moveTypes);
-	var wpn = ChooseRandom(weaponTypes);
+	var wpn = weaponTypes[ChooseRandom([0,1,2,5,6,7,8])];
+	if(hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
+	if(hero.Race == "Beast" && Math.random() > 0.3) wpn = weaponTypes[4];
+	
 	if(wpn.Tags[0] == "Random")
 		wpn.Tags[0] = ChooseRandom(["Red","Blue","Green","Colorless"]);
 	var gennedCharacter = {
@@ -338,6 +342,7 @@ async function RunGenerator()
 	var stats = GenerateStats(character);
 	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
+	document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
 }
 RunGenerator();
