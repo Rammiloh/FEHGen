@@ -277,7 +277,7 @@ function GenerateStats(character)
 	var wpnIndex = character.Weapon.Index;
 	var mvmIndex = character.Movement.Index;
 	
-	var classIndex = wpnIndex + (mvmIndex*4);
+	var classIndex = wpnIndex + (mvmIndex*6);
 	var thisClass = statsJSON[classIndex];
 	
 	let sum = 0;
