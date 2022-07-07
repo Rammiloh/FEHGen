@@ -86,6 +86,65 @@ function GetRandom(min, max) //Get random integer between min and max, inclusive
 {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+		
+//I could make both of these into JSONs too but can't be fucked since they're so small
+const moveTypes = [
+	{
+		Movement: "Infantry",
+		Tag: "Inf"
+	},
+	{
+		Movement: "Armored",
+		Tag: "Arm"
+	},
+	{
+		Movement: "Cavalry",
+		Tag: "Cav"
+	},
+	{
+		Movement: "Flier",
+		Tag: "Fly"
+	}
+];
+
+const weaponTypes = [
+	{
+		Weapon: "Sword",
+		Tags: ["Red","Close","Melee"]
+	},
+	{
+		Weapon: "Lance",
+		Tags: ["Blue","Close","Melee"]
+	},
+	{
+		Weapon: "Axe",
+		Tags: ["Green","Close","Melee"]
+	},
+	{
+		Weapon: "Dragon",
+		Tags: ["Random","Close","Dragon"]
+	},
+	{
+		Weapon: "Beast",
+		Tags: ["Random","Close","Beast"]
+	},
+	{
+		Weapon: "Tome",
+		Tags: ["Random","Tome","Ranged"]
+	},
+	{
+		Weapon: "Bow",
+		Tags: ["Random","Bow","Missile","Ranged"]
+	},
+	{
+		Weapon: "Dagger",
+		Tags: ["Random","Dagger","Missile","Ranged"]
+	},
+	{
+		Weapon: "Staff",
+		Tags: ["Colorless","Staff","Ranged"]
+	}
+];
 
 async function getJSON(jsonFile) {
 return fetch(jsonFile)
@@ -112,7 +171,9 @@ async function loadAllJSONs(){
 	effectsJSON = await caller("./WeaponEffects.json");
 
 }
-
+		
+//=================================GENERATE CHARACTER================================
+		
 function GenerateCharacter(theme,game)
 {
 	console.log("Checkpoint1");
@@ -162,13 +223,39 @@ function GenerateCharacter(theme,game)
 
 	console.log(heroName + ": " + heroTitle.join(" "));
 	var fullTitle = heroName + ": " + heroTitle.join(" ");
+	var mvmnt = ChooseRandom(moveTypes);
+	var wpn = ChooseRandom(weaponTypes);
+	if(wpn.Tags[0] == "Random")
+		wpn.Tags[0] = ChooseRandom(["Red","Blue","Green","Colorless"]);
 	var gennedCharacter = {
 		Title: fullTitle,
-		Filename: hero.Filename
+		Filename: hero.Filename,
+		Movement: mvmnt,
+		Weapon: wpn
 	}
 	return gennedCharacter;
 }
+		
+//=================================GENERATE CLASS================================
 
+function RandomiseGrowths(growths,numberOfIterations)
+{
+	while(numberOfIterations>0)
+	{
+		var minusStat = ChooseRandom([0,1,2,3,4]);
+		var plusStat = ChooseRandom([0,1,2,3,4]);
+		while(plusStat == minusStat) plusStat = ChooseRandom([0,1,2,3,4]);
+		var subtraction = Math.random()*growths[minusStat];
+		console.log(minusStat + " - " + subtraction + " + " + plusStat);
+		growths[minusStat] -= subtraction;
+		growths[plusStat] += subtraction;
+		numberOfIterations -= 1;
+	}
+	return growths;
+}
+		
+		
+		
 async function RunGenerator()
 {
 	await loadAllJSONs();
