@@ -485,7 +485,7 @@ function GenerateSkills(character,rarityInt)
 	
 	for(let i = 0; i < unitSkills.length; i++) {
 		unitSkills[i] = FillInWords(unitSkills[i],tags[0],weapon,move);
-	});
+	}
 	console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
 	return unitSkills;
 }
