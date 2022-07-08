@@ -899,7 +899,7 @@ async function RunGenerator()
 		{
 			//This is bad and should be rewritten
 			while(character.Game != character2.Game)
-				hero = ChooseRandom(charactersJSON);
+				character2 = ChooseRandom(charactersJSON);
 		}
 		if(character.Game == character2.Game) rarityText[4] = "Duo";
 	}
@@ -907,7 +907,7 @@ async function RunGenerator()
 	SortWeaponJSONIntoLists();
 	var skills = GenerateSkills(character,rarity);
 	var weaponText = GenerateWeapon(rarity);
-	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div><div id="charImage2"> <img src="./CharacterIcons/${character2.Filename}" /> </div>`;
+	document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${character.Filename}" /><img src="./CharacterIcons/${character2.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
 	document.getElementById("rarityStatus").innerHTML = `(${rarityText[rarity]})`;
 	if(character.Weapon.Weapon == "Sword" || character.Weapon.Weapon == "Lance" || character.Weapon.Weapon == "Axe" || character.Weapon.Weapon == "Staff")
