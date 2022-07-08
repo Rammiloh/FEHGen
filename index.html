@@ -63,6 +63,7 @@
 	      <div id="generatedTitle" class="my-3"></div>
 	      <div id="generatedClass" class="my-3"></div>
 	      <div id="generatedStats" class="my-3"></div>
+	      <div id="generatedWeapon" class="my-3"></div>
 	      <div id="generatedAssistSkill" class="my-3"></div>
 	      <div id="generatedSpecialSkill" class="my-3"></div>
 	      <div id="generatedASkill" class="my-3"></div>
@@ -89,7 +90,28 @@ function GetRandom(min, max) //Get random integer between min and max, inclusive
 {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-		
+function Shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
+function Capitalise(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 //I could make both of these into JSONs too but can't be fucked since they're so small
 const moveTypes = [
 	{
@@ -98,7 +120,7 @@ const moveTypes = [
 		Index: 0
 	},
 	{
-		Movement: "Armored",
+		Movement: "Armor",
 		Tag: "Arm",
 		Index: 1
 	},
@@ -420,7 +442,7 @@ function FillInWords(skill,colour,weapon,move)
 	
 	skill = skill.replaceAll("<ELEMENT>",ChooseRandom(["Fire","Wind","Water","Earth"]));
 	
-	skill = skill.replaceAll("<CLASSDUEL>",colour.charAt(0) + " Duel " + move);
+	skill = skill.replaceAll("<CLASSDUEL>",colour.charAt(0) + " Duel " + move.Movement);
 	
 	if(move == "Flying")
 		skill = skill.replaceAll("<MISSILE>","Dagger");
@@ -450,7 +472,7 @@ function FillInWords(skill,colour,weapon,move)
 	
 	skill = skill.replaceAll("<DANCE>",ChooseRandom(["Caldera"]));
 	
-	skill = skill.replaceAll("<WEAPON>",weapon);
+	skill = skill.replaceAll("<WEAPON>",weapon.Weapon);
 	
 	return skill;
 }
@@ -503,13 +525,357 @@ function GenerateSkills(character,rarityInt)
 		unitSkills[i] = FillInWords(unitSkills[i],tags[0],weapon,move);
 	}
 	console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
+	if(weapon.Weapon == "Staff")
+	{
+		if(rarityInt <= 1 || (rarityInt == 2 && Math.random()>0.5))
+		{
+			unitSkills[GetRandom(0,2)] = "";
+		}
+		else
+		{
+			unitSkills[4] = "";
+		}
+	}
+	else
+	{
+		if(rarityInt <= 1 || (rarityInt == 2 && ))
+		{
+			unitSkills[GetRandom(0,2)] = "";
+		}
+		unitSkills[GetRandom(3,4)] = "";
+	}
 	return unitSkills;
 }
 		
 
 //=================================GENERATE WEAPON================================
+const innateEffects = [];
+const startOfTurnEffects = [];
+const startOfCombatEffects = [];
+const duringCombatEffects = [];
+const endOfCombatEffects = [];
+const foeInitiatesEffects = [];
+const unitInitiatesEffects = [];
+const assistEffects = [];
+const negativeEffects = [];
+
+const startOfTurnConditions = [];
+const startOfCombatConditions = [];
+const duringCombatConditions = [];
+const endOfCombatConditions = [];
+
+function FillListWithTags(entry, list, tag)
+{
+	if(entry.tags.includes(tag)){
+		var weightCount = entry.weight;
+		while (weightCount > 0){
+			list.push(entry.effect);
+			weightCount-=1;
+		}
+	}
+	return list;
+}
+
+function SortWeaponJSONIntoLists()
+{
+	weaponEffects.forEach(function(entry) {
+		FillTaggedList(entry,innateEffects,"innate");
+		FillTaggedList(entry,startOfTurnEffects,"turn_start");
+		FillTaggedList(entry,startOfCombatEffects,"combat_start");
+		FillTaggedList(entry,duringCombatEffects,"during_combat");
+		FillTaggedList(entry,endOfCombatEffects,"combat_end");
 		
+		FillTaggedList(entry,foeInitiatesEffects,"foe_initiates");
+		FillTaggedList(entry,unitInitiatesEffects,"unit_initiates");
+		FillTaggedList(entry,assistEffects,"assist");
+		FillTaggedList(entry,negativeEffects,"negative");
+	});
+	console.log(negativeEffects);
+	
+	weaponConditions.forEach(function(entry) {
+		FillTaggedList(entry,startOfTurnConditions,"turn_start");
+		FillTaggedList(entry,startOfCombatConditions,"combat_start");
+		FillTaggedList(entry,duringCombatConditions,"during_combat");
+		FillTaggedList(entry,endOfCombatConditions,"combat_end");
+	});
+	console.log(endOfCombatConditions);
+}
+
+function FillInTags(line, rarity)
+{
+	var array = Shuffle(["Atk","Spd","Def","Res"]);
+	line = line.replaceAll("<STAT>",array[0]);
+	line = line.replaceAll("<STAT2>",array[1]);
+	
+	array = Shuffle(["75%","50%","25%","40%","60%","80%"]);
+	line = line.replaceAll("<PERCENT>",array[0]);
+	line = line.replaceAll("<PERCENT2>",array[1]);
+	
+	array = Shuffle(["75 percent","50 percent","25 percent","40 percent","60 percent","80 percent"]);
+	line = line.replaceAll("<PERCENT>",array[0]);
+	line = line.replaceAll("<PERCENT2>",array[1]);
+	
+	array = Shuffle(["1","2","2","3","3","3","4","4","5","6","7"]);
+	line = line.replaceAll("<INT>",array[0]);
+	line = line.replaceAll("<INT2>",array[1]);
+	
+	array = Shuffle(["7","10","15","20","25"]);
+	line = line.replaceAll("<BINT>",array[0]);
+	line = line.replaceAll("<BINT2>",array[1]);
+	
+	array = Shuffle(["Infantry","Armor","Cavalry","Flying","Dragon","Beast"]);
+	line = line.replaceAll("<CLASS>",array[0]);
+	line = line.replaceAll("<CLASS2>",array[1]);
+	
+	array = Shuffle(["【Move+1】","【Guidance】","【Bonus Doubler】",
+					"【Neutralize Dragon Effectiveness】",
+					"【Neutralize Armor Effectiveness】",
+					"【Neutralize Flying Effectiveness】",
+					"【Dominance】","【Desperation】","【Vantage】",
+					"【Deny Follow-ups】","【Dodge】","【Guaranteed Follow-ups】",
+					"【Triangle Attack】","【Null Panic】","【Cancel Affinity】",
+					"【Null Follow-up】","【Pathfinder】","【Fallen Star】",
+					"【Neutralize Foe Bonuses】","【Grand Strategy】",
+					"【En Garde】","【Accelerate Special】","【Treachery】",
+					"【Warp Bubble】","【Charge】"]);
+	line = line.replaceAll("<BONUS>",array[0]);
+	line = line.replaceAll("<BONUS2>",array[1]);
+	
+	array = Shuffle(["【Gravity】","【Panic】","【Flash】","【Triangle Adept】",
+					"【Guard】","【Isolation】","【Deep Wounds】","【Stall】",
+					"【Canto Control】","【Exposure】"]);
+	line = line.replaceAll("<PENALTY>",array[0]);
+	line = line.replaceAll("<PENALTY2>",array[1]);
+	
+	array = Shuffle(["Atk","Def","Spd","Res"]);
+	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
+	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
+	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
+	line = line.replaceAll("<STATS>",array[0]);
+	line = line.replaceAll("<STATS2>",array[1]);
+	
+	val = GetRandom(2,4) + Math.ceil(rarity/2);
+	array = Shuffle(["Atk","Def","Spd","Res"]);
+	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
+	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
+	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
+	line = line.replaceAll("<+STATS>",array[0] + "+" + val);
+	line = line.replaceAll("<+STATS2>",array[1] + "+" + val);
+	
+	val = GetRandom(2,4) + Math.ceil(rarity/2);
+	array = Shuffle(["Atk","Def","Spd","Res"]);
+	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
+	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
+	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
+	line = line.replaceAll("<-STATS>",array[0] + "-" + val);
+	line = line.replaceAll("<-STATS2>",array[1] + "-" + val);
+	
+	line = line.replaceAll("<EITHER>",ChooseRandom(["unit","foe"]));
+	
+	array = Shuffle(["【Canto (3)】", "【Canto (2)】","【Canto (1)】","【Canto (Rem. +1)】","【Canto (Rem.)】"]);
+	line = line.replaceAll("<CANTO>",array[0]);
+	
+	return line;
+}
+
+function SortTwoLists(orderedList,affectedList)
+{
+	//https://stackoverflow.com/questions/11499268/sort-two-arrays-the-same-way
+	
+	//1) combine the arrays:
+	var list = [];
+	for (var j = 0; j < orderedList.length; j++) 
+		list.push({'ord': orderedList[j], 'aff': affectedList[j]});
+
+	//2) sort:
+	list.sort(function(a, b) {
+		return ((a.ord < b.ord) ? -1 : ((a.ord == b.ord) ? 0 : 1));
+	});
+
+	//3) separate them back out:
+	for (var k = 0; k < list.length; k++) {
+		orderedList[k] = list[k].ord;
+		affectedList[k] = list[k].aff;
+	}
+	//Whoops, Javascript can't return multiple variables because it's a shitty language.
+	//We only need the affected list anyway, so let's just return that instead of fiddling with objects.
+	
+	return affectedList;
+}
+function GenerateWeapon(rarity)
+{
+	var points = 2+rarity;
+	if (points > 2)
+		points += GetRandom(-1,1);
+	
+	const lines = [];
+	innatesGiven = false;
+	var rawConds;
+	var rawEffects;
+	var usedConditions = [];
+	if(Math.random() < (0.2+0.1*rarity))
+	{
+		var innate1 = ChooseRandom(innateEffects);
+		var innate2 = ChooseRandom(innateEffects);
+		while(innate2 == innate1)
+			innate2 = ChooseRandom(innateEffects);
 		
+		innate1 = FillInTags(innate1, rarity);
+		innate2 = FillInTags(innate2, rarity);
+		
+		lines.push(innate1);
+		usedConditions.push(-1);
+		console.log("Innate: " + innate1);
+		points -= 1;
+		if(Math.random() < (0.1+0.05*rarity))
+		{
+			lines.push(innate2);
+			usedConditions.push(-1);
+			points -= 1;
+			console.log("Innate: " + innate2);
+		}
+		innatesGiven = true;
+	}
+	while(points > 0)
+	{
+		var newLine = "";
+		var condition = ChooseRandom([0,0,0,0,1,2,2,3,3,4,4,4,5,5,5,6,6,6,7]);
+		while(usedConditions.includes(condition))
+		{
+			condition = ChooseRandom([0,0,0,0,1,2,2,3,3,4,4,4,5,5,5,6,6,6,7]);
+		}
+			
+		usedConditions.push(condition);
+		//start of turn, start of turn 1, start of combat, during combat, outside of combat, after combat, positional/rally skill used
+		
+		currentlyHasCondition = false;
+		unitInitiation = false;
+		foeInitiation = false;
+		var conditionsList;
+		var effectsList;
+		switch(condition){
+			case 0:
+				conditionsList = startOfTurnConditions;
+				effectsList = startOfTurnEffects;
+				newLine = "At start of turn, ";
+				break;
+			case 1:
+				conditionsList = startOfTurnConditions;
+				effectsList = startOfTurnEffects;
+				newLine = ChooseRandom(["At start of odd-numbered turns, ","At start of even-numbered turns, ","At start of turns 1 through 4, "]);
+				break;
+			case 2:
+				effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
+				conditionsList = startOfCombatConditions;
+				newLine = "If unit initiates combat, ";
+				currentlyHasCondition = true;
+				break;
+					
+			case 3:
+				effectsList  = startOfCombatEffects.concat(foeInitiatesEffects);
+				conditionsList = startOfCombatConditions;
+				newLine = "If foe initiates combat, ";
+				currentlyHasCondition = true;
+				break;
+					
+			case 4:
+				effectsList = startOfCombatEffects;
+				conditionsList = startOfCombatConditions;
+				newLine = "At start of combat, ";
+				break;
+					
+			case 5:
+				conditionsList = duringCombatConditions;
+				effectsList = duringCombatEffects;
+				break;
+			case 6:
+				conditionsList = endOfCombatConditions;
+				effectsList = endOfCombatEffects;
+				newLine = "After combat, ";
+				break;
+			case 7:
+				effectsList = assistEffects;
+				newLine = ChooseRandom(["If a movement Assist skill is used by unit or targets unit, ","If a Rally Assist skill is used by unit, "]);
+				break;
+      default:
+        console.log("whoops");
+        break;
+		}
+		
+		rawConds = [];
+		if(Math.random() < 0.75 && condition != 7)
+		{
+			if (currentlyHasCondition == true)
+				newLine = newLine.slice(0,-2) + ChooseRandom([" or "," and "]);
+			
+			var tempCondition = ChooseRandom(conditionsList);
+			rawConds.push(tempCondition);
+			newLine = newLine + "if " + FillInTags(tempCondition, rarity);
+			//randomly choose new condition for initial condition
+			if (currentlyHasCondition == false)
+				if(Math.random() < 0.6)
+				{
+					newLine = newLine + ChooseRandom([" or "," and "]);
+					tempCondition = ChooseRandom(conditionsList);
+					while(rawConds.includes(tempCondition))
+						tempCondition = ChooseRandom(conditionsList);
+					rawConds.push(tempCondition);
+					newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
+				}
+			else
+				newLine = newLine + ", ";
+		}
+		var tempEffect = ChooseRandom(effectsList);
+		rawEffects = [tempEffect];
+		newLine = newLine + FillInTags(tempEffect, rarity);
+		if(condition == 5)
+			newLine = newLine + " during combat";
+		points -= 1;
+		if(points > 0 && Math.random() < 0.4 && condition != 7)
+		{
+			tempCondition = ChooseRandom(conditionsList);
+			while(rawConds.includes(tempCondition))
+				tempCondition = ChooseRandom(conditionsList);
+			rawConds.push(tempCondition);
+			
+			tempEffect = ChooseRandom(effectsList);
+			while(rawEffects.includes(tempEffect))
+				tempEffect = ChooseRandom(effectsList);
+			rawEffects.push(tempEffect);
+			
+			if(Math.random() < 0.33)
+				newLine = newLine + ", and also, if " + FillInTags(tempCondition, rarity) + ", ";
+			else
+				newLine = newLine + " and ";
+			newLine = newLine + FillInTags(tempEffect, rarity);
+		}
+		newLine = newLine + ".";
+		console.log(condition + ": " + newLine);
+		
+		lines.push(newLine);
+	}
+	
+	SortTwoLists(usedConditions,lines);
+	for (index = 0; index < lines.length; index++) {
+		lines[index] = Capitalise(lines[index]);
+	}
+	//console.log(lines);
+	return lines.join(' ');
+	/*for each line in lines
+	{
+		//innate and "outside of combat" are set by default
+		if "start of turn" move to end
+		'' if "start of odd/even numbered turns"
+		'' if "start of combat"
+		'' if "during combat"
+		'' if "after combat"
+		final text = all lines[] in this order
+		if innatesGiven = False
+			final text = "Grants [Atk/Spd/Def/Res]+3. " + final text
+		return final text
+	}*/
+}
+
 //=================================PUT IT ALL TOGETHER================================
 		
 async function RunGenerator()
@@ -522,17 +888,23 @@ async function RunGenerator()
 	var stats = GenerateStats(character);
 	var rarity = GetRandom(0,4);
 	SortSkillJSONIntoLists();
+	SortWeaponJSONIntoLists();
 	var skills = GenerateSkills(character,rarity);
+	var weaponText = GenerateWeapon(rarity);
 	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
-	document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
+	if(character.Weapon.Weapon == "Sword" || character.Weapon.Weapon == "Lance" || character.Weapon.Weapon == "Axe" || character.Weapon.Weapon == "Staff")
+		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
+	else
+		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Tags[0]} ${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
 	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
-	document.getElementById("generatedAssistSkill").innerHTML = `${skills[3]}`;
-	document.getElementById("generatedSpecialSkill").innerHTML = `${skills[4]}`;
-	document.getElementById("generatedASkill").innerHTML = `${skills[0]}`;
-	document.getElementById("generatedBSkill").innerHTML = `${skills[1]}`;
-	document.getElementById("generatedCSkill").innerHTML = `${skills[2]}`;
+	document.getElementById("generatedWeapon").innerHTML = `Weapon: ${weaponText}`;
+	document.getElementById("generatedAssistSkill").innerHTML = `Assist: ${skills[3]}`;
+	document.getElementById("generatedSpecialSkill").innerHTML = `Special: ${skills[4]}`;
+	document.getElementById("generatedASkill").innerHTML = `A: ${skills[0]}`;
+	document.getElementById("generatedBSkill").innerHTML = `B: ${skills[1]}`;
+	document.getElementById("generatedCSkill").innerHTML = `C: ${skills[2]}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
