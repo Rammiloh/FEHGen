@@ -578,7 +578,7 @@ function FillListWithTags(entry, list, tag)
 
 function SortWeaponJSONIntoLists()
 {
-	weaponEffects.forEach(function(entry) {
+	effectsJSON.forEach(function(entry) {
 		FillTaggedList(entry,innateEffects,"innate");
 		FillTaggedList(entry,startOfTurnEffects,"turn_start");
 		FillTaggedList(entry,startOfCombatEffects,"combat_start");
@@ -592,7 +592,7 @@ function SortWeaponJSONIntoLists()
 	});
 	console.log(negativeEffects);
 	
-	weaponConditions.forEach(function(entry) {
+	conditionsJSON.forEach(function(entry) {
 		FillTaggedList(entry,startOfTurnConditions,"turn_start");
 		FillTaggedList(entry,startOfCombatConditions,"combat_start");
 		FillTaggedList(entry,duringCombatConditions,"during_combat");
