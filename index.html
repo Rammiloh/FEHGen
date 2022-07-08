@@ -859,7 +859,7 @@ function GenerateWeapon(rarity)
 		lines[index] = Capitalise(lines[index]);
 	}
 	//console.log(lines);
-	return lines.join(' ');
+	return lines.join('\n');
 	/*for each line in lines
 	{
 		//innate and "outside of combat" are set by default
@@ -898,12 +898,12 @@ async function RunGenerator()
 		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Tags[0]} ${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	document.getElementById("generatedStats").innerHTML = `${stats}`;
 	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
-	document.getElementById("generatedWeapon").innerHTML = `Weapon: ${weaponText}`;
-	document.getElementById("generatedAssistSkill").innerHTML = `Assist: ${skills[3]}`;
-	document.getElementById("generatedSpecialSkill").innerHTML = `Special: ${skills[4]}`;
-	document.getElementById("generatedASkill").innerHTML = `A: ${skills[0]}`;
-	document.getElementById("generatedBSkill").innerHTML = `B: ${skills[1]}`;
-	document.getElementById("generatedCSkill").innerHTML = `C: ${skills[2]}`;
+	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${weaponText}</em>\n`;
+	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${skills[3]}`;
+	document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${skills[4]}`;
+	document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${skills[0]}`;
+	document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${skills[1]}`;
+	document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${skills[2]}`;
 }
 RunGenerator();
   /*function GetRandom(min, max) 
