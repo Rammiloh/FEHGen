@@ -907,18 +907,18 @@ async function RunGenerator()
 	SortWeaponJSONIntoLists();
 	var skills = GenerateSkills(character,rarity);
 	var weaponText = GenerateWeapon(rarity);
-	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div>`;
+	document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${character.Filename}" /> </div><div id="charImage2"> <img src="./CharacterIcons/${character2.Filename}" /> </div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
 	document.getElementById("rarityStatus").innerHTML = `(${rarityText[rarity]})`;
 	if(character.Weapon.Weapon == "Sword" || character.Weapon.Weapon == "Lance" || character.Weapon.Weapon == "Axe" || character.Weapon.Weapon == "Staff")
 		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
 	else
 		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Tags[0]} ${character.Weapon.Weapon} ${character.Movement.Movement}`;
-	document.getElementById("generatedStatsHP").innerHTML = `<b>HP: <\b>${stats[0]}`;
-	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk: <\b>${stats[1]}`;
-	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd: <\b>${stats[2]}`;
-	document.getElementById("generatedStatsDef").innerHTML = `<b>Def: <\b>${stats[3]}`;
-	document.getElementById("generatedStatsRes").innerHTML = `<b>Res: <\b>${stats[4]}`;
+	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:<\b> ${stats[0]}`;
+	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:<\b> ${stats[1]}`;
+	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:<\b> ${stats[2]}`;
+	document.getElementById("generatedStatsDef").innerHTML = `<b>Def:<\b> ${stats[3]}`;
+	document.getElementById("generatedStatsRes").innerHTML = `<b>Res:<\b> ${stats[4]}`;
 	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
 	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${weaponText}</em>\n`;
 	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${skills[3]}`;
