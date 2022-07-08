@@ -708,9 +708,9 @@ function SortTwoLists(orderedList,affectedList)
 }
 function GenerateWeapon(rarity)
 {
-	var points = 2+rarity;
-	if (points > 2)
-		points += GetRandom(-1,1);
+	var points = 1+rarity;
+	if (points > 1)
+		points += ChooseRandom(-1,0,0,0,1);
 	
 	const lines = [];
 	innatesGiven = false;
