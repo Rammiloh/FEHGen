@@ -915,7 +915,7 @@ async function RunGenerator()
 	var skills = GenerateSkills(character,rarity);
 	var weaponText = GenerateWeapon(rarity);
 	if(rarity == 4)
-		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${character.Filename}" /></div><div class="column">"<img src="./CharacterIcons/${character2.Filename}" /> </div> </div>`;
+		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${character.Filename}" /></div><div class="column"><img src="./CharacterIcons/${character2.Filename}" /> </div> </div>`;
 	else
 		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${character.Filename}" /></div>`;
 	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
