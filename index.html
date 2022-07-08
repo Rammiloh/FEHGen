@@ -812,16 +812,15 @@ function GenerateWeapon(rarity)
 			rawConds.push(tempCondition);
 			newLine = newLine + "if " + FillInTags(tempCondition, rarity);
 			//randomly choose new condition for initial condition
-			if (currentlyHasCondition == false)
-				if(Math.random() < 0.6)
-				{
-					newLine = newLine + ChooseRandom([" or "," and "]);
+			if (currentlyHasCondition == false && Math.random() < 0.6)
+			{
+				newLine = newLine + ChooseRandom([" or "," and "]);
+				tempCondition = ChooseRandom(conditionsList);
+				while(rawConds.includes(tempCondition))
 					tempCondition = ChooseRandom(conditionsList);
-					while(rawConds.includes(tempCondition))
-						tempCondition = ChooseRandom(conditionsList);
-					rawConds.push(tempCondition);
-					newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
-				}
+				rawConds.push(tempCondition);
+				newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
+			}
 			else
 				newLine = newLine + ", ";
 		}
