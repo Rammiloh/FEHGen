@@ -566,10 +566,10 @@ const endOfCombatConditions = [];
 
 function FillTaggedList(entry, list, tag)
 {
-	if(entry.tags.includes(tag)){
-		var weightCount = entry.weight;
+	if(entry.Tags.includes(tag)){
+		var weightCount = entry.Weight;
 		while (weightCount > 0){
-			list.push(entry.effect);
+			list.push(entry.Effect);
 			weightCount-=1;
 		}
 	}
