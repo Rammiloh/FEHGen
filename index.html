@@ -898,8 +898,14 @@ async function RunGenerator()
 		if(character.Game != character2.Game && Math.random()>0.5) //If a game is given as a parameter, we only want characters from said game
 		{
 			//This is bad and should be rewritten
-			while(character.Game != character2.Game)
-				character2 = ChooseRandom(charactersJSON);
+			charsList = Shuffle(charactersJSON);
+			for(let i = 0; i < charsList.length; i++)
+			{
+				character2 = charsList[i];
+				console.log("Comparing " + character.Game + " to " + character2.Game);
+				if(character.Game == character2.Game)
+					break;
+			}
 		}
 		if(character.Game == character2.Game) rarityText[4] = "Duo";
 	}
