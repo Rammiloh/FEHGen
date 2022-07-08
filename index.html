@@ -710,7 +710,7 @@ function GenerateWeapon(rarity)
 {
 	var points = 1+rarity;
 	if (points > 1)
-		points += ChooseRandom(-1,0,0,0,1);
+		points += ChooseRandom([-1,0,0,0,1]);
 	
 	const lines = [];
 	innatesGiven = false;
