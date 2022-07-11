@@ -937,11 +937,13 @@ async function GenerateBanner()
 	var charsList = Shuffle(charactersJSON);
 	var bannerCharacters = [];
 	var game1 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	var game2 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
+	var game2 = game1;
+	if(Math.random() > 0.5)
+		game2 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
 	
 	for(let i = 0; i < charsList.length; i++)
 	{
-		if(charsList[i].Game == game1 || charsList[i] == game2)
+		if(charsList[i].Game == game1 || charsList[i].Game == game2)
 			bannerCharacters.push(charsList[i]);
 		if(bannerCharacters.length == 6) break;
 	}
