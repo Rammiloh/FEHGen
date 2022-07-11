@@ -69,8 +69,8 @@
 <button id="premiumButton1" class="button goldButton">Pre1</button>
 <button id="premiumButton2" class="button goldButton">Pre2</button>
 <button id="demoteButton" class="button silverButton">Dem</button>
-<button id="duoButton" class="button goldButton">Pre1</button>
-<button id="TTButton" class="button bronzeButton">Pre1</button>
+<button id="duoButton" class="button goldButton">Duo</button>
+<button id="TTButton" class="button bronzeButton">TT</button>
           
         </header>
     </div>
@@ -1000,6 +1000,8 @@ function DisplayUnit(unit)
 async function Initialise()
 {
 	await loadAllJSONs();
+	SortSkillJSONIntoLists();
+	SortWeaponJSONIntoLists();
 	GenerateBanner();
 	/*console.log("~" + theme.Event + "~");
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
