@@ -944,6 +944,12 @@ async function GenerateBanner()
 		if(bannerCharacters.length == 6) break;
 	}
 	
+	console.log("banner characters: " + bannerCharacters[0].Hero);
+	console.log(bannerCharacters[1].Hero);
+	console.log(bannerCharacters[2].Hero);
+	console.log(bannerCharacters[3].Hero);
+	console.log(bannerCharacters[4].Hero);
+	console.log(bannerCharacters[5].Hero);
 	var unitP1 = GenerateUnit(3,theme,bannerCharacters[0]);
 	var unitP2 = GenerateUnit(2,theme,bannerCharacters[1]);
 	var unitDemote = GenerateUnit(1,theme,bannerCharacters[2]);
