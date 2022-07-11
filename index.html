@@ -972,7 +972,7 @@ async function GenerateBanner()
 
 function DisplayUnit(unit)
 {
-	if(rarity == 4)
+	if(unit.Rarity == 4)
 		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${unit.Filename}" /></div><div class="column"><img src="./CharacterIcons/${unit.Filename2}" /> </div> </div>`;
 	else
 		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
