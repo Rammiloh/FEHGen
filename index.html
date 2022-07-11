@@ -988,10 +988,11 @@ function DisplayUnit(unit)
 		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
 	document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
 	document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText})`;
-	if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
+	/*if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
 		document.getElementById("generatedClass").innerHTML = `${unit.Weapon} ${unit.Movement}`;
 	else
-		document.getElementById("generatedClass").innerHTML = `${unit.Colour} ${unit.Weapon} ${unit.Movement}`;
+		document.getElementById("generatedClass").innerHTML = `${unit.Colour} ${unit.Weapon} ${unit.Movement}`;*/
+	document.getElementById("generatedClass").innerHTML = `  <div class="row"><img src="./GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" /></div><div class="row"><img src="./GameIcons/Icon_Move_${unit.Movement}.png" /></div>`;
 	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
 	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
 	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
