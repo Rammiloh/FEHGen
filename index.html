@@ -952,11 +952,11 @@ async function GenerateBanner()
 	console.log(bannerCharacters[3].Hero);
 	console.log(bannerCharacters[4].Hero);
 	console.log(bannerCharacters[5].Hero);
-	await var unitP1 = GenerateUnit(3,theme,bannerCharacters[0]);
-	await var unitP2 = GenerateUnit(2,theme,bannerCharacters[1]);
-	await var unitDemote = GenerateUnit(1,theme,bannerCharacters[2]);
-	await var unitDuo = GenerateUnit(4,theme,bannerCharacters[3],bannerCharacters[4]);
-	await var unitTT = GenerateUnit(0,theme,bannerCharacters[5]);
+	var unitP1 = await GenerateUnit(3,theme,bannerCharacters[0]);
+	var unitP2 = await GenerateUnit(2,theme,bannerCharacters[1]);
+	var unitDemote = await GenerateUnit(1,theme,bannerCharacters[2]);
+	var unitDuo = await GenerateUnit(4,theme,bannerCharacters[3],bannerCharacters[4]);
+	var unitTT = await GenerateUnit(0,theme,bannerCharacters[5]);
 	
 	DisplayUnit(unitP1);
 	
