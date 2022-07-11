@@ -22,6 +22,23 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Welcome to GitHub Pages" />
 <script type="application/ld+json">
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.goldButton {background-color: #4CAF50;} /* Gold */
+.silverButton {background-color: #dadada;} /* Silver */
+.bronzeButton {background-color: #123456;} /* Bronze */
+</style>
 {"@context":"https://schema.org","@type":"WebSite","description":"Generate random seasonal alts for Fire Emblem Heroes","headline":"Welcome to GitHub Pages","name":"FEH-Alt-Generator","url":"https://rammiloh.github.io/FEH-Alt-Generator/"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -49,7 +66,11 @@
 
           <h1 id="project_title">FEH-Alt-Generator</h1>
           <h2 id="project_tagline">Generate random seasonal alts for Fire Emblem Heroes</h2>
-
+<button id="premiumButton1" class="button goldButton">Pre1</button>
+<button id="premiumButton2" class="button goldButton">Pre2</button>
+<button id="demoteButton" class="button silverButton">Dem</button>
+<button id="duoButton" class="button goldButton">Pre1</button>
+<button id="TTButton" class="button bronzeButton">Pre1</button>
           
         </header>
     </div>
@@ -217,16 +238,8 @@ async function loadAllJSONs(){
 		
 //=================================GENERATE CHARACTER================================
 		
-function GenerateCharacter(theme,game)
+function GenerateCharacter(hero,theme)
 {
-	hero = ChooseRandom(charactersJSON);
-	if(game != "") //If a game is given as a parameter, we only want characters from said game
-	{
-		//This is bad and should be rewritten
-		while(game != hero.Game)
-			hero = ChooseRandom(charactersJSON);
-	}
-	
 	//The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
 	heroName = hero.Hero.substring(0,hero.Hero.indexOf(":"));
 	heroTitle = hero.Hero.substring(hero.Hero.indexOf(":")+2).split(" ");
@@ -882,11 +895,113 @@ function GenerateWeapon(rarity)
 
 //=================================PUT IT ALL TOGETHER================================
 		
-async function RunGenerator()
+async function GenerateUnit(rarity,theme,character,character2 = null)
+{
+	var unit = GenerateCharacter(character,theme);
+	var stats = GenerateStats(unit);
+	var rarityText = ["Tempest Trial","Demote","Premium","Premium","Harmonic"];
+	var character2Filename = "";
+	if(character2 != null)
+		character2Filename = character2.Filename;
+	
+	var skills = GenerateSkills(unit,rarity);
+	var weaponText = GenerateWeapon(rarity);
+	
+	if(rarity == 4)
+	{
+		if(character.Game == character2.Game) rarityText[4] = "Duo";
+	}
+	
+	var gennedUnit = {
+		Title: unit.Title,
+		Filename: unit.Filename,
+		Filename2: character2Filename,
+		Game: unit.Game,
+		Movement: unit.Movement,
+		Weapon: unit.Weapon,
+		WeaponText: weaponText,
+		Stats: stats,
+		Skills: skills,
+		RarityText: rarityText[rarity],
+		Theme: theme
+	}
+	
+	return gennedUnit;
+}
+
+async function GenerateBanner()
+{
+	var theme = ChooseRandom(themesJSON);
+	var charsList = Shuffle(charactersJSON);
+	var bannerCharacters = [];
+	var game1 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
+	var game2 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
+	
+	for(let i = 0; i < charsList.length; i++)
+	{
+		if(charsList[i].Game == game1 || charsList[i] == game2)
+			bannerCharacters.push(charsList[i]);
+		if(bannerCharacters.length == 6) break;
+	}
+	
+	var unitP1 = GenerateUnit(3,theme,bannerCharacters[0]);
+	var unitP2 = GenerateUnit(2,theme,bannerCharacters[1]);
+	var unitDemote = GenerateUnit(1,theme,bannerCharacters[2]);
+	var unitDuo = GenerateUnit(4,theme,bannerCharacters[3],bannerCharacters[4]);
+	var unitTT = GenerateUnit(0,theme,bannerCharacters[5]);
+	
+	DisplayUnit(unitP1);
+	
+	document.getElementById("premiumButton1").addEventListener('click', function(){
+		DisplayUnit(unitP1);
+	});
+	document.getElementById("premiumButton2").addEventListener('click', function(){
+		DisplayUnit(unitP2);
+	});
+	document.getElementById("demoteButton").addEventListener('click', function(){
+		DisplayUnit(unitDemote);
+	});
+	document.getElementById("duoButton").addEventListener('click', function(){
+		DisplayUnit(unitDuo);
+	});
+	document.getElementById("TTButton").addEventListener('click', function(){
+		DisplayUnit(unitTT);
+	});
+
+}
+
+function DisplayUnit(unit)
+{
+	if(rarity == 4)
+		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${unit.Filename}" /></div><div class="column"><img src="./CharacterIcons/${unit.Filename2}" /> </div> </div>`;
+	else
+		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
+	document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
+	document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText[rarity]})`;
+	if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
+		document.getElementById("generatedClass").innerHTML = `${unit.Weapon} ${unit.Movement}`;
+	else
+		document.getElementById("generatedClass").innerHTML = `${unit.Weapon.Tags[0]} ${unit.Weapon} ${unit.Movement}`;
+	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
+	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
+	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
+	document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${unit.Stats[3]}`;
+	document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${unit.Stats[4]}`;
+	document.getElementById("seasonal-theme").innerHTML = `${unit.Theme}`;
+	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
+	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}`;
+	document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${unit.Skills[4]}`;
+	document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${unit.Skills[0]}`;
+	document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${unit.Skills[1]}`;
+	document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${unit.Skills[2]}`;
+	
+}
+		
+async function Initialise()
 {
 	await loadAllJSONs();
-	var theme = ChooseRandom(themesJSON);
-	console.log("~" + theme.Event + "~");
+	GenerateBanner();
+	/*console.log("~" + theme.Event + "~");
 	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
 	var character = GenerateCharacter(theme,game);
 	var stats = GenerateStats(character);
@@ -912,33 +1027,9 @@ async function RunGenerator()
 		if(character.Game == character2.Game) rarityText[4] = "Duo";
 	}
 	SortSkillJSONIntoLists();
-	SortWeaponJSONIntoLists();
-	var skills = GenerateSkills(character,rarity);
-	var weaponText = GenerateWeapon(rarity);
-	if(rarity == 4)
-		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${character.Filename}" /></div><div class="column"><img src="./CharacterIcons/${character2.Filename}" /> </div> </div>`;
-	else
-		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${character.Filename}" /></div>`;
-	document.getElementById("generatedTitle").innerHTML = `${character.Title}`;
-	document.getElementById("rarityStatus").innerHTML = `(${rarityText[rarity]})`;
-	if(character.Weapon.Weapon == "Sword" || character.Weapon.Weapon == "Lance" || character.Weapon.Weapon == "Axe" || character.Weapon.Weapon == "Staff")
-		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Weapon} ${character.Movement.Movement}`;
-	else
-		document.getElementById("generatedClass").innerHTML = `${character.Weapon.Tags[0]} ${character.Weapon.Weapon} ${character.Movement.Movement}`;
-	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${stats[0]}`;
-	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${stats[1]}`;
-	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${stats[2]}`;
-	document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${stats[3]}`;
-	document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${stats[4]}`;
-	document.getElementById("seasonal-theme").innerHTML = `${theme.Event}`;
-	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${weaponText}</em>\n`;
-	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${skills[3]}`;
-	document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${skills[4]}`;
-	document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${skills[0]}`;
-	document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${skills[1]}`;
-	document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${skills[2]}`;
+	SortWeaponJSONIntoLists();*/
 }
-RunGenerator();
+Initialise();
   /*function GetRandom(min, max) 
 {
   return Math.floor(Math.random() * (max - min + 1)) + min;
