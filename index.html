@@ -984,7 +984,7 @@ function DisplayUnit(unit)
 	else
 		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
 	document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
-	document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText[unit.Rarity]})`;
+	document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText})`;
 	if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
 		document.getElementById("generatedClass").innerHTML = `${unit.Weapon} ${unit.Movement}`;
 	else
