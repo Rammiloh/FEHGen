@@ -278,7 +278,7 @@ function GenerateCharacter(hero,theme)
 	console.log(heroName + ": " + heroTitle.join(" "));
 	var fullTitle = heroName + ": " + heroTitle.join(" ");
 	var mvmnt = ChooseRandom(moveTypes);
-	var wpn = weaponTypes[ChooseRandom([0,1,2,5,6,7,8])];
+	var wpn = weaponTypes[ChooseRandom([0,0,0,1,1,1,2,2,2,5,5,6,6,7,7,8])];
 	if(hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
 	if(hero.Race == "Beast" && Math.random() > 0.3) wpn = weaponTypes[4];
 	
@@ -945,12 +945,15 @@ async function GenerateBanner()
 	
 	for(let i = 0; i < charsList.length; i++)
 	{
-		if(bannerCharacters.length != 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
+		if(bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
 			bannerCharacters.push(charsList[i]);
-		else if(duoUnit && charsList[i].Game == bannerCharacters[4].Game) 
-			bannerCharacters.push(charsList[i]);
-		else if(!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
-			bannerCharacters.push(charsList[i]);
+		if(bannerCharacters.length == 5)
+		{
+			if(duoUnit && charsList[i].Game == bannerCharacters[4].Game) 
+				bannerCharacters.push(charsList[i]);
+			else if(!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
+				bannerCharacters.push(charsList[i]);
+		}
 		if(bannerCharacters.length == 6) break;
 	}
 	
