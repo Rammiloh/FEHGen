@@ -945,8 +945,6 @@ async function GenerateBanner()
 	
 	for(let i = 0; i < charsList.length; i++)
 	{
-		if(bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
-			bannerCharacters.push(charsList[i]);
 		if(bannerCharacters.length == 5)
 		{
 			if(duoUnit && charsList[i].Game == bannerCharacters[4].Game) 
@@ -954,6 +952,8 @@ async function GenerateBanner()
 			else if(!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
 				bannerCharacters.push(charsList[i]);
 		}
+		if(bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
+			bannerCharacters.push(charsList[i]);
 		if(bannerCharacters.length == 6) break;
 	}
 	
