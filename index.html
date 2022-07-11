@@ -919,6 +919,7 @@ async function GenerateUnit(rarity,theme,character,character2 = null)
 		Game: unit.Game,
 		Movement: unit.Movement,
 		Weapon: unit.Weapon,
+		Colour: unit.Weapon.Tags[0],
 		WeaponText: weaponText,
 		Stats: stats,
 		Skills: skills,
@@ -988,7 +989,7 @@ function DisplayUnit(unit)
 	if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
 		document.getElementById("generatedClass").innerHTML = `${unit.Weapon} ${unit.Movement}`;
 	else
-		document.getElementById("generatedClass").innerHTML = `${unit.Weapon.Tags[0]} ${unit.Weapon} ${unit.Movement}`;
+		document.getElementById("generatedClass").innerHTML = `${unit.Colour} ${unit.Weapon} ${unit.Movement}`;
 	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
 	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
 	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
