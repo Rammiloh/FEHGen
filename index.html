@@ -940,10 +940,16 @@ async function GenerateBanner()
 	var game2 = game1;
 	if(Math.random() > 0.5)
 		game2 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
+	var duoUnit = true;
+	if(game1 != game2 && Math.random()>0.5) duoUnit = false;
 	
 	for(let i = 0; i < charsList.length; i++)
 	{
-		if(charsList[i].Game == game1 || charsList[i].Game == game2)
+		if(bannerCharacters.length != 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
+			bannerCharacters.push(charsList[i]);
+		else if(duoUnit && charsList[i].Game == bannerCharacters[4].Game) 
+			bannerCharacters.push(charsList[i]);
+		else if(!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
 			bannerCharacters.push(charsList[i]);
 		if(bannerCharacters.length == 6) break;
 	}
@@ -957,8 +963,8 @@ async function GenerateBanner()
 	var unitP1 = await GenerateUnit(3,theme,bannerCharacters[0]);
 	var unitP2 = await GenerateUnit(2,theme,bannerCharacters[1]);
 	var unitDemote = await GenerateUnit(1,theme,bannerCharacters[2]);
-	var unitDuo = await GenerateUnit(4,theme,bannerCharacters[3],bannerCharacters[4]);
-	var unitTT = await GenerateUnit(0,theme,bannerCharacters[5]);
+	var unitDuo = await GenerateUnit(4,theme,bannerCharacters[4],bannerCharacters[5]);
+	var unitTT = await GenerateUnit(0,theme,bannerCharacters[3]);
 	
 	DisplayUnit(unitP1);
 	
