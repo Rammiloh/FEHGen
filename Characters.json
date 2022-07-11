@@ -1393,25 +1393,25 @@
   },
   {
     "Hero": "L'Arachel: Princess of Light",
-    "Filename": "Lachesis.png",
+    "Filename": "LArachel.png",
     "Race": "Human",
     "Game": "FE8"
   },
   {
     "Hero": "Lachesis: Lionheart's Sister",
-    "Filename": "Laegjarn.png",
+    "Filename": "Lachesis.png",
     "Race": "Human",
     "Game": "FE4"
   },
   {
     "Hero": "Laegjarn: Sheathed Steel",
-    "Filename": "Laevatein.png",
+    "Filename": "Laegjarn.png",
     "Race": "Human",
     "Game": "FE0"
   },
   {
     "Hero": "Laevatein: Searing Steel",
-    "Filename": "LArachel.png",
+    "Filename": "Laevatein.png",
     "Race": "Human",
     "Game": "FE0"
   },
