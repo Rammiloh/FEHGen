@@ -1370,7 +1370,7 @@
   {
     "Skill": "Live for Bounty",
     "Slot": "B",
-    "Exclusivity": "R",
+    "Exclusivity": "N",
     "Description": "",
     "Weight": 1,
     "Restrictions": ""
@@ -1378,7 +1378,7 @@
   {
     "Skill": "Live for Honor",
     "Slot": "B",
-    "Exclusivity": "R",
+    "Exclusivity": "N",
     "Description": "",
     "Weight": 1,
     "Restrictions": ""
