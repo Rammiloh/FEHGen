@@ -917,8 +917,8 @@ async function GenerateUnit(rarity,theme,character,character2 = null)
 		Filename: unit.Filename,
 		Filename2: character2Filename,
 		Game: unit.Game,
-		Movement: unit.Movement,
-		Weapon: unit.Weapon,
+		Movement: unit.Movement.Movement,
+		Weapon: unit.Weapon.Weapon,
 		Colour: unit.Weapon.Tags[0],
 		WeaponText: weaponText,
 		Stats: stats,
@@ -995,7 +995,7 @@ function DisplayUnit(unit)
 	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
 	document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${unit.Stats[3]}`;
 	document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${unit.Stats[4]}`;
-	document.getElementById("seasonal-theme").innerHTML = `${unit.Theme}`;
+	document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
 	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
 	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}`;
 	document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${unit.Skills[4]}`;
