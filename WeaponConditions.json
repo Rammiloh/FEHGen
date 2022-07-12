@@ -46,7 +46,7 @@
   },
   {
     "Effect": "【Bonus】is active on unit",
-    "Tags": "turn_start,combat_start,combat_end",
+    "Tags": "combat_start,combat_end",
     "Weight": 4
   },
   {
