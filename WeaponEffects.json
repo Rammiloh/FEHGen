@@ -1,6 +1,6 @@
 [
   {
-    "Effect": "Accelerates Special trigger (cooldown count-1)",
+    "Effect": "accelerates Special trigger (cooldown count-1)",
     "Tags": "innate",
     "Weight": 7
   },
@@ -20,12 +20,12 @@
     "Weight": 1
   },
   {
-    "Effect": "Calculates damage using the lower of foe's Def or Res",
+    "Effect": "calculates damage using the lower of foe's Def or Res",
     "Tags": "innate,during_combat,combat_start",
     "Weight": 3
   },
   {
-    "Effect": "Deals +<BINT> damage when Special triggers",
+    "Effect": "deals +<BINT> damage when Special triggers",
     "Tags": "innate,during_combat",
     "Weight": 3
   },
@@ -87,7 +87,7 @@
   {
     "Effect": "enables <CANTO>",
     "Tags": "innate,combat_end",
-    "Weight": 5
+    "Weight": 4
   },
   {
     "Effect": "foe cannot counterattack",
@@ -97,7 +97,7 @@
   {
     "Effect": "foe cannot make a follow-up attack",
     "Tags": "innate,during_combat,combat_start",
-    "Weight": 7
+    "Weight": 3
   },
   {
     "Effect": "grants <+STATS> and <BONUS> to target ally for 1 turn",
@@ -230,12 +230,12 @@
     "Weight": 1
   },
   {
-    "Effect": "Grants bonus to <STATS> = current bonus on each of unit's stats (Calculates each stat bonus independently)",
+    "Effect": "grants bonus to <STATS> = current bonus on each of unit's stats (Calculates each stat bonus independently)",
     "Tags": "during_combat,combat_start",
     "Weight": 1
   },
   {
-    "Effect": "Grants bonus to <STATS> during combat = current penalty on each of unit's stats × 2 (calculates each stat bonus independently)",
+    "Effect": "grants bonus to <STATS> during combat = current penalty on each of unit's stats × 2 (calculates each stat bonus independently)",
     "Tags": "during_combat,combat_start",
     "Weight": 1
   },
@@ -245,7 +245,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Grants bonus to unit’s <STAT> = total penalties on <EITHER>",
+    "Effect": "grants bonus to unit’s <STAT> = total penalties on <EITHER>",
     "Tags": "during_combat,combat_start",
     "Weight": 1
   },
@@ -260,7 +260,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Grants Special cooldown charge +1 per foe's attack",
+    "Effect": "grants Special cooldown charge +1 per foe's attack",
     "Tags": "during_combat,innate",
     "Weight": 3
   },
@@ -275,17 +275,17 @@
     "Weight": 2
   },
   {
-    "Effect": "If <EITHER>'s <STAT> ≥ foe's <STAT2>+<INT>, deals +<INT2> damage per unit's attack",
+    "Effect": "deals +<INT2> damage per unit's attack",
     "Tags": "during_combat",
     "Weight": 1
   },
   {
-    "Effect": "If a skill compares unit's <STAT> to a foe's or ally's <STAT>, treats unit's <STAT> as if granted +<BINT>",
+    "Effect": "if a skill compares unit's <STAT> to a foe's or ally's <STAT>, treats unit's <STAT> as if granted +<BINT>",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+    "Effect": "if unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%",
     "Tags": "innate",
     "Weight": 1
   },
@@ -467,7 +467,7 @@
   {
     "Effect": "neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks",
     "Tags": "innate,combat_start,during_combat",
-    "Weight": 2
+    "Weight": 1
   },
   {
     "Effect": "neutralizes effects that prevent unit's follow-up attacks",
@@ -515,7 +515,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Reduces damage from foe's first attack by <PERCENT>",
+    "Effect": "reduces damage from foe's first attack by <PERCENT>",
     "Tags": "innate,during_combat",
     "Weight": 2
   },
@@ -525,7 +525,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Reduces damage from foe's second attack by <PERCENT>",
+    "Effect": "reduces damage from foe's second attack by <PERCENT>",
     "Tags": "innate,during_combat",
     "Weight": 2
   },
@@ -567,7 +567,7 @@
   {
     "Effect": "unit makes a guaranteed follow-up attack and foe cannot",
     "Tags": "during_combat,combat_start",
-    "Weight": 3
+    "Weight": 1
   },
   {
     "Effect": "unit recovers <BINT> HP",
