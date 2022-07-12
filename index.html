@@ -288,6 +288,7 @@ function GenerateCharacter(hero,theme)
 	
 	if(wpn.Tags[0] == "Random")
 		wpn.Tags[0] = ChooseRandom(["Red","Blue","Green","Colorless"]);
+	console.log("Statmod: " + hero.StatMod);
 	var gennedCharacter = {
 		Title: fullTitle,
 		Filename: hero.Filename,
