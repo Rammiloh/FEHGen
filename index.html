@@ -279,8 +279,12 @@ function GenerateCharacter(hero,theme)
 	var fullTitle = heroName + ": " + heroTitle.join(" ");
 	var mvmnt = ChooseRandom(moveTypes);
 	var wpn = weaponTypes[ChooseRandom([0,0,0,1,1,1,2,2,2,5,5,6,6,7,7,8])];
+	if(hero.StatMod == "Dancer" && wpn.Weapon == "Staff")
+	{
+		wpn = weaponTypes[ChooseRandom([0,0,0,1,1,1,2,2,2,5,5,6,6,7,7])];
+	}
 	if(hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
-	if(hero.Race == "Beast" && Math.random() > 0.3) wpn = weaponTypes[4];
+	if(hero.Race == "Beast") wpn = weaponTypes[4];
 	
 	if(wpn.Tags[0] == "Random")
 		wpn.Tags[0] = ChooseRandom(["Red","Blue","Green","Colorless"]);
@@ -289,7 +293,8 @@ function GenerateCharacter(hero,theme)
 		Filename: hero.Filename,
 		Game: hero.Game,
 		Movement: mvmnt,
-		Weapon: wpn
+		Weapon: wpn,
+		StatMod: hero.StatMod
 	}
 	return gennedCharacter;
 }
@@ -326,6 +331,8 @@ function GenerateStats(character)
 		sum += thisClass.MinStats[i];
 	}
 	var points = ChooseRandom(thisClass.BST) - sum;
+	if(character.StatMod == "Dancer") points -= ChooseRandom([10,11,12]);
+	if(character.StatMod == "Trainee") points += 5;
 	var rates = [0,0,0,0,0];
 	var stats = thisClass.MinStats;
 	var ratesMax = 0;
@@ -496,8 +503,8 @@ function FillInWords(skill,colour,weapon,move)
 		
 function GenerateSkills(character,rarityInt)
 {
-	move = character.Movement;
-	weapon = character.Weapon;
+	var move = character.Movement;
+	var weapon = character.Weapon;
 	var rarity = "C";
 	if(rarityInt > 1) rarity = "R";
 	var tags = weapon.Tags;
@@ -551,6 +558,15 @@ function GenerateSkills(character,rarityInt)
 		else
 		{
 			unitSkills[4] = "";
+		}
+	}
+	else if(character.StatMod == "Dancer)
+	{
+		unitSkills[3] = ChooseRandom(["Dance","Sing","Play"]);
+		unitSkills[4] = "";
+		if(rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5))
+		{
+			unitSkills[GetRandom(0,2)] = "";
 		}
 	}
 	else
