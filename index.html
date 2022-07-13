@@ -378,7 +378,8 @@ function GenerateStats(character) {
     for (let i = 0; i < thisClass.MinStats.length; i++) {
         sum += thisClass.MinStats[i];
     }
-    var points = ChooseRandom(thisClass.BST) - sum;
+	console.log("sum: " + sum);
+    let points = ChooseRandom(thisClass.BST) - sum;
 	console.log("StatMod: " + character.StatMod + ", points: " + points);
     if (character.StatMod == "Dancer") 
     {
@@ -415,7 +416,7 @@ function GenerateStats(character) {
         rates[i] = rates[i] + rates[i - 1];
     }
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
-
+console.log("points as we head into the loop: " + points);
     while (points > 0) {
         chosenStat = Math.random();
         for (let i = 0; i < rates.length; i++) {
