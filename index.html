@@ -101,6 +101,7 @@
 
         
         <script>
+
 var charactersJSON;
 var themesJSON;
 var skillsJSON;
@@ -110,276 +111,265 @@ var effectsJSON;
 
 function ChooseRandom(list) //Get a random item from the list
 {
-	return list[Math.floor(Math.random() * list.length)];
+    return list[Math.floor(Math.random() * list.length)];
 }
 function GetRandom(min, max) //Get random integer between min and max, inclusive
 {
-	return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 function Shuffle(array) {
-  let currentIndex = array.length,  randomIndex;
+    let currentIndex = array.length, randomIndex;
 
-  // While there remain elements to shuffle.
-  while (currentIndex != 0) {
+    // While there remain elements to shuffle.
+    while (currentIndex != 0) {
 
-    // Pick a remaining element.
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+        // Pick a remaining element.
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
 
-    // And swap it with the current element.
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex], array[currentIndex]];
-  }
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
 
-  return array;
+    return array;
 }
 
 function Capitalise(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
 //I could make both of these into JSONs too but can't be fucked since they're so small
 const moveTypes = [
-	{
-		Movement: "Infantry",
-		Tag: "Inf",
-		Index: 0
-	},
-	{
-		Movement: "Armor",
-		Tag: "Arm",
-		Index: 1
-	},
-	{
-		Movement: "Cavalry",
-		Tag: "Cav",
-		Index: 2
-	},
-	{
-		Movement: "Flier",
-		Tag: "Fly",
-		Index: 3
-	}
+    {
+        Movement: "Infantry",
+        Tag: "Inf",
+        Index: 0
+    },
+    {
+        Movement: "Armor",
+        Tag: "Arm",
+        Index: 1
+    },
+    {
+        Movement: "Cavalry",
+        Tag: "Cav",
+        Index: 2
+    },
+    {
+        Movement: "Flier",
+        Tag: "Fly",
+        Index: 3
+    }
 ];
 
 const weaponTypes = [
-	{
-		Weapon: "Sword",
-		Tags: ["Red","Close","Melee"],
-		Index: 0
-	},
-	{
-		Weapon: "Lance",
-		Tags: ["Blue","Close","Melee"],
-		Index: 0
-	},
-	{
-		Weapon: "Axe",
-		Tags: ["Green","Close","Melee"],
-		Index: 0
-	},
-	{
-		Weapon: "Dragon",
-		Tags: ["Random","Close","Dragon"],
-		Index: 4
-	},
-	{
-		Weapon: "Beast",
-		Tags: ["Random","Close","Beast"],
-		Index: 5
-	},
-	{
-		Weapon: "Tome",
-		Tags: ["Random","Tome","Ranged"],
-		Index: 1
-	},
-	{
-		Weapon: "Bow",
-		Tags: ["Random","Bow","Missile","Ranged"],
-		Index: 2
-	},
-	{
-		Weapon: "Dagger",
-		Tags: ["Random","Dagger","Missile","Ranged"],
-		Index: 2
-	},
-	{
-		Weapon: "Staff",
-		Tags: ["Colorless","Staff","Ranged"],
-		Index: 3
-	}
+    {
+        Weapon: "Sword",
+        Tags: ["Red", "Close", "Melee"],
+        Index: 0
+    },
+    {
+        Weapon: "Lance",
+        Tags: ["Blue", "Close", "Melee"],
+        Index: 0
+    },
+    {
+        Weapon: "Axe",
+        Tags: ["Green", "Close", "Melee"],
+        Index: 0
+    },
+    {
+        Weapon: "Dragon",
+        Tags: ["Random", "Close", "Dragon"],
+        Index: 4
+    },
+    {
+        Weapon: "Beast",
+        Tags: ["Random", "Close", "Beast"],
+        Index: 5
+    },
+    {
+        Weapon: "Tome",
+        Tags: ["Random", "Tome", "Ranged"],
+        Index: 1
+    },
+    {
+        Weapon: "Bow",
+        Tags: ["Random", "Bow", "Missile", "Ranged"],
+        Index: 2
+    },
+    {
+        Weapon: "Dagger",
+        Tags: ["Random", "Dagger", "Missile", "Ranged"],
+        Index: 2
+    },
+    {
+        Weapon: "Staff",
+        Tags: ["Colorless", "Staff", "Ranged"],
+        Index: 3
+    }
 ];
 
 async function getJSON(jsonFile) {
-return fetch(jsonFile)
-	.then((response)=>response.json())
-	.then((responseJson)=>{return responseJson});
+    return fetch(jsonFile)
+        .then((response) => response.json())
+        .then((responseJson) => { return responseJson });
 }
 async function caller(jsonFile) {
-	var json = await this.getJSON(jsonFile);
-	return json;
+    var json = await this.getJSON(jsonFile);
+    return json;
 }
 
-async function loadAllJSONs(){
-	console.log("Characters");
-	charactersJSON = await caller("./Characters.json");
-	console.log("SeasonalThemes");
-	themesJSON = await caller("./SeasonalThemes.json");
-	console.log("Skills");
-	skillsJSON = await caller("./Skills.json");
-	console.log("Classes");
-	statsJSON = await caller("./Classes.json");
-	console.log("WeaponConditions");
-	conditionsJSON = await caller("./WeaponConditions.json");
-	console.log("WeaponEffects");
-	effectsJSON = await caller("./WeaponEffects.json");
+async function loadAllJSONs() {
+    console.log("Characters");
+    charactersJSON = await caller("./Characters.json");
+    console.log("SeasonalThemes");
+    themesJSON = await caller("./SeasonalThemes.json");
+    console.log("Skills");
+    skillsJSON = await caller("./Skills.json");
+    console.log("Classes");
+    statsJSON = await caller("./Classes.json");
+    console.log("WeaponConditions");
+    conditionsJSON = await caller("./WeaponConditions.json");
+    console.log("WeaponEffects");
+    effectsJSON = await caller("./WeaponEffects.json");
 
 }
-		
+
 //=================================GENERATE CHARACTER================================
-		
-function GenerateCharacter(hero,theme)
-{
-	//The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
-	heroName = hero.Hero.substring(0,hero.Hero.indexOf(":"));
-	heroTitle = hero.Hero.substring(hero.Hero.indexOf(":")+2).split(" ");
-	
-	if(Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
-	{
-		if(heroTitle.length > 1)
-		{
-			var suffix = ChooseRandom(theme.Suffixes);
-			//Check if the second word in the base subtitle is a two letter word, usually "of"
-			//If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE/TIME>"
-			//We don't want something like "Hero of of Beach"
-			while(heroTitle[heroTitle.length-2].length == 2 && suffix.includes(" ")) 
-				suffix = ChooseRandom(theme.Suffixes);
-			//Create the new title
-			heroTitle.splice(heroTitle.length-1,1,suffix);
-		}
-		else //If the subtitle is only a single word long, we can just attach the suffix with no issue
-			heroTitle.splice(heroTitle.length-1,0,ChooseRandom(theme.Suffixes));
-	}
-	else
-	{
-		if(heroTitle.length > 1)
-		{
-			//Check if the second word in the base subtitle is a two letter word, usually "of"
-			//If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
-			if(heroTitle[1].length == 2)
-				heroTitle.splice(0,1,ChooseRandom(theme.Suffixes));
-			else
-				heroTitle.splice(0,1,ChooseRandom(theme.Prefixes));
-		}
-		else //If the subtitle is only a single word long, we can just attach the prefix with no issue
-			heroTitle.splice(0,0,ChooseRandom(theme.Prefixes));
-	}
 
-	console.log(heroName + ": " + heroTitle.join(" "));
-	var fullTitle = heroName + ": " + heroTitle.join(" ");
-	var mvmnt = ChooseRandom(moveTypes);
-	var wpn = weaponTypes[ChooseRandom([0,0,0,1,1,1,2,2,2,5,5,6,6,7,7,8])];
-	if(hero.StatMod == "Dancer" && wpn.Weapon == "Staff")
-	{
-		wpn = weaponTypes[ChooseRandom([0,0,0,1,1,1,2,2,2,5,5,6,6,7,7])];
-	}
-	if(hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
-	if(hero.Race == "Beast") wpn = weaponTypes[4];
-	
-	if(wpn.Tags[0] == "Random")
-		wpn.Tags[0] = ChooseRandom(["Red","Blue","Green","Colorless"]);
-	console.log("Statmod: " + hero.StatMod);
-	var gennedCharacter = {
-		Title: fullTitle,
-		Filename: hero.Filename,
-		Game: hero.Game,
-		Movement: mvmnt,
-		Weapon: wpn,
-		StatMod: hero.StatMod
-	}
-	return gennedCharacter;
+function GenerateCharacter(hero, theme) {
+    //The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
+    heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
+    heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
+
+    if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
+    {
+        if (heroTitle.length > 1) {
+            var suffix = ChooseRandom(theme.Suffixes);
+            //Check if the second word in the base subtitle is a two letter word, usually "of"
+            //If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
+            //We don't want something like "Hero of of Beach"
+            while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
+                suffix = ChooseRandom(theme.Suffixes);
+            //Create the new title
+            heroTitle.splice(heroTitle.length - 1, 1, suffix);
+        }
+        else //If the subtitle is only a single word long, we can just attach the suffix with no issue
+            heroTitle.splice(heroTitle.length - 1, 0, ChooseRandom(theme.Suffixes));
+    }
+    else {
+        if (heroTitle.length > 1) {
+            //Check if the second word in the base subtitle is a two letter word, usually "of"
+            //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
+            if (heroTitle[1].length == 2)
+                heroTitle.splice(0, 1, ChooseRandom(theme.Suffixes));
+            else
+                heroTitle.splice(0, 1, ChooseRandom(theme.Prefixes));
+        }
+        else //If the subtitle is only a single word long, we can just attach the prefix with no issue
+            heroTitle.splice(0, 0, ChooseRandom(theme.Prefixes));
+    }
+
+    console.log(heroName + ": " + heroTitle.join(" "));
+    var fullTitle = heroName + ": " + heroTitle.join(" ");
+    var mvmnt = ChooseRandom(moveTypes);
+    var wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7, 8])];
+    if (hero.StatMod == "Dancer" && wpn.Weapon == "Staff") {
+        wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7])];
+    }
+    if (hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
+    if (hero.Race == "Beast") wpn = weaponTypes[4];
+
+    if (wpn.Tags[0] == "Random")
+        wpn.Tags[0] = ChooseRandom(["Red", "Blue", "Green", "Colorless"]);
+    console.log("Statmod: " + hero.StatMod);
+    var gennedCharacter = {
+        Title: fullTitle,
+        Filename: hero.Filename,
+        Game: hero.Game,
+        Movement: mvmnt,
+        Weapon: wpn,
+        StatMod: hero.StatMod
+    }
+    return gennedCharacter;
 }
-		
+
 //=================================GENERATE CLASS================================
 
-function RandomiseGrowths(growths,numberOfIterations)
-{
-	while(numberOfIterations>0)
-	{
-		var minusStat = ChooseRandom([0,1,2,3,4]);
-		var plusStat = ChooseRandom([0,1,2,3,4]);
-		while(plusStat == minusStat) plusStat = ChooseRandom([0,1,2,3,4]);
-		var subtraction = Math.random()*growths[minusStat];
-		console.log(minusStat + " - " + subtraction + " + " + plusStat);
-		growths[minusStat] -= subtraction;
-		growths[plusStat] += subtraction;
-		numberOfIterations -= 1;
-	}
-	return growths;
+function RandomiseGrowths(growths, numberOfIterations) {
+    while (numberOfIterations > 0) {
+        var minusStat = ChooseRandom([0, 1, 2, 3, 4]);
+        var plusStat = ChooseRandom([0, 1, 2, 3, 4]);
+        while (plusStat == minusStat) plusStat = ChooseRandom([0, 1, 2, 3, 4]);
+        var subtraction = Math.random() * growths[minusStat];
+        console.log(minusStat + " - " + subtraction + " + " + plusStat);
+        growths[minusStat] -= subtraction;
+        growths[plusStat] += subtraction;
+        numberOfIterations -= 1;
+    }
+    return growths;
 }
-		
-function GenerateStats(character)
-{
-	var wpnIndex = character.Weapon.Index;
-	var mvmIndex = character.Movement.Index;
-	
-	var classIndex = wpnIndex + (mvmIndex*6);
-	var thisClass = statsJSON[classIndex];
-	
-	let sum = 0;
 
-	for (let i = 0; i < thisClass.MinStats.length; i++) {
-		sum += thisClass.MinStats[i];
-	}
-	var points = ChooseRandom(thisClass.BST) - sum;
-	if(character.StatMod == "Dancer") points -= ChooseRandom([10,11,12]);
-	if(character.StatMod == "Trainee") points += 5;
-	var rates = [0,0,0,0,0];
-	var stats = thisClass.MinStats;
-	var ratesMax = 0;
-	for (let i = 0; i < rates.length; i++) {
-		rates[i] = thisClass.MaxStats[i] - thisClass.MinStats[i];
-		ratesMax += rates[i];
-	}
-	for (let i = 0; i < rates.length; i++) {
-		rates[i] = rates[i]/ratesMax;
-	}
-	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+function GenerateStats(character) {
+    var wpnIndex = character.Weapon.Index;
+    var mvmIndex = character.Movement.Index;
+
+    var classIndex = wpnIndex + (mvmIndex * 6);
+    var thisClass = statsJSON[classIndex];
+
+    let sum = 0;
+
+    for (let i = 0; i < thisClass.MinStats.length; i++) {
+        sum += thisClass.MinStats[i];
+    }
+    var points = ChooseRandom(thisClass.BST) - sum;
+    if (character.StatMod == "Dancer") points -= ChooseRandom([10, 11, 12]);
+    if (character.StatMod == "Trainee") points += 5;
+    var rates = [0, 0, 0, 0, 0];
+    var stats = thisClass.MinStats;
+    var ratesMax = 0;
+    for (let i = 0; i < rates.length; i++) {
+        rates[i] = thisClass.MaxStats[i] - thisClass.MinStats[i];
+        ratesMax += rates[i];
+    }
+    for (let i = 0; i < rates.length; i++) {
+        rates[i] = rates[i] / ratesMax;
+    }
+    console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
 
-	rates = RandomiseGrowths(rates,5);
+    rates = RandomiseGrowths(rates, 5);
 
-	if(thisClass.Weapon == "Melee" && thisClass.Class == "Armor")
-	{
-		//Arden's HP is a statistical outlier, so we have to cut Armored Melee units' HP growth in half to compensate
-		var subtraction = Math.random()*rates[0]/2;
-		rates[0] -= subtraction;
-		rates[ChooseRandom([1,2,3,4])] += subtraction;
-		console.log("Reduced HP growth by " + subtraction);
-	}
-	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+    if (thisClass.Weapon == "Melee" && thisClass.Class == "Armor") {
+        //Arden's HP is a statistical outlier, so we have to cut Armored Melee units' HP growth in half to compensate
+        var subtraction = Math.random() * rates[0] / 2;
+        rates[0] -= subtraction;
+        rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
+        console.log("Reduced HP growth by " + subtraction);
+    }
+    console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
-	for (let i = 1; i < rates.length; i++) {
-		rates[i] = rates[i] + rates[i-1];
-	}
-	console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
+    for (let i = 1; i < rates.length; i++) {
+        rates[i] = rates[i] + rates[i - 1];
+    }
+    console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
 
-	while(points > 0)
-	{
-		chosenStat = Math.random();
-		for (let i = 0; i < rates.length; i++) {
-			if(chosenStat < rates[i] && stats[i] < thisClass.MaxStats[i]) 
-			{
-				stats[i] += 1;
-				points -= 1;
-				break;
-			}
-		}
-	}
-	console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
-	return stats;
-}	
-	
+    while (points > 0) {
+        chosenStat = Math.random();
+        for (let i = 0; i < rates.length; i++) {
+            if (chosenStat < rates[i] && stats[i] < thisClass.MaxStats[i]) {
+                stats[i] += 1;
+                points -= 1;
+                break;
+            }
+        }
+    }
+    console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
+    return stats;
+}
+
 //=================================GENERATE SKILLS================================
 const rareASkills = [];
 const commonASkills = [];
@@ -399,188 +389,172 @@ const allAssistSkills = [];
 
 const rareSpecialSkills = [];
 const commonSpecialSkills = [];
-const allSpecialSkills = [];	
-		
-function FillList(entry, list, slot, rarity)
-{
-	if(entry.Slot == slot && entry.Exclusivity.includes(rarity)){
-		var weightCount = entry.Weight;
-		while (weightCount > 0){
-			list.push(entry);
-			weightCount-=1;
-		}
-	}
-	return list;
-}
-		
-function SortSkillJSONIntoLists()
-{
-	skillsJSON.forEach(function(entry) {
-		FillList(entry,rareASkills,"A","R");
-		FillList(entry,commonASkills,"A","C");
-		FillList(entry,allASkills,"A","");
-		
-		FillList(entry,rareBSkills,"B","R");
-		FillList(entry,commonBSkills,"B","C");
-		FillList(entry,allBSkills,"B","");
-		
-		FillList(entry,rareCSkills,"C","R");
-		FillList(entry,commonCSkills,"C","C");
-		FillList(entry,allCSkills,"C","");
-		
-		FillList(entry,rareAssistSkills,"Assist","R");
-		FillList(entry,commonAssistSkills,"Assist","C");
-		FillList(entry,allAssistSkills,"Assist","");
-		
-		FillList(entry,rareSpecialSkills,"Special","R");
-		FillList(entry,commonSpecialSkills,"Special","C");
-		FillList(entry,allSpecialSkills,"Special","");
-	});
+const allSpecialSkills = [];
+
+function FillList(entry, list, slot, rarity) {
+    if (entry.Slot == slot && entry.Exclusivity.includes(rarity)) {
+        var weightCount = entry.Weight;
+        while (weightCount > 0) {
+            list.push(entry);
+            weightCount -= 1;
+        }
+    }
+    return list;
 }
 
-function CheckSkillForTags(skill,tags)
-{
-	//console.log("CheckSkillForTags: " + skill + ", " + tags);
-	var invalid = false;
-	for (let i = 0; i < tags.length; i++) {
-		//console.log("Skill: " + skill + ", tags: " + tags);
-		if(skill.includes(tags[i]))
-			invalid = true;
-	};
-	return invalid;
-}	
-		
-function FillInWords(skill,colour,weapon,move)
-{
-	skill = skill.replaceAll("<1STAT>",ChooseRandom(["Atk","Spd","Def","Res"]));
-	
-	skill = skill.replaceAll("<2STATS>",ChooseRandom(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]));
-	
-	skill = skill.replaceAll("<2S>",ChooseRandom(["A/S","A/D","A/R","S/D","S/R","D/R"]));
-	
-	skill = skill.replaceAll("<2NAMEEP>",ChooseRandom(["Kestrel","Sturdy","Mirror","Steady","Swift","Bracing"]));
-	skill = skill.replaceAll("Steady Stance","Steady Posture");
-	
-	skill = skill.replaceAll("<1NAMEEP>",ChooseRandom(["Fierce","Darting","Steady","Warding"]));
-	
-	skill = skill.replaceAll("<1NAMEPP>",ChooseRandom(["Death","Darting","Warding","Armored"]));
-	
-	skill = skill.replaceAll("<ELEMENT>",ChooseRandom(["Fire","Wind","Water","Earth"]));
-	
-	skill = skill.replaceAll("<CLASSDUEL>",colour.charAt(0) + " Duel " + move.Movement);
-	
-	if(move == "Flying")
-		skill = skill.replaceAll("<MISSILE>","Dagger");
-	else
-		skill = skill.replaceAll("<MISSILE>",ChooseRandom(["Bow","Dagger"]));
-	
-	if(colour == "Red")
-	{
-		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Axe"]));
-		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","G. Tome"]));
-	}
-	else if(colour == "Blue")
-	{
-		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Lance"]));
-		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","B. Tome"]));
-	}
-	else if(colour == "Green")
-	{
-		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Axe","Lance"]));
-		skill = skill.replaceAll("<TOME>",ChooseRandom(["G. Tome","B. Tome"]));
-	}
-	else if(colour == "Colorless")
-	{
-		skill = skill.replaceAll("<MELEE>",ChooseRandom(["Sword","Axe","Lance"]));
-		skill = skill.replaceAll("<TOME>",ChooseRandom(["R. Tome","G. Tome","B. Tome"]));
-	}
-	
-	skill = skill.replaceAll("<DANCE>",ChooseRandom(["Caldera"]));
-	
-	skill = skill.replaceAll("<WEAPON>",weapon.Weapon);
-	
-	return skill;
+function SortSkillJSONIntoLists() {
+    skillsJSON.forEach(function (entry) {
+        FillList(entry, rareASkills, "A", "R");
+        FillList(entry, commonASkills, "A", "C");
+        FillList(entry, allASkills, "A", "");
+
+        FillList(entry, rareBSkills, "B", "R");
+        FillList(entry, commonBSkills, "B", "C");
+        FillList(entry, allBSkills, "B", "");
+
+        FillList(entry, rareCSkills, "C", "R");
+        FillList(entry, commonCSkills, "C", "C");
+        FillList(entry, allCSkills, "C", "");
+
+        FillList(entry, rareAssistSkills, "Assist", "R");
+        FillList(entry, commonAssistSkills, "Assist", "C");
+        FillList(entry, allAssistSkills, "Assist", "");
+
+        FillList(entry, rareSpecialSkills, "Special", "R");
+        FillList(entry, commonSpecialSkills, "Special", "C");
+        FillList(entry, allSpecialSkills, "Special", "");
+    });
 }
-		
-function GenerateSkills(character,rarityInt)
-{
-	var move = character.Movement;
-	var weapon = character.Weapon;
-	var rarity = "C";
-	if(rarityInt > 1) rarity = "R";
-	var tags = weapon.Tags;
-	
-	tags.push(move.Tag);
-	
-	var skills;
-	var skill;
-	var unitSkills = [];
-	
-	skills = (rarity == "C") ? commonASkills : rareASkills;
-	do {
-		skill = ChooseRandom(skills);
-	} while (CheckSkillForTags(skill.Restrictions,tags));
-	unitSkills.push(skill.Skill);
-	
-	skills = (rarity == "C") ? commonBSkills : rareBSkills;
-	do {
-		skill = ChooseRandom(skills);
-	} while (CheckSkillForTags(skill.Restrictions,tags));
-	unitSkills.push(skill.Skill);
-	
-	skills = (rarity == "C") ? commonCSkills : rareCSkills;
-	do {
-		skill = ChooseRandom(skills);
-	} while (CheckSkillForTags(skill.Restrictions,tags));
-	unitSkills.push(skill.Skill);
-	
-	skills = (rarity == "C") ? commonAssistSkills : rareAssistSkills;
-	do {
-		skill = ChooseRandom(skills);
-	} while (CheckSkillForTags(skill.Restrictions,tags));
-	unitSkills.push(skill.Skill);
-	
-	skills = (rarity == "C") ? commonSpecialSkills : rareSpecialSkills;
-	do {
-		skill = ChooseRandom(skills);
-	} while (CheckSkillForTags(skill.Restrictions,tags));
-	unitSkills.push(skill.Skill);
-	
-	for(let i = 0; i < unitSkills.length; i++) {
-		unitSkills[i] = FillInWords(unitSkills[i],tags[0],weapon,move);
-	}
-	console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
-	if(weapon.Weapon == "Staff")
-	{
-		if(rarityInt <= 1 || (rarityInt == 2 && Math.random()>0.5))
-		{
-			unitSkills[GetRandom(0,2)] = "";
-		}
-		else
-		{
-			unitSkills[4] = "";
-		}
-	}
-	else if(character.StatMod == "Dancer")
-	{
-		unitSkills[3] = ChooseRandom(["Dance","Sing","Play"]);
-		unitSkills[4] = "";
-		if(rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5))
-		{
-			unitSkills[GetRandom(0,2)] = "";
-		}
-	}
-	else
-	{
-		if(rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5))
-		{
-			unitSkills[GetRandom(0,2)] = "";
-		}
-		unitSkills[GetRandom(3,4)] = "";
-	}
-	return unitSkills;
+
+function CheckSkillForTags(skill, tags) {
+    //console.log("CheckSkillForTags: " + skill + ", " + tags);
+    var invalid = false;
+    for (let i = 0; i < tags.length; i++) {
+        //console.log("Skill: " + skill + ", tags: " + tags);
+        if (skill.includes(tags[i]))
+            invalid = true;
+    };
+    return invalid;
 }
-		
+
+function FillInWords(skill, colour, weapon, move) {
+    skill = skill.replaceAll("<1STAT>", ChooseRandom(["Atk", "Spd", "Def", "Res"]));
+
+    skill = skill.replaceAll("<2STATS>", ChooseRandom(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]));
+
+    skill = skill.replaceAll("<2S>", ChooseRandom(["A/S", "A/D", "A/R", "S/D", "S/R", "D/R"]));
+
+    skill = skill.replaceAll("<2NAMEEP>", ChooseRandom(["Kestrel", "Sturdy", "Mirror", "Steady", "Swift", "Bracing"]));
+    skill = skill.replaceAll("Steady Stance", "Steady Posture");
+
+    skill = skill.replaceAll("<1NAMEEP>", ChooseRandom(["Fierce", "Darting", "Steady", "Warding"]));
+
+    skill = skill.replaceAll("<1NAMEPP>", ChooseRandom(["Death", "Darting", "Warding", "Armored"]));
+
+    skill = skill.replaceAll("<ELEMENT>", ChooseRandom(["Fire", "Wind", "Water", "Earth"]));
+
+    skill = skill.replaceAll("<CLASSDUEL>", colour.charAt(0) + " Duel " + move.Movement);
+
+    if (move == "Flying")
+        skill = skill.replaceAll("<MISSILE>", "Dagger");
+    else
+        skill = skill.replaceAll("<MISSILE>", ChooseRandom(["Bow", "Dagger"]));
+
+    if (colour == "Red") {
+        skill = skill.replaceAll("<MELEE>", ChooseRandom(["Sword", "Axe"]));
+        skill = skill.replaceAll("<TOME>", ChooseRandom(["R. Tome", "G. Tome"]));
+    }
+    else if (colour == "Blue") {
+        skill = skill.replaceAll("<MELEE>", ChooseRandom(["Sword", "Lance"]));
+        skill = skill.replaceAll("<TOME>", ChooseRandom(["R. Tome", "B. Tome"]));
+    }
+    else if (colour == "Green") {
+        skill = skill.replaceAll("<MELEE>", ChooseRandom(["Axe", "Lance"]));
+        skill = skill.replaceAll("<TOME>", ChooseRandom(["G. Tome", "B. Tome"]));
+    }
+    else if (colour == "Colorless") {
+        skill = skill.replaceAll("<MELEE>", ChooseRandom(["Sword", "Axe", "Lance"]));
+        skill = skill.replaceAll("<TOME>", ChooseRandom(["R. Tome", "G. Tome", "B. Tome"]));
+    }
+
+    skill = skill.replaceAll("<DANCE>", ChooseRandom(["Caldera"]));
+
+    skill = skill.replaceAll("<WEAPON>", weapon.Weapon);
+
+    return skill;
+}
+
+function GenerateSkills(character, rarityInt) {
+    var move = character.Movement;
+    var weapon = character.Weapon;
+    var rarity = "C";
+    if (rarityInt > 1) rarity = "R";
+    var tags = weapon.Tags;
+
+    tags.push(move.Tag);
+
+    var skills;
+    var skill;
+    var unitSkills = [];
+
+    skills = (rarity == "C") ? commonASkills : rareASkills;
+    do {
+        skill = ChooseRandom(skills);
+    } while (CheckSkillForTags(skill.Restrictions, tags));
+    unitSkills.push(skill.Skill);
+
+    skills = (rarity == "C") ? commonBSkills : rareBSkills;
+    do {
+        skill = ChooseRandom(skills);
+    } while (CheckSkillForTags(skill.Restrictions, tags));
+    unitSkills.push(skill.Skill);
+
+    skills = (rarity == "C") ? commonCSkills : rareCSkills;
+    do {
+        skill = ChooseRandom(skills);
+    } while (CheckSkillForTags(skill.Restrictions, tags));
+    unitSkills.push(skill.Skill);
+
+    skills = (rarity == "C") ? commonAssistSkills : rareAssistSkills;
+    do {
+        skill = ChooseRandom(skills);
+    } while (CheckSkillForTags(skill.Restrictions, tags));
+    unitSkills.push(skill.Skill);
+
+    skills = (rarity == "C") ? commonSpecialSkills : rareSpecialSkills;
+    do {
+        skill = ChooseRandom(skills);
+    } while (CheckSkillForTags(skill.Restrictions, tags));
+    unitSkills.push(skill.Skill);
+
+    for (let i = 0; i < unitSkills.length; i++) {
+        unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
+    }
+    console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
+    if (weapon.Weapon == "Staff") {
+        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+            unitSkills[GetRandom(0, 2)] = "";
+        }
+        else {
+            unitSkills[4] = "";
+        }
+    }
+    else if (character.StatMod == "Dancer") {
+        unitSkills[3] = ChooseRandom(["Dance", "Sing", "Play"]);
+        unitSkills[4] = "";
+        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+            unitSkills[GetRandom(0, 2)] = "";
+        }
+    }
+    else {
+        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+            unitSkills[GetRandom(0, 2)] = "";
+        }
+        unitSkills[GetRandom(3, 4)] = "";
+    }
+    return unitSkills;
+}
+
 
 //=================================GENERATE WEAPON================================
 const innateEffects = [];
@@ -598,496 +572,475 @@ const startOfCombatConditions = [];
 const duringCombatConditions = [];
 const endOfCombatConditions = [];
 
-function FillTaggedList(entry, list, tag)
-{
-	if(entry.Tags.includes(tag)){
-		var weightCount = entry.Weight;
-		while (weightCount > 0){
-			list.push(entry.Effect);
-			weightCount-=1;
-		}
-	}
-	return list;
+function FillTaggedList(entry, list, tag) {
+    if (entry.Tags.includes(tag)) {
+        var weightCount = entry.Weight;
+        while (weightCount > 0) {
+            list.push(entry.Effect);
+            weightCount -= 1;
+        }
+    }
+    return list;
 }
 
-function SortWeaponJSONIntoLists()
-{
-	effectsJSON.forEach(function(entry) {
-		FillTaggedList(entry,innateEffects,"innate");
-		FillTaggedList(entry,startOfTurnEffects,"turn_start");
-		FillTaggedList(entry,startOfCombatEffects,"combat_start");
-		FillTaggedList(entry,duringCombatEffects,"during_combat");
-		FillTaggedList(entry,endOfCombatEffects,"combat_end");
-		
-		FillTaggedList(entry,foeInitiatesEffects,"foe_initiates");
-		FillTaggedList(entry,unitInitiatesEffects,"unit_initiates");
-		FillTaggedList(entry,assistEffects,"assist");
-		FillTaggedList(entry,negativeEffects,"negative");
-	});
-	console.log(negativeEffects);
-	
-	conditionsJSON.forEach(function(entry) {
-		FillTaggedList(entry,startOfTurnConditions,"turn_start");
-		FillTaggedList(entry,startOfCombatConditions,"combat_start");
-		FillTaggedList(entry,duringCombatConditions,"during_combat");
-		FillTaggedList(entry,endOfCombatConditions,"combat_end");
-	});
-	console.log(endOfCombatConditions);
+function SortWeaponJSONIntoLists() {
+    effectsJSON.forEach(function (entry) {
+        FillTaggedList(entry, innateEffects, "innate");
+        FillTaggedList(entry, startOfTurnEffects, "turn_start");
+        FillTaggedList(entry, startOfCombatEffects, "combat_start");
+        FillTaggedList(entry, duringCombatEffects, "during_combat");
+        FillTaggedList(entry, endOfCombatEffects, "combat_end");
+
+        FillTaggedList(entry, foeInitiatesEffects, "foe_initiates");
+        FillTaggedList(entry, unitInitiatesEffects, "unit_initiates");
+        FillTaggedList(entry, assistEffects, "assist");
+        FillTaggedList(entry, negativeEffects, "negative");
+    });
+    console.log(negativeEffects);
+
+    conditionsJSON.forEach(function (entry) {
+        FillTaggedList(entry, startOfTurnConditions, "turn_start");
+        FillTaggedList(entry, startOfCombatConditions, "combat_start");
+        FillTaggedList(entry, duringCombatConditions, "during_combat");
+        FillTaggedList(entry, endOfCombatConditions, "combat_end");
+    });
+    console.log(endOfCombatConditions);
 }
 
-function FillInTags(line, rarity)
-{
-	var array = Shuffle(["Atk","Spd","Def","Res"]);
-	line = line.replaceAll("<STAT>",array[0]);
-	line = line.replaceAll("<STAT2>",array[1]);
-	
-	array = Shuffle(["75%","50%","25%","40%","60%","80%"]);
-	line = line.replaceAll("<PERCENT>",array[0]);
-	line = line.replaceAll("<PERCENT2>",array[1]);
-	
-	array = Shuffle(["75 percent","50 percent","25 percent","40 percent","60 percent","80 percent"]);
-	line = line.replaceAll("<PERCENT>",array[0]);
-	line = line.replaceAll("<PERCENT2>",array[1]);
-	
-	array = Shuffle(["1","2","2","3","3","3","4","4","5","6","7"]);
-	line = line.replaceAll("<INT>",array[0]);
-	line = line.replaceAll("<INT2>",array[1]);
-	
-	array = Shuffle(["7","10","15","20","25"]);
-	line = line.replaceAll("<BINT>",array[0]);
-	line = line.replaceAll("<BINT2>",array[1]);
-	
-	array = Shuffle(["Infantry","Armor","Cavalry","Flying","Dragon","Beast"]);
-	line = line.replaceAll("<CLASS>",array[0]);
-	line = line.replaceAll("<CLASS2>",array[1]);
-	
-	array = Shuffle(["【Move+1】","【Guidance】","【Bonus Doubler】",
-					"【Neutralize Dragon Effectiveness】",
-					"【Neutralize Armor Effectiveness】",
-					"【Neutralize Flying Effectiveness】",
-					"【Dominance】","【Desperation】","【Vantage】",
-					"【Deny Follow-ups】","【Dodge】","【Guaranteed Follow-ups】",
-					"【Triangle Attack】","【Null Panic】","【Cancel Affinity】",
-					"【Null Follow-up】","【Pathfinder】","【Fallen Star】",
-					"【Neutralize Foe Bonuses】","【Grand Strategy】",
-					"【En Garde】","【Accelerate Special】","【Treachery】",
-					"【Warp Bubble】","【Charge】"]);
-	line = line.replaceAll("<BONUS>",array[0]);
-	line = line.replaceAll("<BONUS2>",array[1]);
-	
-	array = Shuffle(["【Gravity】","【Panic】","【Flash】","【Triangle Adept】",
-					"【Guard】","【Isolation】","【Deep Wounds】","【Stall】",
-					"【Canto Control】","【Exposure】"]);
-	line = line.replaceAll("<PENALTY>",array[0]);
-	line = line.replaceAll("<PENALTY2>",array[1]);
-	
-	array = Shuffle(["Atk","Def","Spd","Res"]);
-	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
-	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
-	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
-	line = line.replaceAll("<STATS>",array[0]);
-	line = line.replaceAll("<STATS2>",array[1]);
-	
-	val = GetRandom(2,4) + Math.ceil(rarity/2);
-	array = Shuffle(["Atk","Def","Spd","Res"]);
-	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
-	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
-	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
-	line = line.replaceAll("<+STATS>",array[0] + "+" + val);
-	line = line.replaceAll("<+STATS2>",array[1] + "+" + val);
-	
-	val = GetRandom(2,4) + Math.ceil(rarity/2);
-	array = Shuffle(["Atk","Def","Spd","Res"]);
-	if(Math.random() < 0.1 + 0.1*rarity) array = ["Atk/Spd/Def/Res","Atk/Spd/Def/Res"];
-	else if(Math.random() < 0.2 + 0.1*rarity) array = Shuffle(["Atk/Spd/Def","Atk/Spd/Res","Atk/Def/Res","Spd/Def/Res"]);
-	else if(Math.random() < 0.3 + 0.1*rarity) array = Shuffle(["Atk/Spd","Atk/Def","Atk/Res","Spd/Def","Spd/Res","Def/Res"]);
-	line = line.replaceAll("<-STATS>",array[0] + "-" + val);
-	line = line.replaceAll("<-STATS2>",array[1] + "-" + val);
-	
-	line = line.replaceAll("<EITHER>",ChooseRandom(["unit","foe"]));
-	
-	array = Shuffle(["【Canto (3)】", "【Canto (2)】","【Canto (1)】","【Canto (Rem. +1)】","【Canto (Rem.)】"]);
-	line = line.replaceAll("<CANTO>",array[0]);
-	
-	return line;
+function FillInTags(line, rarity) {
+    var array = Shuffle(["Atk", "Spd", "Def", "Res"]);
+    line = line.replaceAll("<STAT>", array[0]);
+    line = line.replaceAll("<STAT2>", array[1]);
+
+    array = Shuffle(["75%", "50%", "25%", "40%", "60%", "80%"]);
+    line = line.replaceAll("<PERCENT>", array[0]);
+    line = line.replaceAll("<PERCENT2>", array[1]);
+
+    array = Shuffle(["75 percent", "50 percent", "25 percent", "40 percent", "60 percent", "80 percent"]);
+    line = line.replaceAll("<PERCENT>", array[0]);
+    line = line.replaceAll("<PERCENT2>", array[1]);
+
+    array = Shuffle(["1", "2", "2", "3", "3", "3", "4", "4", "5", "6", "7"]);
+    line = line.replaceAll("<INT>", array[0]);
+    line = line.replaceAll("<INT2>", array[1]);
+
+    array = Shuffle(["7", "10", "15", "20", "25"]);
+    line = line.replaceAll("<BINT>", array[0]);
+    line = line.replaceAll("<BINT2>", array[1]);
+
+    array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast"]);
+    line = line.replaceAll("<CLASS>", array[0]);
+    line = line.replaceAll("<CLASS2>", array[1]);
+
+    array = Shuffle(["【Move+1】", "【Guidance】", "【Bonus Doubler】",
+        "【Neutralize Dragon Effectiveness】",
+        "【Neutralize Armor Effectiveness】",
+        "【Neutralize Flying Effectiveness】",
+        "【Dominance】", "【Desperation】", "【Vantage】",
+        "【Deny Follow-ups】", "【Dodge】", "【Guaranteed Follow-ups】",
+        "【Triangle Attack】", "【Null Panic】", "【Cancel Affinity】",
+        "【Null Follow-up】", "【Pathfinder】", "【Fallen Star】",
+        "【Neutralize Foe Bonuses】", "【Grand Strategy】",
+        "【En Garde】", "【Accelerate Special】", "【Treachery】",
+        "【Warp Bubble】", "【Charge】"]);
+    line = line.replaceAll("<BONUS>", array[0]);
+    line = line.replaceAll("<BONUS2>", array[1]);
+
+    array = Shuffle(["【Gravity】", "【Panic】", "【Flash】", "【Triangle Adept】",
+        "【Guard】", "【Isolation】", "【Deep Wounds】", "【Stall】",
+        "【Canto Control】", "【Exposure】"]);
+    line = line.replaceAll("<PENALTY>", array[0]);
+    line = line.replaceAll("<PENALTY2>", array[1]);
+
+    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+    line = line.replaceAll("<STATS>", array[0]);
+    line = line.replaceAll("<STATS2>", array[1]);
+
+    val = GetRandom(2, 4) + Math.ceil(rarity / 2);
+    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+    line = line.replaceAll("<+STATS>", array[0] + "+" + val);
+    line = line.replaceAll("<+STATS2>", array[1] + "+" + val);
+
+    val = GetRandom(2, 4) + Math.ceil(rarity / 2);
+    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+    line = line.replaceAll("<-STATS>", array[0] + "-" + val);
+    line = line.replaceAll("<-STATS2>", array[1] + "-" + val);
+
+    line = line.replaceAll("<EITHER>", ChooseRandom(["unit", "foe"]));
+
+    array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】"]);
+    line = line.replaceAll("<CANTO>", array[0]);
+
+    return line;
 }
 
-function SortTwoLists(orderedList,affectedList)
-{
-	//https://stackoverflow.com/questions/11499268/sort-two-arrays-the-same-way
-	
-	//1) combine the arrays:
-	var list = [];
-	for (var j = 0; j < orderedList.length; j++) 
-		list.push({'ord': orderedList[j], 'aff': affectedList[j]});
+function SortTwoLists(orderedList, affectedList) {
+    //https://stackoverflow.com/questions/11499268/sort-two-arrays-the-same-way
 
-	//2) sort:
-	list.sort(function(a, b) {
-		return ((a.ord < b.ord) ? -1 : ((a.ord == b.ord) ? 0 : 1));
-	});
+    //1) combine the arrays:
+    var list = [];
+    for (var j = 0; j < orderedList.length; j++)
+        list.push({ 'ord': orderedList[j], 'aff': affectedList[j] });
 
-	//3) separate them back out:
-	for (var k = 0; k < list.length; k++) {
-		orderedList[k] = list[k].ord;
-		affectedList[k] = list[k].aff;
-	}
-	//Whoops, Javascript can't return multiple variables because it's a shitty language.
-	//We only need the affected list anyway, so let's just return that instead of fiddling with objects.
-	
-	return affectedList;
+    //2) sort:
+    list.sort(function (a, b) {
+        return ((a.ord < b.ord) ? -1 : ((a.ord == b.ord) ? 0 : 1));
+    });
+
+    //3) separate them back out:
+    for (var k = 0; k < list.length; k++) {
+        orderedList[k] = list[k].ord;
+        affectedList[k] = list[k].aff;
+    }
+    //Whoops, Javascript can't return multiple variables because it's a shitty language.
+    //We only need the affected list anyway, so let's just return that instead of fiddling with objects.
+
+    return affectedList;
 }
-function GenerateWeapon(rarity)
+function GenerateWeapon(rarity) {
+    var points = 1 + rarity;
+    if (points > 1)
+        points += ChooseRandom([-1, 0, 0, 0, 1]);
+    if (points == 1) points += 1;
+
+    const lines = [];
+    innatesGiven = false;
+    var rawConds;
+    var rawEffects;
+    var usedConditions = [];
+    if (Math.random() < (0.2 + 0.1 * rarity)) {
+        var innate1 = ChooseRandom(innateEffects);
+        var innate2 = ChooseRandom(innateEffects);
+        while (innate2 == innate1)
+            innate2 = ChooseRandom(innateEffects);
+
+        innate1 = FillInTags(innate1, rarity);
+        innate2 = FillInTags(innate2, rarity);
+
+        lines.push(innate1 + ".");
+        usedConditions.push(-1);
+        console.log("Innate: " + innate1);
+        points -= 1;
+        if (Math.random() < (0.1 + 0.05 * rarity)) {
+            lines.push(innate2 + ".");
+            usedConditions.push(-1);
+            points -= 1;
+            console.log("Innate: " + innate2);
+        }
+        innatesGiven = true;
+    }
+    while (points > 0) {
+        var newLine = "";
+        var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7]);
+        while (usedConditions.includes(condition)) {
+            condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7]);
+        }
+
+        usedConditions.push(condition);
+        //start of turn, start of turn 1, start of combat, during combat, outside of combat, after combat, positional/rally skill used
+
+        currentlyHasCondition = false;
+        unitInitiation = false;
+        foeInitiation = false;
+        var conditionsList;
+        var effectsList;
+        switch (condition) {
+            case 0:
+                conditionsList = startOfTurnConditions;
+                effectsList = startOfTurnEffects;
+                newLine = "At start of turn, ";
+                break;
+            case 1:
+                conditionsList = startOfTurnConditions;
+                effectsList = startOfTurnEffects;
+                newLine = ChooseRandom(["At start of odd-numbered turns, ", "At start of even-numbered turns, ", "At start of turns 1 through 4, "]);
+                break;
+            case 2:
+                effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
+                conditionsList = startOfCombatConditions;
+                newLine = "If unit initiates combat, ";
+                currentlyHasCondition = true;
+                break;
+
+            case 3:
+                effectsList = startOfCombatEffects.concat(foeInitiatesEffects);
+                conditionsList = startOfCombatConditions;
+                newLine = "If foe initiates combat, ";
+                currentlyHasCondition = true;
+                break;
+
+            case 4:
+                effectsList = startOfCombatEffects;
+                conditionsList = startOfCombatConditions;
+                newLine = "At start of combat, ";
+                break;
+
+            case 5:
+                conditionsList = duringCombatConditions;
+                effectsList = duringCombatEffects;
+                break;
+            case 6:
+                conditionsList = endOfCombatConditions;
+                effectsList = endOfCombatEffects;
+                newLine = "After combat, ";
+                break;
+            case 7:
+                effectsList = assistEffects;
+                newLine = ChooseRandom(["If a movement Assist skill is used by unit or targets unit, ", "If a Rally Assist skill is used by unit, "]);
+                break;
+            default:
+                console.log("whoops");
+                break;
+        }
+
+        rawConds = [];
+        if (Math.random() < 0.75 && condition != 7) {
+            if (currentlyHasCondition == true)
+                newLine = newLine.slice(0, -2) + ChooseRandom([" or ", " and "]);
+
+            var tempCondition = ChooseRandom(conditionsList);
+            rawConds.push(tempCondition);
+            newLine = newLine + "if " + FillInTags(tempCondition, rarity);
+            //randomly choose new condition for initial condition
+            if (currentlyHasCondition == false && Math.random() < 0.6) {
+                newLine = newLine + ChooseRandom([" or ", " and "]);
+                tempCondition = ChooseRandom(conditionsList);
+                while (rawConds.includes(tempCondition))
+                    tempCondition = ChooseRandom(conditionsList);
+                rawConds.push(tempCondition);
+                newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
+            }
+            else
+                newLine = newLine + ", ";
+        }
+        var firstHalfEffects = [];
+        var secondHalfEffects = [];
+        rawEffects = [];
+        var tempEffect;
+        do {
+            points -= 1;
+            tempEffect = ChooseRandom(effectsList);
+            while (rawEffects.includes(tempEffect))
+                tempEffect = ChooseRandom(effectsList);
+            firstHalfEffects.push(tempEffect);
+            rawEffects.push(tempEffect);
+
+        } while (points > 0 && Math.random() > 0.5 && condition != 7);
+
+        //second half
+        while (points > 0 && Math.random() < 0.4 && condition != 7) {
+
+            points -= 1;
+            tempEffect = ChooseRandom(effectsList);
+            while (rawEffects.includes(tempEffect))
+                tempEffect = ChooseRandom(effectsList);
+            secondHalfEffects.push(tempEffect);
+            rawEffects.push(tempEffect);
+        }
+
+        //Negative condition
+        var hasNegative = false;
+        if (points == 0 && (condition >= 2 && condition <= 5) && Math.random() > 0.95) {
+            hasNegative = true;
+            tempEffect = ChooseRandom(effectsList);
+            while (rawEffects.includes(tempEffect))
+                tempEffect = ChooseRandom(effectsList);
+            if (secondHalfEffects.length > 0)
+                secondHalfEffects.push(tempEffect);
+            else
+                firstHalfEffects.push(tempEffect);
+        }
+
+        for (let i = 0; i < firstHalfEffects.length, i++) {
+            if(i != 0)
+                newLine = newLine + ", ";
+            if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1)
+                newLine = newLine + "and ";
+            newLine = newLine + FillInTags(firstHalfEffects[i], rarity);
+        }
+        if (condition == 5)
+            newLine = newLine + " during combat";
+        if (secondHalfEffects.length > 0) {
+            newLine = newLine + ", and also, if ";
+            tempCondition = ChooseRandom(conditionsList);
+            while (rawConds.includes(tempCondition))
+                tempCondition = ChooseRandom(conditionsList);
+            rawConds.push(tempCondition);
+            newLine = newLine + FillInTags(tempCondition, rarity);
+
+            for (let i = 0; i < secondHalfEffects.length, i++) {
+                newLine = newLine + ", ";
+                if (i == secondHalfEffects.length - 1 && secondHalfEffects.length != 1)
+                    newLine = newLine + "and ";
+                newLine = newLine + FillInTags(secondHalfEffects[i], rarity);
+            }
+        }
+        if (hasNegative) {
+            newLine = newLine + ", but after combat, if unit attacked, " + FillInTags(ChooseRandom(negativeEffects), rarity);
+        }
+
+        newLine = newLine + ".";
+        console.log(condition + ": " + newLine);
+
+        lines.push(newLine);
+    }
+
+    SortTwoLists(usedConditions, lines);
+    for (index = 0; index < lines.length; index++) {
+        lines[index] = Capitalise(lines[index]);
+    }
+    //console.log(lines);
+    return lines.join('\n');
+    /*for each line in lines
 {
-	var points = 1+rarity;
-	if (points > 1)
-		points += ChooseRandom([-1,0,0,0,1]);
-	if(points == 1) points += 1;
-	
-	const lines = [];
-	innatesGiven = false;
-	var rawConds;
-	var rawEffects;
-	var usedConditions = [];
-	if(Math.random() < (0.2+0.1*rarity))
-	{
-		var innate1 = ChooseRandom(innateEffects);
-		var innate2 = ChooseRandom(innateEffects);
-		while(innate2 == innate1)
-			innate2 = ChooseRandom(innateEffects);
-		
-		innate1 = FillInTags(innate1, rarity);
-		innate2 = FillInTags(innate2, rarity);
-		
-		lines.push(innate1 + ".");
-		usedConditions.push(-1);
-		console.log("Innate: " + innate1);
-		points -= 1;
-		if(Math.random() < (0.1+0.05*rarity))
-		{
-			lines.push(innate2 + ".");
-			usedConditions.push(-1);
-			points -= 1;
-			console.log("Innate: " + innate2);
-		}
-		innatesGiven = true;
-	}
-	while(points > 0)
-	{
-		var newLine = "";
-		var condition = ChooseRandom([0,0,0,0,1,2,2,3,3,4,4,4,5,5,5,6,6,6,7]);
-		while(usedConditions.includes(condition))
-		{
-			condition = ChooseRandom([0,0,0,0,1,2,2,3,3,4,4,4,5,5,5,6,6,6,7]);
-		}
-			
-		usedConditions.push(condition);
-		//start of turn, start of turn 1, start of combat, during combat, outside of combat, after combat, positional/rally skill used
-		
-		currentlyHasCondition = false;
-		unitInitiation = false;
-		foeInitiation = false;
-		var conditionsList;
-		var effectsList;
-		switch(condition){
-			case 0:
-				conditionsList = startOfTurnConditions;
-				effectsList = startOfTurnEffects;
-				newLine = "At start of turn, ";
-				break;
-			case 1:
-				conditionsList = startOfTurnConditions;
-				effectsList = startOfTurnEffects;
-				newLine = ChooseRandom(["At start of odd-numbered turns, ","At start of even-numbered turns, ","At start of turns 1 through 4, "]);
-				break;
-			case 2:
-				effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
-				conditionsList = startOfCombatConditions;
-				newLine = "If unit initiates combat, ";
-				currentlyHasCondition = true;
-				break;
-					
-			case 3:
-				effectsList  = startOfCombatEffects.concat(foeInitiatesEffects);
-				conditionsList = startOfCombatConditions;
-				newLine = "If foe initiates combat, ";
-				currentlyHasCondition = true;
-				break;
-					
-			case 4:
-				effectsList = startOfCombatEffects;
-				conditionsList = startOfCombatConditions;
-				newLine = "At start of combat, ";
-				break;
-					
-			case 5:
-				conditionsList = duringCombatConditions;
-				effectsList = duringCombatEffects;
-				break;
-			case 6:
-				conditionsList = endOfCombatConditions;
-				effectsList = endOfCombatEffects;
-				newLine = "After combat, ";
-				break;
-			case 7:
-				effectsList = assistEffects;
-				newLine = ChooseRandom(["If a movement Assist skill is used by unit or targets unit, ","If a Rally Assist skill is used by unit, "]);
-				break;
-      default:
-        console.log("whoops");
-        break;
-		}
-		
-		rawConds = [];
-		if(Math.random() < 0.75 && condition != 7)
-		{
-			if (currentlyHasCondition == true)
-				newLine = newLine.slice(0,-2) + ChooseRandom([" or "," and "]);
-			
-			var tempCondition = ChooseRandom(conditionsList);
-			rawConds.push(tempCondition);
-			newLine = newLine + "if " + FillInTags(tempCondition, rarity);
-			//randomly choose new condition for initial condition
-			if (currentlyHasCondition == false && Math.random() < 0.6)
-			{
-				newLine = newLine + ChooseRandom([" or "," and "]);
-				tempCondition = ChooseRandom(conditionsList);
-				while(rawConds.includes(tempCondition))
-					tempCondition = ChooseRandom(conditionsList);
-				rawConds.push(tempCondition);
-				newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
-			}
-			else
-				newLine = newLine + ", ";
-		}
-		var tempEffect = ChooseRandom(effectsList);
-		rawEffects = [tempEffect];
-		newLine = newLine + FillInTags(tempEffect, rarity);
-		if(condition == 5)
-			newLine = newLine + " during combat";
-		points -= 1;
-		if(points > 0 && Math.random() < 0.4 && condition != 7)
-		{
-			tempCondition = ChooseRandom(conditionsList);
-			while(rawConds.includes(tempCondition))
-				tempCondition = ChooseRandom(conditionsList);
-			rawConds.push(tempCondition);
-			
-			tempEffect = ChooseRandom(effectsList);
-			while(rawEffects.includes(tempEffect))
-				tempEffect = ChooseRandom(effectsList);
-			rawEffects.push(tempEffect);
-			
-			if(Math.random() < 0.33)
-				newLine = newLine + ", and also, if " + FillInTags(tempCondition, rarity) + ", ";
-			else
-				newLine = newLine + " and ";
-			newLine = newLine + FillInTags(tempEffect, rarity);
-		}
-		newLine = newLine + ".";
-		console.log(condition + ": " + newLine);
-		
-		lines.push(newLine);
-	}
-	
-	SortTwoLists(usedConditions,lines);
-	for (index = 0; index < lines.length; index++) {
-		lines[index] = Capitalise(lines[index]);
-	}
-	//console.log(lines);
-	return lines.join('\n');
-	/*for each line in lines
-	{
-		//innate and "outside of combat" are set by default
-		if "start of turn" move to end
-		'' if "start of odd/even numbered turns"
-		'' if "start of combat"
-		'' if "during combat"
-		'' if "after combat"
-		final text = all lines[] in this order
-		if innatesGiven = False
-			final text = "Grants [Atk/Spd/Def/Res]+3. " + final text
-		return final text
-	}*/
+//innate and "outside of combat" are set by default
+if "start of turn" move to end
+    '' if "start of odd/even numbered turns"
+    '' if "start of combat"
+    '' if "during combat"
+    '' if "after combat"
+    final text = all lines[] in this order
+    if innatesGiven = False
+        final text = "Grants [Atk/Spd/Def/Res]+3. " + final text
+    return final text
+}*/
 }
 
 //=================================PUT IT ALL TOGETHER================================
-		
-async function GenerateUnit(rarity,theme,character,character2 = null)
-{
-	var unit = GenerateCharacter(character,theme);
-	var stats = GenerateStats(unit);
-	var rarityText = ["Tempest Trial","Demote","Premium","Premium","Harmonic"];
-	var character2Filename = "";
-	if(character2 != null)
-		character2Filename = character2.Filename;
-	
-	var skills = GenerateSkills(unit,rarity);
-	var weaponText = GenerateWeapon(rarity);
-	
-	if(rarity == 4)
-	{
-		if(character.Game == character2.Game) rarityText[4] = "Duo";
-	}
-	
-	var gennedUnit = {
-		Title: unit.Title,
-		Filename: unit.Filename,
-		Filename2: character2Filename,
-		Game: unit.Game,
-		Movement: unit.Movement.Movement,
-		Weapon: unit.Weapon.Weapon,
-		Colour: unit.Weapon.Tags[0],
-		WeaponText: weaponText,
-		Stats: stats,
-		Skills: skills,
-		RarityText: rarityText[rarity],
-		Rarity: rarity,
-		Theme: theme
-	}
-	
-	return gennedUnit;
+
+async function GenerateUnit(rarity, theme, character, character2 = null) {
+    var unit = GenerateCharacter(character, theme);
+    var stats = GenerateStats(unit);
+    var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
+    var character2Filename = "";
+    if (character2 != null)
+        character2Filename = character2.Filename;
+
+    var skills = GenerateSkills(unit, rarity);
+    var weaponText = GenerateWeapon(rarity);
+
+    if (rarity == 4) {
+        if (character.Game == character2.Game) rarityText[4] = "Duo";
+    }
+
+    var gennedUnit = {
+        Title: unit.Title,
+        Filename: unit.Filename,
+        Filename2: character2Filename,
+        Game: unit.Game,
+        Movement: unit.Movement.Movement,
+        Weapon: unit.Weapon.Weapon,
+        Colour: unit.Weapon.Tags[0],
+        WeaponText: weaponText,
+        Stats: stats,
+        Skills: skills,
+        RarityText: rarityText[rarity],
+        Rarity: rarity,
+        Theme: theme
+    }
+
+    return gennedUnit;
 }
 
-async function GenerateBanner()
-{
-	var theme = ChooseRandom(themesJSON);
-	var charsList = Shuffle(charactersJSON);
-	var bannerCharacters = [];
-	var game1 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	var game2 = game1;
-	if(Math.random() > 0.5)
-		game2 = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	var duoUnit = true;
-	if(game1 != game2 && Math.random()>0.5) duoUnit = false;
-	
-	for(let i = 0; i < charsList.length; i++)
-	{
-		if(bannerCharacters.length == 5)
-		{
-			if(duoUnit && charsList[i].Game == bannerCharacters[4].Game) 
-				bannerCharacters.push(charsList[i]);
-			else if(!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
-				bannerCharacters.push(charsList[i]);
-		}
-		if(bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
-			bannerCharacters.push(charsList[i]);
-		if(bannerCharacters.length == 6) break;
-	}
-	
-	console.log("banner characters: " + bannerCharacters[0].Hero);
-	console.log(bannerCharacters[1].Hero);
-	console.log(bannerCharacters[2].Hero);
-	console.log(bannerCharacters[3].Hero);
-	console.log(bannerCharacters[4].Hero);
-	console.log(bannerCharacters[5].Hero);
-	var unitP1 = await GenerateUnit(3,theme,bannerCharacters[0]);
-	var unitP2 = await GenerateUnit(2,theme,bannerCharacters[1]);
-	var unitDemote = await GenerateUnit(1,theme,bannerCharacters[2]);
-	var unitDuo = await GenerateUnit(4,theme,bannerCharacters[4],bannerCharacters[5]);
-	var unitTT = await GenerateUnit(0,theme,bannerCharacters[3]);
-	
-	DisplayUnit(unitP1);
-	
-	document.getElementById("premiumButton1").addEventListener('click', function(){
-		DisplayUnit(unitP1);
-	});
-	document.getElementById("premiumButton2").addEventListener('click', function(){
-		DisplayUnit(unitP2);
-	});
-	document.getElementById("demoteButton").addEventListener('click', function(){
-		DisplayUnit(unitDemote);
-	});
-	document.getElementById("duoButton").addEventListener('click', function(){
-		DisplayUnit(unitDuo);
-	});
-	document.getElementById("TTButton").addEventListener('click', function(){
-		DisplayUnit(unitTT);
-	});
+async function GenerateBanner() {
+    var theme = ChooseRandom(themesJSON);
+    var charsList = Shuffle(charactersJSON);
+    var bannerCharacters = [];
+    var game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+    var game2 = game1;
+    if (Math.random() > 0.5)
+        game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+    var duoUnit = true;
+    if (game1 != game2 && Math.random() > 0.5) duoUnit = false;
+
+    for (let i = 0; i < charsList.length; i++) {
+        if (bannerCharacters.length == 5) {
+            if (duoUnit && charsList[i].Game == bannerCharacters[4].Game)
+                bannerCharacters.push(charsList[i]);
+            else if (!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
+                bannerCharacters.push(charsList[i]);
+        }
+        if (bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
+            bannerCharacters.push(charsList[i]);
+        if (bannerCharacters.length == 6) break;
+    }
+
+    console.log("banner characters: " + bannerCharacters[0].Hero);
+    console.log(bannerCharacters[1].Hero);
+    console.log(bannerCharacters[2].Hero);
+    console.log(bannerCharacters[3].Hero);
+    console.log(bannerCharacters[4].Hero);
+    console.log(bannerCharacters[5].Hero);
+    var unitP1 = await GenerateUnit(3, theme, bannerCharacters[0]);
+    var unitP2 = await GenerateUnit(2, theme, bannerCharacters[1]);
+    var unitDemote = await GenerateUnit(1, theme, bannerCharacters[2]);
+    var unitDuo = await GenerateUnit(4, theme, bannerCharacters[4], bannerCharacters[5]);
+    var unitTT = await GenerateUnit(0, theme, bannerCharacters[3]);
+
+    DisplayUnit(unitP1);
+
+    document.getElementById("premiumButton1").addEventListener('click', function () {
+        DisplayUnit(unitP1);
+    });
+    document.getElementById("premiumButton2").addEventListener('click', function () {
+        DisplayUnit(unitP2);
+    });
+    document.getElementById("demoteButton").addEventListener('click', function () {
+        DisplayUnit(unitDemote);
+    });
+    document.getElementById("duoButton").addEventListener('click', function () {
+        DisplayUnit(unitDuo);
+    });
+    document.getElementById("TTButton").addEventListener('click', function () {
+        DisplayUnit(unitTT);
+    });
 
 }
 
-function DisplayUnit(unit)
-{
-	if(unit.Rarity == 4)
-		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${unit.Filename}" /></div><div class="column"><img src="./CharacterIcons/${unit.Filename2}" /> </div> </div>`;
-	else
-		document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
-	document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
-	document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText})`;
-	/*if(unit.Weapon == "Sword" || unit.Weapon == "Lance" || unit.Weapon == "Axe" || unit.Weapon == "Staff")
-		document.getElementById("generatedClass").innerHTML = `${unit.Weapon} ${unit.Movement}`;
-	else
-		document.getElementById("generatedClass").innerHTML = `${unit.Colour} ${unit.Weapon} ${unit.Movement}`;*/
-	document.getElementById("generatedClass").innerHTML = `  <div class="row"><img src="./GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" /></div><div class="row"><img src="./GameIcons/Icon_Move_${unit.Movement}.png" /></div>`;
-	document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
-	document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
-	document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
-	document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${unit.Stats[3]}`;
-	document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${unit.Stats[4]}`;
-	document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
-	document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
-	document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}`;
-	document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${unit.Skills[4]}`;
-	document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${unit.Skills[0]}`;
-	document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${unit.Skills[1]}`;
-	document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${unit.Skills[2]}`;
-	
+function DisplayUnit(unit) {
+    if (unit.Rarity == 4)
+        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${unit.Filename}" /></div><div class="column"><img src="./CharacterIcons/${unit.Filename2}" /> </div> </div>`;
+    else
+        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
+    document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
+    document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText})`;
+    document.getElementById("generatedClass").innerHTML = `  <div class="row"><img src="./GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" /></div><div class="row"><img src="./GameIcons/Icon_Move_${unit.Movement}.png" /></div>`;
+    document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
+    document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
+    document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
+    document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${unit.Stats[3]}`;
+    document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${unit.Stats[4]}`;
+    document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
+    document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
+    document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}`;
+    document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${unit.Skills[4]}`;
+    document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${unit.Skills[0]}`;
+    document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${unit.Skills[1]}`;
+    document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${unit.Skills[2]}`;
+
 }
-		
-async function Initialise()
-{
-	await loadAllJSONs();
-	SortSkillJSONIntoLists();
-	SortWeaponJSONIntoLists();
-	GenerateBanner();
-	/*console.log("~" + theme.Event + "~");
-	var game = ChooseRandom(["FE1","FE2","FE4","FE5","FE6","FE7","FE8","FE9","FE10","FE13","FE14","FE16","FE0","FEE"]);
-	var character = GenerateCharacter(theme,game);
-	var stats = GenerateStats(character);
-	var rarity = GetRandom(0,4);
-	var rarityText = ["Tempest Trial","Demote","Premium","Premium","Harmonic"];
-	var character2;
-	
-	if(rarity == 4)
-	{
-		character2 = ChooseRandom(charactersJSON);
-		if(character.Game != character2.Game && Math.random()>0.5) //If a game is given as a parameter, we only want characters from said game
-		{
-			//This is bad and should be rewritten
-			charsList = Shuffle(charactersJSON);
-			for(let i = 0; i < charsList.length; i++)
-			{
-				character2 = charsList[i];
-				console.log("Comparing " + character.Game + " to " + character2.Game);
-				if(character.Game == character2.Game)
-					break;
-			}
-		}
-		if(character.Game == character2.Game) rarityText[4] = "Duo";
-	}
-	SortSkillJSONIntoLists();
-	SortWeaponJSONIntoLists();*/
+
+async function Initialise() {
+    await loadAllJSONs();
+    SortSkillJSONIntoLists();
+    SortWeaponJSONIntoLists();
+    GenerateBanner();
+
 }
 Initialise();
-  /*function GetRandom(min, max) 
-{
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-  //var chars = [];
-  var json = [];
-  async function getJSON() {
-    return fetch("./Characters.json")
-        .then((response)=>response.json())
-        .then((responseJson)=>{return responseJson});
-  }
-  async function caller() {
-    json = await this.getJSON();  // command waits until completion
-    console.log(json[0].Filename);            // hello is now available
-    document.getElementById("generatedUnit").innerHTML = `  <div id="charImage"> <img src="./CharacterIcons/${json[0].Filename}" /> </div>`;
-  }
-  caller();*/
-  
-  
+
+
+
+
         </script>
       </section>
     </div>
