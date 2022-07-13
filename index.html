@@ -66,11 +66,61 @@
 
           <h1 id="project_title">FEH-Alt-Generator</h1>
           <h2 id="project_tagline">Generate random seasonal alts for Fire Emblem Heroes</h2>
-<button id="premiumButton1" class="button goldButton">Pre1</button>
-<button id="premiumButton2" class="button goldButton">Pre2</button>
-<button id="demoteButton" class="button silverButton">Dem</button>
-<button id="duoButton" class="button goldButton">Duo</button>
-<button id="TTButton" class="button bronzeButton">TT</button>
+<label for="gameDropdown1">Game 1:</label>
+<select name="gameDropdown1" id="gameDropdown1">
+    <option value="random">Random</option>
+  <option value="FE0">Heroes</option>
+  <option value="FE1">Shadow Dragon</option>
+  <option value="FE2">Gaiden/SoV</option>
+  <option value="FE4">Genealogy of the Holy War</option>
+  <option value="FE5">Thracia 776</option>
+  <option value="FE6">Binding Blade</option>
+  <option value="FE7">Blazing Blade</option>
+  <option value="FE8">Sacred Stones</option>
+  <option value="FE9">Path of Radiance</option>
+  <option value="FE10">Radiant Dawn</option>
+  <option value="FE13">Awakening</option>
+  <option value="FE14">Fates</option>
+  <option value="FE16">Three Houses</option>
+  <option value="FEE">Tokyo Mirage Sessions</option>
+</select>
+<label for="gameDropdown2">Game 2:</label>
+<select name="gameDropdown2" id="gameDropdown2">
+    <option value="random">Random</option>
+    <option value="none">None</option>
+  <option value="FE0">Heroes</option>
+  <option value="FE1">Shadow Dragon</option>
+  <option value="FE2">Gaiden/SoV</option>
+  <option value="FE4">Genealogy of the Holy War</option>
+  <option value="FE5">Thracia 776</option>
+  <option value="FE6">Binding Blade</option>
+  <option value="FE7">Blazing Blade</option>
+  <option value="FE8">Sacred Stones</option>
+  <option value="FE9">Path of Radiance</option>
+  <option value="FE10">Radiant Dawn</option>
+  <option value="FE13">Awakening</option>
+  <option value="FE14">Fates</option>
+  <option value="FE16">Three Houses</option>
+  <option value="FEE">Tokyo Mirage Sessions</option>
+</select>
+<label for="themeDropdown">Theme:</label>
+<select name="themeDropdown" id="themeDropdown">
+    <option value=-1>Random</option>
+  <option value=0>New Years</option>
+  <option value=1>Desert</option>
+  <option value=2>Hot Springs</option>
+  <option value=3>Valentines</option>
+  <option value=4>Easter</option>
+  <option value=5>Picnic</option>
+  <option value=6>Child</option>
+  <option value=7>Bridal</option>
+  <option value=8>Summer</option>
+  <option value=9>Pirates</option>
+  <option value=10>Halloween</option>
+  <option value=11>Ninjas</option>
+  <option value=12>Christmas</option>
+</select>
+<button id="generateButton" class="button silverButton">Generate</button>
           
         </header>
     </div>
@@ -78,6 +128,11 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+<button id="premiumButton1" class="button goldButton">Pre1</button>
+<button id="premiumButton2" class="button goldButton">Pre2</button>
+<button id="demoteButton" class="button silverButton">Dem</button>
+<button id="duoButton" class="button goldButton">Duo</button>
+<button id="TTButton" class="button bronzeButton">TT</button>
         <h2 id="seasonal-theme"></h2>
 
 	      <div id="generatedUnit" class="px-3 py-3"></div>
@@ -952,13 +1007,21 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
 }
 
 async function GenerateBanner() {
-    var theme = ChooseRandom(themesJSON);
+    var themeInt = document.getElementById("themeDropdown").value;
+	var theme = ChooseRandom(themesJSON);
+	if(themeInt != -1)
+    		theme = themesJSON[themeInt];
     var charsList = Shuffle(charactersJSON);
     var bannerCharacters = [];
-    var game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
-    var game2 = game1;
-    if (Math.random() > 0.5)
-        game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+	
+	var game1 = document.getElementById("gameDropdown1").value;
+	if(game1 == "random")
+		game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+    var game2 = document.getElementById("gameDropdown2").value;
+	if(game2 == "none")
+		game2 = game1;
+	else if(game2 == "random")
+		game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
     var duoUnit = true;
     if (game1 != game2 && Math.random() > 0.5) duoUnit = false;
 
@@ -1033,7 +1096,10 @@ async function Initialise() {
     await loadAllJSONs();
     SortSkillJSONIntoLists();
     SortWeaponJSONIntoLists();
-    GenerateBanner();
+    GenerateBanner();    
+	document.getElementById("generateButton").addEventListener('click', function () {
+        GenerateBanner();
+    });
 
 }
 Initialise();
