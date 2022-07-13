@@ -379,13 +379,14 @@ function GenerateStats(character) {
         sum += thisClass.MinStats[i];
     }
     var points = ChooseRandom(thisClass.BST) - sum;
-	console.log("StatMod: " + character.StatMod);
+	console.log("StatMod: " + character.StatMod + ", points: " + points);
     if (character.StatMod == "Dancer") 
     {
 	    console.log("Character is a Dancer");
 	    points -= 11;
     }
     if (character.StatMod == "Trainee") points += 5;
+	console.log("points: " + points);
     var rates = [0, 0, 0, 0, 0];
     var stats = thisClass.MinStats;
     var ratesMax = 0;
