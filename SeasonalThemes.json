@@ -1,58 +1,8 @@
 [
   {
-    "Event": "Summer",
-    "Prefixes": ["Summer","Summering","Horizon","Seaside","Seashore's","Tropical","Shade","Beachside","Sunbathing","Beaming","Bonfire's","Burning","Sandcastle","Clear-Blue","Sunbeam","Sandbar","Solar","Solstice","Sea","Estival","Sky-Blue","Wavecrest"],
-    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","Two-Piece","One-Piece","Rays","on Leave"]
-  },
-  {
-    "Event": "Easter",
-    "Prefixes": ["Spring","Earsome","Vernal","Springtime","Festival","Verdant","Nature","Hopping","Egg-Bearing","Sunny","Sun","Bright","Cheerful","Lively","Lush","Natural","Springy"],
-    "Suffixes": ["Hare","Rabbit","Bun-Bun","of Spring","Blossom","Flower","in Bloom","Egg","Bunny"]
-  },
-  {
-    "Event": "Valentines",
-    "Prefixes": ["Devoted","Blushing","Youthful","Gift of","Addled","Warm","Pure","Purest","Lovelorn","Lovely","Loving","Selfless","Lovebird","Lovestruck","Tactful","Admiring","Bestowed","Uplifting","Overflowing"],
-    "Suffixes": ["Love","Embrace","of Youth","Gifts","Heart","of Love","Heartstring","Lovebird","Lover","Fondness","Celebrant","Admirer"]
-  },
-  {
-    "Event": "Bridal",
-    "Prefixes": ["Bride","Groom","Bridal","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Bride of","Groom of","Partner of","Devoted","Blessed","Avowed"],
-    "Suffixes": ["Bride","Groom","Maiden","Husband","Wife","Partner","in White","in Black","Flowergirl","Fiancé","Devotion","Bride-to-Be","Groom-to-Be","Vow","Vows","Love","of Love","in Love","Bachelor"]
-  },
-  {
-    "Event": "Halloween",
-    "Prefixes": ["Forbidden","Moonlit","Vampiric","Ghoulish","Mad","Ghastly","Tricky","Harvest","Fall","Autumn","Cobweb","Spooky","Skeletal","Zombified","Mummified","Ghostly","Naughty"],
-    "Suffixes": ["Witch","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Wizard","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"]
-  },
-  {
-    "Event": "Christmas",
-    "Prefixes": ["Festive","Gifted","Sparkling","Snowy","Holiday","Winter's","Winter","Silver","Hoary","Icy","Frosty","Sugarplum","Warming","Joyful"],
-    "Suffixes": ["Joy","Snow","Night","Gift-Giver","Reindeer","Elf","Frost","Ice","Caroler","Nutcracker"]
-  },
-  {
     "Event": "New Years",
     "Prefixes": ["Traditional","Celebratory","Holiday","Kumade","New","Refreshed","Resolute","New Year's","Renewed","Fresh","New Year","Fortunate"],
     "Suffixes": ["Soup","Refresher","Resolution","Celebrator","Spirit","Anew","Dawn","of Fortune"]
-  },
-  {
-    "Event": "Picnic",
-    "Prefixes": ["Buffet","Lunch","Luncheon","Tea-Time","Relaxing","Relaxed","Picnicking","Cookout","Outdoor","Dozing","Hungry","Basket"],
-    "Suffixes": ["Buffet","Snacker","Dish","Relaxer","Muncher","Chef","Dozer","Hunger","Tablecloth"]
-  },
-  {
-    "Event": "Hot Springs",
-    "Prefixes": ["Relaxed","Hot-Spring","Steamy","Scantily-Clad","Bubbling","Risqué","Indecent","Spicy","Soaked","Soothing","Immersed","Lax","Modest","Immodest","Soapy","Immersed in"],
-    "Suffixes": ["at Ease","Soaker","Bather","Immersion","Splasher","Swimmer"]
-  },
-  {
-    "Event": "Pirates",
-    "Prefixes": ["Sea","Sea's","Pirate of","High Seas","Terror of","Ship-Shape","First-Mate","Ruthless","Bountied","Bootiful","Crow's Nest","Gangplank","Jolly","Keelhaul","Mutinous","Plundering","Drunken","Savvy"],
-    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad","Lass","Laddie","Lassie","Lookout","Ho","Scourge","Sea-Dog","Wench"]
-  },
-  {
-    "Event": "Ninjas",
-    "Prefixes": ["Ninja of","Ninja","Sneaky","Stealthy","Shinobi","Disguised","Silent"],
-    "Suffixes": ["Ninja","Shinobi","Sneak","Silence","Assassin"]
   },
   {
     "Event": "Desert",
@@ -60,8 +10,58 @@
     "Suffixes": ["Monger","Charmer","Scorcher","Sandstorm","Sun","Wanderer","Traveler","Merchant"]
   },
   {
+    "Event": "Hot Springs",
+    "Prefixes": ["Relaxed","Hot-Spring","Steamy","Scantily-Clad","Bubbling","Risqué","Indecent","Spicy","Soaked","Soothing","Immersed","Lax","Modest","Immodest","Soapy","Immersed in"],
+    "Suffixes": ["at Ease","Soaker","Bather","Immersion","Splasher","Swimmer"]
+  },
+  {
+    "Event": "Valentines",
+    "Prefixes": ["Devoted","Blushing","Youthful","Gift of","Addled","Warm","Pure","Purest","Lovelorn","Lovely","Loving","Selfless","Lovebird","Lovestruck","Tactful","Admiring","Bestowed","Uplifting","Overflowing"],
+    "Suffixes": ["Love","Embrace","of Youth","Gifts","Heart","of Love","Heartstring","Lovebird","Lover","Fondness","Celebrant","Admirer"]
+  },
+  {
+    "Event": "Easter",
+    "Prefixes": ["Spring","Earsome","Vernal","Springtime","Festival","Verdant","Nature","Hopping","Egg-Bearing","Sunny","Sun","Bright","Cheerful","Lively","Lush","Natural","Springy"],
+    "Suffixes": ["Hare","Rabbit","Bun-Bun","of Spring","Blossom","Flower","in Bloom","Egg","Bunny"]
+  },
+  {
+    "Event": "Picnic",
+    "Prefixes": ["Buffet","Lunch","Luncheon","Tea-Time","Relaxing","Relaxed","Picnicking","Cookout","Outdoor","Dozing","Hungry","Basket"],
+    "Suffixes": ["Buffet","Snacker","Dish","Relaxer","Muncher","Chef","Dozer","Hunger","Tablecloth"]
+  },
+  {
     "Event": "Child",
     "Prefixes": ["Radiant","Youthful","Young","Legacied","Spirited","Shy","Nervous","Future","Budding","Awakened","Prodigious","Childish","Playful","Eager","Boisterous"],
     "Suffixes": ["Refulgence","Radiance","Youth","Kid","Child","Legacy","Prodigy"]
+  },
+  {
+    "Event": "Bridal",
+    "Prefixes": ["Bride","Groom","Bridal","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Bride of","Groom of","Partner of","Devoted","Blessed","Avowed"],
+    "Suffixes": ["Bride","Groom","Maiden","Husband","Wife","Partner","in White","in Black","Flowergirl","Fiancé","Devotion","Bride-to-Be","Groom-to-Be","Vow","Vows","Love","of Love","in Love","Bachelor"]
+  },
+  {
+    "Event": "Summer",
+    "Prefixes": ["Summer","Summering","Horizon","Seaside","Seashore's","Tropical","Shade","Beachside","Sunbathing","Beaming","Bonfire's","Burning","Sandcastle","Clear-Blue","Sunbeam","Sandbar","Solar","Solstice","Sea","Estival","Sky-Blue","Wavecrest"],
+    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","Two-Piece","One-Piece","Rays","on Leave"]
+  },
+  {
+    "Event": "Pirates",
+    "Prefixes": ["Sea","Sea's","Pirate of","High Seas","Terror of","Ship-Shape","First-Mate","Ruthless","Bountied","Bootiful","Crow's Nest","Gangplank","Jolly","Keelhaul","Mutinous","Plundering","Drunken","Savvy"],
+    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad","Lass","Laddie","Lassie","Lookout","Ho","Scourge","Sea-Dog","Wench"]
+  },
+  {
+    "Event": "Halloween",
+    "Prefixes": ["Forbidden","Moonlit","Vampiric","Ghoulish","Mad","Ghastly","Tricky","Harvest","Fall","Autumn","Cobweb","Spooky","Skeletal","Zombified","Mummified","Ghostly","Naughty"],
+    "Suffixes": ["Witch","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Wizard","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"]
+  },
+  {
+    "Event": "Ninjas",
+    "Prefixes": ["Ninja of","Ninja","Sneaky","Stealthy","Shinobi","Disguised","Silent"],
+    "Suffixes": ["Ninja","Shinobi","Sneak","Silence","Assassin"]
+  },
+  {
+    "Event": "Christmas",
+    "Prefixes": ["Festive","Gifted","Sparkling","Snowy","Holiday","Winter's","Winter","Silver","Hoary","Icy","Frosty","Sugarplum","Warming","Joyful"],
+    "Suffixes": ["Joy","Snow","Night","Gift-Giver","Reindeer","Elf","Frost","Ice","Caroler","Nutcracker"]
   }
 ]
