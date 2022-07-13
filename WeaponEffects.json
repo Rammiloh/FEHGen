@@ -540,7 +540,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Unit and foe cannot counterattack",
+    "Effect": "unit and foe cannot counterattack",
     "Tags": "innate",
     "Weight": 2
   },
@@ -551,12 +551,12 @@
   },
   {
     "Effect": "unit can counterattack before foe's first attack",
-    "Tags": "combat_start,foe_initiates",
+    "Tags": "foe_initiates",
     "Weight": 3
   },
   {
     "Effect": "unit can counterattack regardless of foe's range",
-    "Tags": "innate,combat_start,foe_initiates",
+    "Tags": "innate,foe_initiates",
     "Weight": 3
   },
   {
