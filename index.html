@@ -945,7 +945,9 @@ function GenerateWeapon(rarity) {
             }
         }
         if (hasNegative) {
-            newLine = newLine + ", but after combat, if unit attacked, " + FillInTags(ChooseRandom(negativeEffects), rarity);
+            	newLine = newLine + ", but after combat, ";
+		if(Math.random()>0.5) newLine = newLine + "if unit attacked, " 
+		newLine = newLine + FillInTags(ChooseRandom(negativeEffects), rarity);
         }
 
         newLine = newLine + ".";
