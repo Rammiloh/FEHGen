@@ -371,7 +371,7 @@ function GenerateStats(character) {
     var mvmIndex = character.Movement.Index;
 
     var classIndex = wpnIndex + (mvmIndex * 6);
-    var thisClass = structuredClone(statsJSON[classIndex]);
+    var thisClass = JSON.parse(JSON.stringify(statsJSON[classIndex]));
 
     let sum = 0;
 
