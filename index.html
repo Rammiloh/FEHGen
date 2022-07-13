@@ -380,7 +380,8 @@ function GenerateStats(character) {
         sum += thisClass.MinStats[i];
     }
     var points = ChooseRandom(thisClass.BST) - sum;
-    if (character.StatMod == "Dancer") points -= ChooseRandom([10, 11, 12]);
+	console.Log("StatMod: " + character.StatMod);
+    if (character.StatMod == "Dancer") points -= 11;
     if (character.StatMod == "Trainee") points += 5;
     var rates = [0, 0, 0, 0, 0];
     var stats = thisClass.MinStats;
