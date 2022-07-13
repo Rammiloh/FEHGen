@@ -339,7 +339,6 @@ function GenerateCharacter(hero, theme) {
 
     if (wpn.Tags[0] == "Random")
         wpn.Tags[0] = ChooseRandom(["Red", "Blue", "Green", "Colorless"]);
-    console.log("Statmod: " + hero.StatMod);
     var gennedCharacter = {
         Title: fullTitle,
         Filename: hero.Filename,
@@ -381,7 +380,11 @@ function GenerateStats(character) {
     }
     var points = ChooseRandom(thisClass.BST) - sum;
 	console.log("StatMod: " + character.StatMod);
-    if (character.StatMod == "Dancer") points -= 11;
+    if (character.StatMod == "Dancer") 
+    {
+	    console.log("Character is a Dancer");
+	    points -= 11;
+    }
     if (character.StatMod == "Trainee") points += 5;
     var rates = [0, 0, 0, 0, 0];
     var stats = thisClass.MinStats;
