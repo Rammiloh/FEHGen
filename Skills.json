@@ -1850,7 +1850,7 @@
   {
     "Skill": "<2STATS> Gap 3",
     "Slot": "C",
-    "Exclusivity": "R",
+    "Exclusivity": "C",
     "Description": "",
     "Weight": 4,
     "Restrictions": ""
@@ -1865,6 +1865,14 @@
   },
   {
     "Skill": "<2STATS> Oath 3",
+    "Slot": "C",
+    "Exclusivity": "C",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": "Arm,Cav"
+  },
+  {
+    "Skill": "<2STATS> Oath 4",
     "Slot": "C",
     "Exclusivity": "R",
     "Description": "",
