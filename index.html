@@ -860,7 +860,7 @@ function GenerateWeapon(rarity) {
                 firstHalfEffects.push(tempEffect);
         }
 
-        for (let i = 0; i < firstHalfEffects.length, i++) {
+        for (let i = 0; i < firstHalfEffects.length; i++) {
             if(i != 0)
                 newLine = newLine + ", ";
             if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1)
@@ -877,7 +877,7 @@ function GenerateWeapon(rarity) {
             rawConds.push(tempCondition);
             newLine = newLine + FillInTags(tempCondition, rarity);
 
-            for (let i = 0; i < secondHalfEffects.length, i++) {
+            for (let i = 0; i < secondHalfEffects.length; i++) {
                 newLine = newLine + ", ";
                 if (i == secondHalfEffects.length - 1 && secondHalfEffects.length != 1)
                     newLine = newLine + "and ";
