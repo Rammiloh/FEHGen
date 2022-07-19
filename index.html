@@ -625,7 +625,7 @@ function GenerateSkills(character, rarityInt) {
 	    slot = prfs[i].substring(0, prfs[i].indexOf(":"));
             skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
 	    console.log("slot: " + slot + ", name: " + skillName);
-            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots.length+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
                 usedPrfSlots.push(slot);
                 if (slot == "A") unitSkills[0] = skillName;
                 if (slot == "B") unitSkills[1] = skillName;
