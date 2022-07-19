@@ -620,7 +620,7 @@ function GenerateSkills(character, rarityInt) {
 	console.log("they exist");
         prfs = Shuffle(character.Prfs);
         usedPrfSlots = [];
-        prfOdds = 0.8;
+        prfOdds = 1.0;
         for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
 	    slot = prfs[i].substring(0, prfs[i].indexOf(":"));
             skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
