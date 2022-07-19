@@ -614,7 +614,7 @@ function GenerateSkills(character, rarityInt) {
         }
         unitSkills[GetRandom(3, 4)] = "";
     }
-	
+    console.log("unitskills: " + unitSkills);
     console.log(character.Prfs);
     if (character.Prfs.length > 0) {//Add prf skills if they exist
 	console.log("they exist");
@@ -625,8 +625,9 @@ function GenerateSkills(character, rarityInt) {
 	    slot = prfs[i].substring(0, prfs[i].indexOf(":"));
             skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
 	    console.log("slot: " + slot + ", name: " + skillName);
-            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots.length+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
-                usedPrfSlots.push(slot);
+            if (!usedPrfSlots.includes(slot) && Math.random()<(prfOdds/(usedPrfSlots.length+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+                console.log("pushing " + slot);
+		usedPrfSlots.push(slot);
                 if (slot == "A") unitSkills[0] = skillName;
                 if (slot == "B") unitSkills[1] = skillName;
                 if (slot == "C") unitSkills[2] = skillName;
@@ -636,6 +637,7 @@ function GenerateSkills(character, rarityInt) {
 
         }
     }
+    console.log("unitskills after: " + unitSkills);
     return unitSkills;
 }
 
