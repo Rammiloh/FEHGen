@@ -588,26 +588,6 @@ function GenerateSkills(character, rarityInt) {
         skill = ChooseRandom(skills);
     } while (CheckSkillForTags(skill.Restrictions, tags));
     unitSkills.push(skill.Skill);
-    console.log(character.Prfs);
-    if (character.Prfs.length > 0) {//Add prf skills if they exist
-	console.log("they exist");
-        prfs = Shuffle(character.Prfs);
-        usedPrfSlots = [];
-        prfOdds = 0.8;
-        for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
-            slot = prfs[i].substring(0, prfs[i].indexOf(":"));
-            skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
-            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
-                usedPrfSlots.push(slot);
-                if (slot == "A") unitSkills[0] = skillName;
-                if (slot == "B") unitSkills[1] = skillName;
-                if (slot == "C") unitSkills[2] = skillName;
-                if (slot == "Assist") unitSkills[3] = skillName;
-                if (slot == "Special") unitSkills[4] = skillName;
-            }
-
-        }
-    }
 
     for (let i = 0; i < unitSkills.length; i++) {
         unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
@@ -633,6 +613,28 @@ function GenerateSkills(character, rarityInt) {
             unitSkills[GetRandom(0, 2)] = "";
         }
         unitSkills[GetRandom(3, 4)] = "";
+    }
+	
+    console.log(character.Prfs);
+    if (character.Prfs.length > 0) {//Add prf skills if they exist
+	console.log("they exist");
+        prfs = Shuffle(character.Prfs);
+        usedPrfSlots = [];
+        prfOdds = 0.8;
+        for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
+	    slot = prfs[i].substring(0, prfs[i].indexOf(":"));
+            skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
+	    console.log("slot: " + slot + ", name: " + skillName);
+            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+                usedPrfSlots.push(slot);
+                if (slot == "A") unitSkills[0] = skillName;
+                if (slot == "B") unitSkills[1] = skillName;
+                if (slot == "C") unitSkills[2] = skillName;
+                if (slot == "Assist") unitSkills[3] = skillName;
+                if (slot == "Special") unitSkills[4] = skillName;
+            }
+
+        }
     }
     return unitSkills;
 }
