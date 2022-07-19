@@ -157,6 +157,7 @@
         
         <script>
 
+// JavaScript source code
 var charactersJSON;
 var themesJSON;
 var skillsJSON;
@@ -345,7 +346,8 @@ function GenerateCharacter(hero, theme) {
         Game: hero.Game,
         Movement: mvmnt,
         Weapon: wpn,
-        StatMod: hero.StatMod
+        StatMod: hero.StatMod,
+        Prfs: hero.Prfs
     }
     return gennedCharacter;
 }
@@ -378,16 +380,15 @@ function GenerateStats(character) {
     for (let i = 0; i < thisClass.MinStats.length; i++) {
         sum += thisClass.MinStats[i];
     }
-	console.log("sum: " + sum);
+    console.log("sum: " + sum);
     let points = ChooseRandom(thisClass.BST) - sum;
-	console.log("StatMod: " + character.StatMod + ", points: " + points);
-    if (character.StatMod == "Dancer") 
-    {
-	    console.log("Character is a Dancer");
-	    points -= 11;
+    console.log("StatMod: " + character.StatMod + ", points: " + points);
+    if (character.StatMod == "Dancer") {
+        console.log("Character is a Dancer");
+        points -= 11;
     }
     if (character.StatMod == "Trainee") points += 5;
-	console.log("points: " + points);
+    console.log("points: " + points);
     var rates = [0, 0, 0, 0, 0];
     var stats = thisClass.MinStats;
     var ratesMax = 0;
@@ -416,7 +417,7 @@ function GenerateStats(character) {
         rates[i] = rates[i] + rates[i - 1];
     }
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
-console.log("points as we head into the loop: " + points);
+    console.log("points as we head into the loop: " + points);
     while (points > 0) {
         chosenStat = Math.random();
         for (let i = 0; i < rates.length; i++) {
@@ -587,6 +588,25 @@ function GenerateSkills(character, rarityInt) {
         skill = ChooseRandom(skills);
     } while (CheckSkillForTags(skill.Restrictions, tags));
     unitSkills.push(skill.Skill);
+
+    if (character.Prfs.length > 0) {//Add prf skills if they exist
+        prfs = Shuffle(character.Prfs);
+        usedPrfSlots = [];
+        prfOdds = 0.8;
+        for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
+            slot = prfs[i].substring(0, prfs[i].indexOf(":"));
+            skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
+            if (!usedPrfSlots.includes(slot) && Math.random<(prfOdds/(usedPrfSlots+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+                usedPrfSlots.push(slot);
+                if (slot == "A") unitSkills[0] = skillName;
+                if (slot == "B") unitSkills[1] = skillName;
+                if (slot == "C") unitSkills[2] = skillName;
+                if (slot == "Assist") unitSkills[3] = skillName;
+                if (slot == "Special") unitSkills[4] = skillName;
+            }
+
+        }
+    }
 
     for (let i = 0; i < unitSkills.length; i++) {
         unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
@@ -922,9 +942,9 @@ function GenerateWeapon(rarity) {
         }
 
         for (let i = 0; i < firstHalfEffects.length; i++) {
-            if(i != 0 && firstHalfEffects.length != 2)
+            if (i != 0 && firstHalfEffects.length != 2)
                 newLine = newLine + ", ";
-            if(i == 1 && firstHalfEffects.length == 2)
+            if (i == 1 && firstHalfEffects.length == 2)
                 newLine = newLine + " ";
             if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1)
                 newLine = newLine + "and ";
@@ -941,19 +961,19 @@ function GenerateWeapon(rarity) {
             newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
 
             for (let i = 0; i < secondHalfEffects.length; i++) {
-		if(i != 0 && secondHalfEffects.length != 2)
-                	newLine = newLine + ", ";
-            	if(i == 1 && secondHalfEffects.length == 2)
-                	newLine = newLine + " ";
+                if (i != 0 && secondHalfEffects.length != 2)
+                    newLine = newLine + ", ";
+                if (i == 1 && secondHalfEffects.length == 2)
+                    newLine = newLine + " ";
                 if (i == secondHalfEffects.length - 1 && secondHalfEffects.length != 1)
                     newLine = newLine + "and ";
                 newLine = newLine + FillInTags(secondHalfEffects[i], rarity);
             }
         }
         if (hasNegative) {
-            	newLine = newLine + ", but after combat, ";
-		if(Math.random()>0.5) newLine = newLine + "if unit attacked, " 
-		newLine = newLine + FillInTags(ChooseRandom(negativeEffects), rarity);
+            newLine = newLine + ", but after combat, ";
+            if (Math.random() > 0.5) newLine = newLine + "if unit attacked, "
+            newLine = newLine + FillInTags(ChooseRandom(negativeEffects), rarity);
         }
 
         newLine = newLine + ".";
@@ -1021,20 +1041,20 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
 
 async function GenerateBanner() {
     var themeInt = document.getElementById("themeDropdown").value;
-	var theme = ChooseRandom(themesJSON);
-	if(themeInt != -1)
-    		theme = themesJSON[themeInt];
+    var theme = ChooseRandom(themesJSON);
+    if (themeInt != -1)
+        theme = themesJSON[themeInt];
     var charsList = Shuffle(charactersJSON);
     var bannerCharacters = [];
-	
-	var game1 = document.getElementById("gameDropdown1").value;
-	if(game1 == "random")
-		game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+
+    var game1 = document.getElementById("gameDropdown1").value;
+    if (game1 == "random")
+        game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
     var game2 = document.getElementById("gameDropdown2").value;
-	if(game2 == "none")
-		game2 = game1;
-	else if(game2 == "random")
-		game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+    if (game2 == "none")
+        game2 = game1;
+    else if (game2 == "random")
+        game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
     var duoUnit = true;
     if (game1 != game2 && Math.random() > 0.5) duoUnit = false;
 
@@ -1109,15 +1129,13 @@ async function Initialise() {
     await loadAllJSONs();
     SortSkillJSONIntoLists();
     SortWeaponJSONIntoLists();
-    GenerateBanner();    
-	document.getElementById("generateButton").addEventListener('click', function () {
+    GenerateBanner();
+    document.getElementById("generateButton").addEventListener('click', function () {
         GenerateBanner();
     });
 
 }
 Initialise();
-
-
 
 
         </script>
