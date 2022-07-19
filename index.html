@@ -588,8 +588,9 @@ function GenerateSkills(character, rarityInt) {
         skill = ChooseRandom(skills);
     } while (CheckSkillForTags(skill.Restrictions, tags));
     unitSkills.push(skill.Skill);
-
+    console.log(character.Prfs);
     if (character.Prfs.length > 0) {//Add prf skills if they exist
+	console.log("they exist");
         prfs = Shuffle(character.Prfs);
         usedPrfSlots = [];
         prfOdds = 0.8;
