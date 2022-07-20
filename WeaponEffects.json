@@ -21,12 +21,12 @@
   },
   {
     "Effect": "calculates damage using the lower of foe's Def or Res",
-    "Tags": "innate,during_combat,combat_start",
+    "Tags": "innate,during_combat,combat_start,grant",
     "Weight": 3
   },
   {
     "Effect": "deals +<BINT> damage when Special triggers",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 3
   },
   {
@@ -60,23 +60,23 @@
     "Weight": 1
   },
   {
-    "Effect": "deals damage = <PERCENT> of foe's <STAT> per unit's attack",
-    "Tags": "during_combat",
+    "Effect": "deals damage = <LOWPERCENT> of foe's <STAT> per unit's attack",
+    "Tags": "during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "deals damage = <PERCENT> of unit's <STAT> minus foe's <STAT2> per unit's attack",
-    "Tags": "during_combat",
+    "Tags": "during_combat,grant",
     "Weight": 1
   },
   {
-    "Effect": "deals damage = <PERCENT> of unit's <STAT> per unit's attack",
-    "Tags": "during_combat",
+    "Effect": "deals damage = <LOWPERCENT> of unit's <STAT> per unit's attack",
+    "Tags": "during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "disables non-Special skills that \"reduce damage by X%\"",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 3
   },
   {
@@ -91,12 +91,12 @@
   },
   {
     "Effect": "foe cannot counterattack",
-    "Tags": "innate,unit_initiates",
+    "Tags": "innate,unit_initiates,grant",
     "Weight": 3
   },
   {
     "Effect": "foe cannot make a follow-up attack",
-    "Tags": "innate,during_combat,combat_start",
+    "Tags": "innate,during_combat,combat_start,grant",
     "Weight": 3
   },
   {
@@ -276,17 +276,17 @@
   },
   {
     "Effect": "deals +<INT2> damage per unit's attack",
-    "Tags": "during_combat",
+    "Tags": "during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "if a skill compares unit's <STAT> to a foe's or ally's <STAT>, treats unit's <STAT> as if granted +<BINT>",
-    "Tags": "innate",
+    "Tags": "innate,grant",
     "Weight": 1
   },
   {
     "Effect": "if unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%",
-    "Tags": "innate",
+    "Tags": "innate,grant",
     "Weight": 1
   },
   {
@@ -461,17 +461,17 @@
   },
   {
     "Effect": "neutralizes effects that guarantee foe's follow-up attacks",
-    "Tags": "innate,combat_start,during_combat",
+    "Tags": "innate,combat_start,during_combat,grant",
     "Weight": 2
   },
   {
     "Effect": "neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks",
-    "Tags": "innate,combat_start,during_combat",
+    "Tags": "innate,combat_start,during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "neutralizes effects that prevent unit's follow-up attacks",
-    "Tags": "innate,combat_start,during_combat",
+    "Tags": "innate,combat_start,during_combat,grant",
     "Weight": 2
   },
   {
@@ -486,22 +486,22 @@
   },
   {
     "Effect": "prevents foe's Specials that are triggered by unit's attack",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 2
   },
   {
     "Effect": "Reduces damage from <CLASS> foe's consecutive attacks by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "Reduces damage from <CLASS> foe's first attack by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "Reduces damage from <CLASS> foe's second attack by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
@@ -511,12 +511,12 @@
   },
   {
     "Effect": "Reduces damage from foe's consecutive attacks by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
     "Effect": "reduces damage from foe's first attack by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 2
   },
   {
@@ -526,12 +526,12 @@
   },
   {
     "Effect": "reduces damage from foe's second attack by <PERCENT>",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 2
   },
   {
     "Effect": "restores <INT> HP to unit per unit's attack",
-    "Tags": "during_combat",
+    "Tags": "during_combat,grant",
     "Weight": 2
   },
   {
@@ -546,32 +546,52 @@
   },
   {
     "Effect": "unit attacks twice",
-    "Tags": "innate,during_combat",
+    "Tags": "innate,during_combat,grant",
     "Weight": 3
   },
   {
     "Effect": "unit can counterattack before foe's first attack",
-    "Tags": "foe_initiates",
+    "Tags": "foe_initiates,grant",
     "Weight": 3
   },
   {
     "Effect": "unit can counterattack regardless of foe's range",
-    "Tags": "innate,foe_initiates",
+    "Tags": "innate,foe_initiates,grant",
     "Weight": 3
   },
   {
     "Effect": "unit makes a guaranteed follow-up attack",
-    "Tags": "innate,during_combat,combat_start",
+    "Tags": "innate,during_combat,combat_start,grant",
     "Weight": 3
   },
   {
     "Effect": "unit makes a guaranteed follow-up attack and foe cannot",
-    "Tags": "during_combat,combat_start",
+    "Tags": "during_combat,combat_start,grant",
     "Weight": 1
   },
   {
     "Effect": "unit recovers <BINT> HP",
     "Tags": "turn_start,combat_end",
     "Weight": 2
+  },
+  {
+    "Effect": "if unit’s HP ≥ <PERCENT and foe would reduce unit’s HP to 0, unit survives with 1 HP (once per combat)",
+    "Tags": "innate,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "treats foe's <STAT> as if reduced by <LOWPERCENT>",
+    "Tags": "innate,combat_start,during_combat,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals damage = <LOWPERCENT> of <EITHER>'s <STAT>",
+    "Tags": "innate,combat_start,during_combat,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "if unit's <STAT> > foe's <STAT2> during combat, deals damage = <PERCENT> of unit's <STAT> minus foe's <STAT2>",
+    "Tags": "innate,grant",
+    "Weight": 1
   }
 ]
