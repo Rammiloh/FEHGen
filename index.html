@@ -903,18 +903,18 @@ function GenerateWeapon(rarity) {
         }
 	if(grantEffect)
 	{
-		newLine = FillInTags(ChooseRandom(["grants <+STATS> to allies within 2 spaces of unit during combat",
-					"grants <+STATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\"",
-					"grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\"",
-					"grants <+STATS> to unit and allies within 2 spaces of unit during combat",
-					"grants <+STATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\"",
-					"grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\"",
-					"grants <+STATS> to allies within <INT> spaces of unit during combat",
-					"grants <+STATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\"",
-					"grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\"",
-					"grants <+STATS> to unit and allies within <INT> spaces of unit during combat",
-					"grants <+STATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"",
-					"grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\""]),rarity);
+		newLine = FillInTags(ChooseRandom(["grants <+STATS> to allies within 2 spaces of unit during combat.",
+					"grants <+STATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
+					"grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
+					"grants <+STATS> to unit and allies within 2 spaces of unit during combat.",
+					"grants <+STATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
+					"grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
+					"grants <+STATS> to allies within <INT> spaces of unit during combat.",
+					"grants <+STATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+					"grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+					"grants <+STATS> to unit and allies within <INT> spaces of unit during combat.",
+					"grants <+STATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+					"grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"."]),rarity);
 		points -= 1;
         	lines.push(newLine);
 		continue;
