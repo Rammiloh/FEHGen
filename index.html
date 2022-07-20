@@ -650,6 +650,7 @@ const duringCombatEffects = [];
 const endOfCombatEffects = [];
 const foeInitiatesEffects = [];
 const unitInitiatesEffects = [];
+const grantEffects = [];
 const assistEffects = [];
 const negativeEffects = [];
 
@@ -672,6 +673,7 @@ function FillTaggedList(entry, list, tag) {
 function SortWeaponJSONIntoLists() {
     effectsJSON.forEach(function (entry) {
         FillTaggedList(entry, innateEffects, "innate");
+        FillTaggedList(entry, grantEffects, "grant");
         FillTaggedList(entry, startOfTurnEffects, "turn_start");
         FillTaggedList(entry, startOfCombatEffects, "combat_start");
         FillTaggedList(entry, duringCombatEffects, "during_combat");
@@ -694,7 +696,11 @@ function SortWeaponJSONIntoLists() {
 }
 
 function FillInTags(line, rarity) {
-    var array = Shuffle(["Atk", "Spd", "Def", "Res"]);
+    var array = Shuffle(grantEffects);
+    line = line.replaceAll("<GRANT>", array[0]);
+    line = line.replaceAll("<GRANT2>", array[1]);
+    
+    array = Shuffle(["Atk", "Spd", "Def", "Res"]);
     line = line.replaceAll("<STAT>", array[0]);
     line = line.replaceAll("<STAT2>", array[1]);
 
@@ -705,6 +711,10 @@ function FillInTags(line, rarity) {
     array = Shuffle(["75 percent", "50 percent", "25 percent", "40 percent", "60 percent", "80 percent"]);
     line = line.replaceAll("<PERCENT>", array[0]);
     line = line.replaceAll("<PERCENT2>", array[1]);
+	
+    array = Shuffle(["10%", "15%", "20%", "25%", "30%"]);
+    line = line.replaceAll("<LOWPERCENT>", array[0]);
+    line = line.replaceAll("<LOWPERCENT2>", array[1]);
 
     array = Shuffle(["1", "2", "2", "3", "3", "3", "4", "4", "5", "6", "7"]);
     line = line.replaceAll("<INT>", array[0]);
@@ -826,9 +836,9 @@ function GenerateWeapon(rarity) {
     }
     while (points > 0) {
         var newLine = "";
-        var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7]);
+        var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 8, 8]);
         while (usedConditions.includes(condition)) {
-            condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7]);
+            condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 8, 8]);
         }
 
         usedConditions.push(condition);
@@ -839,6 +849,7 @@ function GenerateWeapon(rarity) {
         foeInitiation = false;
         var conditionsList;
         var effectsList;
+	grantEffect = false;
         switch (condition) {
             case 0:
                 conditionsList = startOfTurnConditions;
@@ -883,11 +894,31 @@ function GenerateWeapon(rarity) {
                 effectsList = assistEffects;
                 newLine = ChooseRandom(["If a movement Assist skill is used by unit or targets unit, ", "If a Rally Assist skill is used by unit, "]);
                 break;
+	    case 8:
+		grantEffect = true;
+		break;
             default:
                 console.log("whoops");
                 break;
         }
-
+	if(grantEffect)
+	{
+		newLine = FillInTags(ChooseRandom(["grants <+STATS> to allies within 2 spaces of unit during combat",
+					"grants <+STATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\"",
+					"grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\"",
+					"grants <+STATS> to unit and allies within 2 spaces of unit during combat",
+					"grants <+STATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\"",
+					"grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\"",
+					"grants <+STATS> to allies within <INT> spaces of unit during combat",
+					"grants <+STATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\"",
+					"grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\"",
+					"grants <+STATS> to unit and allies within <INT> spaces of unit during combat",
+					"grants <+STATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"",
+					"grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\""]),rarity);
+		points -= 1;
+        	lines.push(newLine);
+		continue;
+	}
         rawConds = [];
         if (Math.random() < 0.75 && condition != 7) {
             if (currentlyHasCondition == true)
