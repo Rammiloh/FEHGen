@@ -808,6 +808,8 @@ function GenerateWeapon(rarity, unit, skills) {
     if (points > 1)
         points += ChooseRandom([-1, 0, 0, 0, 1]);
     if (points == 1) points += 1;
+    //Apply a tax for weapon types with consistently innate effects
+    if (unit.Weapon.Weapon == "Staff" || unit.Weapon.Weapon == "Beast" || unit.Weapon.Weapon == "Dragon") points -= 1;
 
     const lines = [];
     innatesGiven = false;
@@ -896,7 +898,7 @@ function GenerateWeapon(rarity, unit, skills) {
 		var assistString = "";
 		if(assist.includes("Rally") || assist.includes("Harsh")) assistString = "rally";
 		else if(unit.StatMod == "Dancer") assistString = "dance";
-		else if(unit.Weapon.weapon == "Staff") assistString = "healing";
+		else if(unit.Weapon.Weapon == "Staff") assistString = "healing";
 		else assistString = "positional"
 		console.log("assist string: " + assistString + " (" + unit.StatMod + ") (" + unit.Weapon.weapon + ")");
                 newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
@@ -1030,11 +1032,23 @@ function GenerateWeapon(rarity, unit, skills) {
     for (index = 0; index < lines.length; index++) {
         lines[index] = Capitalise(lines[index]);
     }
-    if(!innatesGiven) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk","Spd","Def","Res"]) + "+3. ");
-    if(unit.Weapon.weapon == "Beast")
+    if(unit.Weapon.Weapon == "Staff")
     {
-	    lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】");
+	    lines.splice(0,0,ChooseRandom(["Foe cannot counterattack. ","Calculates damage from staff like other weapons. "]);
     }
+    if(unit.Weapon.Weapon == "Beast")
+    {
+	    lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】 ");
+    }
+    if(unit.Weapon.Weapon == "Dagger")
+    {
+	    lines.push("Effect: 【Dagger 7】 ");
+    }
+    if(unit.Weapon.Weapon == "Dragon")
+    {
+	    lines.push("If foe's Range = 2, calculates damage using the lower of foe's Def or Res. ");
+    }
+    if(!innatesGiven) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk","Spd","Def","Res"]) + "+3. ");
     //console.log(lines);
     return lines.join('\n');
     /*for each line in lines
