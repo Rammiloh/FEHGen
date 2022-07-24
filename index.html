@@ -404,8 +404,8 @@ function GenerateStats(character) {
 
     rates = RandomiseGrowths(rates, 5);
 
-    if (thisClass.Weapon == "Melee" && thisClass.Class == "Armor") {
-        //Arden's HP is a statistical outlier, so we have to cut Armored Melee units' HP growth in half to compensate
+    if ((thisClass.Weapon == "Melee" && thisClass.Class == "Armor") || (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry")) {
+        //Arden and Merlinus's HP are statistical outliers, so we have to cut Armored Melee and Cavalry Missile units' HP growth in half to compensate
         var subtraction = Math.random() * rates[0] / 2;
         rates[0] -= subtraction;
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
