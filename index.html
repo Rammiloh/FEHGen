@@ -755,7 +755,7 @@ function FillInTags(line, rarity) {
     line = line.replaceAll("<STATS>", array[0]);
     line = line.replaceAll("<STATS2>", array[1]);
 
-    val = GetRandom(2, 4) + Math.ceil(rarity / 2);
+    val = GetRandom(2, 5) + Math.ceil(rarity / 2);
     array = Shuffle(["Atk", "Def", "Spd", "Res"]);
     if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
     else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
@@ -763,7 +763,7 @@ function FillInTags(line, rarity) {
     line = line.replaceAll("<+STATS>", array[0] + "+" + val);
     line = line.replaceAll("<+STATS2>", array[1] + "+" + val);
 
-    val = GetRandom(2, 4) + Math.ceil(rarity / 2);
+    val = GetRandom(2, 5) + Math.ceil(rarity / 2);
     array = Shuffle(["Atk", "Def", "Spd", "Res"]);
     if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
     else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
