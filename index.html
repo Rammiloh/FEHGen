@@ -896,10 +896,10 @@ function GenerateWeapon(rarity, unit, skills) {
             case 7:
                 effectsList = assistEffects;
 		var assistString = "";
-		if(assist.includes("Rally") || assist.includes("Harsh")) assistString = "rally";
-		else if(unit.StatMod == "Dancer") assistString = "dance";
+		if(assist.includes("Rally") || assist.includes("Harsh")) assistString = "Rally";
+		else if(unit.StatMod == "Dancer") assistString = "Dance";
 		else if(unit.Weapon.Weapon == "Staff") assistString = "healing";
-		else assistString = "positional"
+		else assistString = "movement"
 		console.log("assist string: " + assistString + " (" + unit.StatMod + ") (" + unit.Weapon.weapon + ")");
                 newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
 		newLine = newLine.replaceAll("<ASSIST>",assistString);
