@@ -802,7 +802,8 @@ function SortTwoLists(orderedList, affectedList) {
 
     return affectedList;
 }
-function GenerateWeapon(rarity) {
+function GenerateWeapon(rarity, unit, skills) {
+    var assist = skills[3];
     var points = 1 + rarity;
     if (points > 1)
         points += ChooseRandom([-1, 0, 0, 0, 1]);
@@ -892,7 +893,14 @@ function GenerateWeapon(rarity) {
                 break;
             case 7:
                 effectsList = assistEffects;
-                newLine = ChooseRandom(["If a movement Assist skill is used by unit or targets unit, ", "If a Rally Assist skill is used by unit, "]);
+		var assistString = "";
+		if(assist.includes("Rally") || assist.includes("Harsh")) assistString = "rally";
+		else if(unit.StatMod == "Dancer") assistString = "dance";
+		else if(unit.Weapon.weapon == "Staff") assistString = "healing";
+		else assistString = "positional"
+		console.log("assist string: " + assistString + " (" + unit.StatMod + ") (" + unit.Weapon.weapon + ")");
+                newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
+		newLine = newLine.replaceAll("<ASSIST>",assistString);
                 break;
 	    case 8:
 		grantEffect = true;
@@ -1022,6 +1030,11 @@ function GenerateWeapon(rarity) {
     for (index = 0; index < lines.length; index++) {
         lines[index] = Capitalise(lines[index]);
     }
+    if(!innatesGiven) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk","Spd","Def","Res"]) + "+3. ");
+    if(unit.Weapon.weapon == "Beast")
+    {
+	    lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】");
+    }
     //console.log(lines);
     return lines.join('\n');
     /*for each line in lines
@@ -1050,7 +1063,7 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
         character2Filename = character2.Filename;
 
     var skills = GenerateSkills(unit, rarity);
-    var weaponText = GenerateWeapon(rarity);
+    var weaponText = GenerateWeapon(rarity, unit, skills);
 
     if (rarity == 4) {
         if (character.Game == character2.Game) rarityText[4] = "Duo";
