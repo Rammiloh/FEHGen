@@ -240,7 +240,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Grants bonus to unit’s <STAT> = total bonuses on <EITHER>",
+    "Effect": "grants bonus to unit’s <STAT> = total bonuses on <EITHER>",
     "Tags": "during_combat,combat_start",
     "Weight": 1
   },
@@ -450,7 +450,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Neutralizes \"effective against <UNITCLASS>\" bonuses",
+    "Effect": "neutralizes \"effective against <UNITCLASS>\" bonuses",
     "Tags": "innate",
     "Weight": 1
   },
@@ -490,17 +490,17 @@
     "Weight": 2
   },
   {
-    "Effect": "Reduces damage from <CLASS> foe's consecutive attacks by <PERCENT>",
+    "Effect": "reduces damage from <CLASS> foe's consecutive attacks by <PERCENT>",
     "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
-    "Effect": "Reduces damage from <CLASS> foe's first attack by <PERCENT>",
+    "Effect": "reduces damage from <CLASS> foe's first attack by <PERCENT>",
     "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
   {
-    "Effect": "Reduces damage from <CLASS> foe's second attack by <PERCENT>",
+    "Effect": "reduces damage from <CLASS> foe's second attack by <PERCENT>",
     "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
@@ -510,7 +510,7 @@
     "Weight": 1
   },
   {
-    "Effect": "Reduces damage from foe's consecutive attacks by <PERCENT>",
+    "Effect": "reduces damage from foe's consecutive attacks by <PERCENT>",
     "Tags": "innate,during_combat,grant",
     "Weight": 1
   },
