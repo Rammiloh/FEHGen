@@ -150,6 +150,7 @@
 	      <div id="generatedASkill" class="my-3"></div>
 	      <div id="generatedBSkill" class="my-3"></div>
 	      <div id="generatedCSkill" class="my-3"></div>
+	      <div id="generatedDuoSkill" class="my-3"></div>
 <!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
 
 <h3 id="support-or-contact">Support or Contact</h3>
@@ -1065,6 +1066,70 @@ if "start of turn" move to end
     return final text
 }*/
 }
+function FillInDuoTags(line) {
+    	var array = Shuffle(["unit and allies from the same titles as unit","allies from the same titles as unit"]);
+    	line = line.replaceAll("<HALLIES>", array[0]);
+    
+    	array = Shuffle(["unit and allies",
+		     "unit, as well as <CLASS> and <CLASS2> allies",
+		     "allies",
+		     "<CLASS> and <CLASS2> allies",
+		     "<CLASS> allies>",
+		     "unit and <CLASS> allies",
+		     "ally with the highest <STAT>",
+		     "closest allies"]);
+    	line = line.replaceAll("<ALLIES>", array[0]);
+	
+    	array = Shuffle([" within <INT> spaces of unit",
+		" within 3 columns centered on unit",
+		" within 3 rows centered on unit",
+		" within 3 rows and 3 columns centered on unit",
+		" within 5 columns centered on unit",
+		" within 5 rows centered on unit",
+		" within 5 rows and 5 columns centered on unit",
+		" adjacent to unit",
+		""]);
+	line = line.replaceAll("<POSITION>", array[0]);
+	
+	line = line.replaceAll("<RESONANCE>", ChooseRandom(["【Resonance: Blades】","【Resonance: Shields】"]));
+	return line;
+}
+    
+function GenerateDuoSkill(duo) {
+	var duoText = ChooseRandom(["Deals <BINT> damage to foes<POSITION>.",
+		"Inflicts <-STATS> on foes<POSITION> through their next action.",
+		"Inflicts <PENALTY> on foes<POSITION> through their next action.",
+		"Inflicts <-STATS> and <PENALTY> on foes<POSITION> through their next action.",
+		"Inflicts Special cooldown count+<INT> on foes<POSITION>.",
+		"Inflicts Special cooldown count+<INT> and <-STATS> on foes<POSITION> through their next action.",
+		"Deals <BINT> damage and inflicts <PENALTY> on foes<POSITION> through their next action.",
+		"Deals <BINT> damage and inflicts <-STATS> on foes<POSITION> through their next action.",
+		"Deals <BINT> damage and inflicts <-STATS> and <PENALTY> on foes<POSITION> through their next action.",
+		"Grants <BONUS> to <ALLIES><POSITION> for one turn.",
+		"Grants <+STATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
+		"Restores <BINT> HP and grants <+STATS> to <ALLIES><POSITION> for one turn.",
+		"Restores <BINT> HP and grants <BONUS> to <ALLIES><POSITION> for one turn.",
+		"Grants <+STATS> and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+		"Grants Special cooldown count-<INT> to <ALLIES><POSITION>.",
+		"Grants another action, <+STATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
+		"Grants another action, <+STATS>, and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+		"Grants unit another action. (May be used only if unit has already entered combat during the current turn.)",
+		"Moves allies adjacent to unit to opposite side of unit. If an ally cannot move to the target space (if another ally or foe is occupying the space) ally will not move."]);
+	
+	var harmonicText = ChooseRandom(["Grants <RESONANCE> to <HALLIES> for one turn.",
+		"Grants <RESONANCE> to <HALLIES> for one turn. Grants another action to ally with the highest <STAT> that is within <INT> spaces, has already acted, and is from the same titles as unit (excluding unit).",
+		"Grants <RESONANCE> to <HALLIES> for one turn. Grants <BONUS> to unit.",
+		"Grants <RESONANCE> and the following effect to <HALLIES> for one turn: <GRANT>.",
+		"Grants <RESONANCE> and <BONUS> to <HALLIES> for one turn.",
+		"Grants <RESONANCE> and <+STATS> to <HALLIES> for one turn.",
+		"Grants <RESONANCE>, <+STATS>, and <BONUS> to <HALLIES> for one turn.",
+		"Grants <RESONANCE>, <+STATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
+		"Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
+		"Grants <RESONANCE>, <+STATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
+	if(duo) return FillInTags(FillInDuoTags(duoText));
+	else return FillInTags(FillInDuoTags(harmonicText));
+}
+	
 
 //=================================PUT IT ALL TOGETHER================================
 
@@ -1078,9 +1143,11 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
 
     var skills = GenerateSkills(unit, rarity);
     var weaponText = GenerateWeapon(rarity, unit, skills);
+    var duoSkill = "";
 
     if (rarity == 4) {
         if (character.Game == character2.Game) rarityText[4] = "Duo";
+ 	duoSkill = GenerateDuoSkill(character.Game == character2.Game);
     }
 
     var gennedUnit = {
@@ -1096,7 +1163,8 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
         Skills: skills,
         RarityText: rarityText[rarity],
         Rarity: rarity,
-        Theme: theme
+        Theme: theme,
+	DuoSkill: duoSkill
     }
 
     return gennedUnit;
@@ -1185,7 +1253,12 @@ function DisplayUnit(unit) {
     document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${unit.Skills[0]}`;
     document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${unit.Skills[1]}`;
     document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${unit.Skills[2]}`;
-
+    document.getElementById("generatedDuoSkill").innerHTML = ``;
+    if(unit.Rarity == 4)
+    {
+	    if(unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> ${unit.DuoSkill}`;
+	    else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> ${unit.DuoSkill}`;
+    }
 }
 
 async function Initialise() {
