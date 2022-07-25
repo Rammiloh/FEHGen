@@ -1256,8 +1256,8 @@ function DisplayUnit(unit) {
     document.getElementById("generatedDuoSkill").innerHTML = ``;
     if(unit.Rarity == 4)
     {
-	    if(unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> ${unit.DuoSkill}`;
-	    else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> ${unit.DuoSkill}`;
+	    if(unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> <em>${unit.DuoSkill}</em>`;
+	    else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> <em>${unit.DuoSkill}</em>`;
     }
 }
 
