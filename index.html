@@ -420,13 +420,13 @@ function GenerateStats(character) {
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
         console.log("Reduced HP growth by " + subtraction);
     }
-    if (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry") {
-        //Add to Missile Cav's attack to compensate for Merlinus's terrible atk stat
-        var subtraction = Math.random() * rates[0] / 2;
-        rates[ChooseRandom([0, 2, 3, 4])] -= subtraction;
-        rates[1] += subtraction;
-        console.log("Added to atk growth by " + subtraction);
-    }
+    //if (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry") {
+    //    //Add to Missile Cav's attack to compensate for Merlinus's terrible atk stat
+    //    var subtraction = Math.random() * rates[0] / 2;
+    //    rates[ChooseRandom([0, 2, 3, 4])] -= subtraction;
+    //    rates[1] += subtraction;
+    //    console.log("Added to atk growth by " + subtraction);
+    //}
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
     for (let i = 1; i < rates.length; i++) {
