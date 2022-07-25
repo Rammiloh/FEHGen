@@ -325,7 +325,12 @@ function GenerateCharacter(hero, theme, rarity) {
 		    {
 			    //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
 			    suffix = ChooseRandom(theme.Suffixes);
-			    while(suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) suffix = ChooseRandom(theme.Suffixes);
+			    console.log("Pre-suffix: " + suffix);
+			    while(suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) 
+			    {
+				    suffix = ChooseRandom(theme.Suffixes);
+			    	console.log("Rerolled. New pre-suffix: " + suffix);
+			    }
 			    heroTitle.splice(0, 1, ChooseRandom(theme.Suffixes));
 		    }
 		    else
