@@ -296,37 +296,47 @@ async function loadAllJSONs() {
 
 //=================================GENERATE CHARACTER================================
 
-function GenerateCharacter(hero, theme) {
+function GenerateCharacter(hero, theme, rarity) {
     //The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
     heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
     heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
 
-    if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
-    {
-        if (heroTitle.length > 1) {
-            var suffix = ChooseRandom(theme.Suffixes);
-            //Check if the second word in the base subtitle is a two letter word, usually "of"
-            //If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
-            //We don't want something like "Hero of of Beach"
-            while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
-                suffix = ChooseRandom(theme.Suffixes);
-            //Create the new title
-            heroTitle.splice(heroTitle.length - 1, 1, suffix);
-        }
-        else //If the subtitle is only a single word long, we can just attach the suffix with no issue
-            heroTitle.splice(heroTitle.length - 1, 0, ChooseRandom(theme.Suffixes));
+    if(rarity != 4){
+    	if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
+    	{
+        	if (heroTitle.length > 1) {
+			var suffix = ChooseRandom(theme.Suffixes);
+			//Check if the second word in the base subtitle is a two letter word, usually "of"
+			//If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
+			//We don't want something like "Hero of of Beach"
+			while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
+				suffix = ChooseRandom(theme.Suffixes);
+			    //Create the new title
+			    heroTitle.splice(heroTitle.length - 1, 1, suffix);
+		}
+		else //If the subtitle is only a single word long, we can just attach the suffix with no issue
+		    heroTitle.splice(heroTitle.length - 1, 0, ChooseRandom(theme.Suffixes));
+	}
+	else {
+		if (heroTitle.length > 1) {
+		    //Check if the second word in the base subtitle is a two letter word, usually "of"
+		    //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
+		    if (heroTitle[1].length == 2)
+		    {
+			    //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
+			    suffix = ChooseRandom(theme.Suffixes);
+			    while(suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) suffix = ChooseRandom(theme.Suffixes);
+			    heroTitle.splice(0, 1, ChooseRandom(theme.Suffixes));
+		    }
+		    else
+			heroTitle.splice(0, 1, ChooseRandom(theme.Prefixes));
+		}
+		else //If the subtitle is only a single word long, we can just attach the prefix with no issue
+		    heroTitle.splice(0, 0, ChooseRandom(theme.Prefixes));
+	    }
     }
-    else {
-        if (heroTitle.length > 1) {
-            //Check if the second word in the base subtitle is a two letter word, usually "of"
-            //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
-            if (heroTitle[1].length == 2)
-                heroTitle.splice(0, 1, ChooseRandom(theme.Suffixes));
-            else
-                heroTitle.splice(0, 1, ChooseRandom(theme.Prefixes));
-        }
-        else //If the subtitle is only a single word long, we can just attach the prefix with no issue
-            heroTitle.splice(0, 0, ChooseRandom(theme.Prefixes));
+    else{
+	    heroTitle = [ChooseRandom(theme.Prefixes),ChooseRandom(theme.Duos)];
     }
 
     console.log(heroName + ": " + heroTitle.join(" "));
@@ -1138,7 +1148,7 @@ function GenerateDuoSkill(duo) {
 //=================================PUT IT ALL TOGETHER================================
 
 async function GenerateUnit(rarity, theme, character, character2 = null) {
-    var unit = GenerateCharacter(character, theme);
+    var unit = GenerateCharacter(character, theme, rarity);
     var stats = GenerateStats(unit);
     var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
     var character2Filename = "";
