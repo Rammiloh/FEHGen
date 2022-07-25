@@ -1126,8 +1126,8 @@ function GenerateDuoSkill(duo) {
 		"Grants <RESONANCE>, <+STATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
 		"Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
 		"Grants <RESONANCE>, <+STATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
-	if(duo) return FillInTags(FillInDuoTags(duoText));
-	else return FillInTags(FillInDuoTags(harmonicText));
+	if(duo) return FillInTags(FillInDuoTags(duoText),4);
+	else return FillInTags(FillInDuoTags(harmonicText),4);
 }
 	
 
