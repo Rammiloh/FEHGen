@@ -2,66 +2,79 @@
   {
     "Event": "New Years",
     "Prefixes": ["Traditional","Celebratory","Holiday","Kumade","New","Refreshed","Resolute","New Year's","Renewed","Fresh","New Year","Fortunate"],
-    "Suffixes": ["Soup","Refresher","Resolution","Celebrator","Spirit","Anew","Dawn","of Fortune"]
+    "Suffixes": ["Soup","Refresher","Resolution","Celebrator","Spirit","Anew","Dawn","Fortune"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Spirits","Celebrators"]
   },
   {
     "Event": "Desert",
     "Prefixes": ["Torchlit","Sunny","Sun","Scorching","Sandy","Flowing","Tanned","Sand Dune","Sand","Wandering","Traveling"],
-    "Suffixes": ["Monger","Charmer","Scorcher","Sandstorm","Sun","Wanderer","Traveler","Merchant"]
+    "Suffixes": ["Monger","Charmer","Scorcher","Sandstorm","Sun","Wanderer","Traveler","Merchant"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Wanderers","Travelers","Harmony"]
   },
   {
     "Event": "Hot Springs",
     "Prefixes": ["Relaxed","Hot-Spring","Steamy","Scantily-Clad","Bubbling","Risqué","Indecent","Spicy","Soaked","Soothing","Immersed","Lax","Modest","Immodest","Soapy","Immersed in"],
-    "Suffixes": ["at Ease","Soaker","Bather","Immersion","Splasher","Swimmer"]
+    "Suffixes": ["at Ease","Soaker","Bather","Immersion","Splasher","Swimmer"],
+    "Duos": ["Duo","Pair","'Friends'","Buddies","Partners","Rivals","Allies","Companions","Bathers","Soakers","Splashers","Swimmers","Skinship"]
   },
   {
     "Event": "Valentines",
     "Prefixes": ["Devoted","Blushing","Youthful","Gift of","Addled","Warm","Pure","Purest","Lovelorn","Lovely","Loving","Selfless","Lovebird","Lovestruck","Tactful","Admiring","Bestowed","Uplifting","Overflowing"],
-    "Suffixes": ["Love","Embrace","of Youth","Gifts","Heart","of Love","Heartstring","Lovebird","Lover","Fondness","Celebrant","Admirer"]
+    "Suffixes": ["Love","Embrace","of Youth","Gifts","Heart","Heartstring","Lovebird","Lover","Fondness","Celebrant","Admirer","Sweetheart","Heartthrob","Darling"],
+    "Duos": ["Duo","Pair","'Friends'","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings"]
   },
   {
     "Event": "Easter",
     "Prefixes": ["Spring","Earsome","Vernal","Springtime","Festival","Verdant","Nature","Hopping","Egg-Bearing","Sunny","Sun","Bright","Cheerful","Lively","Lush","Natural","Springy"],
-    "Suffixes": ["Hare","Rabbit","Bun-Bun","of Spring","Blossom","Flower","in Bloom","Egg","Bunny"]
+    "Suffixes": ["Hare","Rabbit","Bun-Bun","Blossom","Flower","in Bloom","Egg","Bunny"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Bunnies","Bun-Buns","Rabbits","Hares","Hoppers"]
   },
   {
     "Event": "Picnic",
     "Prefixes": ["Buffet","Lunch","Luncheon","Tea-Time","Relaxing","Relaxed","Picnicking","Cookout","Outdoor","Dozing","Hungry","Basket"],
-    "Suffixes": ["Buffet","Snacker","Dish","Relaxer","Muncher","Chef","Dozer","Hunger","Tablecloth"]
+    "Suffixes": ["Buffet","Snacker","Dish","Relaxer","Muncher","Chef","Dozer","Hunger","Tablecloth"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Snacks","Taste-Testers","Pals","Munchers"]
   },
   {
     "Event": "Child",
     "Prefixes": ["Radiant","Youthful","Young","Legacied","Spirited","Shy","Nervous","Future","Budding","Awakened","Prodigious","Childish","Playful","Eager","Boisterous"],
-    "Suffixes": ["Refulgence","Radiance","Youth","Kid","Child","Legacy","Prodigy"]
+    "Suffixes": ["Refulgence","Radiance","Youth","Kid","Child","Legacy","Prodigy"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Rivals","Allies","Pals","Besties","BFFs","Kids","Children","Young-Ones"]
   },
   {
     "Event": "Bridal",
-    "Prefixes": ["Bride","Groom","Bridal","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Bride of","Groom of","Partner of","Devoted","Blessed","Avowed"],
-    "Suffixes": ["Bride","Groom","Maiden","Husband","Wife","Partner","in White","in Black","Flowergirl","Fiancé","Devotion","Bride-to-Be","Groom-to-Be","Vow","Vows","Love","of Love","in Love","Bachelor"]
+    "Prefixes": ["Bridal","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Devoted","Blessed","Avowed"],
+    "Suffixes": ["Bride","Groom","Maiden","Husband","Wife","Partner","Flowergirl","Fiancé","Devotion","Bride-to-Be","Groom-to-Be","Vow","Vows","Love","Bachelor"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings","Newlyweds","Brides","Grooms","Item"]
   },
   {
     "Event": "Summer",
     "Prefixes": ["Summer","Summering","Horizon","Seaside","Seashore's","Tropical","Shade","Beachside","Sunbathing","Beaming","Bonfire's","Burning","Sandcastle","Clear-Blue","Sunbeam","Sandbar","Solar","Solstice","Sea","Estival","Sky-Blue","Wavecrest"],
-    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","Two-Piece","One-Piece","Rays","on Leave"]
+    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","Two-Piece","One-Piece","Rays","on Leave"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Sunbathers","Swimmers","Splashers","Two-Piece","Skinship","Beachgoers","Flaunters","Show-Offs"]
   },
   {
     "Event": "Pirates",
-    "Prefixes": ["Sea","Sea's","Pirate of","High Seas","Terror of","Ship-Shape","First-Mate","Ruthless","Bountied","Bootiful","Crow's Nest","Gangplank","Jolly","Keelhaul","Mutinous","Plundering","Drunken","Savvy"],
-    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad","Lass","Laddie","Lassie","Lookout","Ho","Scourge","Sea-Dog","Wench"]
+    "Prefixes": ["Sea","Sea's","Pirate","High Seas","Terrorizing","Ship-Shape","First-Mate","Ruthless","Bountied","Bootiful","Crow's Nest","Gangplank","Jolly","Keelhaul","Mutinous","Plundering","Drunken","Savvy"],
+    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad","Lass","Laddie","Lassie","Lookout","Ho","Scourge","Sea-Dog","Wench"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Mates","Scallywags","Booty-Buddies","Land-Lubbers","Pirates","Lassies","Laddies","Sailors","Lookouts","Sea-Dogs"]
   },
   {
     "Event": "Halloween",
     "Prefixes": ["Forbidden","Moonlit","Vampiric","Ghoulish","Mad","Ghastly","Tricky","Harvest","Fall","Autumn","Cobweb","Spooky","Skeletal","Zombified","Mummified","Ghostly","Naughty"],
-    "Suffixes": ["Witch","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Wizard","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"]
+    "Suffixes": ["Witch","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Wizard","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Witches","Monsters","Vampires","Tricksters","Pumpkins","Trick-or-Treaters","Skeletons","Zombies","Ghosts","Devils","Werewolves","Spirits","'Two People in a Horse Costume'","Angel & Devil"]
   },
   {
     "Event": "Ninjas",
     "Prefixes": ["Ninja of","Ninja","Sneaky","Stealthy","Shinobi","Disguised","Silent"],
-    "Suffixes": ["Ninja","Shinobi","Sneak","Silence","Assassin"]
+    "Suffixes": ["Ninja","Shinobi","Sneak","Silence","Assassin"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Ninja","Assassins","Sneaks","Shinobi"]
   },
   {
     "Event": "Christmas",
     "Prefixes": ["Festive","Gifted","Sparkling","Snowy","Holiday","Winter's","Winter","Silver","Hoary","Icy","Frosty","Sugarplum","Warming","Joyful"],
-    "Suffixes": ["Joy","Snow","Night","Gift-Giver","Reindeer","Elf","Frost","Ice","Caroler","Nutcracker"]
+    "Suffixes": ["Joy","Snow","Night","Gift-Giver","Reindeer","Elf","Frost","Ice","Caroler","Nutcracker","Miracle"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Naughty-and-Nice","Gift-Givers","Elves","Carolers","Mistletoe","Reindeer"]
   }
 ]
