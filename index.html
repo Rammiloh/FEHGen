@@ -325,13 +325,11 @@ function GenerateCharacter(hero, theme, rarity) {
 		    {
 			    //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
 			    suffix = ChooseRandom(theme.Suffixes);
-			    console.log("Pre-suffix: " + suffix);
 			    while(suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) 
 			    {
 				    suffix = ChooseRandom(theme.Suffixes);
-			    	console.log("Rerolled. New pre-suffix: " + suffix);
 			    }
-			    heroTitle.splice(0, 1, ChooseRandom(theme.Suffixes));
+			    heroTitle.splice(0, 1, suffix);
 		    }
 		    else
 			heroTitle.splice(0, 1, ChooseRandom(theme.Prefixes));
@@ -344,7 +342,6 @@ function GenerateCharacter(hero, theme, rarity) {
 	    heroTitle = [ChooseRandom(theme.Prefixes),ChooseRandom(theme.Duos)];
     }
 
-    console.log(heroName + ": " + heroTitle.join(" "));
     var fullTitle = heroName + ": " + heroTitle.join(" ");
     var mvmnt = ChooseRandom(moveTypes);
     var wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7, 8])];
@@ -396,15 +393,11 @@ function GenerateStats(character) {
     for (let i = 0; i < thisClass.MinStats.length; i++) {
         sum += thisClass.MinStats[i];
     }
-    console.log("sum: " + sum);
     let points = ChooseRandom(thisClass.BST) - sum;
-    console.log("StatMod: " + character.StatMod + ", points: " + points);
     if (character.StatMod == "Dancer") {
-        console.log("Character is a Dancer");
         points -= 11;
     }
     if (character.StatMod == "Trainee") points += 5;
-    console.log("points: " + points);
     var rates = [0, 0, 0, 0, 0];
     var stats = thisClass.MinStats;
     var ratesMax = 0;
@@ -427,13 +420,19 @@ function GenerateStats(character) {
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
         console.log("Reduced HP growth by " + subtraction);
     }
+    if (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry") {
+        //Add to Missile Cav's attack to compensate for Merlinus's terrible atk stat
+        var subtraction = Math.random() * rates[0] / 2;
+        rates[ChooseRandom([0, 2, 3, 4])] -= subtraction;
+        rates[1] += subtraction;
+        console.log("Added to atk growth by " + subtraction);
+    }
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
     for (let i = 1; i < rates.length; i++) {
         rates[i] = rates[i] + rates[i - 1];
     }
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
-    console.log("points as we head into the loop: " + points);
     while (points > 0) {
         chosenStat = Math.random();
         for (let i = 0; i < rates.length; i++) {
@@ -608,7 +607,6 @@ function GenerateSkills(character, rarityInt) {
     for (let i = 0; i < unitSkills.length; i++) {
         unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
     }
-    console.log(move.Movement + " " + weapon.Tags[0] + " " + weapon.Weapon + ": " + unitSkills);
     if (weapon.Weapon == "Staff") {
         if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
             unitSkills[GetRandom(0, 2)] = "";
@@ -630,19 +628,14 @@ function GenerateSkills(character, rarityInt) {
         }
         unitSkills[GetRandom(3, 4)] = "";
     }
-    console.log("unitskills: " + unitSkills);
-    console.log(character.Prfs);
     if (character.Prfs.length > 0) {//Add prf skills if they exist
-	console.log("they exist");
         prfs = Shuffle(character.Prfs);
         usedPrfSlots = [];
         prfOdds = 1.0;
         for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
 	    slot = prfs[i].substring(0, prfs[i].indexOf(":"));
             skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
-	    console.log("slot: " + slot + ", name: " + skillName);
             if (!usedPrfSlots.includes(slot) && Math.random()<(prfOdds/(usedPrfSlots.length+1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
-                console.log("pushing " + slot);
 		usedPrfSlots.push(slot);
                 if (slot == "A") unitSkills[0] = skillName;
                 if (slot == "B") unitSkills[1] = skillName;
@@ -653,7 +646,6 @@ function GenerateSkills(character, rarityInt) {
 
         }
     }
-    console.log("unitskills after: " + unitSkills);
     return unitSkills;
 }
 
@@ -700,7 +692,6 @@ function SortWeaponJSONIntoLists() {
         FillTaggedList(entry, assistEffects, "assist");
         FillTaggedList(entry, negativeEffects, "negative");
     });
-    console.log(negativeEffects);
 
     conditionsJSON.forEach(function (entry) {
         FillTaggedList(entry, startOfTurnConditions, "turn_start");
@@ -708,7 +699,6 @@ function SortWeaponJSONIntoLists() {
         FillTaggedList(entry, duringCombatConditions, "during_combat");
         FillTaggedList(entry, endOfCombatConditions, "combat_end");
     });
-    console.log(endOfCombatConditions);
 }
 
 function FillInTags(line, rarity) {
@@ -740,14 +730,8 @@ function FillInTags(line, rarity) {
     line = line.replaceAll("<BINT>", array[0]);
     line = line.replaceAll("<BINT2>", array[1]);
 
-    array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast"]);
-    line = line.replaceAll("<CLASS>", array[0]);
-    line = line.replaceAll("<CLASS2>", array[1]);
-
     array = Shuffle(["【Move+1】", "【Guidance】", "【Bonus Doubler】",
-        "【Neutralize Dragon Effectiveness】",
-        "【Neutralize Armor Effectiveness】",
-        "【Neutralize Flying Effectiveness】",
+        "【Neutralize <CLASS> Effectiveness】",
         "【Dominance】", "【Desperation】", "【Vantage】",
         "【Deny Follow-ups】", "【Dodge】", "【Guaranteed Follow-ups】",
         "【Triangle Attack】", "【Null Panic】", "【Cancel Affinity】",
@@ -757,6 +741,10 @@ function FillInTags(line, rarity) {
         "【Warp Bubble】", "【Charge】"]);
     line = line.replaceAll("<BONUS>", array[0]);
     line = line.replaceAll("<BONUS2>", array[1]);
+	
+    array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast"]);
+    line = line.replaceAll("<CLASS>", array[0]);
+    line = line.replaceAll("<CLASS2>", array[1]);
 
     array = Shuffle(["【Gravity】", "【Panic】", "【Flash】", "【Triangle Adept】",
         "【Guard】", "【Isolation】", "【Deep Wounds】", "【Stall】",
@@ -843,13 +831,11 @@ function GenerateWeapon(rarity, unit, skills) {
 
         lines.push(innate1 + ".");
         usedConditions.push(-1);
-        console.log("Innate: " + innate1);
         points -= 1;
         if (Math.random() < (0.1 + 0.05 * rarity)) {
             lines.push(innate2 + ".");
             usedConditions.push(-1);
             points -= 1;
-            console.log("Innate: " + innate2);
         }
         innatesGiven = true;
     }
@@ -916,7 +902,6 @@ function GenerateWeapon(rarity, unit, skills) {
 		else if(unit.StatMod == "Dancer") assistString = "Dance";
 		else if(unit.Weapon.Weapon == "Staff") assistString = "healing";
 		else assistString = "movement"
-		console.log("assist string: " + assistString + " (" + unit.StatMod + ") (" + unit.Weapon.weapon + ")");
                 newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
 		newLine = newLine.replaceAll("<ASSIST>",assistString);
                 break;
@@ -1039,7 +1024,6 @@ function GenerateWeapon(rarity, unit, skills) {
         }
 
         newLine = newLine + ".";
-        console.log(condition + ": " + newLine);
 
         lines.push(newLine);
     }
