@@ -1126,8 +1126,12 @@ function GenerateDuoSkill(duo) {
 		"Grants <RESONANCE>, <+STATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
 		"Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
 		"Grants <RESONANCE>, <+STATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
-	if(duo) return FillInTags(FillInDuoTags(duoText),4);
-	else return FillInTags(FillInDuoTags(harmonicText),4);
+	var text = "";
+	if(duo) text = FillInTags(FillInDuoTags(duoText),4);
+	else text = FillInTags(FillInDuoTags(harmonicText),4);
+	if(Math.random() < 0.2 && duo) text += " At start of odd-numbered turns, if Duo Skill has already been used, unit can use Duo Skill again.";
+	if(Math.random() < 0.2 && !duo) text += " At start of odd-numbered turns, if Harmonized Skill has already been used, unit can use Harmonized Skill again.";
+	return text;
 }
 	
 
