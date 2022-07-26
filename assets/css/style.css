@@ -6,13 +6,25 @@
 }
 #generatedUnit {
   background-color: #847668;
-  width:120px;
-  height:120px;
+  width:75px;
+  height:75px;
   padding:10px;
   margin:auto;
   border-radius: 10px;
 }
 #generatedUnit img {
+  width: 100%;
+  height: 100%;
+}
+#generatedClass {
+  background-color: #AAAEEE;
+  width:40px;
+  height:40px;
+  padding:5px;
+  margin:auto;
+  border-radius: 10px;
+}
+#generatedClass img {
   width: 100%;
   height: 100%;
 }
