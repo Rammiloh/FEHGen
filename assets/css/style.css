@@ -54,3 +54,11 @@
 #generatedStatsHP {
   color: #FF4040;
 }
+.splitscreen {
+  display: flex;
+}
+
+.splitscreen .left,
+.splitscreen .right {
+  flex: 1;
+}
