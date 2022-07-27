@@ -110,7 +110,7 @@
     "Weight": 1
   },
   {
-    "Effect": "During unit's first combat in player phase or enemy phase",
+    "Effect": "it is currently unit's first combat in player phase or enemy phase",
     "Tags": "during_combat",
     "Weight": 3
   },
@@ -185,17 +185,17 @@
     "Weight": 1
   },
   {
-    "Effect": "during turns 1 through 4",
+    "Effect": "it is currently turns 1 through 4",
     "Tags": "during_combat",
     "Weight": 1
   },
   {
-    "Effect": "during turns 1 through <INT>",
+    "Effect": "it is currently turns 1 through <INT>",
     "Tags": "during_combat",
     "Weight": 1
   },
   {
-    "Effect": "current turn is turn <INT> or later",
+    "Effect": "it is currently turn <INT> or later",
     "Tags": "turn_start,during_combat",
     "Weight": 1
   },
