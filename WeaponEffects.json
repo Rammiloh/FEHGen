@@ -692,12 +692,12 @@
   {
     "Effect": "the following effects will occur based on the value of total bonuses on unit + value of total penalties on foe: if ≥ 5, <GRANT>; and if ≥ 10, <GRANT2> and if ≥ 15, <GRANT3>",
     "Tags": "combat_start,during_combat",
-    "Weight": 1
+    "Weight": 10
   },
   {
     "Effect": "the following effects will occur based on the value of total penalties on unit + value of total bonuses on foe: if ≥ 5, <GRANT>; and if ≥ 10, <GRANT2> and if ≥ 15, <GRANT3>",
     "Tags": "combat_start,during_combat",
-    "Weight": 1
+    "Weight": 10
   },
   {
     "Effect": "grants bonus to unit's Atk = unit's max Special cooldown count value × 3",
