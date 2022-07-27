@@ -850,9 +850,9 @@ function GenerateWeapon(rarity, unit, skills) {
     }
     while (points > 0) {
         var newLine = "";
-        var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 8, 8]);
+        var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
         while (usedConditions.includes(condition)) {
-            condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6, 7, 8, 8]);
+            condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
         }
 
         usedConditions.push(condition);
