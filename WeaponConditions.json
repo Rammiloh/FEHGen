@@ -248,5 +248,20 @@
     "Effect": "unit is within 3 spaces of two allies in a support-partner pair (excluding unit)",
     "Tags": "turn_start,combat_start,during_combat,combat_end",
     "Weight": 1
+  },
+  {
+    "Effect": "unit cannot make a follow-up attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit can make a follow-up attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "another foe is within <INT> spaces of target",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   }
 ]
