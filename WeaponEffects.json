@@ -596,17 +596,17 @@
   },
   {
     "Effect": "unit can move to a space adjacent to an ally within 2 spaces",
-    "Tags": "innate,grant",
+    "Tags": "innate",
     "Weight": 1
   },
   {
     "Effect": "unit can move to a space within 2 spaces of any ally within 2 spaces",
-    "Tags": "innate,grant",
+    "Tags": "innate",
     "Weight": 1
   },
   {
     "Effect": "unit can move to a space adjacent to an ally within <INT> spaces",
-    "Tags": "innate,grant",
+    "Tags": "innate",
     "Weight": 1
   },
   {
@@ -652,6 +652,56 @@
   {
     "Effect": "grants target ally another action (Once per turn)",
     "Tags": "assist",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals <BINT> damage to foes within <INT> spaces of unit",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals <BINT> damage to foes within 3 columns centered on unit",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals <BINT> damage to closest foes within <INT> spaces of unit",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals <BINT> damage to foes with <STAT> < unit's <STAT>",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "reduces damage from foe's attacks by <LOWPERCENT> of unit's <STAT> (excluding area-of-effect Specials)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "restores <BINT> HP to unit and allies within <INT> spaces of unit",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "restores <BINT> HP to unit and target ally",
+    "Tags": "assist",
+    "Weight": 1
+  },
+  {
+    "Effect": "the following effects will occur based on the value of total bonuses on unit + value of total penalties on foe: if ≥ 5, <GRANT>; and if ≥ 10, <GRANT2> and if ≥ 15, <GRANT3>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "the following effects will occur based on the value of total penalties on unit + value of total bonuses on foe: if ≥ 5, <GRANT>; and if ≥ 10, <GRANT2> and if ≥ 15, <GRANT3>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants bonus to unit's Atk = unit's max Special cooldown count value × 3",
+    "Tags": "combat_start,during_combat",
     "Weight": 1
   }
 ]
