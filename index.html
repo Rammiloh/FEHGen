@@ -711,6 +711,7 @@ function FillInTags(line, rarity) {
     var array = Shuffle(grantEffects);
     line = line.replaceAll("<GRANT>", array[0]);
     line = line.replaceAll("<GRANT2>", array[1]);
+    line = line.replaceAll("<GRANT3>", array[2]);
     
     array = Shuffle(["Atk", "Spd", "Def", "Res"]);
     line = line.replaceAll("<STAT>", array[0]);
@@ -943,6 +944,9 @@ function GenerateWeapon(rarity, unit, skills) {
 
             var tempCondition = ChooseRandom(conditionsList);
             rawConds.push(tempCondition);
+		//The following condition prevents us from getting situations where our HP needs to be below and above certain thresholds, which can be impossible to meet
+	    if(tempCondition.includes("≥"))rawConds.push(tempCondition.replaceAll("≥","≤"));
+	    else if(tempCondition.includes("≤"))rawConds.push(tempCondition.replaceAll("≤","≥"));
             newLine = newLine + "if " + FillInTags(tempCondition, rarity);
             //randomly choose new condition for initial condition
             if (currentlyHasCondition == false && Math.random() < 0.6) {
@@ -951,6 +955,8 @@ function GenerateWeapon(rarity, unit, skills) {
                 while (rawConds.includes(tempCondition))
                     tempCondition = ChooseRandom(conditionsList);
                 rawConds.push(tempCondition);
+	        if(tempCondition.includes("≥"))rawConds.push(tempCondition.replaceAll("≥","≤"));
+	        else if(tempCondition.includes("≤"))rawConds.push(tempCondition.replaceAll("≤","≥"));
                 newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
             }
             else
@@ -1011,6 +1017,8 @@ function GenerateWeapon(rarity, unit, skills) {
             while (rawConds.includes(tempCondition))
                 tempCondition = ChooseRandom(conditionsList);
             rawConds.push(tempCondition);
+	    if(tempCondition.includes("≥"))rawConds.push(tempCondition.replaceAll("≥","≤"));
+	    else if(tempCondition.includes("≤"))rawConds.push(tempCondition.replaceAll("≤","≥"));
             newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
 
             for (let i = 0; i < secondHalfEffects.length; i++) {
