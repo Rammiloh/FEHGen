@@ -816,6 +816,14 @@
     "Restrictions": "Staff"
   },
   {
+    "Skill": "<2STATS> Bulwark 3",
+    "Slot": "B",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Arm,Cav,Fly,Ranged"
+  },
+  {
     "Skill": "<2STATS> Link 3",
     "Slot": "B",
     "Exclusivity": "C",
@@ -994,7 +1002,7 @@
   {
     "Skill": "Chill <2STATS> 2",
     "Slot": "B",
-    "Exclusivity": "R",
+    "Exclusivity": "C",
     "Description": "",
     "Weight": 4,
     "Restrictions": ""
