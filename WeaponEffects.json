@@ -575,9 +575,9 @@
     "Weight": 2
   },
   {
-    "Effect": "if unit’s HP ≥ <PERCENT and foe would reduce unit’s HP to 0, unit survives with 1 HP (once per combat)",
+    "Effect": "if unit’s HP ≥ <PERCENT> and foe would reduce unit’s HP to 0, unit survives with 1 HP (once per combat)",
     "Tags": "innate,grant",
-    "Weight": 1
+    "Weight": 100
   },
   {
     "Effect": "treats foe's <STAT> as if reduced by <LOWPERCENT>",
