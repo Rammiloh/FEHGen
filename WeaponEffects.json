@@ -630,7 +630,7 @@
     "Weight": 1
   },
   {
-    "Effect": "grants bonus to Atk/Spd/Def/Res+X during combat based on the number of times unit has been enhanced using Dragonflowers (X = number of times x <INT>)",
+    "Effect": "grants bonus to Atk/Spd/Def/Res+X during combat based on the number of times unit has been enhanced using Dragonflowers (X = number of times x <INT>, max 5 enhancements)",
     "Tags": "combat_start,during_combat",
     "Weight": 1
   },
