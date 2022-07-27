@@ -636,12 +636,12 @@
   },
   {
     "Effect": "grants <+STATS> to unit for 1 turn and grants unit another action (Once per turn)",
-    "Tags": "assist,after_combat",
+    "Tags": "assist,combat_end",
     "Weight": 1
   },,
   {
     "Effect": "grants unit another action (Once per turn)",
-    "Tags": "assist,after_combat",
+    "Tags": "assist,combat_end",
     "Weight": 1
   },
   {
