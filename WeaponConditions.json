@@ -233,5 +233,20 @@
     "Effect": "unit's Special reduces damage taken during combat",
     "Tags": "combat_start,during_combat",
     "Weight": 1
+  },
+  {
+    "Effect": "unit is within 2 spaces of support partner",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit is within <INT> spaces of support partner",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit is within 3 spaces of two allies in a support-partner pair (excluding unit)",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 1
   }
 ]
