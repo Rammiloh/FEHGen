@@ -285,6 +285,7 @@ async function caller(jsonFile) {
 }
 
 async function loadAllJSONs() {
+    console.log("Loading JSON files");
     console.log("Characters");
     charactersJSON = await caller("./Characters.json");
     console.log("SeasonalThemes");
@@ -297,6 +298,7 @@ async function loadAllJSONs() {
     conditionsJSON = await caller("./WeaponConditions.json");
     console.log("WeaponEffects");
     effectsJSON = await caller("./WeaponEffects.json");
+    console.log("Loading JSONs complete");
 
 }
 
