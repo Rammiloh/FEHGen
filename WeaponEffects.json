@@ -162,7 +162,7 @@
   {
     "Effect": "grants <+STATS> to unit and allies within 2 spaces of unit for 1 turn",
     "Tags": "turn_start,combat_end",
-    "Weight": 2
+    "Weight": 1
   },
   {
     "Effect": "grants <+STATS> to unit and target ally for 1 turn",
@@ -592,6 +592,66 @@
   {
     "Effect": "if unit's <STAT> > foe's <STAT2> during combat, deals damage = <PERCENT> of unit's <STAT> minus foe's <STAT2>",
     "Tags": "innate,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit can move to a space adjacent to an ally within 2 spaces",
+    "Tags": "innate,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit can move to a space within 2 spaces of any ally within 2 spaces",
+    "Tags": "innate,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit can move to a space adjacent to an ally within <INT> spaces",
+    "Tags": "innate,grant",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants <STATS>+X (Calculates X based on number of allies within 2 spaces of unit: 0 allies grants +6; 1 ally grants +4; 2 allies grants +2; ≥3 allies grants +0)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit makes a guaranteed follow-up attack before foe can make a follow-up attack",
+    "Tags": "foe_initiates",
+    "Weight": 1
+  },
+  {
+    "Effect": "Effect: 【Pathfinder】.",
+    "Tags": "innate",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants bonus to Atk/Spd/Def/Res during combat based on the number of times unit has been enhanced using Dragonflowers (one or more times grants +<INT>, max; zero times grants +<INT2>)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants bonus to Atk/Spd/Def/Res+X during combat based on the number of times unit has been enhanced using Dragonflowers (X = number of times x <INT>)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants <+STATS> to unit for 1 turn and grants unit another action (Once per turn)",
+    "Tags": "assist,after_combat",
+    "Weight": 1
+  },,
+  {
+    "Effect": "grants unit another action (Once per turn)",
+    "Tags": "assist,after_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants <+STATS> to target ally for 1 turn and grants target ally another action (Once per turn)",
+    "Tags": "assist",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants target ally another action (Once per turn)",
+    "Tags": "assist",
     "Weight": 1
   }
 ]
