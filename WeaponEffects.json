@@ -270,9 +270,34 @@
     "Weight": 3
   },
   {
-    "Effect": "grants Special cooldown count-<INT>",
+    "Effect": "grants Special cooldown count-1 to unit",
     "Tags": "combat_end,turn_start",
     "Weight": 2
+  },
+  {
+    "Effect": "grants Special cooldown count-<INT> to unit",
+    "Tags": "combat_end,turn_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-1 to ally with the highest <STAT> whose Special cooldown is at max",
+    "Tags": "turn_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-1 to ally with the highest <STAT>",
+    "Tags": "turn_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-1 to ally with the lowest <STAT> whose Special cooldown is at max",
+    "Tags": "turn_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-1 to ally with the lowest <STAT>",
+    "Tags": "turn_start",
+    "Weight": 1
   },
   {
     "Effect": "deals +<INT2> damage per unit's attack",
