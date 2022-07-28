@@ -237,44 +237,31 @@
 	border-color: #7FCDE1;
 	border-width: 1px;
 }
-#custom-container {
-   width:100%;
-    overflow: hidden;
-}
-#leftbox {
-	border-style: solid;
-  padding:10px;
-  border-radius: 10px;
-    background-color: #032437;
-	margin:auto;
-	max-width:auto;
-	border-color: #7FCDE1;
-	border-width: 1px;
-   width:50%;
-   float:left;
-}
-#rightbox {
-	border-style: solid;
-  padding:10px;
-  border-radius: 10px;
-    background-color: #032437;
-	margin:auto;
-	max-width:auto;
-	border-color: #7FCDE1;
-	border-width: 1px;
-   width:50%;
-   float:right;
-}
-@media only screen and (max-width: 767px)
-{
-    #leftbox, #rightbox
-    {
-        display: block; 
-        float: none; 
-        width: 100%;
-        padding: 20px 0;
+.custom-container{
+        width:300px;
+		margin: auto;
+    }
+@media (min-width: 768px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
     }
 }
+
+@media (min-width: 992px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
+    }
+}
+
 .goldButton {background-color: rgb(255,217,86);
 	border-color: rgb(137,105,51);} /* Gold */
 .duoButton {background-color: rgb(255,249,192);
