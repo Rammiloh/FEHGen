@@ -179,7 +179,7 @@
 	border-color: rgb(62,44,36);
     background-color: rgb(233,204,169);
 	padding:5px;  
-	box-shadow: 0px 3px 3px #000;
+	box-shadow: 0px 2px 1px #000;
   color: #000000;
 }
 .footBanner{
@@ -192,7 +192,7 @@
     background-color: rgb(233,204,169);
 	padding:5px;  
 	margin-top:100px;
-	box-shadow: 0px -3px 3px #000;
+	box-shadow: 0px -2px 1px #000;
   color: #000000;
 }
 
@@ -229,7 +229,7 @@
 }
 .box-1{
 	border-style: solid;
-  padding:10px;
+  padding:7px;
   border-radius: 10px;
     background-color: #032437;
 	margin:auto;
