@@ -127,12 +127,12 @@ body {
 <button id="duoButton" class="button goldButton">Duo/Harmonic</button>
 <button id="TTButton" class="button bronzeButton">Tempest Trial</button>
         </div>
-		<div class="unit-container">
+		<div id="twoUnitDisplay" class="unit-container" display="none">
 		  <div class="row">
 		<div class="col-6">
-	      <div id="unitFrameFront" class="px-0 py-0"></div>
-	      <div id="generatedUnit" class="px-0 py-0"></div>
-	      <div id="unitFrameBack" class="px-0 py-0"></div>
+	      <div id="frontpackFrameFront" class="px-0 py-0"></div>
+	      <div id="generatedFrontpack" class="px-0 py-0"></div>
+	      <div id="frontpackFrameBack" class="px-0 py-0"></div>
 		  </div>
 		<div class="col-6">
 	      <div id="backpackFrameFront" class="px-0 py-0"></div>
@@ -141,6 +141,11 @@ body {
 		  </div>
 		  </div>
 		  </div>
+		<div id="oneUnitDisplay" class="unit-container" display="block">
+	      <div id="unitFrameFront" class="px-0 py-0"></div>
+	      <div id="generatedUnit" class="px-0 py-0"></div>
+	      <div id="unitFrameBack" class="px-0 py-0"></div>
+	      </div>
 		  <!--div class="row">
   <div class="col-1"-->
 		  <div class="title-and-weapon-container">
@@ -1278,6 +1283,8 @@ function DisplayUnit(unit) {
 		document.getElementById("generatedBackpack").innerHTML = `  <img src="/FEH-Alt-Generator/CharacterIcons/${unit.Filename2}" z-index=20/>`;
 		document.getElementById("backpackFrameFront").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Face_Duo_Front.png" class="overlay_image"/>`;
 		document.getElementById("backpackFrameBack").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Face_Duo_Back.png" class="underlay_image"/>`;
+		document.getElementById("twoUnitDisplay").style.display = "block";
+		document.getElementById("oneUnitDisplay").style.display = "none";
     }
 	else
 	{
@@ -1285,6 +1292,8 @@ function DisplayUnit(unit) {
 		document.getElementById("generatedBackpack").innerHTML = ` `;
 		document.getElementById("backpackFrameFront").innerHTML = `  `;
 		document.getElementById("backpackFrameBack").innerHTML = `  `;
+		document.getElementById("twoUnitDisplay").style.display = "none";
+		document.getElementById("oneUnitDisplay").style.display = "block";
 	}
 	document.getElementById("unitFrameFront").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
 	document.getElementById("unitFrameBack").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
