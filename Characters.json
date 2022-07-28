@@ -184,6 +184,14 @@
     "Prfs": []
   },
   {
+    "Hero": "Askr: God of Openness",
+    "Filename": "Askr.png",
+    "Race": "Beast",
+    "Game": "FE0",
+    "StatMod": "",
+    "Prfs": ["C:Opened Domain"]
+  },
+  {
     "Hero": "Astram: Midia's Hero",
     "Filename": "Astram.png",
     "Race": "Human",
