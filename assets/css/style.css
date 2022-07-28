@@ -1,45 +1,99 @@
 #generatedTitle {
   margin-top: 2rem;
-  background-color: #D3D3D1;
-  padding:10px;
+  width:auto;
+  margin:auto;
+  padding:1px;
   border-radius: 10px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #FFFFFF;
 }
 #generatedUnit {
-  background-color: #847668;
-  width:95px;
-  height:95px;
-  padding:10px;
-  margin:auto;
-  border-radius: 10px;
+    position: relative;
+  width:auto;
+  height:auto;
+  padding:0px;
+  border-radius: 1px;
+	z-index: 20;
 }
-#generatedUnit img {
+#generatedBackpack {
+    position: relative;
+  width:auto;
+  height:auto;
+  padding:0px;
+  border-radius: 1px;
+	z-index: 20;
+}
+.overlay_image{
+    position: absolute;
+    width: 88px;
+    height: 89px;
+    margin-top: -6px;
+    margin-left: -6px;
+	z-index: 30;
+}
+.underlay_image{
+    position: absolute;
+    width: 88px;
+    height: 89px;
+    margin-top: -81px;
+    margin-left: -6px;
+	z-index: 10;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.unit-column {
+  float: left;
+  width: 50%;
+  padding: 100px;
+}
+
+/* Clear floats after image containers */
+.unit-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#generatedWepIcon {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width:35px;
+  margin:auto;
+  border-radius: 0px;
+  float: left;
+}
+#generatedWepIcon img {
   width: 100%;
   height: 100%;
 }
-#generatedClass {
-  background-color: #AAAEEE;
-  width:70px;
-  height:70px;
-  padding:5px;
+#generatedMove {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width:35px;
+  height:auto;
+  padding:0px;
   margin:auto;
-  border-radius: 5px;
+  border-radius: 0px;
+  float: left;
 }
-#generatedClass img {
+#generatedMove img {
   width: 100%;
   height: 100%;
 }
-#generatedBSkill {
-  color: rgb(255,215,0);
-  font-size:18px;
-  line-height:16px;
-  text-shadow: 2px 1px 1px #24201B;
-  font-family: Verdana, Geneva, sans-serif;
-  font-weight: bolder;
+#generatedSkills {
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: rgb(255,255,255);
+  padding-left:10px;
+  max-width: 350px;
 }
 #generatedDuoSkill {
-  color: #756B5E;
+  color: #8DE761;
   font-family:TF2 Secondary, Verdana, Geneva, sans-serif;
-  font-size: 15px
+  font-size: 15px;
+  max-width: 350px;
 }
 #rarityStatus {
   line-height:1.2em;
@@ -49,16 +103,162 @@
   color: #EBE2CA;
 }
 #generatedWeapon {
-  color: #99CCFF;
+  color: #FFFFFF;
 }
-#generatedStatsHP {
-  color: #FF4040;
+#generatedStats {
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: #F8FB94;
+  padding-left:10px;
+  max-width: 350px;
 }
-#splitscreen {
+.flexDiv {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+/*@media only screen and (max-width: 880px) {
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+ }*/
 }
 
-#splitscreen .left,
-#splitscreen .right {
-  flex: 1;
+.leftCol{
+    width:48%;
+    margin-right:2%;
+    float: left;
 }
+.rightCol {
+    width:48%;
+    float: left;
+}
+.clearfix{
+    clear:both
+}
+
+.box-1{
+	border-style: solid;
+  padding:10px;
+  border-radius: 10px;
+    background-color: #032437;
+	margin:auto;
+	max-width:auto;
+	border-color: #7FCDE1;
+	border-width: 1px;
+}
+.unit-container{
+    width:150px;
+    height:75px;
+	margin: auto;
+}
+.title-and-weapon-container{
+	display: table;
+  width: auto; 
+  height: fit-content;
+	margin: auto;
+	padding:5px;
+}
+.title-container{
+	display: table;
+  width: auto; 
+  height: fit-content;
+	margin: auto;
+	border-style: solid;
+  border-radius: 10px;
+	border-width: 1px;
+	border-color: rgb(62,44,36);
+    background-color: rgb(132,93,76);
+	padding:5px;
+}
+.banner{
+  width: auto; 
+  height: fit-content;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(62,44,36);
+    background-color: rgb(233,233,255);
+	padding:5px;  
+	box-shadow: 0px 3px 3px #000;
+  color: #000000;
+}
+.footBanner{
+  width: auto; 
+  height: fit-content;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(62,44,36);
+    background-color: rgb(233,233,255);
+	padding:5px;  
+	margin-top:100px;
+	box-shadow: 0px -3px 3px #000;
+  color: #000000;
+}
+
+    .custom-container{
+        width:420px;
+		margin: auto;
+    }
+@media (min-width: 768px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-container{
+        width:750px;
+		margin: auto;
+    }
+}
+
+.button {
+	border-style: solid;
+	border-width: 1px;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 130px;
+	color: rgb(0,0,0);
+}
+.buttonContainer{
+	display: table;
+	margin:auto;
+	width:auto;
+	padding: 5px;
+}
+.season{
+	display: table;
+	margin:auto;
+	color: #FFFFFF;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
+	padding: 5px;
+}
+
+.goldButton {background-color: rgb(255,217,86);
+	border-color: rgb(137,105,51);} /* Gold */
+.duoButton {background-color: rgb(255,249,192);
+	border-color: rgb(245,233,170);} /* Duo */
+.silverButton {
+	background-color: rgb(212,248,255);
+	border-color: rgb(129,169,188);} /* Silver */
+.bronzeButton {background-color: rgb(227,147,111);
+	border-color: rgb(140,58,18);} /* Bronze */
