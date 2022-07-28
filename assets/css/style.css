@@ -196,16 +196,7 @@
   color: #000000;
 }
 
-.box-1{
-	border-style: solid;
-  padding:10px;
-  border-radius: 10px;
-    background-color: #032437;
-	margin:auto;
-	max-width:auto;
-	border-color: #7FCDE1;
-	border-width: 1px;
-}
+
 
 .button {
 	border-style: solid;
@@ -236,15 +227,41 @@
   
 	padding: 5px;
 }
+.box-1{
+	border-style: solid;
+  padding:10px;
+  border-radius: 10px;
+    background-color: #032437;
+	margin:auto;
+	max-width:auto;
+	border-color: #7FCDE1;
+	border-width: 1px;
+}
 #custom-container {
    width:100%;
     overflow: hidden;
 }
 #leftbox {
+	border-style: solid;
+  padding:10px;
+  border-radius: 10px;
+    background-color: #032437;
+	margin:auto;
+	max-width:auto;
+	border-color: #7FCDE1;
+	border-width: 1px;
    width:50%;
    float:left;
 }
 #rightbox {
+	border-style: solid;
+  padding:10px;
+  border-radius: 10px;
+    background-color: #032437;
+	margin:auto;
+	max-width:auto;
+	border-color: #7FCDE1;
+	border-width: 1px;
    width:50%;
    float:right;
 }
