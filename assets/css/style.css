@@ -181,7 +181,7 @@
 	padding:5px;
 }
 .banner{
-	max-width: 100%
+	width: 100vw;
   height: fit-content;
 	margin: 0 auto;
 	border-style: solid;
@@ -193,7 +193,7 @@
   color: #000000;
 }
 .footBanner{
-	max-width: 100%
+	width: 100vw;
   height: fit-content;
 	margin: 0 auto;
 	border-style: solid;
