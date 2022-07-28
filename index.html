@@ -1274,20 +1274,23 @@ function DisplayUnit(unit) {
     if (unit.Rarity == 4)
 	{
 	//        document.getElementById("generatedUnit").innerHTML = `  <div class="unit-row"><div class="unit-column"><img src="./${unit.Filename}" /></div><div class="unit-column"><img src="./${unit.Filename2}" /> </div> </div><div class="clearfix"></div>`;
-        document.getElementById("generatedUnit").innerHTML = `  <img src="./${unit.Filename}" z-index=20/>`;
-		document.getElementById("generatedBackpack").innerHTML = `  <img src="./${unit.Filename2}" z-index=20/>`;
-		document.getElementById("backpackFrameFront").innerHTML = `  <img src="./Face_Duo_Front.png" class="overlay_image"/>`;
-		document.getElementById("backpackFrameBack").innerHTML = `  <img src="./Face_Duo_Back.png" class="underlay_image"/>`;
+        document.getElementById("generatedUnit").innerHTML = `  <img src="./FEH-Alt-Generator/CharacterIcons/${unit.Filename}" z-index=20/>`;
+		document.getElementById("generatedBackpack").innerHTML = `  <img src="./FEH-Alt-Generator/CharacterIcons/${unit.Filename2}" z-index=20/>`;
+		document.getElementById("backpackFrameFront").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/Face_Duo_Front.png" class="overlay_image"/>`;
+		document.getElementById("backpackFrameBack").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/Face_Duo_Back.png" class="underlay_image"/>`;
     }
 	else
 	{
-        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./${unit.Filename}" z-index=20/></div>`;
+        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./FEH-Alt-Generator/CharacterIcons/${unit.Filename}" z-index=20/></div>`;
+		document.getElementById("generatedBackpack").innerHTML = ` `;
+		document.getElementById("backpackFrameFront").innerHTML = `  `;
+		document.getElementById("backpackFrameBack").innerHTML = `  `;
 	}
-	document.getElementById("unitFrameFront").innerHTML = `  <img src="./${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
-	document.getElementById("unitFrameBack").innerHTML = `  <img src="./${backFrames[unit.Rarity]}" class="underlay_image"/>`;
+	document.getElementById("unitFrameFront").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
+	document.getElementById("unitFrameBack").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
     document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
-    document.getElementById("generatedWepIcon").innerHTML = `  <img src="./Icon_Class_${unit.Colour}_${unit.Weapon}.png" />`;
-    document.getElementById("generatedMove").innerHTML = `  <img src="./Icon_Move_${unit.Movement}.png" />`;
+    document.getElementById("generatedWepIcon").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" />`;
+    document.getElementById("generatedMove").innerHTML = `  <img src="./FEH-Alt-Generator/GameIcons/Icon_Move_${unit.Movement}.png" />`;
     document.getElementById("generatedStats").innerHTML = `<b>HP:</b> ${unit.Stats[0]}<br><b>Atk:</b> ${unit.Stats[1]}<br><b>Spd:</b> ${unit.Stats[2]}<br><b>Def:</b> ${unit.Stats[3]}<br><b>Res:</b> ${unit.Stats[4]}`;
     document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
     document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
