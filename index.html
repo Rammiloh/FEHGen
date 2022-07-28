@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="/FEH-Alt-Generator/assets/css/style.css?v=8bc45d64c9c0ed235811c433a275f64430b963ee">
 	<link rel="stylesheet" href="/FEH-Alt-Generator/bootstrap.css" />
-
+		<style>
+body {
+  background-image: url('/FEH-Alt-Generator/Backgrounds/BG_Halloween.png');
+  background-size: cover;
+}
+</style>
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Welcome to GitHub Pages | FEH-Alt-Generator</title>
 <meta name="generator" content="Jekyll v3.9.2" />
@@ -23,23 +28,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Welcome to GitHub Pages" />
 <script type="application/ld+json">
-<style>
-.button {
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
 
-.goldButton {background-color: #4CAF50;} /* Gold */
-.silverButton {background-color: #dadada;} /* Silver */
-.bronzeButton {background-color: #123456;} /* Bronze */
-</style>
 {"@context":"https://schema.org","@type":"WebSite","description":"Generate random seasonal alts for Fire Emblem Heroes","headline":"Welcome to GitHub Pages","name":"FEH-Alt-Generator","url":"https://rammiloh.github.io/FEH-Alt-Generator/"}</script>
 <!-- End Jekyll SEO tag -->
 
@@ -60,6 +49,7 @@
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
+	<div class="banner">
         <header class="inner">
           
             <a id="forkme_banner" href="https://github.com/Rammiloh/FEH-Alt-Generator">View on GitHub</a>
@@ -121,45 +111,71 @@
   <option value=11>Ninjas</option>
   <option value=12>Christmas</option>
 </select>
-<button id="generateButton" class="button silverButton">Generate</button>
-          
+<button id="generateButton" class="button">Generate</button>
+       </div>   
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-<button id="premiumButton1" class="button goldButton">Pre1</button>
-<button id="premiumButton2" class="button goldButton">Pre2</button>
-<button id="demoteButton" class="button silverButton">Dem</button>
-<button id="duoButton" class="button goldButton">Duo</button>
-<button id="TTButton" class="button bronzeButton">TT</button>
-        <h2 id="seasonal-theme"></h2>
-	      <div id="generatedUnit" class="px-3 py-3"></div>
-<div class="splitscreen">
-	<div class="left">
-	      <div id="generatedClass" class="px-3 py-3"></div>
-	      <div id="generatedTitle" class="my-3"></div>
-	      <div id="rarityStatus" class="my-3"></div>
-	      <div id="generatedStatsHP" class="my-3"></div>
-	      <div id="generatedStatsAtk" class="my-3"></div>
-	      <div id="generatedStatsSpd" class="my-3"></div>
-	      <div id="generatedStatsDef" class="my-3"></div>
-	      <div id="generatedStatsRes" class="my-3"></div>
+		<h2 id="seasonal-theme" class="season"></h2>
+	  <div class="buttonContainer">
+<button id="premiumButton1" class="button goldButton">Premium 1</button>
+<button id="premiumButton2" class="button goldButton">Premium 2</button>
+<button id="demoteButton" class="button silverButton">Demote</button>
+<button id="duoButton" class="button goldButton">Duo/Harmonic</button>
+<button id="TTButton" class="button bronzeButton">Tempest Trial</button>
+        </div>
+		<div class="unit-container">
+		  <div class="row">
+		<div class="col-6">
+	      <div id="unitFrameFront" class="px-0 py-0"></div>
+	      <div id="generatedUnit" class="px-0 py-0"></div>
+	      <div id="unitFrameBack" class="px-0 py-0"></div>
+		  </div>
+		<div class="col-6">
+	      <div id="backpackFrameFront" class="px-0 py-0"></div>
+	      <div id="generatedBackpack" class="px-0 py-0"></div>
+	      <div id="backpackFrameBack" class="px-0 py-0"></div>
+		  </div>
+		  </div>
+		  </div>
+		  <!--div class="row">
+  <div class="col-1"-->
+		  <div class="title-and-weapon-container">
+	      <div id="generatedWepIcon" class="align-middle"></div>
+		  <!--/div-->
+  <!--div class="col-1"-->
+	      <div id="generatedMove" class="align-middle"></div>
+		  <div class="title-container">
+		  <!--/div-->
+  <!--div class="col-10"-->
+	      <h4 id="generatedTitle" class="align-middle"></h4>
+		  </div>
+		  </div>
+		  </div>
+		  
+		  </div>
+		  <div class="custom-container">
+<div class="row">
+  <div class="col-7">
+<div class="box-1">
+	      <p id="generatedWeapon" class="my-3"></p>
+	      <p id="generatedDuoSkill" class="my-3"></p>
+		  </div>
+  </div>
+<div class="col-5">
+<div class="box-1">
+	      <!--p id="rarityStatus" class="my-3"></p-->
+	      <p id="generatedStats" class="my-3"></p>
+	      <p id="generatedSkills" class="my-3"></p>
 	</div>
-  <div class="right">
-	      <div id="generatedWeapon" class="my-3"></div>
-	      <div id="generatedAssistSkill" class="my-3"></div>
-	      <div id="generatedSpecialSkill" class="my-3"></div>
-	      <div id="generatedASkill" class="my-3"></div>
-	      <div id="generatedBSkill" class="my-3"></div>
-	      <div id="generatedCSkill" class="my-3"></div>
-	      <div id="generatedDuoSkill" class="my-3"></div>
-  	</div>
+	</div>
+  </div>
   </div>
 <!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
 
-<h3 id="support-or-contact">Support or Contact</h3>
 
         
         <script>
@@ -1252,31 +1268,37 @@ async function GenerateBanner() {
 }
 
 function DisplayUnit(unit) {
+
+	var frontFrames = ["Face_Bronze_Front.png","Face_Silver_Front.png","Face_Gold_Front.png","Face_Gold_Front.png","Face_Duo_Front.png"];
+	var backFrames = ["Face_Bronze_Back.png","Face_Silver_Back.png","Face_Gold_Back.png","Face_Gold_Back.png","Face_Duo_Back.png"];
     if (unit.Rarity == 4)
-        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><div class="column"><img src="./CharacterIcons/${unit.Filename}" /></div><div class="column"><img src="./CharacterIcons/${unit.Filename2}" /> </div> </div>`;
-    else
-        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./CharacterIcons/${unit.Filename}" /></div>`;
+	{
+	//        document.getElementById("generatedUnit").innerHTML = `  <div class="unit-row"><div class="unit-column"><img src="./${unit.Filename}" /></div><div class="unit-column"><img src="./${unit.Filename2}" /> </div> </div><div class="clearfix"></div>`;
+        document.getElementById("generatedUnit").innerHTML = `  <img src="./${unit.Filename}" z-index=20/>`;
+		document.getElementById("generatedBackpack").innerHTML = `  <img src="./${unit.Filename2}" z-index=20/>`;
+		document.getElementById("backpackFrameFront").innerHTML = `  <img src="./Face_Duo_Front.png" class="overlay_image"/>`;
+		document.getElementById("backpackFrameBack").innerHTML = `  <img src="./Face_Duo_Back.png" class="underlay_image"/>`;
+    }
+	else
+	{
+        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="./${unit.Filename}" z-index=20/></div>`;
+	}
+	document.getElementById("unitFrameFront").innerHTML = `  <img src="./${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
+	document.getElementById("unitFrameBack").innerHTML = `  <img src="./${backFrames[unit.Rarity]}" class="underlay_image"/>`;
     document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
-    document.getElementById("rarityStatus").innerHTML = `(${unit.RarityText})`;
-    document.getElementById("generatedClass").innerHTML = `  <div class="row"><img src="./GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" /></div><div class="row"><img src="./GameIcons/Icon_Move_${unit.Movement}.png" /></div>`;
-    document.getElementById("generatedStatsHP").innerHTML = `<b>HP:</b> ${unit.Stats[0]}`;
-    document.getElementById("generatedStatsAtk").innerHTML = `<b>Atk:</b> ${unit.Stats[1]}`;
-    document.getElementById("generatedStatsSpd").innerHTML = `<b>Spd:</b> ${unit.Stats[2]}`;
-    document.getElementById("generatedStatsDef").innerHTML = `<b>Def:</b> ${unit.Stats[3]}`;
-    document.getElementById("generatedStatsRes").innerHTML = `<b>Res:</b> ${unit.Stats[4]}`;
+    document.getElementById("generatedWepIcon").innerHTML = `  <img src="./Icon_Class_${unit.Colour}_${unit.Weapon}.png" />`;
+    document.getElementById("generatedMove").innerHTML = `  <img src="./Icon_Move_${unit.Movement}.png" />`;
+    document.getElementById("generatedStats").innerHTML = `<b>HP:</b> ${unit.Stats[0]}<br><b>Atk:</b> ${unit.Stats[1]}<br><b>Spd:</b> ${unit.Stats[2]}<br><b>Def:</b> ${unit.Stats[3]}<br><b>Res:</b> ${unit.Stats[4]}`;
     document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
     document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
-    document.getElementById("generatedAssistSkill").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}`;
-    document.getElementById("generatedSpecialSkill").innerHTML = `<b>Special:</b> ${unit.Skills[4]}`;
-    document.getElementById("generatedASkill").innerHTML = `<b>A:</b> ${unit.Skills[0]}`;
-    document.getElementById("generatedBSkill").innerHTML = `<b>B:</b> ${unit.Skills[1]}`;
-    document.getElementById("generatedCSkill").innerHTML = `<b>C:</b> ${unit.Skills[2]}`;
+    document.getElementById("generatedSkills").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}<br><b>Special:</b> ${unit.Skills[4]}<br><b>A:</b> ${unit.Skills[0]}<br><b>B:</b> ${unit.Skills[1]}<br><b>C:</b> ${unit.Skills[2]}`;
     document.getElementById("generatedDuoSkill").innerHTML = ``;
     if(unit.Rarity == 4)
     {
 	    if(unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> <em>${unit.DuoSkill}</em>`;
 	    else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> <em>${unit.DuoSkill}</em>`;
     }
+
 }
 
 async function Initialise() {
@@ -1297,6 +1319,8 @@ Initialise();
     </div>
 
     <!-- FOOTER  -->
+	<div class="footBanner">
+<h3 id="support-or-contact">Support or Contact</h3>
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         
@@ -1305,5 +1329,6 @@ Initialise();
         <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
+	</div>
   </body>
 </html>
