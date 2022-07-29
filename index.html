@@ -820,7 +820,7 @@
 
                         return affectedList;
                     }
-                    function GenerateWeapon(rarity, unit, skills) {
+                    function GenerateWeapon(rarity, unit, skills, theme) {
                         var assist = skills[3];
                         var points = 1 + rarity;
                         if (points > 1)
@@ -1206,7 +1206,7 @@
                             character2Filename = character2.Filename;
 
                         var skills = GenerateSkills(unit, rarity);
-                        var weaponText = GenerateWeapon(rarity, unit, skills);
+                        var weaponText = GenerateWeapon(rarity, unit, skills, theme.Event);
                         var duoSkill = "";
 
                         if (rarity == 4) {
