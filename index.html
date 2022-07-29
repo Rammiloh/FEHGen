@@ -42,7 +42,7 @@
 <body>
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
-        <div class="banner">
+        <div class="banner" id="headie">
             <header class="inner">
                 <a id="forkme_banner" href="https://github.com/Rammiloh/FEH-Alt-Generator">View on GitHub</a>
                 <h1 id="project_title">FEH-Alt-Generator</h1>
@@ -94,12 +94,14 @@
                     <option value=4>Easter</option>
                     <option value=5>Picnic</option>
                     <option value=6>Child</option>
-                    <option value=7>Bridal</option>
-                    <option value=8>Summer</option>
-                    <option value=9>Pirates</option>
-                    <option value=10>Halloween</option>
-                    <option value=11>Ninjas</option>
-                    <option value=12>Christmas</option>
+                    <option value=7>Fallen</option>
+                    <option value=8>Bridal</option>
+                    <option value=9>Summer</option>
+                    <option value=10>Pirates</option>
+                    <option value=11>Dancers</option>
+                    <option value=12>Halloween</option>
+                    <option value=13>Ninjas</option>
+                    <option value=14>Christmas</option>
                 </select>
                 <button id="generateButton" class="button">Generate</button>
             </header>
@@ -1189,6 +1191,10 @@
                         var theme = ChooseRandom(themesJSON);
                         if (themeInt != -1)
                             theme = themesJSON[themeInt];
+                        document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/${theme.Background}')";
+                        
+                        document.getElementById("headie").style.backgroundColor = theme.Header;
+                        document.getElementById("footie").style.backgroundColor = theme.Footer;
                         var charsList = Shuffle(charactersJSON);
                         var bannerCharacters = [];
 
@@ -1305,7 +1311,7 @@
         </div>
     </div>
     <!-- FOOTER  -->
-    <div class="footBanner">
+    <div class="footBanner" id="footie">
         <h3 id="support-or-contact">Support or Contact</h3>
         <div id="footer_wrap" class="outer">
             <footer class="inner">
