@@ -834,7 +834,25 @@
                         var rawConds;
                         var rawEffects;
                         var usedConditions = [];
-                        if (Math.random() < (0.2 + 0.1 * rarity)) {
+                        if(theme == "Ninjas")
+                        {
+                            var innate1 = "Grants Spd+4. Inflicts Def/Res-4. If unit initiates combat, unit attacks twice.";
+                            if(Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
+                            var innate2 = ChooseRandom(innateEffects);
+                            while (innate2.includes("nit attacks twice"))
+                                innate2 = ChooseRandom(innateEffects);
+                            innate2 = FillInTags(innate2, rarity);
+                            if (Math.random() < (0.1 + 0.05 * rarity)) {
+                                lines.push(innate2 + ".");
+                                usedConditions.push(-1);
+                                points -= 1;
+                            }
+                            lines.push(innate1 + ".");
+                            usedConditions.push(-1);
+                            points -= 1;
+                            innatesGiven = true;
+                        }
+                        else if (Math.random() < (0.2 + 0.1 * rarity)) {
                             var innate1 = ChooseRandom(innateEffects);
                             var innate2 = ChooseRandom(innateEffects);
                             while (innate2 == innate1)
