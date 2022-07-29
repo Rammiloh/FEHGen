@@ -313,7 +313,8 @@
                         //The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
                         heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
                         heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
-
+                        var statmod = hero.StatMod;
+                        if(theme.Event == "Dancers") statmod = "Dancer";
                         if (rarity != 4) {
                             if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
                             {
@@ -370,7 +371,7 @@
                             Game: hero.Game,
                             Movement: mvmnt,
                             Weapon: wpn,
-                            StatMod: hero.StatMod,
+                            StatMod: statmod,
                             Prfs: hero.Prfs
                         }
                         return gennedCharacter;
