@@ -834,9 +834,10 @@
                         var rawConds;
                         var rawEffects;
                         var usedConditions = [];
+                        var ninjaString = "Grants Spd+4. Inflicts Def/Res-4. If unit initiates combat, unit attacks twice.";
                         if(theme == "Ninjas")
                         {
-                            var innate1 = "Grants Spd+4. Inflicts Def/Res-4. If unit initiates combat, unit attacks twice.";
+                            var innate1 = ninjaString;
                             if(Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
                             var innate2 = ChooseRandom(innateEffects);
                             while (innate2.includes("nit attacks twice"))
@@ -962,7 +963,21 @@
                                 continue;
                             }
                             rawConds = [];
-                            if (Math.random() < 0.75 && condition != 7) {
+                            //This entire block is just dedicated to dealing with the "Ninja initiates" clause
+                            var ninjaCond = (theme == "Ninjas" && condition == 2 && (lines[0] == ninjaString || lines[1] == ninjaString));
+                            console.log("NinjaCond: " + ninjaCond);
+                            if(ninjaCond) 
+                            {
+                                currentlyHasCondition = true;
+                                newLine = "";
+                                if(Math.random() < 0.6)
+                                {
+                                    var tempCondition = ChooseRandom(conditionsList);
+                                    rawConds.push(tempCondition);
+                                    newLine = ", and also, if " + tempCondition + ", ";
+                                }
+                            }
+                            else if (Math.random() < 0.75 && condition != 7) {
                                 if (currentlyHasCondition == true)
                                     newLine = newLine.slice(0, -2) + ChooseRandom([" or ", " and "]);
 
@@ -1001,7 +1016,7 @@
                             } while (points > 0 && Math.random() > 0.5 && condition != 7);
 
                             //second half
-                            while (points > 0 && Math.random() < 0.4 && condition != 7) {
+                            while (points > 0 && Math.random() < 0.4 && condition != 7 && !ninjaCond) {
 
                                 points -= 1;
                                 tempEffect = ChooseRandom(effectsList);
@@ -1025,11 +1040,11 @@
                             }
 
                             for (let i = 0; i < firstHalfEffects.length; i++) {
-                                if (i != 0 && firstHalfEffects.length != 2)
+                                if (i != 0 && firstHalfEffects.length != 2)//If there are more than two entries, comma between them
                                     newLine = newLine + ", ";
-                                if (i == 1 && firstHalfEffects.length == 2)
+                                if (i == 1 && firstHalfEffects.length == 2 || (ninjaCond && firstHalfEffects.length == 1))//If there are only two entries, no comma between first and second
                                     newLine = newLine + " ";
-                                if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1)
+                                if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1 || (ninjaCond && firstHalfEffects.length == 1))//Last entry, add an and
                                     newLine = newLine + "and ";
                                 newLine = newLine + FillInTags(firstHalfEffects[i], rarity);
                             }
@@ -1062,8 +1077,21 @@
                             }
 
                             newLine = newLine + ".";
-
-                            lines.push(newLine);
+                            if(!ninjaCond)
+                                lines.push(newLine);
+                            else{
+                                console.log("Ninjacond met");
+                                if(lines[0] == ninjaString)
+                                {
+                                    console.log("Replacing " + lines[0]);
+                                    lines[0] = ninjaString.slice(0, -1) + newLine;
+                                }
+                                else if(lines[1] == ninjaString)
+                                {
+                                    console.log("Replacing " + lines[1]);
+                                    lines[1] = ninjaString.slice(0, -1) + newLine;
+                                }
+                            }
                         }
 
                         SortTwoLists(usedConditions, lines);
