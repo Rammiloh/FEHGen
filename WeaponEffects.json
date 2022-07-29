@@ -572,7 +572,12 @@
   {
     "Effect": "unit attacks twice",
     "Tags": "innate,during_combat,grant",
-    "Weight": 3
+    "Weight": 1
+  },
+  {
+    "Effect": "inflicts Spd-5. Unit attacks twice",
+    "Tags": "innate",
+    "Weight": 2
   },
   {
     "Effect": "unit can counterattack before foe's first attack",
