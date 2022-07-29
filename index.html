@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/FEH-Alt-Generator/bootstrap.css" />
     <style>
 
+
         body {
             background-image: url('/FEH-Alt-Generator/Backgrounds/BG_Halloween.png');
             background-size: cover;
@@ -43,9 +44,7 @@
     <div id="header_wrap" class="outer">
         <div class="banner">
             <header class="inner">
-
                 <a id="forkme_banner" href="https://github.com/Rammiloh/FEH-Alt-Generator">View on GitHub</a>
-
                 <h1 id="project_title">FEH-Alt-Generator</h1>
                 <h2 id="project_tagline">Generate random seasonal alts for Fire Emblem Heroes</h2>
                 <label for="gameDropdown1">Game 1:</label>
@@ -147,7 +146,6 @@
                         <!--div class="col-10"-->
                         <h4 id="generatedTitle" class="align-middle"></h4>
                     </div>
-
                 </div>
                 <div class="custom-container">
                     <div class="row">
@@ -167,7 +165,6 @@
                     </div>
                 </div>
                 <!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
-
                 <script>
 
                     // JavaScript source code
@@ -777,16 +774,16 @@
                         if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
                         else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
                         else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
-                        line = line.replace(/<+STATS>/g, array[0] + "+" + val);
-                        line = line.replace(/<+STATS2>/g, array[1] + "+" + val);
+                        line = line.replace(/<ADDSTATS>/g, array[0] + "+" + val);
+                        line = line.replace(/<ADDSTATS2>/g, array[1] + "+" + val);
 
                         val = GetRandom(2, 5) + Math.ceil(rarity / 2);
                         array = Shuffle(["Atk", "Def", "Spd", "Res"]);
                         if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
                         else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
                         else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
-                        line = line.replace(/<-STATS>/g, array[0] + "-" + val);
-                        line = line.replace(/<-STATS2>/g, array[1] + "-" + val);
+                        line = line.replace(/<MINUSSTATS>/g, array[0] + "-" + val);
+                        line = line.replace(/<MINUSSTATS2>/g, array[1] + "-" + val);
 
                         line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
 
@@ -926,17 +923,17 @@
                                     break;
                             }
                             if (grantEffect) {
-                                newLine = FillInTags(ChooseRandom(["grants <+STATS> to allies within 2 spaces of unit during combat.",
-                                    "grants <+STATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                newLine = FillInTags(ChooseRandom(["grants <ADDSTATS> to allies within 2 spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
                                     "grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                                    "grants <+STATS> to unit and allies within 2 spaces of unit during combat.",
-                                    "grants <+STATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to unit and allies within 2 spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
                                     "grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                                    "grants <+STATS> to allies within <INT> spaces of unit during combat.",
-                                    "grants <+STATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to allies within <INT> spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
                                     "grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
-                                    "grants <+STATS> to unit and allies within <INT> spaces of unit during combat.",
-                                    "grants <+STATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to unit and allies within <INT> spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\".",
                                     "grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"."]), rarity);
                                 points -= 1;
                                 lines.push(newLine);
@@ -1111,22 +1108,22 @@
 
                     function GenerateDuoSkill(duo) {
                         var duoText = ChooseRandom(["Deals <BINT> damage to foes<POSITION>.",
-                            "Inflicts <-STATS> on foes<POSITION> through their next action.",
+                            "Inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
                             "Inflicts <PENALTY> on foes<POSITION> through their next action.",
-                            "Inflicts <-STATS> and <PENALTY> on foes<POSITION> through their next action.",
+                            "Inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
                             "Inflicts Special cooldown count+<INT> on foes<POSITION>.",
-                            "Inflicts Special cooldown count+<INT> and <-STATS> on foes<POSITION> through their next action.",
+                            "Inflicts Special cooldown count+<INT> and <MINUSSTATS> on foes<POSITION> through their next action.",
                             "Deals <BINT> damage and inflicts <PENALTY> on foes<POSITION> through their next action.",
-                            "Deals <BINT> damage and inflicts <-STATS> on foes<POSITION> through their next action.",
-                            "Deals <BINT> damage and inflicts <-STATS> and <PENALTY> on foes<POSITION> through their next action.",
+                            "Deals <BINT> damage and inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
+                            "Deals <BINT> damage and inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
                             "Grants <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Grants <+STATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Restores <BINT> HP and grants <+STATS> to <ALLIES><POSITION> for one turn.",
+                            "Grants <ADDSTATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Restores <BINT> HP and grants <ADDSTATS> to <ALLIES><POSITION> for one turn.",
                             "Restores <BINT> HP and grants <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Grants <+STATS> and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+                            "Grants <ADDSTATS> and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
                             "Grants Special cooldown count-<INT> to <ALLIES><POSITION>.",
-                            "Grants another action, <+STATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Grants another action, <+STATS>, and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+                            "Grants another action, <ADDSTATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Grants another action, <ADDSTATS>, and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
                             "Grants unit another action. (May be used only if unit has already entered combat during the current turn.)",
                             "Moves allies adjacent to unit to opposite side of unit. If an ally cannot move to the target space (if another ally or foe is occupying the space) ally will not move."]);
 
@@ -1134,11 +1131,11 @@
                             "Grants <RESONANCE> to <HALLIES> for one turn. Grants <BONUS> to unit.",
                             "Grants <RESONANCE> and the following effect to <HALLIES> for one turn: <GRANT>.",
                             "Grants <RESONANCE> and <BONUS> to <HALLIES> for one turn.",
-                            "Grants <RESONANCE> and <+STATS> to <HALLIES> for one turn.",
-                            "Grants <RESONANCE>, <+STATS>, and <BONUS> to <HALLIES> for one turn.",
-                            "Grants <RESONANCE>, <+STATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
+                            "Grants <RESONANCE> and <ADDSTATS> to <HALLIES> for one turn.",
+                            "Grants <RESONANCE>, <ADDSTATS>, and <BONUS> to <HALLIES> for one turn.",
+                            "Grants <RESONANCE>, <ADDSTATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
                             "Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
-                            "Grants <RESONANCE>, <+STATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
+                            "Grants <RESONANCE>, <ADDSTATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
                         var text = "";
                         if (duo) text = FillInTags(FillInDuoTags(duoText), 4);
                         else text = FillInTags(FillInDuoTags(harmonicText), 4);
@@ -1312,9 +1309,7 @@
         <h3 id="support-or-contact">Support or Contact</h3>
         <div id="footer_wrap" class="outer">
             <footer class="inner">
-
                 <p class="copyright">FEH-Alt-Generator maintained by <a href="https://github.com/Rammiloh">Rammiloh</a></p>
-
                 <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
             </footer>
         </div>
