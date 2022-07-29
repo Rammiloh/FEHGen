@@ -100,77 +100,77 @@
     "Weight": 3
   },
   {
-    "Effect": "grants <+STATS> and <BONUS> to target ally for 1 turn",
+    "Effect": "grants <ADDSTATS> and <BONUS> to target ally for 1 turn",
     "Tags": "assist",
     "Weight": 2
   },
   {
-    "Effect": "grants <+STATS> and <BONUS> to unit and target ally for 1 turn",
+    "Effect": "grants <ADDSTATS> and <BONUS> to unit and target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to allies in cardinal directions of unit during combat",
+    "Effect": "grants <ADDSTATS> to allies in cardinal directions of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to allies in cardinal directions of unit for 1 turn",
+    "Effect": "grants <ADDSTATS> to allies in cardinal directions of unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to allies within <INT> spaces of unit during combat",
+    "Effect": "grants <ADDSTATS> to allies within <INT> spaces of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to allies within <INT> spaces of unit during combat",
+    "Effect": "grants <ADDSTATS> to allies within <INT> spaces of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to ally with the highest <STAT>",
+    "Effect": "grants <ADDSTATS> to ally with the highest <STAT>",
     "Tags": "turn_start",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to ally with the lowest <STAT>",
+    "Effect": "grants <ADDSTATS> to ally with the lowest <STAT>",
     "Tags": "turn_start",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to target ally for 1 turn",
+    "Effect": "grants <ADDSTATS> to target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit",
+    "Effect": "grants <ADDSTATS> to unit",
     "Tags": "during_combat,combat_start",
     "Weight": 7
   },
   {
-    "Effect": "grants <+STATS> to unit and allies for 1 turn",
+    "Effect": "grants <ADDSTATS> to unit and allies for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit and allies in cardinal directions of unit for 1 turn",
+    "Effect": "grants <ADDSTATS> to unit and allies in cardinal directions of unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit and allies within 2 spaces of unit for 1 turn",
+    "Effect": "grants <ADDSTATS> to unit and allies within 2 spaces of unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit and target ally for 1 turn",
+    "Effect": "grants <ADDSTATS> to unit and target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit for 1 turn",
+    "Effect": "grants <ADDSTATS> to unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
@@ -375,92 +375,92 @@
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on allies within <INT> spaces of unit",
+    "Effect": "inflicts <MINUSSTATS> on allies within <INT> spaces of unit",
     "Tags": "negative",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foe",
+    "Effect": "inflicts <MINUSSTATS> on foe",
     "Tags": "during_combat,combat_start",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foe and foes within <INT> spaces of foe through their next actions",
+    "Effect": "inflicts <MINUSSTATS> on foe and foes within <INT> spaces of foe through their next actions",
     "Tags": "combat_end",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes in cardinal directions from target ally for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes in cardinal directions from target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes in cardinal directions from unit or target ally for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes in cardinal directions from unit or target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes in cardinal directions of unit during combat",
+    "Effect": "inflicts <MINUSSTATS> on foes in cardinal directions of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes in cardinal directions of unit for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes in cardinal directions of unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes in cardinal directions of unit whose <STAT>+1 <= unit's <STAT> for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes in cardinal directions of unit whose <STAT>+1 <= unit's <STAT> for 1 turn",
     "Tags": "turn_start",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes within <INT> spaces of target ally for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes within <INT> spaces of target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes within <INT> spaces of unit during combat",
+    "Effect": "inflicts <MINUSSTATS> on foes within <INT> spaces of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes within <INT> spaces of unit during combat",
+    "Effect": "inflicts <MINUSSTATS> on foes within <INT> spaces of unit during combat",
     "Tags": "innate",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes within <INT> spaces of unit for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on foes within <INT> spaces of unit for 1 turn",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on foes within <INT> spaces of unit through their next actions",
+    "Effect": "inflicts <MINUSSTATS> on foes within <INT> spaces of unit through their next actions",
     "Tags": "turn_start,combat_end",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on nearest allies within <INT> spaces of unit",
+    "Effect": "inflicts <MINUSSTATS> on nearest allies within <INT> spaces of unit",
     "Tags": "negative",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on nearest foes within <INT> spaces of target ally for 1 turn",
+    "Effect": "inflicts <MINUSSTATS> on nearest foes within <INT> spaces of target ally for 1 turn",
     "Tags": "assist",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on unit",
+    "Effect": "inflicts <MINUSSTATS> on unit",
     "Tags": "negative",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on unit and allies within <INT> spaces of unit",
+    "Effect": "inflicts <MINUSSTATS> on unit and allies within <INT> spaces of unit",
     "Tags": "negative",
     "Weight": 1
   },
   {
-    "Effect": "inflicts <-STATS> on unit and nearest allies within <INT> spaces of unit",
+    "Effect": "inflicts <MINUSSTATS> on unit and nearest allies within <INT> spaces of unit",
     "Tags": "negative",
     "Weight": 1
   },
@@ -660,7 +660,7 @@
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to unit for 1 turn and grants unit another action (Once per turn)",
+    "Effect": "grants <ADDSTATS> to unit for 1 turn and grants unit another action (Once per turn)",
     "Tags": "assist,combat_end",
     "Weight": 1
   },
@@ -670,7 +670,7 @@
     "Weight": 1
   },
   {
-    "Effect": "grants <+STATS> to target ally for 1 turn and grants target ally another action (Once per turn)",
+    "Effect": "grants <ADDSTATS> to target ally for 1 turn and grants target ally another action (Once per turn)",
     "Tags": "assist",
     "Weight": 1
   },
