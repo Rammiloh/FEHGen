@@ -524,9 +524,9 @@
                     }
 
                     function FillInWords(skill, colour, weapon, move) {
-                        skill = skill.replaceAll(/<1STAT>/g, ChooseRandom(["Atk", "Spd", "Def", "Res"]));
+                        skill = skill.replace(/<1STAT>/g, ChooseRandom(["Atk", "Spd", "Def", "Res"]));
 
-                        skill = skill.replaceAll(/<2STATS>/g, ChooseRandom(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]));
+                        skill = skill.replace(/<2STATS>/g, ChooseRandom(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]));
 
                         skill = skill.replace(/<2S>/g, ChooseRandom(["A/S", "A/D", "A/R", "S/D", "S/R", "D/R"]));
 
