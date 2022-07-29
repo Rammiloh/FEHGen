@@ -965,7 +965,7 @@
                             rawConds = [];
                             //This entire block is just dedicated to dealing with the "Ninja initiates" clause
                             var ninjaCond = (theme == "Ninjas" && condition == 2 && (lines[0] == ninjaString || lines[1] == ninjaString));
-                            console.log("NinjaCond: " + ninjaCond);
+                            console.log("NinjaCond: " + ninjaCond + " (" + condition + ", " + lines[0] + ", " + lines[1] + ", " + ninjaString);
                             if(ninjaCond) 
                             {
                                 currentlyHasCondition = true;
