@@ -1192,7 +1192,7 @@
                         var theme = ChooseRandom(themesJSON);
                         if (themeInt != -1)
                             theme = themesJSON[themeInt];
-                        document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/${theme.Background}')";
+                        document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/" + theme.Background + "')";
                         
                         document.getElementById("headie").style.backgroundColor = theme.Header;
                         document.getElementById("footie").style.backgroundColor = theme.Footer;
