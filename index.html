@@ -357,9 +357,6 @@
                         var fullTitle = heroName + ": " + heroTitle.join(" ");
                         var mvmnt = ChooseRandom(moveTypes);
                         var wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7, 8])];
-                        if (hero.StatMod == "Dancer" && wpn.Weapon == "Staff") {
-                            wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7])];
-                        }
                         if (hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
                         if (hero.Race == "Beast") wpn = weaponTypes[4];
 
@@ -625,6 +622,10 @@
                             }
                             else {
                                 unitSkills[4] = "";
+                            }
+                            if (character.StatMod == "Dancer")
+                            {
+                                unitSkills[3] = "Anew";
                             }
                         }
                         else if (character.StatMod == "Dancer") {
