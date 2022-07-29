@@ -874,7 +874,7 @@
                         }
                         while (points > 0) {
                             var newLine = "";
-                            var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
+                            var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
                             while (usedConditions.includes(condition)) {
                                 condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
                             }
@@ -1042,6 +1042,11 @@
                             }
 
                             for (let i = 0; i < firstHalfEffects.length; i++) {
+                                if(ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 2 && i = 0)
+                                {
+                                    //This is the worst condition I've ever written but it's 12:40am, I'm exhausted, and it's for dealing with one specific edge case
+                                    newLine = newLine + ", ";
+                                }
                                 if (i != 0 && firstHalfEffects.length != 2)//If there are more than two entries, comma between them
                                     newLine = newLine + ", ";
                                 if (i == 1 && firstHalfEffects.length == 2 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//If there are only two entries, no comma between first and second
