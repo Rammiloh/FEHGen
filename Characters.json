@@ -128,7 +128,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Artur: Silver Saint",
+    "Hero": "Artur: Saint of Light",
     "Filename": "Artur.png",
     "Race": "Human",
     "Game": "FE8",
@@ -496,7 +496,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Caspar: Summer Intensity",
+    "Hero": "Caspar: Hotheaded Instigator",
     "Filename": "Caspar.png",
     "Race": "Human",
     "Game": "FE16",
@@ -752,7 +752,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Dheginsea: Harvest Goldoan",
+    "Hero": "Dheginsea: King of Goldoa",
     "Filename": "Dheginsea.png",
     "Race": "Dragon",
     "Game": "FE10",
@@ -952,7 +952,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Ena: Autumn Tactician",
+    "Hero": "Ena: Wish Spinner",
     "Filename": "Ena.png",
     "Race": "Dragon",
     "Game": "FE10",
@@ -1040,9 +1040,17 @@
     "Prfs": ["Special:Life Unending"]
   },
   {
-    "Hero": "Fáfnir: Fresh Ambition",
+    "Hero": "Fáfnir: King of Desolation",
     "Filename": "Fafnir.png",
     "Race": "Human",
+    "Game": "FE0",
+    "StatMod": "",
+    "Prfs": []
+  },
+  {
+    "Hero": "Fáfnir: Beast of Desolation",
+    "Filename": "Fafnir2.png",
+    "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
     "Prfs": []
@@ -1072,7 +1080,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Felix: Icy Gift Giver",
+    "Hero": "Felix: Meandering Sword",
     "Filename": "Felix.png",
     "Race": "Human",
     "Game": "FE16",
@@ -1200,7 +1208,7 @@
     "Prfs": ["B:Binding Necklace"]
   },
   {
-    "Hero": "Freyr: Estival Dreams",
+    "Hero": "Freyr: Dream King",
     "Filename": "Freyr.png",
     "Race": "Beast",
     "Game": "FE0",
@@ -1264,7 +1272,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Geese: A Life at Sea",
+    "Hero": "Geese: Ocean King",
     "Filename": "Geese.png",
     "Race": "Human",
     "Game": "FE6",
@@ -1328,7 +1336,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Greil: Heroic Exemplar",
+    "Hero": "Greil: Divine Knight",
     "Filename": "Greil.png",
     "Race": "Human",
     "Game": "FE9",
@@ -1456,7 +1464,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Henriette: Overflowing Love",
+    "Hero": "Henriette: Queen of Askr",
     "Filename": "Henriette.png",
     "Race": "Human",
     "Game": "FE0",
@@ -1544,7 +1552,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Ignatz: Snowscape Artist",
+    "Hero": "Ignatz: Worldly Artist",
     "Filename": "Ignatz.png",
     "Race": "Human",
     "Game": "FE16",
@@ -1888,7 +1896,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Kurthnaga: Autumn Goldoan",
+    "Hero": "Kurthnaga: Young Dragon Prince",
     "Filename": "Kurthnaga.png",
     "Race": "Dragon",
     "Game": "FE10",
@@ -1896,7 +1904,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Kyza: Tiger of Fortune",
+    "Hero": "Kyza: Dutiful Assistant",
     "Filename": "Kyza.png",
     "Race": "Beast",
     "Game": "FE10",
@@ -2032,7 +2040,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Leonie: Relentless Rays",
+    "Hero": "Leonie: Blade Breaker's Apprentice",
     "Filename": "Leonie.png",
     "Race": "Human",
     "Game": "FE16",
@@ -2088,7 +2096,7 @@
     "Prfs": ["Special:Open the Future","B:Deadly Balance"]
   },
   {
-    "Hero": "Lifis: Terror of Iz",
+    "Hero": "Lifis: Shy Thief",
     "Filename": "Lifis.png",
     "Race": "Human",
     "Game": "FE5",
@@ -2176,7 +2184,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Lorenz: Noble of the Red Rose",
+    "Hero": "Lorenz: Red Rose Noble",
     "Filename": "Lorenz.png",
     "Race": "Human",
     "Game": "FE16",
@@ -2264,7 +2272,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Lyre: Lap Cat of Luxury",
+    "Hero": "Lyre: Finder of Secrets",
     "Filename": "Lyre.png",
     "Race": "Beast",
     "Game": "FE10",
@@ -2304,7 +2312,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Manuela: Silver Caroler",
+    "Hero": "Manuela: Divine Songstress",
     "Filename": "Manuela.png",
     "Race": "Human",
     "Game": "FE16",
@@ -2552,7 +2560,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Muarim: Raw Instinct",
+    "Hero": "Muarim: Desert's Water",
     "Filename": "Muarim.png",
     "Race": "Beast",
     "Game": "FE10",
@@ -2736,7 +2744,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Noire: Shade Seeker",
+    "Hero": "Noire: Miss Personality",
     "Filename": "Noire.png",
     "Race": "Human",
     "Game": "FE13",
@@ -3008,7 +3016,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Rafiel: Blessed Wings",
+    "Hero": "Rafiel: Earthbound Chorister",
     "Filename": "Rafiel.png",
     "Race": "Beast",
     "Game": "FE10",
@@ -3032,7 +3040,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Raphael: Muscle-Monger",
+    "Hero": "Raphael: Beast of Leicester",
     "Filename": "Raphael.png",
     "Race": "Human",
     "Game": "FE16",
@@ -3112,7 +3120,7 @@
     "Prfs": ["B:True Dragon Wall"]
   },
   {
-    "Hero": "Rhys: Gentle Basker",
+    "Hero": "Rhys: Gentle Saint",
     "Filename": "Rhys.png",
     "Race": "Human",
     "Game": "FE10",
@@ -3288,7 +3296,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Saleh: Vernal Sage",
+    "Hero": "Saleh: Well of Wisdom",
     "Filename": "Saleh.png",
     "Race": "Human",
     "Game": "FE8",
@@ -3328,7 +3336,7 @@
     "Prfs": []
   },
   {
-    "Hero": "Saul: Minister of Love",
+    "Hero": "Saul: Amorous Priest",
     "Filename": "Saul.png",
     "Race": "Human",
     "Game": "FE6",
