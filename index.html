@@ -456,7 +456,7 @@ function GenerateStats(character, chaosMode) {
     }
     console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
     var uncappedStats = false;
-    if(chaosMode && Math.random() > 0.9) uncappedStats = true;
+    if(chaosMode && Math.random() > 0.97) uncappedStats = true;
     while (points > 0) {
         //For every point, we get a random decimal between 0 and 1. Wherever that decimals falls on the growth scale, that respective stat gets the point (unless that stat is already maxed out).
         chosenStat = Math.random();
