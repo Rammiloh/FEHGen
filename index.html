@@ -584,7 +584,7 @@
                             skill = ChooseRandom(skills);
                         } while (CheckSkillForTags(skill.Restrictions, tags));
                         //Non dancers shouldnt get dancer skills but there's no in built restriction for that so here we are
-                        while(character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>"))) skill = ChooseRandom(skills);
+                        while(character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>")) && CheckSkillForTags(skill.Restrictions, tags)) skill = ChooseRandom(skills);
                         unitSkills.push(skill.Skill);
 
                         skills = (rarity == "C") ? commonCSkills : rareCSkills;
