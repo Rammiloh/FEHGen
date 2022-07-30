@@ -459,7 +459,7 @@ function GenerateStats(character, chaosMode) {
         //For every point, we get a random decimal between 0 and 1. Wherever that decimals falls on the growth scale, that respective stat gets the point (unless that stat is already maxed out).
         chosenStat = Math.random();
         for (let i = 0; i < rates.length; i++) {
-            if (chosenStat < rates[i] && stats[i] < thisClass.MaxStats[i]) {
+            if (chosenStat < rates[i] && (stats[i] < thisClass.MaxStats[i] || chaosMode)) {
                 stats[i] += 1;
                 points -= 1;
                 break;
