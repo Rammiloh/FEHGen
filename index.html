@@ -1174,22 +1174,24 @@
                             "Grants <ADDSTATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
                             "Restores <BINT> HP and grants <ADDSTATS> to <ALLIES><POSITION> for one turn.",
                             "Restores <BINT> HP and grants <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Grants <ADDSTATS> and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+                            "Grants <ADDSTATS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants <BONUS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants <ADDSTATS>, <BONUS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
                             "Grants Special cooldown count-<INT> to <ALLIES><POSITION>.",
                             "Grants another action, <ADDSTATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
-                            "Grants another action, <ADDSTATS>, and the following effect to <ALLIES><POSITION> for one turn: <GRANT>.",
+                            "Grants another action, <ADDSTATS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
                             "Grants unit another action. (May be used only if unit has already entered combat during the current turn.)",
                             "Moves allies adjacent to unit to opposite side of unit. If an ally cannot move to the target space (if another ally or foe is occupying the space) ally will not move."]);
 
                         var harmonicText = ChooseRandom(["Grants <RESONANCE> to <HALLIES> for one turn. Grants another action to ally with the highest <STAT> that is within <INT> spaces, has already acted, and is from the same titles as unit (excluding unit).",
                             "Grants <RESONANCE> to <HALLIES> for one turn. Grants <BONUS> to unit.",
-                            "Grants <RESONANCE> and the following effect to <HALLIES> for one turn: <GRANT>.",
+                            "Grants <RESONANCE> and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
                             "Grants <RESONANCE> and <BONUS> to <HALLIES> for one turn.",
                             "Grants <RESONANCE> and <ADDSTATS> to <HALLIES> for one turn.",
                             "Grants <RESONANCE>, <ADDSTATS>, and <BONUS> to <HALLIES> for one turn.",
-                            "Grants <RESONANCE>, <ADDSTATS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
-                            "Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>.",
-                            "Grants <RESONANCE>, <ADDSTATS>, <BONUS>, and the following effect to <HALLIES> for one turn: <GRANT>."]);
+                            "Grants <RESONANCE>, <ADDSTATS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
+                            "Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
+                            "Grants <RESONANCE>, <ADDSTATS>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\"."]);
                         var text = "";
                         if (duo) text = FillInTags(FillInDuoTags(duoText), 4);
                         else text = FillInTags(FillInDuoTags(harmonicText), 4);
