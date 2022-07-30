@@ -1,0 +1,110 @@
+[
+  {
+    "Event": "St. Patrick's Day",
+    "Prefixes": ["Green","Joyful","Lucky","Fortunate","Celtic","Tipsy","Merry","Happy","St.","Pinch-Proof","Shamrock","Pot O'"],
+    "Suffixes": ["Pincher","Leprechaun","Shamrock","Clover","Emerald","Gold"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Partygoers","Leprechauns","Drinking Buddies","Pinchers"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Thanksgiving",
+    "Prefixes": ["Thankful","Hungry","Appreciative","Grateful","Familial","Turkey-Cutting","Stuffed","Home-Cooked"],
+    "Suffixes": ["Chef","Guest","Family Man/Family Woman/Family Member","Uncle/Aunt/Relative","Cranberries","Salad","Gobbler","Turkey","Host"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Relatives","Feasters","Family","Thankers","Hosts","Guests","Chefs"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Independence Day",
+    "Prefixes": ["Patriotic","Free","Freedom","Enthusiastic","Proud","Dedicated","Dutiful","Celebratory","Flag-Flying","Spirited","United"],
+    "Suffixes": ["Patriot","Freedom-Fighter","Fireworks","Flag","Pride","Unity","Celebrator","Pledger"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Patriots","Celebrators","Fireworks"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Labor Day",
+    "Prefixes": ["Unionized","Diligent","Hard-Working","Toiling","Laborious"],
+    "Suffixes": ["Laborer","Worker","Patriot","Diligence","Boss","Foreman","Union-Buster"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Union","and United","Coworkers"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Cinco de Mayo",
+    "Prefixes": ["La","Piñata-Pummeling","Amable","Apasionados","Divertido","Guapo/Guapa/Guapo","Fuerte","Brilliante"],
+    "Suffixes": ["Fiesta","Celebración","Mariachi","Sombrero","Amigo/Amiga/Amigo","Fuego"],
+    "Duos": ["Dúo","Par","Amigos/Amigas/Amigos","Socios/Socias/Socios","Rivales","Aliados/Aliadas/Aliados","Compañeros/Compañeras/Compañeros"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Mother's Day",
+    "Prefixes": ["Gracious","Grateful","Paternal/Maternal/Familial","Pampering","Darling","Heartfelt","Lovable","Special","Proud"],
+    "Suffixes": ["Husband/Mother/Partner","Son/Daughter/Child"],
+    "Duos": ["Siblings","Parents","Partners","Friends","Dads/Moms/Parents","Companions","Pair"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Father's Day",
+    "Prefixes": ["Gracious","Grateful","Paternal/Maternal/Familial","Pampering","Doting","Heartfelt","Dependable","Special","Proud"],
+    "Suffixes": ["Father/Wife/Partner","Son/Daughter/Child"],
+    "Duos": ["Siblings","Parents","Partners","Friends","Dads/Moms/Parents","Companions","Pair"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Leif Erikson Day",
+    "Prefixes": ["Nordic","Northern","Northerly","Adventurous","Ship-Shape"],
+    "Suffixes": ["Viking/Valkyrie/Viking","Anglo-Saxon","Celt","Norseman/Norsewoman/Nord","Warrior","Berserker"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Vinr","Vikings/Valkyries/Vikings","Warriors","Berserkers"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "April Fools' Day",
+    "Prefixes": ["Tricky","Pranking","Foolish","Joking","Funny","Laughing","Amusing","Childish","Gullible","Mischievous","Scheming","Unwitting"],
+    "Suffixes": ["Trickster","Pranker","Fool","Joker","Jester","Clown","Pranked","Chicanery","Hoodwinker","Mockery","Schemer","Victim"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Prankers","Fools","Jokesters","Jesters","Clowns","Partners-in-Crime","Tricksters","Schemers"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Mardi Gras",
+    "Prefixes": ["Proud","Queer","Fabulous","Colorful","Bright","Dancing","Celebratory","Flamboyant","Fervid","Masked"],
+    "Suffixes": ["Masquerade","Dancer","Celebrator","Partier","Merrymaker","Partygoer","Reveler"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Dancers","Masquerades","Celebrators","Partygoers"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "Oktoberfest",
+    "Prefixes": ["Tipsy","Drunken","Jovial","Gut","Wunderbar","Froh","Hungry","Merry"],
+    "Suffixes": ["Brewer","Barfly","Betrunken","Brew","Folk Dancer","Schuhplattler"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Freunde/Freundinnen/Freunde","Drinking Buddies"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  },
+  {
+    "Event": "April 20th",
+    "Prefixes": ["High","Dope","Toking","Blazing","Pot","Weed","Grass","Sticky","Baked","Doobie","Reefer","Stoned"],
+    "Suffixes": ["Smoker","Toker","Stoner","Pothead","Blazer","Dogg","Bud","Dab","Munchies","Weed Eater"],
+    "Duos": ["Smokers","BC Buddies","Tokers","Stoners","Blazers","Marijuana Enthusiasts","Weed Eaters"],
+    "Background": "BG_.png",
+    "Header": "#",
+    "Footer": "#"
+  }
+]
