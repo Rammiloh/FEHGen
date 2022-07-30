@@ -422,20 +422,10 @@
 
                         rates = RandomiseGrowths(rates, 5);
 
-                        if ((thisClass.Weapon == "Melee" && thisClass.Class == "Armor") || (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry")) {
-                            //Arden and Merlinus's HP are statistical outliers, so we have to cut Armored Melee and Cavalry Missile units' HP growth in half to compensate
-                            var subtraction = Math.random() * rates[0] / 2;
-                            rates[0] -= subtraction;
-                            rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
-                            console.log("Reduced HP growth by " + subtraction);
-                        }
-                        //if (thisClass.Weapon == "Missile" && thisClass.Class == "Cavalry") {
-                        //    //Add to Missile Cav's attack to compensate for Merlinus's terrible atk stat
-                        //    var subtraction = Math.random() * rates[0] / 2;
-                        //    rates[ChooseRandom([0, 2, 3, 4])] -= subtraction;
-                        //    rates[1] += subtraction;
-                        //    console.log("Added to atk growth by " + subtraction);
-                        //}
+                        var subtraction = Math.random() * rates[0];
+                        rates[0] -= subtraction;
+                        rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
+                        console.log("Reduced HP growth by " + subtraction);
                         console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
                         for (let i = 1; i < rates.length; i++) {
@@ -593,6 +583,8 @@
                         do {
                             skill = ChooseRandom(skills);
                         } while (CheckSkillForTags(skill.Restrictions, tags));
+                        //Non dancers shouldnt get dancer skills but there's no in built restriction for that so here we are
+                        while(character.StatMod == "Dancer" && (skill.includes("Cantrip") || skill.includes("<DANCE>"))) skill = ChooseRandom(skills);
                         unitSkills.push(skill.Skill);
 
                         skills = (rarity == "C") ? commonCSkills : rareCSkills;
@@ -874,9 +866,12 @@
                         }
                         while (points > 0) {
                             var newLine = "";
-                            var condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
+                            var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
+                            if(theme == "Dancers") distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
+                            
+                            var condition = ChooseRandom(distribution);
                             while (usedConditions.includes(condition)) {
-                                condition = ChooseRandom([0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8]);
+                                condition = ChooseRandom(distribution);
                             }
 
                             usedConditions.push(condition);
