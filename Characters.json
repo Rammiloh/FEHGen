@@ -288,6 +288,14 @@
     "Prfs": []
   },
   {
+    "Hero": "Barry: Drill Sergeant",
+    "Filename": "Barry.png",
+    "Race": "Human",
+    "Game": "FEE",
+    "StatMod": "",
+    "Prfs": []
+  },
+  {
     "Hero": "Barst: The Hatchet",
     "Filename": "Barst.png",
     "Race": "Human",
@@ -2296,6 +2304,14 @@
     "Prfs": []
   },
   {
+    "Hero": "Maiko: Tipsy President",
+    "Filename": "Maiko.png",
+    "Race": "Human",
+    "Game": "FEE",
+    "StatMod": "",
+    "Prfs": []
+  },
+  {
     "Hero": "Malice: Deft Sellsword",
     "Filename": "Malice.png",
     "Race": "Human",
@@ -3808,6 +3824,22 @@
     "Prfs": []
   },
   {
+    "Hero": "Tiki: Virtual Empath",
+    "Filename": "Tiki3.png",
+    "Race": "Dragon",
+    "Game": "FEE",
+    "StatMod": "Trainee",
+    "Prfs": []
+  },
+  {
+    "Hero": "Tiki=Waifu: Musical Prodigy",
+    "Filename": "TikiEqualsWaifu.png",
+    "Race": "Human",
+    "Game": "FEE",
+    "StatMod": "",
+    "Prfs": []
+  },
+  {
     "Hero": "Tine: Rumbling Thunder",
     "Filename": "Tine.png",
     "Race": "Human",
@@ -4004,6 +4036,14 @@
     "Filename": "Yarne.png",
     "Race": "Beast",
     "Game": "FE13",
+    "StatMod": "",
+    "Prfs": []
+  },
+  {
+    "Hero": "Yashiro: Cold Hearted",
+    "Filename": "Yashiro.png",
+    "Race": "Human",
+    "Game": "FEE",
     "StatMod": "",
     "Prfs": []
   },
