@@ -339,6 +339,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     if(hero.Gender == "M") suffix = genderArray[0];
                     else if(hero.Gender == "F") suffix = genderArray[1];
                     else suffix = genderArray[2];
+                    if(chaosMode) suffix = ChooseRandom(genderArray);
                 }
                 heroTitle.splice(heroTitle.length - 1, 1, suffix);
             }
@@ -351,6 +352,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     if(hero.Gender == "M") suffix = genderArray[0];
                     else if(hero.Gender == "F") suffix = genderArray[1];
                     else suffix = genderArray[2];
+                    if(chaosMode) suffix = ChooseRandom(genderArray);
                 }
                 heroTitle.splice(heroTitle.length - 1, 0, suffix);
             }
@@ -371,6 +373,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                         if(hero.Gender == "M") suffix = genderArray[0];
                         else if(hero.Gender == "F") suffix = genderArray[1];
                         else suffix = genderArray[2];
+                        if(chaosMode) suffix = ChooseRandom(genderArray);
                     }
                     heroTitle.splice(0, 1, suffix);
                 }
@@ -383,6 +386,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                         if(hero.Gender == "M") prefix = genderArray[0];
                         else if(hero.Gender == "F") prefix = genderArray[1];
                         else prefix = genderArray[2];
+                        if(chaosMode) prefix = ChooseRandom(genderArray);
                     }
                     heroTitle.splice(0, 1, prefix);
                 }
@@ -396,6 +400,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     if(hero.Gender == "M") prefix = genderArray[0];
                     else if(hero.Gender == "F") prefix = genderArray[1];
                     else prefix = genderArray[2];
+                    if(chaosMode) prefix = ChooseRandom(genderArray);
                 }
                 heroTitle.splice(0, 1, prefix);
             }
@@ -410,6 +415,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
             if(hero.Gender == "M" && hero2.Gender == "M") prefix = genderArray[0];
             else if(hero.Gender == "F" && hero2.Gender == "F") prefix = genderArray[1];
             else prefix = genderArray[2];
+            if(chaosMode) prefix = ChooseRandom(genderArray);
         }
         var suffix = ChooseRandom(theme.Duos);
         if(suffix.includes("/"))
@@ -418,6 +424,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
             if(hero.Gender == "M" && hero2.Gender == "M") suffix = genderArray[0];
             else if(hero.Gender == "F" && hero2.Gender == "F") suffix = genderArray[1];
             else suffix = genderArray[2];
+            if(chaosMode) suffix = ChooseRandom(genderArray);
         }
         heroTitle = [prefix, suffix];
     }
