@@ -175,6 +175,7 @@
 // JavaScript source code
 var charactersJSON;
 var themesJSON;
+var extrasJSON;
 var skillsJSON;
 var statsJSON;
 var conditionsJSON;
@@ -298,6 +299,8 @@ async function loadAllJSONs() {
     charactersJSON = await caller("./Characters.json");
     console.log("SeasonalThemes");
     themesJSON = await caller("./SeasonalThemes.json");
+    console.log("Extras");
+    extrasJSON = await caller("./GameIcons/new_file.json");
     console.log("Skills");
     skillsJSON = await caller("./Skills.json");
     console.log("Classes");
@@ -1287,9 +1290,14 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
 
 async function GenerateBanner() {
     var themeInt = document.getElementById("themeDropdown").value;
-    var theme = ChooseRandom(themesJSON);
-    if (themeInt != -1)
+    var theme;
+    if (themeInt == -1)
         theme = themesJSON[themeInt];
+    else if(Math.random() > 0.5)
+    {
+        theme = ChooseRandom(extrasJSON);
+    }
+    else theme = ChooseRandom(themesJSON);
     document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/" + theme.Background + "')";
 
     document.getElementById("headie").style.backgroundColor = theme.Header;
