@@ -5,7 +5,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Aelfric: Custodian Monk",
@@ -13,7 +14,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Alfonse: Prince of Askr",
@@ -21,7 +23,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["Special:Open the Future"]
+    "Prfs": ["Special:Open the Future"],
+    "Gender": "M"
   },
   {
     "Hero": "Alm: Hero of Prophecy",
@@ -29,7 +32,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": ["Special:Lunar Flash","A:Scendscale"]
+    "Prfs": ["Special:Lunar Flash","A:Scendscale"],
+    "Gender": "M"
   },
   {
     "Hero": "Altena: Luminous Rider",
@@ -37,7 +41,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Altina: Dawn's Trueblade",
@@ -45,7 +50,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["Special:Twin Blades","A:Ashera's Chosen"]
+    "Prfs": ["Special:Twin Blades","A:Ashera's Chosen"],
+    "Gender": "F"
   },
   {
     "Hero": "Amelia: Rose of the War",
@@ -53,7 +59,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Anna: Commander",
@@ -61,7 +68,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Anna: Secret Seller",
@@ -69,7 +77,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Annand: Knight-Defender",
@@ -77,7 +86,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Annette: Overachiever",
@@ -85,7 +95,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Arden: Strong and Tough",
@@ -93,7 +104,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Follow-Up Ring"]
+    "Prfs": ["B:Follow-Up Ring"],
+    "Gender": "M"
   },
   {
     "Hero": "Ares: Black Knight",
@@ -101,7 +113,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Arete: Requiem's Beauty",
@@ -109,7 +122,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Arthur: Furious Mage",
@@ -117,7 +131,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Arthur: Hapless Hero",
@@ -125,7 +140,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Artur: Saint of Light",
@@ -133,7 +149,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Arvis: Emperor of Flame",
@@ -141,7 +158,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Recover Ring"]
+    "Prfs": ["B:Recover Ring"],
+    "Gender": "M"
   },
   {
     "Hero": "Asbel: Windswept Youth",
@@ -149,7 +167,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ash: Retainer to Askr",
@@ -157,7 +176,8 @@
     "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Opening Retainer"]
+    "Prfs": ["C:Opening Retainer"],
+    "Gender": "F"
   },
   {
     "Hero": "Ashe: Arrow of Justice",
@@ -165,7 +185,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ashera: Order Goddess",
@@ -173,7 +194,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["C:Order's Restraint"]
+    "Prfs": ["C:Order's Restraint"],
+    "Gender": "F"
   },
   {
     "Hero": "Ashnard: Mad King",
@@ -181,7 +203,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Askr: God of Openness",
@@ -189,7 +212,8 @@
     "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Opened Domain"]
+    "Prfs": ["C:Opened Domain"],
+    "Gender": "M"
   },
   {
     "Hero": "Astram: Midia's Hero",
@@ -197,7 +221,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Astrid: Resolute Damsel",
@@ -205,7 +230,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Athena: Borderland Sword",
@@ -213,7 +239,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Atlas: Forest Muscle",
@@ -221,7 +248,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "August: Astute Tactician",
@@ -229,7 +257,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Aversa: Dark One",
@@ -237,7 +266,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ayra: Astra's Wielder",
@@ -245,7 +275,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["Special:Regnal Astra"]
+    "Prfs": ["Special:Regnal Astra"],
+    "Gender": "F"
   },
   {
     "Hero": "Azama: Carefree Monk",
@@ -253,7 +284,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Azelle: Youthful Flame",
@@ -261,7 +293,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Azura: Lady of the Lake",
@@ -269,7 +302,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Gray Waves","Assist:Gray Waves II"]
+    "Prfs": ["Assist:Gray Waves","Assist:Gray Waves II"],
+    "Gender": "F"
   },
   {
     "Hero": "Balthus: King of Grappling",
@@ -277,7 +311,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Bantu: Tiki's Guardian",
@@ -285,7 +320,8 @@
     "Race": "Dragon",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Barry: Drill Sergeant",
@@ -293,7 +329,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Barst: The Hatchet",
@@ -301,7 +338,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Bartre: Fearless Warrior",
@@ -309,7 +347,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Basilio: Feroxi West-Khan",
@@ -317,7 +356,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Benny: Sensitive Soul",
@@ -325,7 +365,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Berkut: Prideful Prince",
@@ -333,7 +374,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Bernadetta: Eternal Loner",
@@ -341,7 +383,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Bertram: Dread Cavalier",
@@ -349,7 +392,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Beruka: Quiet Assassin",
@@ -357,7 +401,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Black Knight: Sinister General",
@@ -365,7 +410,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": ["Special:Black Luna"]
+    "Prfs": ["Special:Black Luna"],
+    "Gender": "M"
   },
   {
     "Hero": "Boey: Skillful Survivor",
@@ -373,7 +419,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Boyd: Future Great",
@@ -381,7 +428,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Brady: Daunting Priest",
@@ -389,7 +437,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Bramimond: The Enigma",
@@ -397,7 +446,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": ["C:Impenetrable Dark"]
+    "Prfs": ["C:Impenetrable Dark"],
+    "Gender": "N"
   },
   {
     "Hero": "Brigand Boss: Known Criminal",
@@ -405,7 +455,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Brigid: Orgahil Pirate",
@@ -413,7 +464,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Brunnya: Devoted General",
@@ -421,7 +473,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Bruno: Masked Knight",
@@ -429,7 +482,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Byleth: Proven Professor",
@@ -437,7 +491,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["C:Goddess Bearer"]
+    "Prfs": ["C:Goddess Bearer"],
+    "Gender": "F"
   },
   {
     "Hero": "Byleth: Tested Professor",
@@ -445,7 +500,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["Special:Sublime Heaven"]
+    "Prfs": ["Special:Sublime Heaven"],
+    "Gender": "M"
   },
   {
     "Hero": "Caeda: Talys's Heart",
@@ -453,7 +509,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": ["B:Belief in Love","B:Faithful Loyalty"]
+    "Prfs": ["B:Belief in Love","B:Faithful Loyalty"],
+    "Gender": "F"
   },
   {
     "Hero": "Caellach: Tiger Eye",
@@ -461,7 +518,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Cain: The Bull",
@@ -469,7 +527,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Caineghis: Gallia's Lion King",
@@ -477,7 +536,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Camilla: Bewitching Beauty",
@@ -485,7 +545,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Camus: Sable Knight",
@@ -493,7 +554,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Canas: Wisdom Seeker",
@@ -501,7 +563,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Caspar: Hotheaded Instigator",
@@ -509,7 +572,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Cath: Master Thief",
@@ -517,7 +581,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Catherine: Thunder Knight",
@@ -525,7 +590,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Catria: Middle Whitewing",
@@ -533,7 +599,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Catria: Mild Middle Sister",
@@ -541,7 +608,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Cecilia: Etrurian General",
@@ -549,7 +617,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ced: Hero on the Wind",
@@ -557,7 +626,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Celica: Caring Princess",
@@ -565,7 +635,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": ["B:Soul of Zofia","B:Double Lion"]
+    "Prfs": ["B:Soul of Zofia","B:Double Lion"],
+    "Gender": "F"
   },
   {
     "Hero": "Chad: Lycian Wildcat",
@@ -573,7 +644,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Charlotte: Wily Warrior",
@@ -581,7 +653,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Cherche: Wyvern Friend",
@@ -589,7 +662,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Chrom: Exalted Prince",
@@ -597,7 +671,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": ["Assist:To Change Fate!"]
+    "Prfs": ["Assist:To Change Fate!"],
+    "Gender": "M"
   },
   {
     "Hero": "Clair: Highborn Flier",
@@ -605,7 +680,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Clarine: Refined Noble",
@@ -613,7 +689,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Clarisse: Sniper in the Dark",
@@ -621,7 +698,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Claude: The Schemer",
@@ -629,7 +707,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:Fallen Star"]
+    "Prfs": ["B:Fallen Star"],
+    "Gender": "M"
   },
   {
     "Hero": "Clive: Idealistic Knight",
@@ -637,7 +716,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Colm: Capable Thief",
@@ -645,7 +725,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Conrad: Masked Knight",
@@ -653,7 +734,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Constance: Fallen Noble",
@@ -661,7 +743,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Cordelia: Knight Paragon",
@@ -669,7 +752,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Cormag: Aloof Lanceman",
@@ -677,7 +761,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Corrin: Fateful Prince",
@@ -685,7 +770,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Corrin: Fateful Princess",
@@ -693,7 +779,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": ["Special:Negating Fang"]
+    "Prfs": ["Special:Negating Fang"],
+    "Gender": "F"
   },
   {
     "Hero": "Cynthia: Hero Chaser",
@@ -701,7 +788,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Dagr: Sun's Radiance",
@@ -709,7 +797,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Sun-Twin Wing"]
+    "Prfs": ["B:Sun-Twin Wing"],
+    "Gender": "F"
   },
   {
     "Hero": "Darros: Seawalker",
@@ -717,7 +806,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Death Knight: The Reaper",
@@ -725,7 +815,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Dedue: Dimitri's Vassal",
@@ -733,7 +824,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Deen: Bladed Sandstorm",
@@ -741,7 +833,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Deirdre: Lady of the Forest",
@@ -749,7 +842,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Delthea: Free Spirit",
@@ -757,7 +851,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Dheginsea: King of Goldoa",
@@ -765,7 +860,8 @@
     "Race": "Dragon",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Dieck: Wounded Tiger",
@@ -773,7 +869,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Dimitri: The Protector",
@@ -781,7 +878,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:Blue Lion Rule","B:Murderous Lion","B:Atrocity"]
+    "Prfs": ["B:Blue Lion Rule","B:Murderous Lion","B:Atrocity"],
+    "Gender": "M"
   },
   {
     "Hero": "Díthorba: Cutting Knight",
@@ -789,7 +887,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Donnel: Village Hero",
@@ -797,7 +896,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Dorcas: Serene Warrior",
@@ -805,7 +905,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Dorothea: Mystical Songstress",
@@ -813,7 +914,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Dozla: Steady Axe",
@@ -821,7 +923,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Draug: Gentle Giant",
@@ -829,7 +932,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Duessel: Obsidian",
@@ -837,7 +941,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Duma: God of Strength",
@@ -845,7 +950,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": ["C:Upheaval","C:Upheaval+"]
+    "Prfs": ["C:Upheaval","C:Upheaval+"],
+    "Gender": "M"
   },
   {
     "Hero": "Echidna: Unyielding Idealist",
@@ -853,7 +959,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Edelgard: The Future",
@@ -861,7 +968,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:Black Eagle Rule","B:Raging Storm"]
+    "Prfs": ["B:Black Eagle Rule","B:Raging Storm"],
+    "Gender": "F"
   },  
   {
     "Hero": "Edelgard: Hegemon Husk",
@@ -869,7 +977,8 @@
     "Race": "Beast",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:Armored Wall"]
+    "Prfs": ["B:Armored Wall"],
+    "Gender": "F"
   },
   {
     "Hero": "Effie: Army of One",
@@ -877,7 +986,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Eir: Merciful Death",
@@ -885,7 +995,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Sparkling Boost","C:Sparkling Boost+"]
+    "Prfs": ["C:Sparkling Boost","C:Sparkling Boost+"],
+    "Gender": "F"
   },
   {
     "Hero": "Eirika: Restoration Lady",
@@ -893,7 +1004,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": ["B:Moonlit Bangle F","B:Moonlight Bangle","B:Lunar Brace","B:Lunar Brace II"]
+    "Prfs": ["B:Moonlit Bangle F","B:Moonlight Bangle","B:Lunar Brace","B:Lunar Brace II"],
+    "Gender": "F"
   },
   {
     "Hero": "Eitri: Youthful Sage",
@@ -901,7 +1013,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Divine Recreation"]
+    "Prfs": ["B:Divine Recreation"],
+    "Gender": "F"
   },
   {
     "Hero": "Eldigan: Lionheart",
@@ -909,7 +1022,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Eleonora: Shooting Starlet",
@@ -917,7 +1031,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Elimine: Scouring Saint",
@@ -925,7 +1040,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": ["C:Holy Ground"]
+    "Prfs": ["C:Holy Ground"],
+    "Gender": "F"
   },
   {
     "Hero": "Elincia: Lost Princess",
@@ -933,7 +1049,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Elise: Budding Flower",
@@ -941,7 +1058,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Eliwood: Knight of Lycia",
@@ -949,7 +1067,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": ["C:Vision of Arcadia"]
+    "Prfs": ["C:Vision of Arcadia"],
+    "Gender": "M"
   },
   {
     "Hero": "Emmeryn: Gentle Exalt",
@@ -957,7 +1076,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ena: Wish Spinner",
@@ -965,7 +1085,8 @@
     "Race": "Dragon",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ephraim: Restoration Lord",
@@ -973,7 +1094,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": ["B:Solar Brace","B:Solar Brace II"]
+    "Prfs": ["B:Solar Brace","B:Solar Brace II"],
+    "Gender": "M"
   },
   {
     "Hero": "Eremiya: Bishop of Woe",
@@ -981,7 +1103,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Erinys: Earnest Knight",
@@ -989,7 +1112,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Erk: Studious Mage",
@@ -997,7 +1121,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Est: Junior Whitewing",
@@ -1005,7 +1130,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Est: Sweet Baby Sis",
@@ -1013,7 +1139,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ethlyn: Spirited Princess",
@@ -1021,7 +1148,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ewan: Eager Student",
@@ -1029,7 +1157,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Eyvel: Mistress of Fiana",
@@ -1037,7 +1166,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Fae: Divine Dragon",
@@ -1045,7 +1175,8 @@
     "Race": "Dragon",
     "Game": "FE6",
     "StatMod": "Trainee",
-    "Prfs": ["Special:Life Unending"]
+    "Prfs": ["Special:Life Unending"],
+    "Gender": "F"
   },
   {
     "Hero": "Fáfnir: King of Desolation",
@@ -1053,7 +1184,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Fáfnir: Beast of Desolation",
@@ -1061,7 +1193,8 @@
     "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Farina: The Great Wing",
@@ -1069,7 +1202,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Faye: Devoted Heart",
@@ -1077,7 +1211,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Felicia: Maid Mayhem",
@@ -1085,7 +1220,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Felix: Meandering Sword",
@@ -1093,7 +1229,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ferdinand: Noblest of Nobles",
@@ -1101,7 +1238,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Fernand: Traitorous Knight",
@@ -1109,7 +1247,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Finn: Lance of Legend",
@@ -1117,7 +1256,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Fiora: Airborne Warrior",
@@ -1125,7 +1265,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Fir: Sword Student",
@@ -1133,7 +1274,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Fjorm: Princess of Ice",
@@ -1141,7 +1283,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["Special:Ice Mirror","Special:Ice Mirror II"]
+    "Prfs": ["Special:Ice Mirror","Special:Ice Mirror II"],
+    "Gender": "F"
   },
   {
     "Hero": "Flame Emperor: Bringer of War",
@@ -1149,7 +1292,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "N"
   },
   {
     "Hero": "Flavia: Feroxi East-Khan",
@@ -1157,7 +1301,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Flayn: Playing Innocent",
@@ -1165,7 +1310,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Flora: Cold as Ice",
@@ -1173,7 +1319,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Florina: Lovely Flier",
@@ -1181,7 +1328,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Forrest: Fashion Forward",
@@ -1189,7 +1337,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Forsyth: Loyal Lieutenant",
@@ -1197,7 +1346,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Frederick: Polite Knight",
@@ -1205,7 +1355,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Freyja: Lady of Nightmare",
@@ -1213,7 +1364,8 @@
     "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Binding Necklace"]
+    "Prfs": ["B:Binding Necklace"],
+    "Gender": "F"
   },
   {
     "Hero": "Freyr: Dream King",
@@ -1221,7 +1373,8 @@
     "Race": "Beast",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gaius: Candy Stealer",
@@ -1229,7 +1382,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Galle: Azure Rider",
@@ -1237,7 +1391,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Galzus: Dark Blade of Od",
@@ -1245,7 +1400,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gangrel: Plegia's Mad King",
@@ -1253,7 +1409,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Garon: King of Nohr",
@@ -1261,7 +1418,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gatekeeper: Nothing to Report",
@@ -1269,7 +1427,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:Detailed Report"]
+    "Prfs": ["B:Detailed Report"],
+    "Gender": "M"
   },
   {
     "Hero": "Gatrie: Armored Amour",
@@ -1277,7 +1436,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Geese: Ocean King",
@@ -1285,7 +1445,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Genny: Endearing Ally",
@@ -1293,7 +1454,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Gerik: Desert Tiger",
@@ -1301,7 +1463,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gerome: Masked Rider",
@@ -1309,7 +1472,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gharnef: Dark Pontifex",
@@ -1317,7 +1481,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gonzalez: Kindly Bandit",
@@ -1325,7 +1490,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gordin: Altean Archer",
@@ -1333,7 +1499,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gray: Wry Comrade",
@@ -1341,7 +1508,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Greil: Divine Knight",
@@ -1349,7 +1517,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Guinivere: Princess of Bern",
@@ -1357,7 +1526,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Gunnthrá: Voice of Dreams",
@@ -1365,7 +1535,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Chilling Seal","B:Chilling Seal II"]
+    "Prfs": ["B:Chilling Seal","B:Chilling Seal II"],
+    "Gender": "F"
   },
   {
     "Hero": "Gunter: Inveterate Soldier",
@@ -1373,7 +1544,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gustav: Sovereign Slain",
@@ -1381,7 +1553,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Guy: Kutolah Blade",
@@ -1389,7 +1562,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Gwendolyn: Adorable Knight",
@@ -1397,7 +1571,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Haar: Black Tempest",
@@ -1405,7 +1580,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hana: Focused Samurai",
@@ -1413,7 +1589,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Hapi: Drawn-Out Sigh",
@@ -1421,7 +1598,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Hardin: Dark Emperor",
@@ -1429,7 +1607,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hawkeye: Desert Guardian",
@@ -1437,7 +1616,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Heath: Wandering Knight",
@@ -1445,7 +1625,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hector: General of Ostia",
@@ -1453,7 +1634,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": ["A:Ostian Counter","C:Ostia's Pulse","C:Ostia's Pulse II"]
+    "Prfs": ["A:Ostian Counter","C:Ostia's Pulse","C:Ostia's Pulse II"],
+    "Gender": "M"
   },
   {
     "Hero": "Hel: Death Sovereign",
@@ -1461,7 +1643,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Inevitable Death"]
+    "Prfs": ["C:Inevitable Death"],
+    "Gender": "F"
   },
   {
     "Hero": "Helbindi: Savage Scourge",
@@ -1469,7 +1652,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Henriette: Queen of Askr",
@@ -1477,7 +1661,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Henry: Twisted Mind",
@@ -1485,7 +1670,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hilda: Idle Maiden",
@@ -1493,7 +1679,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Hilda: Queen of Friege",
@@ -1501,7 +1688,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Hinata: Wild Samurai",
@@ -1509,7 +1697,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hinoka: Warrior Princess",
@@ -1517,7 +1706,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Hríd: Icy Blade",
@@ -1525,7 +1715,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Freezing Seal","B:Freezing Seal II"]
+    "Prfs": ["B:Freezing Seal","B:Freezing Seal II"],
+    "Gender": "M"
   },
   {
     "Hero": "Hubert: Sinister Servant",
@@ -1533,7 +1724,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Hugh: Worldly Mage",
@@ -1541,7 +1733,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Iago: Nohr's Tactician",
@@ -1549,7 +1742,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Idunn: Dark Priestess",
@@ -1557,7 +1751,8 @@
     "Race": "Dragon",
     "Game": "FE6",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ignatz: Worldly Artist",
@@ -1565,7 +1760,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Igrene: Nabata Protector",
@@ -1573,7 +1769,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ike: Vanguard Legend",
@@ -1581,7 +1778,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["Special:Mayhem Aether","Special:Radiant Aether","Special:Radiant Aether II","B:Beorc's Blessing"]
+    "Prfs": ["Special:Mayhem Aether","Special:Radiant Aether","Special:Radiant Aether II","B:Beorc's Blessing"],
+    "Gender": "M"
   },
   {
     "Hero": "Ike: Young Mercenary",
@@ -1589,7 +1787,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": ["Special:Radiant Aether","Special:Radiant Aether II","B:Beorc's Blessing"]
+    "Prfs": ["Special:Radiant Aether","Special:Radiant Aether II","B:Beorc's Blessing"],
+    "Gender": "M"
   },
   {
     "Hero": "Ilyana: Hungering Mage",
@@ -1597,7 +1796,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ingrid: Galatea's Heir",
@@ -1605,7 +1805,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Inigo: Flower Picker",
@@ -1613,7 +1814,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Innes: Regal Strategician",
@@ -1621,7 +1823,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ishtar: Thunder Goddess",
@@ -1629,7 +1832,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Itsuki: Finding a Path",
@@ -1637,7 +1841,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jaffar: Angel of Death",
@@ -1645,7 +1850,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jagen: Veteran Knight",
@@ -1653,7 +1859,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jakob: Devoted Servant",
@@ -1661,7 +1868,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jamke: Prince of Verdane",
@@ -1669,7 +1877,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jeorge: Perfect Shot",
@@ -1677,7 +1886,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Jill: Fiery Dracoknight",
@@ -1685,7 +1895,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Jorge: Traveling Peddler",
@@ -1693,7 +1904,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Joshua: Tempest King",
@@ -1701,7 +1913,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Julia: Naga's Blood",
@@ -1709,7 +1922,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Light and Dark"]
+    "Prfs": ["B:Light and Dark"],
+    "Gender": "F"
   },
   {
     "Hero": "Julian: Tender Thief",
@@ -1717,7 +1931,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Julius: Scion of Darkness",
@@ -1725,7 +1940,8 @@
     "Race": "Dragon",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Juno: Legendary Flightleader",
@@ -1733,7 +1949,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kaden: Kitsune Braggart",
@@ -1741,7 +1958,8 @@
     "Race": "Beast",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kagero: Honorable Ninja",
@@ -1749,7 +1967,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kamui: Wandering Blade",
@@ -1757,7 +1976,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kana: Dragon Princess",
@@ -1765,7 +1985,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kana: Dragon Spawn",
@@ -1773,7 +1994,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Karel: Sword Demon",
@@ -1781,7 +2003,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Karin: Driven Knight",
@@ -1789,7 +2012,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Karla: Sword Vassal",
@@ -1797,7 +2021,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Katarina: Wayward One",
@@ -1805,7 +2030,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kaze: Easygoing Ninja",
@@ -1813,7 +2039,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Keaton: Lupine Collector",
@@ -1821,7 +2048,8 @@
     "Race": "Beast",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kempf: Conniving General",
@@ -1829,7 +2057,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kent: Crimson Shield",
@@ -1837,7 +2066,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kiria: Cool Façade",
@@ -1845,7 +2075,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kjelle: Fair Fighter",
@@ -1853,7 +2084,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Klein: Silver Nobleman",
@@ -1861,7 +2093,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kliff: Curious Spirit",
@@ -1869,7 +2102,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Knoll: Darkness Watcher",
@@ -1877,7 +2111,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kris: Unknown Hero",
@@ -1885,7 +2120,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kris: Unsung Hero",
@@ -1893,7 +2129,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kronya: Gleaming Blade",
@@ -1901,7 +2138,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Kurthnaga: Young Dragon Prince",
@@ -1909,7 +2147,8 @@
     "Race": "Dragon",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Kyza: Dutiful Assistant",
@@ -1917,7 +2156,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "N"
   },
   {
     "Hero": "L'Arachel: Princess of Light",
@@ -1925,7 +2165,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lachesis: Lionheart's Sister",
@@ -1933,7 +2174,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Laegjarn: Sheathed Steel",
@@ -1941,7 +2183,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Laevatein: Searing Steel",
@@ -1949,7 +2192,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Larcei: Keen Kin",
@@ -1957,7 +2201,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["Special:Regnal Astra"]
+    "Prfs": ["Special:Regnal Astra"],
+    "Gender": "F"
   },
   {
     "Hero": "Larum: Sprightly Dancer",
@@ -1965,7 +2210,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Laslow: Dancing Duelist",
@@ -1973,7 +2219,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Leanne: Forest's Song",
@@ -1981,7 +2228,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Legault: The Hurricane",
@@ -1989,7 +2237,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Legion: Masked Maniac",
@@ -1997,7 +2246,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Leif: Prince of Leonster",
@@ -2005,7 +2255,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": ["Special:Njörun's Zeal","B:S Drink"]
+    "Prfs": ["Special:Njörun's Zeal","B:S Drink"],
+    "Gender": "M"
   },
   {
     "Hero": "Leila: Rose amid Fangs",
@@ -2013,7 +2264,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lena: Tender Angel",
@@ -2021,7 +2273,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lene: Yearning Dancer",
@@ -2029,7 +2282,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Leo: Sorcerous Prince",
@@ -2037,7 +2291,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Leon: True of Heart",
@@ -2045,7 +2300,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Leonie: Blade Breaker's Apprentice",
@@ -2053,7 +2309,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lethe: Gallia's Valkyrie",
@@ -2061,7 +2318,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Letizia: Curse Director",
@@ -2069,7 +2327,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lewyn: Guiding Breeze",
@@ -2077,7 +2336,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lex: Young Blade",
@@ -2085,7 +2345,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Libra: Fetching Friar",
@@ -2093,7 +2354,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Líf: Lethal Swordsman",
@@ -2101,7 +2363,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["Special:Open the Future","B:Deadly Balance"]
+    "Prfs": ["Special:Open the Future","B:Deadly Balance"],
+    "Gender": "M"
   },
   {
     "Hero": "Lifis: Shy Thief",
@@ -2109,7 +2372,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lilina: Delightful Noble",
@@ -2117,7 +2381,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": ["Special:Gifted Magic"]
+    "Prfs": ["Special:Gifted Magic"],
+    "Gender": "F"
   },
   {
     "Hero": "Lilith: Astral Daughter",
@@ -2125,7 +2390,8 @@
     "Race": "Dragon",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Limstella: Living Construct",
@@ -2133,7 +2399,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "N"
   },
   {
     "Hero": "Linde: Light Mage",
@@ -2141,7 +2408,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Linhardt: Hevring's Heir",
@@ -2149,7 +2417,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Linus: Mad Dog",
@@ -2157,7 +2426,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lissa: Sprightly Cleric",
@@ -2165,7 +2435,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lloyd: White Wolf",
@@ -2173,7 +2444,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Loki: The Trickster",
@@ -2181,7 +2453,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lon'qu: Solitary Blade",
@@ -2189,7 +2462,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lorenz: Red Rose Noble",
@@ -2197,7 +2471,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Louise: Lady of Violets",
@@ -2205,7 +2480,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lucina: Future Witness",
@@ -2213,7 +2489,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": ["Assist:Future Vision","Assist:Future Vision II"]
+    "Prfs": ["Assist:Future Vision","Assist:Future Vision II"],
+    "Gender": "F"
   },
   {
     "Hero": "Lucius: The Light",
@@ -2221,7 +2498,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lugh: Anima Child",
@@ -2229,7 +2507,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lukas: Sharp Soldier",
@@ -2237,7 +2516,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Luke: Rowdy Squire",
@@ -2245,7 +2525,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lute: Prodigy",
@@ -2253,7 +2534,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Luthier: Odd Wayfarer",
@@ -2261,7 +2543,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lyn: Lady of the Plains",
@@ -2269,7 +2552,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": ["A:Laws of Sacae","A:Laws of Sacae II","B:Sacae's Blessing"]
+    "Prfs": ["A:Laws of Sacae","A:Laws of Sacae II","B:Sacae's Blessing"],
+    "Gender": "F"
   },
   {
     "Hero": "Lyon: Shadow Prince",
@@ -2277,7 +2561,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Lyre: Finder of Secrets",
@@ -2285,7 +2570,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Lysithea: Child Prodigy",
@@ -2293,7 +2579,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mae: Bundle of Energy",
@@ -2301,7 +2588,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Maiko: Tipsy President",
@@ -2309,7 +2597,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Malice: Deft Sellsword",
@@ -2317,7 +2606,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mamori: Microwavin' Idol",
@@ -2325,7 +2615,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Manuela: Divine Songstress",
@@ -2333,7 +2624,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Marcia: Petulant Knight",
@@ -2341,7 +2633,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mareeta: Sword of Stars",
@@ -2349,7 +2642,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Maria: Minerva's Sister",
@@ -2357,7 +2651,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Marianne: Adopted Daughter",
@@ -2365,7 +2660,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["Special:Requiem Dance"]
+    "Prfs": ["Special:Requiem Dance"],
+    "Gender": "F"
   },
   {
     "Hero": "Maribelle: Dire Damsel",
@@ -2373,7 +2669,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Marisa: Crimson Flash",
@@ -2381,7 +2678,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Marth: Altean Prince",
@@ -2389,7 +2687,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": ["Special:Fire Emblem","Special:Shining Emblem","Special:Hero's Blood","B:Binding Shield II","B:Binding Shield"]
+    "Prfs": ["Special:Fire Emblem","Special:Shining Emblem","Special:Hero's Blood","B:Binding Shield II","B:Binding Shield"],
+    "Gender": "M"
   },
   {
     "Hero": "Marth: Enigmatic Blade",
@@ -2397,7 +2696,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mathilda: Legendary Knight",
@@ -2405,7 +2705,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Matthew: Faithful Spy",
@@ -2413,7 +2714,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Medeus: Earth-Dragon King",
@@ -2421,7 +2723,8 @@
     "Race": "Dragon",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": ["B:Assured Rebirth"]
+    "Prfs": ["B:Assured Rebirth"],
+    "Gender": "M"
   },
   {
     "Hero": "Melady: Crimson Rider",
@@ -2429,7 +2732,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mercedes: Kindly Devotee",
@@ -2437,7 +2741,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Merlinus: Pherae's Clerk",
@@ -2445,7 +2750,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Merric: Wind Mage",
@@ -2453,7 +2759,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": ["Special:Righteous Wind"]
+    "Prfs": ["Special:Righteous Wind"],
+    "Gender": "M"
   },
   {
     "Hero": "Mia: Lady of Blades",
@@ -2461,7 +2768,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mia: Aspiring Lady of the Blades",
@@ -2469,7 +2777,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Micaiah: Priestess of Dawn",
@@ -2477,7 +2786,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["Assist:Maiden's Solace","Assist:Sacrifice","B:Prescience","B:Yune's Whispers"]
+    "Prfs": ["Assist:Maiden's Solace","Assist:Sacrifice","B:Prescience","B:Yune's Whispers"],
+    "Gender": "F"
   },
   {
     "Hero": "Michalis: Ambitious King",
@@ -2485,7 +2795,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Midori: Reliable Chemist",
@@ -2493,7 +2804,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mikoto: Caring Mother",
@@ -2501,7 +2813,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mila: Goddess of Love",
@@ -2509,7 +2822,8 @@
     "Race": "Dragon",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": ["C:Mila's Turnwheel"]
+    "Prfs": ["C:Mila's Turnwheel"],
+    "Gender": "F"
   },
   {
     "Hero": "Minerva: Red Dragoon",
@@ -2517,7 +2831,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": ["A:Dragoon Shield"]
+    "Prfs": ["A:Dragoon Shield"],
+    "Gender": "F"
   },
   {
     "Hero": "Mirabilis: Daydream",
@@ -2525,7 +2840,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Whimsical Dream"]
+    "Prfs": ["Assist:Whimsical Dream"],
+    "Gender": "F"
   },
   {
     "Hero": "Miranda: Willful Princess",
@@ -2533,7 +2849,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Miriel: Rapier Intellect",
@@ -2541,7 +2858,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mist: Helpful Sister",
@@ -2549,7 +2867,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Mordecai: Kindhearted Tiger",
@@ -2557,7 +2876,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Morgan: Lad from Afar",
@@ -2565,7 +2885,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Morgan: Lass from Afar",
@@ -2573,7 +2894,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Muarim: Desert's Water",
@@ -2581,7 +2903,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Múspell: Flame God",
@@ -2589,7 +2912,8 @@
     "Race": "Dragon",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Domain of Flame"]
+    "Prfs": ["C:Domain of Flame"],
+    "Gender": "M"
   },
   {
     "Hero": "Mustafa: Plegian Champion",
@@ -2597,7 +2921,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Myrrh: Great Dragon",
@@ -2605,7 +2930,8 @@
     "Race": "Dragon",
     "Game": "FE8",
     "StatMod": "Trainee",
-    "Prfs": ["C:Darkling Guardian"]
+    "Prfs": ["C:Darkling Guardian"],
+    "Gender": "F"
   },
   {
     "Hero": "Naesala: Sky's Shadow",
@@ -2613,7 +2939,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Naga: Dragon Divinity",
@@ -2621,7 +2948,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": ["C:Divine Fang"]
+    "Prfs": ["C:Divine Fang"],
+    "Gender": "F"
   },
   {
     "Hero": "Nagi: Dragon Avatar",
@@ -2629,7 +2957,8 @@
     "Race": "Dragon",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nah: Little Miss",
@@ -2637,7 +2966,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nailah: Unflinching Eye",
@@ -2645,7 +2975,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["C:Glare"]
+    "Prfs": ["C:Glare"],
+    "Gender": "F"
   },
   {
     "Hero": "Nanna: Nordion Princess",
@@ -2653,7 +2984,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": ["B:Hoðr's Zeal"]
+    "Prfs": ["B:Hoðr's Zeal"],
+    "Gender": "F"
   },
   {
     "Hero": "Narcian: Wyvern General",
@@ -2661,7 +2993,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Natasha: Sacred Healer",
@@ -2669,7 +3002,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Navarre: Scarlet Sword",
@@ -2677,7 +3011,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Neimi: Tearful Archer",
@@ -2685,7 +3020,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nemesis: King of Liberation",
@@ -2693,7 +3029,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Nephenee: Fierce Halberdier",
@@ -2701,7 +3038,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nifl: God of Ice",
@@ -2709,7 +3047,8 @@
     "Race": "Dragon",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Domain of Ice"]
+    "Prfs": ["C:Domain of Ice"],
+    "Gender": "F"
   },
   {
     "Hero": "Niime: Mountain Hermit",
@@ -2717,7 +3056,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Niles: Cruel to Be Kind",
@@ -2725,7 +3065,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Nils: Bright Bard",
@@ -2733,7 +3074,8 @@
     "Race": "Dragon",
     "Game": "FE7",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Nina: Eye Spy",
@@ -2741,7 +3083,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ninian: Oracle of Destiny",
@@ -2749,7 +3092,8 @@
     "Race": "Dragon",
     "Game": "FE7",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Call to Flame"]
+    "Prfs": ["Assist:Call to Flame"],
+    "Gender": "F"
   },
   {
     "Hero": "Nino: Pious Mage",
@@ -2757,7 +3101,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Noire: Miss Personality",
@@ -2765,7 +3110,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Norne: The Volunteer",
@@ -2773,7 +3119,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nótt: Moon's Elegance",
@@ -2781,7 +3128,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Moon-Twin Wing"]
+    "Prfs": ["B:Moon-Twin Wing"],
+    "Gender": "F"
   },
   {
     "Hero": "Nowi: Eternal Youth",
@@ -2789,7 +3137,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Nyx: Rulebreaker Mage",
@@ -2797,7 +3146,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Oboro: Fierce Fighter",
@@ -2805,7 +3155,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Odin: Potent Force",
@@ -2813,7 +3164,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ogma: Loyal Blade",
@@ -2821,7 +3173,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Oliver: Admirer of Beauty",
@@ -2829,7 +3182,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Olivia: Blushing Beauty",
@@ -2837,7 +3191,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Olwen: Blue Mage Knight",
@@ -2845,7 +3200,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ophelia: Dramatic Heroine",
@@ -2853,7 +3209,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Orochi: Merry Diviner",
@@ -2861,7 +3218,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Orson: Passion's Folly",
@@ -2869,7 +3227,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Oscar: Agile Horseman",
@@ -2877,7 +3236,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Osian: Scolded Soldier",
@@ -2885,7 +3245,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ótr: Kingsbrother",
@@ -2893,7 +3254,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["Special:Brutal Shell"]
+    "Prfs": ["Special:Brutal Shell"],
+    "Gender": "M"
   },
   {
     "Hero": "Owain: Chosen One",
@@ -2901,7 +3263,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Palla: Eldest Whitewing",
@@ -2909,7 +3272,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Palla: Kind Eldest Sister",
@@ -2917,7 +3281,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Panne: Proud Taguel",
@@ -2925,7 +3290,8 @@
     "Race": "Beast",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Pelleas: Ashnard's Orphan",
@@ -2933,7 +3299,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Pent: Mage General",
@@ -2941,7 +3308,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Peony: Sweet Dream",
@@ -2949,7 +3317,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Gentle Dream"]
+    "Prfs": ["Assist:Gentle Dream"],
+    "Gender": "F"
   },
   {
     "Hero": "Perceval: Knightly Ideal",
@@ -2957,7 +3326,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Peri: Playful Slayer",
@@ -2965,7 +3335,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Petra: Princess of Brigid",
@@ -2973,7 +3344,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Petrine: Icy Flame-Lancer",
@@ -2981,7 +3353,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Phina: Roving Dancer",
@@ -2989,7 +3362,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Plumeria: Lewd Dream",
@@ -2997,7 +3371,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Sweet Dreams"]
+    "Prfs": ["Assist:Sweet Dreams"],
+    "Gender": "F"
   },
   {
     "Hero": "Priam: Radiant Hero",
@@ -3005,7 +3380,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Priscilla: Delicate Princess",
@@ -3013,7 +3389,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Python: Apathetic Archer",
@@ -3021,7 +3398,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Quan: Luminous Lancer",
@@ -3029,7 +3407,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rafiel: Earthbound Chorister",
@@ -3037,7 +3416,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Raigh: Dark Child",
@@ -3045,7 +3425,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ranulf: Friend of Nations",
@@ -3053,7 +3434,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Raphael: Beast of Leicester",
@@ -3061,7 +3443,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rath: Wolf of Sacae",
@@ -3069,7 +3452,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Raven: Peerless Fighter",
@@ -3077,7 +3461,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rebecca: Wildflower",
@@ -3085,7 +3470,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Reginn: Bearing Hope",
@@ -3093,7 +3479,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["Special:Seiðr Shell"]
+    "Prfs": ["Special:Seiðr Shell"],
+    "Gender": "F"
   },
   {
     "Hero": "Reinhardt: Thunder's Fist",
@@ -3101,7 +3488,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rennac: Rich 'Merchant'",
@@ -3109,7 +3497,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Reyson: White Prince",
@@ -3117,7 +3506,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rhajat: Black Magician",
@@ -3125,7 +3515,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Rhea: Immaculate One",
@@ -3133,7 +3524,8 @@
     "Race": "Dragon",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["B:True Dragon Wall"]
+    "Prfs": ["B:True Dragon Wall"],
+    "Gender": "F"
   },
   {
     "Hero": "Rhys: Gentle Saint",
@@ -3141,7 +3533,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Riev: Blood Beryl",
@@ -3149,7 +3542,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rinea: Reminiscent Belle",
@@ -3157,7 +3551,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Rinkah: Scion of Flame",
@@ -3165,7 +3560,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Robin: Fell Reincarnation",
@@ -3173,7 +3569,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Robin: Fell Vessel",
@@ -3181,7 +3578,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": ["A:Dragonscale","A:Dragonskin","A:Dragonskin II"]
+    "Prfs": ["A:Dragonscale","A:Dragonskin","A:Dragonskin II"],
+    "Gender": "F"
   },
   {
     "Hero": "Robin: High Deliverer",
@@ -3189,7 +3587,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Robin: Mystery Tactician",
@@ -3197,7 +3596,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Roderick: Steady Squire",
@@ -3205,7 +3605,8 @@
     "Race": "Human",
     "Game": "FE3",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rolf: Faithful Student",
@@ -3213,7 +3614,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ronan: Villager of Iz",
@@ -3221,7 +3623,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Roshea: Coyote's Faithful",
@@ -3229,7 +3632,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ross: His Father's Son",
@@ -3237,7 +3641,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Roy: Young Lion",
@@ -3245,7 +3650,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": ["C:Human Virtue","C:Human Virtue II","C:Faith in Humanity"]
+    "Prfs": ["C:Human Virtue","C:Human Virtue II","C:Faith in Humanity"],
+    "Gender": "M"
   },
   {
     "Hero": "Rudolf: Emperor of Rigel",
@@ -3253,7 +3659,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Rutger: Lone Swordsman",
@@ -3261,7 +3668,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ryoma: Peerless Samurai",
@@ -3269,7 +3677,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": ["B:Bushido","B:Bushido II"]
+    "Prfs": ["B:Bushido","B:Bushido II"],
+    "Gender": "M"
   },
   {
     "Hero": "Saber: Driven Mercenary",
@@ -3277,7 +3686,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Saias: Bishop of Flame",
@@ -3285,7 +3695,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sain: Green Lance",
@@ -3293,7 +3704,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Saizo: Angry Ninja",
@@ -3301,7 +3713,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sakura: Loving Priestess",
@@ -3309,7 +3722,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Saleh: Well of Wisdom",
@@ -3317,7 +3731,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Salem: Dark Sage",
@@ -3325,7 +3740,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sanaki: Holy Empress",
@@ -3333,7 +3749,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sanaki: Begnion's Apostle",
@@ -3341,7 +3758,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sara: Lady of Loptr",
@@ -3349,7 +3767,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Saul: Amorous Priest",
@@ -3357,7 +3776,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Say'ri: Chon'sin's Blade",
@@ -3365,7 +3785,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Scáthach: Astra's Wake",
@@ -3373,7 +3794,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sedgar: Coyote's Dutiful",
@@ -3381,7 +3803,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Seiros: Saint of Legend",
@@ -3389,7 +3812,8 @@
     "Race": "Dragon",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["C:Wings of Light"]
+    "Prfs": ["C:Wings of Light"],
+    "Gender": "F"
   },
   {
     "Hero": "Selena: Cutting Wit",
@@ -3397,7 +3821,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Selena: Fluorspar",
@@ -3405,7 +3830,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Seliph: Heir of Light",
@@ -3413,7 +3839,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Holy War's End"]
+    "Prfs": ["B:Holy War's End"],
+    "Gender": "M"
   },
   {
     "Hero": "Selkie: Free Spirit",
@@ -3421,7 +3848,8 @@
     "Race": "Beast",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sephiran: Begnion's Sovereign",
@@ -3429,7 +3857,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Serra: Outspoken Cleric",
@@ -3437,7 +3866,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Seteth: Seiros Adherent",
@@ -3445,7 +3875,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Seth: Silver Knight",
@@ -3453,7 +3884,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Setsuna: Absent Archer",
@@ -3461,7 +3893,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Severa: Secret Dreamer",
@@ -3469,7 +3902,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Shamir: Archer Apart",
@@ -3477,7 +3911,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Shanna: Sprightly Flier",
@@ -3485,7 +3920,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Shannan: Wielder of Astra",
@@ -3493,7 +3929,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["Special:Imperial Astra"]
+    "Prfs": ["Special:Imperial Astra"],
+    "Gender": "M"
   },
   {
     "Hero": "Sharena: Princess of Askr",
@@ -3501,7 +3938,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sheena: Princess of Gra",
@@ -3509,7 +3947,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Shigure: Uplifting Artist",
@@ -3517,7 +3956,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Shinon: Scathing Archer",
@@ -3525,7 +3965,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Shiro: Raw Talent",
@@ -3533,7 +3974,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Siegbert: Future King",
@@ -3541,7 +3983,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sigrun: Loyal Protector",
@@ -3549,7 +3992,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sigurd: Holy Knight",
@@ -3557,7 +4001,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["Special:Holy-Knight Aura","B:Crusader's Ward"]
+    "Prfs": ["Special:Holy-Knight Aura","B:Crusader's Ward"],
+    "Gender": "M"
   },
   {
     "Hero": "Silas: Loyal Knight",
@@ -3565,7 +4010,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Silque: Adherent of Mila",
@@ -3573,7 +4019,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Silvia: Traveling Dancer",
@@ -3581,7 +4028,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sirius: Mysterious Knight",
@@ -3589,7 +4037,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Soleil: Adorable Adorer",
@@ -3597,7 +4046,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Solon: Church Shadow",
@@ -3605,7 +4055,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sonia: Inhuman Beauty",
@@ -3613,7 +4064,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sonya: Vengeful Mage",
@@ -3621,7 +4073,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sophia: Nabata Prophet",
@@ -3629,7 +4082,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Soren: Shrewd Strategist",
@@ -3637,7 +4091,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sothe: Zephyr",
@@ -3645,7 +4100,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sothis: Girl on the Throne",
@@ -3653,7 +4109,8 @@
     "Race": "Dragon",
     "Game": "FE16",
     "StatMod": "Trainee",
-    "Prfs": ["Special:Sirius"]
+    "Prfs": ["Special:Sirius"],
+    "Gender": "F"
   },
   {
     "Hero": "Stahl: Viridian Knight",
@@ -3661,7 +4118,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Subaki: Perfect Expert",
@@ -3669,7 +4127,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Sue: Doe of the Plains",
@@ -3677,7 +4136,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sully: Crimson Knight",
@@ -3685,7 +4145,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Sumia: Maid of Flowers",
@@ -3693,7 +4154,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Surtr: Ruler of Flame",
@@ -3701,7 +4163,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Surtr's Menace","C:Surtr's Potent"]
+    "Prfs": ["C:Surtr's Menace","C:Surtr's Potent"],
+    "Gender": "M"
   },
   {
     "Hero": "Sylvain: Sincerest of Knights",
@@ -3709,7 +4172,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Tailtiu: Thunder Noble",
@@ -3717,7 +4181,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Takumi: Wild Card",
@@ -3725,7 +4190,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Tana: Winged Princess",
@@ -3733,7 +4199,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tanith: Bright Blade",
@@ -3741,7 +4208,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tanya: Dagdar's Kid",
@@ -3749,7 +4217,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tatiana: Devoted Saint",
@@ -3757,7 +4226,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tethys: Beloved Dancer",
@@ -3765,7 +4235,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "Dancer",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tharja: Dark Shadow",
@@ -3773,7 +4244,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Thea: Stormy Flier",
@@ -3781,7 +4253,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Thórr: War God",
@@ -3789,7 +4262,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Worldbreaker"]
+    "Prfs": ["C:Worldbreaker"],
+    "Gender": "F"
   },
   {
     "Hero": "Thrasir: Omnicidal Witch",
@@ -3797,7 +4271,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["B:Killing Intent"]
+    "Prfs": ["B:Killing Intent"],
+    "Gender": "F"
   },
   {
     "Hero": "Tibarn: Lord of the Air",
@@ -3805,7 +4280,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Tiki: Dragon Scion",
@@ -3813,7 +4289,8 @@
     "Race": "Dragon",
     "Game": "FE1",
     "StatMod": "Trainee",
-    "Prfs": ["C:Solitary Dream","C:With Everyone!","C:With Everyone! II"]
+    "Prfs": ["C:Solitary Dream","C:With Everyone!","C:With Everyone! II"],
+    "Gender": "F"
   },
   {
     "Hero": "Tiki: Naga's Voice",
@@ -3821,7 +4298,8 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tiki: Virtual Empath",
@@ -3829,7 +4307,8 @@
     "Race": "Dragon",
     "Game": "FEE",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tiki=Waifu: Musical Prodigy",
@@ -3837,7 +4316,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tine: Rumbling Thunder",
@@ -3845,7 +4325,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Titania: Mighty Mercenary",
@@ -3853,7 +4334,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Tobin: The Clueless One",
@@ -3861,7 +4343,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "Trainee",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Touma: Pro Understudy",
@@ -3869,7 +4352,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Travant: King of Thracia",
@@ -3877,7 +4361,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Triandra: Nightmare",
@@ -3885,7 +4370,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "Dancer",
-    "Prfs": ["Assist:Frightful Dream"]
+    "Prfs": ["Assist:Frightful Dream"],
+    "Gender": "F"
   },
   {
     "Hero": "Tsubasa: Madcap Idol",
@@ -3893,7 +4379,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Ullr: The Bowmaster",
@@ -3901,7 +4388,8 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Yngvi Ascendant"]
+    "Prfs": ["B:Yngvi Ascendant"],
+    "Gender": "F"
   },
   {
     "Hero": "Ursula: Blue Crow",
@@ -3909,7 +4397,8 @@
     "Race": "Human",
     "Game": "FE7",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Valbar: Open and Honest",
@@ -3917,7 +4406,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Valter: Dark Moonstone",
@@ -3925,7 +4415,8 @@
     "Race": "Human",
     "Game": "FE8",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Veld: Manfroy's Rock",
@@ -3933,7 +4424,8 @@
     "Race": "Human",
     "Game": "FE5",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Velouria: Wolf Cub",
@@ -3941,7 +4433,8 @@
     "Race": "Beast",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Veronica: Emblian Princess",
@@ -3949,7 +4442,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Vika: Liberation's Talon",
@@ -3957,7 +4451,8 @@
     "Race": "Beast",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },
   {
     "Hero": "Virion: Elite Archer",
@@ -3965,7 +4460,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Volke: Man of Mysteries",
@@ -3973,7 +4469,8 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Vyland: Coyote's Justice",
@@ -3981,7 +4478,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Walhart: The Conqueror",
@@ -3989,7 +4487,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Wolf: Coyote's Loyal",
@@ -3997,7 +4496,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Wolt: Dutiful Archer",
@@ -4005,7 +4505,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Wrys: Kindly Priest",
@@ -4013,7 +4514,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Xander: Paragon Knight",
@@ -4021,7 +4523,8 @@
     "Race": "Human",
     "Game": "FE14",
     "StatMod": "",
-    "Prfs": ["B:Chivalry"]
+    "Prfs": ["B:Chivalry"],
+    "Gender": "M"
   },
   {
     "Hero": "Xane: Shape-Shifter",
@@ -4029,7 +4532,8 @@
     "Race": "Human",
     "Game": "FE1",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Yarne: Timid Taguel",
@@ -4037,7 +4541,8 @@
     "Race": "Beast",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Yashiro: Cold Hearted",
@@ -4045,7 +4550,8 @@
     "Race": "Human",
     "Game": "FEE",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Yen'fay: Blade Legend",
@@ -4053,7 +4559,8 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Ylgr: Fresh Snowfall",
@@ -4061,7 +4568,8 @@
     "Race": "Human",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "F"
   },  
   {
     "Hero": "Ymir: Life-Mother",
@@ -4069,7 +4577,8 @@
     "Race": "Dragon",
     "Game": "FE0",
     "StatMod": "",
-    "Prfs": ["C:Everliving Domain"]
+    "Prfs": ["C:Everliving Domain"],
+    "Gender": "F"
   },
   {
     "Hero": "Yune: Chaos Goddess",
@@ -4077,7 +4586,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["C:Chaos Named"]
+    "Prfs": ["C:Chaos Named"],
+    "Gender": "F"
   },
   {
     "Hero": "Yuri: Ashen Valiant",
@@ -4085,7 +4595,8 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["Assist:Foul Play"]
+    "Prfs": ["Assist:Foul Play"],
+    "Gender": "M"
   },
   {
     "Hero": "Zeke: Past Unknown",
@@ -4093,7 +4604,8 @@
     "Race": "Human",
     "Game": "FE2",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Zelgius: Jet-Black General",
@@ -4101,7 +4613,8 @@
     "Race": "Human",
     "Game": "FE10",
     "StatMod": "",
-    "Prfs": ["Special:Black Luna","B:Warp Powder"]
+    "Prfs": ["Special:Black Luna","B:Warp Powder"],
+    "Gender": "M"
   },
   {
     "Hero": "Zelot: Leader of Knights",
@@ -4109,7 +4622,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Zephiel: The Liberator",
@@ -4117,7 +4631,8 @@
     "Race": "Human",
     "Game": "FE6",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   },
   {
     "Hero": "Zihark: Blade of Unity",
@@ -4125,6 +4640,7 @@
     "Race": "Human",
     "Game": "FE9",
     "StatMod": "",
-    "Prfs": []
+    "Prfs": [],
+    "Gender": "M"
   }
 ]
