@@ -1355,7 +1355,7 @@ async function GenerateBanner() {
     var theme;
     if (themeInt != -1)
         theme = themesJSON[themeInt];
-    else if(Math.random() > 0.5)
+    else if(Math.random() < 0.02)
     {
         theme = ChooseRandom(extrasJSON);
     }
