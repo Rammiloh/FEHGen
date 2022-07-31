@@ -1298,6 +1298,7 @@ async function GenerateBanner() {
         theme = ChooseRandom(extrasJSON);
     }
     else theme = ChooseRandom(themesJSON);
+    console.log("extras length " + extrasJSON.length.toString());
     document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/" + theme.Background + "')";
 
     document.getElementById("headie").style.backgroundColor = theme.Header;
