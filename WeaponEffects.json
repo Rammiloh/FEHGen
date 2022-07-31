@@ -22,7 +22,7 @@
   {
     "Effect": "calculates damage using the lower of foe's Def or Res",
     "Tags": "innate,during_combat,combat_start,grant",
-    "Weight": 3
+    "Weight": 1
   },
   {
     "Effect": "deals +<BINT> damage when Special triggers",
