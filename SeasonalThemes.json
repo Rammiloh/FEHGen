@@ -83,8 +83,8 @@
   {
     "Event": "Summer",
     "Prefixes": ["Summer","Summering","Horizon","Seaside","Seashore's","Tropical","Shade","Beachside","Sunbathing","Beaming","Bonfire's","Burning","Sandcastle","Clear-Blue","Sunbeam","Sandbar","Solar","Solstice","Sea","Estival","Sky-Blue","Wavecrest"],
-    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","One-Piece/Two-Piece/One-Piece","One-Piece","Rays","on Leave","Swimsuit/Bikini/Swimsuit"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Sunbathers","Swimmers","Splashers","Two-Piece","Skinship","Beachgoers","Flaunters","Show-Offs","Boys/Girls/Pals"],
+    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","One-Piece/Two-Piece/One-Piece","One-Piece","Rays","Swimsuit/Bikini/Swimsuit","Hunk/Babe/Stunner","Beefcake/Beauty/Beauty","Dreamboat/Looker/Looker"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Sunbathers","Swimmers","Splashers","Two-Piece","Skinship","Beachgoers","Flaunters","Show-Offs","Boys/Girls/Pals","Hunks/Babes/Stunners","Beefcakes/Beauties/Lookers"],
     "Background": "BG_Summer.png",
     "Header": "#95d6f7",
     "Footer": "#fef1ce"
