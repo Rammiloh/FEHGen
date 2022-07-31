@@ -3,7 +3,7 @@
     "Event": "New Years",
     "Prefixes": ["Traditional","Celebratory","Holiday","Kumade","New","Refreshed","Resolute","New Year's","Renewed","Fresh","New Year","Fortunate"],
     "Suffixes": ["Soup","Refresher","Resolution","Celebrator","Spirit","Anew","Dawn","Fortune"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Spirits","Celebrators"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Spirits","Celebrators","Guys/Girls/Pals"],
     "Background": "BG_NewYears.png",
     "Header": "#b7d5fd",
     "Footer": "#e4d5b6"
@@ -30,7 +30,7 @@
     "Event": "Valentines",
     "Prefixes": ["Devoted","Blushing","Youthful","Gift of","Addled","Warm","Pure","Purest","Lovelorn","Lovely","Loving","Selfless","Lovebird","Lovestruck","Tactful","Admiring","Bestowed","Uplifting","Overflowing"],
     "Suffixes": ["Love","Embrace","of Youth","Gifts","Heart","Heartstring","Lovebird","Lover","Fondness","Celebrant","Admirer","Sweetheart","Heartthrob","Darling"],
-    "Duos": ["Duo","Pair","'Friends'","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings"],
+    "Duos": ["Duo","Pair","'Friends'","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings","Men/Ladies/Lovers"],
     "Background": "BG_Valentines.png",
     "Header": "#c2efed",
     "Footer": "#f5f6f1"
@@ -56,8 +56,8 @@
   {
     "Event": "Child",
     "Prefixes": ["Radiant","Youthful","Young","Legacied","Spirited","Shy","Nervous","Future","Budding","Awakened","Prodigious","Childish","Playful","Eager","Boisterous"],
-    "Suffixes": ["Refulgence","Radiance","Youth","Kid","Child","Legacy","Prodigy"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Rivals","Allies","Pals","Besties","BFFs","Kids","Children","Young-Ones"],
+    "Suffixes": ["Refulgence","Radiance","Youth","Kid","Child","Legacy","Prodigy","Boy/Girl/Kid"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Rivals","Allies","Pals","Besties","BFFs","Kids","Children","Young-Ones","Boys/Girls/Kids"],
     "Background": "BG_Child.png",
     "Header": "#afc9e4",
     "Footer": "#c5feee"
@@ -73,9 +73,9 @@
   },
   {
     "Event": "Bridal",
-    "Prefixes": ["Bridal","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Devoted","Blessed","Avowed"],
-    "Suffixes": ["Bride","Groom","Maiden","Husband","Wife","Partner","Flowergirl","Fiancé","Devotion","Bride-to-Be","Groom-to-Be","Vow","Vows","Love","Bachelor"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings","Newlyweds","Brides","Grooms","Item"],
+    "Prefixes": ["Groomal/Bridal/Married","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Devoted","Blessed","Avowed"],
+    "Suffixes": ["Groom/Bride/Marrier","Gentleman/Maiden/Gentlefolk","Husband/Wife/Partner","Flowerboy/Flowergirl/Flowerfolk","Fiancé","Devotion","Groom-to-Be/Bride-to-Be/Partner-to-Be","","Vow","Vows","Love","Bachelor/Bachelorette/Available","Best Man/Bridesmaid/Attendant"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings","Newlyweds","Grooms/Brides/Partners","Husbands/Wives/Couple","Item"],
     "Background": "BG_Bridal.png",
     "Header": "#ecddce",
     "Footer": "#f5e9ea"
@@ -83,8 +83,8 @@
   {
     "Event": "Summer",
     "Prefixes": ["Summer","Summering","Horizon","Seaside","Seashore's","Tropical","Shade","Beachside","Sunbathing","Beaming","Bonfire's","Burning","Sandcastle","Clear-Blue","Sunbeam","Sandbar","Solar","Solstice","Sea","Estival","Sky-Blue","Wavecrest"],
-    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","Two-Piece","One-Piece","Rays","on Leave"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Sunbathers","Swimmers","Splashers","Two-Piece","Skinship","Beachgoers","Flaunters","Show-Offs"],
+    "Suffixes": ["Exposed","Swimmer","Basker","Vacationer","in Paradise","at Play","Sun","Sunbather","of the Beach","of the Water","of the Sand","Heat","One-Piece/Two-Piece/One-Piece","One-Piece","Rays","on Leave","Swimsuit/Bikini/Swimsuit"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Sunbathers","Swimmers","Splashers","Two-Piece","Skinship","Beachgoers","Flaunters","Show-Offs","Boys/Girls/Pals"],
     "Background": "BG_Summer.png",
     "Header": "#95d6f7",
     "Footer": "#fef1ce"
@@ -92,8 +92,8 @@
   {
     "Event": "Pirates",
     "Prefixes": ["Sea","Sea's","Pirate","High Seas","Terrorizing","Ship-Shape","First-Mate","Ruthless","Bountied","Bootiful","Crow's Nest","Gangplank","Jolly","Keelhaul","Mutinous","Plundering","Drunken","Savvy"],
-    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad","Lass","Laddie","Lassie","Lookout","Ho","Scourge","Sea-Dog","Wench"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Mates","Scallywags","Booty-Buddies","Land-Lubbers","Pirates","Lassies","Laddies","Sailors","Lookouts","Sea-Dogs"],
+    "Suffixes": ["Pirate","Piracy","at Sea","Land-Lubber","Scallywag","Mate","Matey","Booty","Bounty","Buccaneer","Shanty","Cutlass","Hornswaggle","Lad/Lass/Duck","Laddie/Lassie/Duckie","Lookout","Ho","Scourge","Sea-Dog","Swain/Wench/Swain"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Mates","Scallywags","Booty-Buddies","Land-Lubbers","Pirates","Laddies/Lassies/Crewmates","Sailors","Lookouts","Sea-Dogs"],
     "Background": "BG_Pirate.png",
     "Header": "#9bd5fb",
     "Footer": "#e1c1a8"
@@ -101,8 +101,8 @@
   {
     "Event": "Dancers",
     "Prefixes": ["Ballroom","Dancing","Debonair","Lightfoot","Glimmering","Strutting","Rhythmic"],
-    "Suffixes": ["Ballad","Singer","Dancer","Rondo","Waltz","Belle","Lady","Gentleman"],
-    "Duos": ["Duo","Pair","Friends","Partners","Rivals","Companions","Dancers","Belles","Waltzers","Singers","Performers","Duet"],
+    "Suffixes": ["Ballad","Singer","Dancer","Rondo","Waltz","Beau/Belle/Beau","Elegance","Gentleman/Lady/Elegance"],
+    "Duos": ["Duo","Pair","Friends","Partners","Rivals","Companions","Dancers","Beaus/Belles/Dancers","Waltzers","Singers","Performers","Duet","Gentlemen/Ladies/Guests"],
     "Background": "BG_Dancer.png",
     "Header": "#fce7a0",
     "Footer": "#ecb4b0"
@@ -110,17 +110,17 @@
   {
     "Event": "Halloween",
     "Prefixes": ["Forbidden","Moonlit","Vampiric","Ghoulish","Mad","Ghastly","Tricky","Harvest","Fall","Autumn","Cobweb","Spooky","Skeletal","Zombified","Mummified","Ghostly","Naughty"],
-    "Suffixes": ["Witch","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Wizard","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Witches","Monsters","Vampires","Tricksters","Pumpkins","Trick-or-Treaters","Skeletons","Zombies","Ghosts","Devils","Werewolves","Spirits","'Two People in a Horse Costume'","Angel & Devil"],
+    "Suffixes": ["Wizard/Witch/Warlock","Nekomata","Monster","Vampire","Harvester","Trickster","Pumpkin","Skeleton","Zombie","Mummy","Ghost","Devil","Werewolf","Reaper","Spirit"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Wizards/Witches/Warlocks","Monsters","Vampires","Tricksters","Pumpkins","Trick-or-Treaters","Skeletons","Zombies","Ghosts","Devils","Werewolves","Spirits","'Two People in a Horse Costume'","Angel & Devil"],
     "Background": "BG_Halloween.png",
     "Header": "#aeb5d0",
     "Footer": "#f9cdac"
   },
   {
     "Event": "Ninjas",
-    "Prefixes": ["Ninja of","Ninja","Sneaky","Stealthy","Shinobi","Disguised","Silent"],
-    "Suffixes": ["Ninja","Shinobi","Sneak","Silence","Assassin"],
-    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Ninja","Assassins","Sneaks","Shinobi"],
+    "Prefixes": ["Ninja of","Ninja","Sneaky","Stealthy","Disguised","Silent"],
+    "Suffixes": ["Ninja","Shinobi/Shinobu/Shinobi","Sneak","Silence","Assassin"],
+    "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Ninja","Assassins","Sneaks","Shinobi/Shinobu/Shinobi"],
     "Background": "BG_Ninja.png",
     "Header": "#ddc8bf",
     "Footer": "#ddd6aa"
