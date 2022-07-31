@@ -1291,14 +1291,14 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
 async function GenerateBanner() {
     var themeInt = document.getElementById("themeDropdown").value;
     var theme;
-    if (themeInt == -1)
+    if (themeInt != -1)
         theme = themesJSON[themeInt];
     else if(Math.random() > 0.5)
     {
         theme = ChooseRandom(extrasJSON);
     }
     else theme = ChooseRandom(themesJSON);
-    console.log("extras length " + extrasJSON.length.toString());
+    
     document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/" + theme.Background + "')";
 
     document.getElementById("headie").style.backgroundColor = theme.Header;
