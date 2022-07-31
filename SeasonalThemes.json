@@ -74,7 +74,7 @@
   {
     "Event": "Bridal",
     "Prefixes": ["Groomal/Bridal/Married","Lovestruck","Loving","Lovable","Bright-Eyed","Obsessive","Forthright","Devoted","Blessed","Avowed"],
-    "Suffixes": ["Groom/Bride/Marrier","Gentleman/Maiden/Gentlefolk","Husband/Wife/Partner","Flowerboy/Flowergirl/Flowerfolk","Fiancé","Devotion","Groom-to-Be/Bride-to-Be/Partner-to-Be","","Vow","Vows","Love","Bachelor/Bachelorette/Available","Best Man/Bridesmaid/Attendant"],
+    "Suffixes": ["Groom/Bride/Marrier","Gentleman/Maiden/Gentlefolk","Husband/Wife/Partner","Flowerboy/Flowergirl/Flowerfolk","Fiancé","Devotion","Groom-to-Be/Bride-to-Be/Partner-to-Be","Vow","Vows","Love","Bachelor/Bachelorette/Available","Best Man/Bridesmaid/Attendant"],
     "Duos": ["Duo","Pair","Friends","Buddies","Partners","Rivals","Allies","Companions","Lovebirds","Lovers","Heartthrobs","Sweethearts","Darlings","Newlyweds","Grooms/Brides/Partners","Husbands/Wives/Couple","Item"],
     "Background": "BG_Bridal.png",
     "Header": "#ecddce",
