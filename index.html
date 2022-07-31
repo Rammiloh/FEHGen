@@ -684,7 +684,12 @@ function GenerateSkills(character, rarityInt, chaosMode) {
         skill = ChooseRandom(skills);
     } while (CheckSkillForTags(skill.Restrictions, tags));
     //Non dancers shouldnt get dancer skills but there's no in built restriction for that so here we are
-    while (character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>")) && CheckSkillForTags(skill.Restrictions, tags) && !chaosMode) skill = ChooseRandom(skills);
+    console.log(skill.Skill + "/" + character.StatMod);
+    while (character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>")) && CheckSkillForTags(skill.Restrictions, tags) && !chaosMode)
+    {
+        skill = ChooseRandom(skills);
+        console.log("New skill: " + skill.Skill);
+    }
     unitSkills.push(skill.Skill);
 
     skills = (rarity == "C") ? commonCSkills : rareCSkills;
