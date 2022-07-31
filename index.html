@@ -315,12 +315,13 @@ async function loadAllJSONs() {
 
 //=================================GENERATE CHARACTER================================
 
-function GenerateCharacter(hero, theme, rarity, chaosMode) {
+function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
     //The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
     heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
     heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
     var statmod = hero.StatMod;
     if (theme.Event == "Dancers" && !chaosMode) statmod = "Dancer";
+    var genderArray;
     if (rarity != 4) {
         if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
         {
@@ -332,10 +333,27 @@ function GenerateCharacter(hero, theme, rarity, chaosMode) {
                 while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
                     suffix = ChooseRandom(theme.Suffixes);
                 //Create the new title
+                if(suffix.includes("/"))
+                {
+                    genderArray = suffix.split("/");
+                    if(hero.Gender == "M") suffix = genderArray[0];
+                    else if(hero.Gender == "F") suffix = genderArray[1];
+                    else suffix = genderArray[2];
+                }
                 heroTitle.splice(heroTitle.length - 1, 1, suffix);
             }
             else //If the subtitle is only a single word long, we can just attach the suffix with no issue
-                heroTitle.splice(heroTitle.length - 1, 0, ChooseRandom(theme.Suffixes));
+            {
+                var suffix = ChooseRandom(theme.Suffixes);
+                if(suffix.includes("/"))
+                {
+                    genderArray = suffix.split("/");
+                    if(hero.Gender == "M") suffix = genderArray[0];
+                    else if(hero.Gender == "F") suffix = genderArray[1];
+                    else suffix = genderArray[2];
+                }
+                heroTitle.splice(heroTitle.length - 1, 0, suffix);
+            }
         }
         else {
             if (heroTitle.length > 1) {
@@ -347,17 +365,61 @@ function GenerateCharacter(hero, theme, rarity, chaosMode) {
                     while (suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) {
                         suffix = ChooseRandom(theme.Suffixes);
                     }
+                    if(suffix.includes("/"))
+                    {
+                        genderArray = suffix.split("/");
+                        if(hero.Gender == "M") suffix = genderArray[0];
+                        else if(hero.Gender == "F") suffix = genderArray[1];
+                        else suffix = genderArray[2];
+                    }
                     heroTitle.splice(0, 1, suffix);
                 }
                 else
-                    heroTitle.splice(0, 1, ChooseRandom(theme.Prefixes));
+                {
+                    var prefix = ChooseRandom(theme.Prefixes);
+                    if(prefix.includes("/"))
+                    {
+                        genderArray = prefix.split("/");
+                        if(hero.Gender == "M") prefix = genderArray[0];
+                        else if(hero.Gender == "F") prefix = genderArray[1];
+                        else prefix = genderArray[2];
+                    }
+                    heroTitle.splice(0, 1, prefix);
+                }
             }
             else //If the subtitle is only a single word long, we can just attach the prefix with no issue
-                heroTitle.splice(0, 0, ChooseRandom(theme.Prefixes));
+            {
+                var prefix = ChooseRandom(theme.Prefixes);
+                if(prefix.includes("/"))
+                {
+                    genderArray = prefix.split("/");
+                    if(hero.Gender == "M") prefix = genderArray[0];
+                    else if(hero.Gender == "F") prefix = genderArray[1];
+                    else prefix = genderArray[2];
+                }
+                heroTitle.splice(0, 1, prefix);
+            }
         }
     }
     else {
-        heroTitle = [ChooseRandom(theme.Prefixes), ChooseRandom(theme.Duos)];
+        
+        var prefix = ChooseRandom(theme.Prefixes);
+        if(prefix.includes("/"))
+        {
+            genderArray = prefix.split("/");
+            if(hero.Gender == "M" && hero2.Gender == "M") prefix = genderArray[0];
+            else if(hero.Gender == "F" && hero2.Gender == "F") prefix = genderArray[1];
+            else prefix = genderArray[2];
+        }
+        var suffix = ChooseRandom(theme.Duos);
+        if(suffix.includes("/"))
+        {
+            genderArray = suffix.split("/");
+            if(hero.Gender == "M" && hero2.Gender == "M") suffix = genderArray[0];
+            else if(hero.Gender == "F" && hero2.Gender == "F") suffix = genderArray[1];
+            else suffix = genderArray[2];
+        }
+        heroTitle = [prefix, suffix];
     }
 
     var fullTitle = heroName + ": " + heroTitle.join(" ");
@@ -1252,7 +1314,7 @@ function GenerateDuoSkill(duo) {
 
 async function GenerateUnit(rarity, theme, character, character2 = null) {
     var chaosMode = document.getElementById("chaosCheck").checked;
-    var unit = GenerateCharacter(character, theme, rarity, chaosMode);
+    var unit = GenerateCharacter(character, character2, theme, rarity, chaosMode);
     var stats = GenerateStats(unit, chaosMode);
     var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
     var character2Filename = "";
