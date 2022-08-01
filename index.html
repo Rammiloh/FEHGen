@@ -342,7 +342,6 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     if(chaosMode) suffix = ChooseRandom(genderArray);
                 }
                 heroTitle.splice(heroTitle.length - 1, 1, suffix);
-                console.log("CASE 1: " + heroTitle);
             }
             else //If the subtitle is only a single word long, we can just attach the suffix with no issue
             {
@@ -356,7 +355,6 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     if(chaosMode) suffix = ChooseRandom(genderArray);
                 }
                 heroTitle.splice(heroTitle.length - 1, 0, suffix);
-                console.log("CASE 2: " + heroTitle);
             }
         }
         else {
@@ -378,7 +376,6 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                         if(chaosMode) suffix = ChooseRandom(genderArray);
                     }
                     heroTitle.splice(0, 1, suffix);
-                    console.log("CASE 3: " + heroTitle);
                 }
                 else
                 {
@@ -392,7 +389,6 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                         if(chaosMode) prefix = ChooseRandom(genderArray);
                     }
                     heroTitle.splice(0, 1, prefix);
-                    console.log("CASE 4: " + heroTitle);
                 }
             }
             else //If the subtitle is only a single word long, we can just attach the prefix with no issue
@@ -406,8 +402,7 @@ function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
                     else prefix = genderArray[2];
                     if(chaosMode) prefix = ChooseRandom(genderArray);
                 }
-                heroTitle.splice(0, 1, prefix);
-                console.log("CASE 5: " + heroTitle);
+                heroTitle.splice(0, 0, prefix);
             }
         }
     }
