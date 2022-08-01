@@ -120,6 +120,11 @@
     "Weight": 1
   },
   {
+    "Effect": "unit's Special restores HP to unit during combat",
+    "Tags": "during_combat",
+    "Weight": 1
+  },
+  {
     "Effect": "the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit)",
     "Tags": "combat_start,during_combat",
     "Weight": 1
@@ -256,6 +261,16 @@
   },
   {
     "Effect": "unit can make a follow-up attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },,
+  {
+    "Effect": "foe cannot make a follow-up attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe can make a follow-up attack",
     "Tags": "combat_start,during_combat",
     "Weight": 1
   },
