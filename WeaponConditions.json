@@ -263,7 +263,7 @@
     "Effect": "unit can make a follow-up attack",
     "Tags": "combat_start,during_combat",
     "Weight": 1
-  },,
+  },
   {
     "Effect": "foe cannot make a follow-up attack",
     "Tags": "combat_start,during_combat",
