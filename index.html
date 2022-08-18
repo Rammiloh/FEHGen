@@ -1135,10 +1135,10 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
             firstHalfEffects.push(tempEffect);
             rawEffects.push(tempEffect);
 
-        } while (points > 0 && Math.random() < (0.4 + rarity*0.05) && condition != 7);
+        } while (points > 0 && Math.random() < (0.4 + rarity*0.1 - firstHalfEffects.length*0.1) && condition != 7);
 
         //second half
-        while (points > 0 && Math.random() < (0.3 + rarity*0.05) && condition != 7 && !ninjaCond) {
+        while (points > 0 && Math.random() < (0.4 + rarity*0.05 - secondHalfEffects.length*0.05) && condition != 7 && !ninjaCond) {
 
             points -= 1;
             tempEffect = ChooseRandom(effectsList);
