@@ -467,7 +467,7 @@ function RandomiseGrowths(growths, numberOfIterations) {
     return growths;
 }
 
-function GenerateStats(character, chaosMode) {
+function GenerateStats(character, rarity, chaosMode) {
     var wpnIndex = character.Weapon.Index;
     var mvmIndex = character.Movement.Index;
 
@@ -519,6 +519,14 @@ function GenerateStats(character, chaosMode) {
         rates[0] -= subtraction;
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
         console.log("Reduced HP growth by " + subtraction);
+        
+        //Increase the atk growth proportional to the unit's rarity
+        var statToSiphon = ChooseRandom([0, 2, 3, 4]);
+        var addition = Math.random() * rates[statToSiphon] * (rarity+1/5);
+        rates[statToSiphon] -= addition;
+        rates[1] += addition;
+        console.log("Increased atk growth by " + subtraction);
+        
         console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
     }
 
@@ -1328,7 +1336,7 @@ function GenerateDuoSkill(duo) {
 async function GenerateUnit(rarity, theme, character, character2 = null) {
     var chaosMode = document.getElementById("chaosCheck").checked;
     var unit = GenerateCharacter(character, character2, theme, rarity, chaosMode);
-    var stats = GenerateStats(unit, chaosMode);
+    var stats = GenerateStats(unit, rarity, chaosMode);
     var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
     var character2Filename = "";
     if (character2 != null)
