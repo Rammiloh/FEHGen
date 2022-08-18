@@ -125,6 +125,16 @@
     "Weight": 1
   },
   {
+    "Effect": "unit's attack can trigger their Special",
+    "Tags": "during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe's attack can trigger their Special",
+    "Tags": "during_combat",
+    "Weight": 1
+  },
+  {
     "Effect": "the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit)",
     "Tags": "combat_start,during_combat",
     "Weight": 1
@@ -277,6 +287,11 @@
   {
     "Effect": "another foe is within <INT> spaces of target",
     "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit or foe initiates combat after moving 2 or more spaces",
+    "Tags": "during_combat",
     "Weight": 1
   }
 ]
