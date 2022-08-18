@@ -743,5 +743,45 @@
     "Effect": "grants bonus to unit's Atk = unit's max Special cooldown count value × 3",
     "Tags": "combat_start,during_combat",
     "Weight": 1
+  },
+  {
+    "Effect": "grants any 【Bonus】 active on target ally to unit for 1 turn",
+    "Tags": "assist",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-1 to unit before unit's first attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count+1 to foe before foe's first attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-<INT> to unit before unit's first attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants Special cooldown count+<INT> to foe before foe's first attack",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "deals damage = number of spaces moved by whoever initiated combat (max 4) x <LOWPERCENT> of foe's <STAT>",
+    "Tags": "during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants bonus to unit's <STATS> = X + <INT> (X = number of spaces moved by whoever initiated combat; max 4)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "grants bonus to unit's <STATS> = X x <INT> (X = number of spaces moved by whoever initiated combat; max 4)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   }
 ]
