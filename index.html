@@ -761,7 +761,13 @@ function GenerateSkills(character, rarityInt, chaosMode) {
                 if (slot == "A") unitSkills[0] = skillName;
                 if (slot == "B") unitSkills[1] = skillName;
                 if (slot == "C") unitSkills[2] = skillName;
-                if (slot == "Assist") unitSkills[3] = skillName;
+                if (slot == "Assist") 
+                {
+                    if(character.StatMod != "Dancer")
+                        unitSkills[3] = skillName;
+                    else if(character.StatMod == "Dancer" && (skillName.includes("Gray Waves") || skillName.includes("Dream") || skillName.includes("Call to Flame")))
+                        unitSkills[3] = skillName;
+                }
                 if (slot == "Special") unitSkills[4] = skillName;
             }
 
@@ -916,9 +922,9 @@ function FillInTags(line, rarity) {
 
     line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
 
-    array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】"]);
+    array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】", ChooseRandom(["【Canto (Recall)】","【Canto (Unit 3x3)】","【Canto (Ally 2)】"])]);
 
-    if (chaosMode) array = Shuffle(["【Canto (" + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem. + " + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem.) 】"]);
+    if (chaosMode) array = Shuffle(["【Canto (" + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem. + " + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem.) 】",ChooseRandom(["【Canto (Recall)】","【Canto (Unit " + GetRandom(1, 5).toString() + "x" + GetRandom(1, 5).toString() + ")】","【Canto (Ally " + GetRandom(1, 5).toString() + ")】"])]);
     line = line.replace(/<CANTO>/g, array[0]);
 
     return line;
@@ -1001,7 +1007,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     while (points > 0) {
         var newLine = "";
         var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
-        if (theme == "Dancers" && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
+        if ((unit.StatMod == "Dancer" || unit.Weapon.Weapon == "Staff") && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
 
         var condition = ChooseRandom(distribution);
         while (usedConditions.includes(condition)) {
