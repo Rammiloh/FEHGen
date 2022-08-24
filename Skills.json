@@ -456,12 +456,44 @@
     "Restrictions": ""
   },
   {
+    "Skill": "Deflect Melee 3",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Ranged"
+  },
+  {
+    "Skill": "Deflect Magic 3",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Deflect Missile 3",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Distant Counter",
     "Slot": "A",
     "Exclusivity": "R",
     "Description": "",
     "Weight": 1,
     "Restrictions": "Ranged"
+  },
+  {
+    "Skill": "Distant Counter (D)",
+    "Slot": "A",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Melee,Beast,Ranged"
   },
   {
     "Skill": "Distant Dart",
@@ -798,6 +830,30 @@
     "Description": "",
     "Weight": 1,
     "Restrictions": "Colorless"
+  },
+  {
+    "Skill": "Embla's Ward",
+    "Slot": "A",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Muspellflame",
+    "Slot": "A",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Niðavellir Axiom",
+    "Slot": "A",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
   },
   {
     "Skill": "<2S> Far Trace 3",
@@ -1368,6 +1424,22 @@
     "Restrictions": "Inf,Arm,Cav,Ranged,Beast,Dragon"
   },
   {
+    "Skill": "Gullinbursti",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Hardy Bearing 3",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Hardy Fighter 3",
     "Slot": "B",
     "Exclusivity": "R",
@@ -1568,6 +1640,14 @@
     "Restrictions": "Inf,Arm,Cav,Ranged,Beast,Dragon"
   },
   {
+    "Skill": "Phantom <1STAT> 3",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 2,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Poison Strike 3",
     "Slot": "B",
     "Exclusivity": "C",
@@ -1622,6 +1702,14 @@
     "Description": "",
     "Weight": 1,
     "Restrictions": "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    "Skill": "Røkkr",
+    "Slot": "B",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
   },
   {
     "Skill": "S Drink",
@@ -1859,6 +1947,14 @@
     "Skill": "Yune's Whispers",
     "Slot": "B",
     "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Armored Boots",
+    "Slot": "C",
+    "Exclusivity": "N",
     "Description": "",
     "Weight": 1,
     "Restrictions": ""
@@ -2614,6 +2710,14 @@
     "Description": "",
     "Weight": 1,
     "Restrictions": "Staff"
+  },
+  {
+    "Skill": "Quickened Pulse",
+    "Slot": "C",
+    "Exclusivity": "N",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
   },
   {
     "Skill": "Rouse <2STATS> 3",
