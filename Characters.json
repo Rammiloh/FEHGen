@@ -491,7 +491,7 @@
     "Race": "Human",
     "Game": "FE16",
     "StatMod": "",
-    "Prfs": ["C:Goddess Bearer"],
+    "Prfs": ["C:Goddess Bearer","Special:Divine Pulse"],
     "Gender": "F"
   },
   {
@@ -671,7 +671,7 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": ["Assist:To Change Fate!"],
+    "Prfs": ["Assist:To Change Fate!","Assist:A Fate Changed!"],
     "Gender": "M"
   },
   {
@@ -3839,7 +3839,7 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Holy War's End"],
+    "Prfs": ["B:Holy War's End","C:Heir to Light"],
     "Gender": "M"
   },
   {
@@ -4298,7 +4298,7 @@
     "Race": "Dragon",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": [],
+    "Prfs": ["B:New Divinity"],
     "Gender": "F"
   },
   {
