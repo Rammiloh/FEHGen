@@ -80,6 +80,38 @@
     "Restrictions": "Inf,Arm"
   },
   {
+    "Skill": "<2STATS> Clash 3",
+    "Slot": "A",
+    "Exclusivity": "C",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": "Arm,Ranged"
+  },
+  {
+    "Skill": "<2STATS> Clash 4",
+    "Slot": "A",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": "Arm,Ranged"
+  },
+  {
+    "Skill": "<2STATS> Finish 3",
+    "Slot": "A",
+    "Exclusivity": "C",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": "Arm,Cav,Fly"
+  },
+  {
+    "Skill": "<2STATS> Finish 4",
+    "Slot": "A",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": "Arm,Cav,Fly"
+  },
+  {
     "Skill": "<2STATS> Form 3",
     "Slot": "A",
     "Exclusivity": "C",
@@ -816,6 +848,14 @@
     "Restrictions": "Staff"
   },
   {
+    "Skill": "<1STAT> Preempt 3",
+    "Slot": "B",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 2,
+    "Restrictions": "Close"
+  },
+  {
     "Skill": "<2STATS> Bulwark 3",
     "Slot": "B",
     "Exclusivity": "R",
@@ -1001,6 +1041,14 @@
   },
   {
     "Skill": "Chill <2STATS> 2",
+    "Slot": "B",
+    "Exclusivity": "C",
+    "Description": "",
+    "Weight": 4,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Chill <2STATS> 3",
     "Slot": "B",
     "Exclusivity": "C",
     "Description": "",
@@ -1459,6 +1507,14 @@
     "Skill": "Mystic Boost 3",
     "Slot": "B",
     "Exclusivity": "R",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "New Divinity",
+    "Slot": "B",
+    "Exclusivity": "Prf",
     "Description": "",
     "Weight": 1,
     "Restrictions": ""
@@ -1944,11 +2000,27 @@
     "Restrictions": "Staff"
   },
   {
+    "Skill": "Def/Res Smoke 3",
+    "Slot": "C",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Staff"
+  },
+  {
     "Skill": "<1STAT> Tactic 3",
     "Slot": "C",
     "Exclusivity": "C",
     "Description": "",
     "Weight": 2,
+    "Restrictions": ""
+  },
+  {
+    "Skill": "Inf. Spd Tactic",
+    "Slot": "C",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 1,
     "Restrictions": ""
   },
   {
@@ -2294,6 +2366,14 @@
     "Description": "",
     "Weight": 1,
     "Restrictions": "Inf,Arm,Cav"
+  },
+  {
+    "Skill": "Heir to Light",
+    "Slot": "C",
+    "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
   },
   {
     "Skill": "Holy Ground",
@@ -3056,6 +3136,14 @@
     "Restrictions": ""
   },
   {
+    "Skill": "A Fate Changed!",
+    "Slot": "Assist",
+    "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Whimsical Dream",
     "Slot": "Assist",
     "Exclusivity": "Prf",
@@ -3166,6 +3254,14 @@
     "Description": "",
     "Weight": 1,
     "Restrictions": "Close,Tome,Missile"
+  },
+  {
+    "Skill": "Divine Pulse",
+    "Slot": "Special",
+    "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
   },
   {
     "Skill": "Draconic Aura",
