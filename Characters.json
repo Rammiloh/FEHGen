@@ -1890,6 +1890,15 @@
     "Gender": "M"
   },
   {
+    "Hero": "Jeralt: Blade Breaker",
+    "Filename": "Jeralt.png",
+    "Race": "Human",
+    "Game": "FE16",
+    "StatMod": "",
+    "Prfs": [],
+    "Gender": "M"
+  },
+  {
     "Hero": "Jill: Fiery Dracoknight",
     "Filename": "Jill.png",
     "Race": "Human",
@@ -3532,6 +3541,15 @@
     "Filename": "Rhys.png",
     "Race": "Human",
     "Game": "FE10",
+    "StatMod": "",
+    "Prfs": [],
+    "Gender": "M"
+  },
+  {
+    "Hero": "Rickard: Big-Time Thief",
+    "Filename": "Rickard.png",
+    "Race": "Human",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
