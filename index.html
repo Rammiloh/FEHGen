@@ -960,11 +960,14 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     if (points > 1)
         points += ChooseRandom([-1, 0, 0, 0, 1]);
     if (points == 1) points += 1;
+    var initialPoints = points;
     //Apply a tax for weapon types with consistently innate effects
-    if (unit.Weapon.Weapon == "Staff" || unit.Weapon.Weapon == "Beast" || unit.Weapon.Weapon == "Dragon") points -= 1;
+    var weapon = unit.Weapon.Weapon;
+    if (weapon == "Staff" || weapon == "Beast" || weapon == "Dragon") points -= 1;
 
     const lines = [];
     innatesGiven = false;
+    braveWeapon = false;
     var rawConds;
     var rawEffects;
     var usedConditions = [];
@@ -985,6 +988,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         usedConditions.push(-1);
         points -= 1;
         innatesGiven = true;
+        braveWeapon = true;
     }
     else if (theme == "Thieves" && !chaosMode) {
         var innate1 = "enables <CANTO>";
@@ -1002,6 +1006,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
             lines.push(innate2 + ".");
             usedConditions.push(-1);
             points -= 1;
+            if(innate2.includes("nit attacks twice")) braveWeapon = true;
         }
         innatesGiven = true;
     }
@@ -1021,13 +1026,15 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
             lines.push(innate2 + ".");
             usedConditions.push(-1);
             points -= 1;
+            if(innate2.includes("nit attacks twice")) braveWeapon = true;
         }
+        if(innate1.includes("nit attacks twice")) braveWeapon = true;
         innatesGiven = true;
     }
     while (points > 0) {
         var newLine = "";
         var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
-        if ((unit.StatMod == "Dancer" || unit.Weapon.Weapon == "Staff") && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
+        if ((unit.StatMod == "Dancer" || weapon == "Staff") && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
 
         var condition = ChooseRandom(distribution);
         while (usedConditions.includes(condition)) {
@@ -1088,7 +1095,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
                 var assistString = "";
                 if (assist.includes("Rally") || assist.includes("Harsh")) assistString = "Rally";
                 else if (unit.StatMod == "Dancer") assistString = "Dance";
-                else if (unit.Weapon.Weapon == "Staff") assistString = "healing";
+                else if (weapon == "Staff") assistString = "healing";
                 else assistString = "movement"
                 if (chaosMode) assistString = ChooseRandom(["Rally","Dance","healing","movement","300sp or greater","150sp or lower"]);
                 newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
@@ -1258,19 +1265,47 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         if (lines[index] == null) lines[index] = "";
         lines[index] = Capitalise(lines[index]);
     }
-    if (unit.Weapon.Weapon == "Staff") {
+    var mtVal = 16;
+    if (weapon == "Staff") {
         lines.splice(0, 0, ChooseRandom(["Foe cannot counterattack. ", "Calculates damage from staff like other weapons. "]));
+        mtVal -= 2;
     }
-    if (unit.Weapon.Weapon == "Beast") {
+    if (weapon == "Beast") {
         lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】 ");
+        mtVal -= 2;
     }
-    if (unit.Weapon.Weapon == "Dagger") {
+    if (weapon == "Dagger") {
         lines.push("Effect: 【Dagger 7】 ");
+        mtVal -= 2;
     }
-    if (unit.Weapon.Weapon == "Dragon") {
+    if (weapon == "Dragon") {
         lines.push("If foe's Range = 2, calculates damage using the lower of foe's Def or Res. ");
     }
-    if (!innatesGiven) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk", "Spd", "Def", "Res"]) + "+3. ");
+    if (weapon == "Bow") {
+        lines.push("Effective against Fliers. ");
+        mtVal -= 2;
+    }
+    
+    if(weapon == "Tome") mtVal -= 2;
+    if(braveWeapon) mtVal -= 5;
+    
+    var inheritable = false;
+    if(rarity <= 2)
+    {
+        if(initialPoints == 2 || rarity = 0)
+            inheritable = true;
+        if(initialPoints == 3 && Math.random() < 0.2)
+            inheritable = true;
+    }
+    var mtText = "Mt <br>" + mtVal.toString();
+    if(inheritable)
+    {
+        mtVal -= 2;
+        mtText = "Mt " + mtVal.toString() + " (Inheritable)<br>";
+    }
+    
+    if (!innatesGiven && !inheritable) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk", "Spd", "Def", "Res"]) + "+3. ");
+    lines.splice(0, 0, mtText);
     //console.log(lines);
     return lines.join('\n');
     /*for each line in lines
