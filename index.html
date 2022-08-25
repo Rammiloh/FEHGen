@@ -963,11 +963,21 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     var initialPoints = points;
     //Apply a tax for weapon types with consistently innate effects
     var weapon = unit.Weapon.Weapon;
-    if (weapon == "Staff" || weapon == "Beast" || weapon == "Dragon") points -= 1;
 
     const lines = [];
-    innatesGiven = false;
-    braveWeapon = false;
+    var innatesGiven = false;
+    var braveWeapon = false;
+    var inheritable = false;
+    
+    if(rarity <= 2)
+    {
+        if(initialPoints == 2 || rarity == 0)
+            inheritable = true;
+        if(initialPoints == 3 && Math.random() < 0.2)
+            inheritable = true;
+    }
+    if ((weapon == "Staff" && !inheritable) || weapon == "Beast" || weapon == "Dragon") points -= 1;
+    
     var rawConds;
     var rawEffects;
     var usedConditions = [];
@@ -1267,8 +1277,10 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     }
     var mtVal = 16;
     if (weapon == "Staff") {
-        lines.splice(0, 0, ChooseRandom(["Foe cannot counterattack. ", "Calculates damage from staff like other weapons. "]));
         mtVal -= 2;
+        if(!inheritable)
+            lines.splice(0, 0, ChooseRandom(["Foe cannot counterattack. ", "Calculates damage from staff like other weapons. "]));
+        
     }
     if (weapon == "Beast") {
         lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】 ");
@@ -1289,14 +1301,6 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     if(weapon == "Tome") mtVal -= 2;
     if(braveWeapon) mtVal -= 5;
     
-    var inheritable = false;
-    if(rarity <= 2)
-    {
-        if(initialPoints == 2 || rarity == 0)
-            inheritable = true;
-        if(initialPoints == 3 && Math.random() < 0.2)
-            inheritable = true;
-    }
     var mtText = "Mt " + mtVal.toString() + "<br>";
     if(inheritable)
     {
