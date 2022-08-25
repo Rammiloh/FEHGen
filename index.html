@@ -98,10 +98,11 @@
                     <option value=8>Bridal</option>
                     <option value=9>Summer</option>
                     <option value=10>Pirates</option>
-                    <option value=11>Dancers</option>
-                    <option value=12>Halloween</option>
-                    <option value=13>Ninjas</option>
-                    <option value=14>Christmas</option>
+                    <option value=11>Thieves</option>
+                    <option value=12>Dancers</option>
+                    <option value=13>Halloween</option>
+                    <option value=14>Ninjas</option>
+                    <option value=15>Christmas</option>
                 </select>
                 
                 <input type="checkbox" id="chaosCheck" name="chaosCheck">
@@ -983,6 +984,25 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         lines.push(innate1);
         usedConditions.push(-1);
         points -= 1;
+        innatesGiven = true;
+    }
+    else if (theme == "Thieves" && !chaosMode) {
+        var innate1 = "enables <CANTO>";
+        var innate2 = ChooseRandom(innateEffects);
+        while (innate2 == innate1)
+            innate2 = ChooseRandom(innateEffects);
+
+        innate1 = FillInTags(innate1, rarity);
+        innate2 = FillInTags(innate2, rarity);
+
+        lines.push(innate1 + ".");
+        usedConditions.push(-1);
+        points -= 1;
+        if (Math.random() < (0.1 + 0.05 * rarity)) {
+            lines.push(innate2 + ".");
+            usedConditions.push(-1);
+            points -= 1;
+        }
         innatesGiven = true;
     }
     else if (Math.random() < (0.2 + 0.1 * rarity)) {
