@@ -1294,7 +1294,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         lines.push("If foe's Range = 2, calculates damage using the lower of foe's Def or Res. ");
     }
     if (weapon == "Bow") {
-        lines.push("Effective against Fliers. ");
+        lines.splice(0, 0, "Effective against Fliers. ");
         mtVal -= 2;
     }
     
