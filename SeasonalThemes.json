@@ -99,6 +99,15 @@
     "Footer": "#e1c1a8"
   },
   {
+    "Event": "Thieves",
+    "Prefixes": ["Phantom","Shadowy","Rushing","Keen","Caper","Shadow","Pilfering","Petty","Sneaky","Caped","Masked"],
+    "Suffixes": ["Thief","Figure","Culprit","Lookout","Caperer","Phantom","Grifter","Swiper","Pickpocket","Cat Burglar","Burglar","Robber","Mugger","Looter","Cutpurse","Crook"],
+    "Duos": ["Duo","Pair","Friends","Partners","Rivals","Allies","Companions","Figures","Phantoms","Cat Burglars","Robbers","Shadows"],
+    "Background": "BG_Thief.png",
+    "Header": "#2d5991",
+    "Footer": "#6a8098"
+  },
+  {
     "Event": "Dancers",
     "Prefixes": ["Ballroom","Dancing","Debonair","Lightfoot","Glimmering","Strutting","Rhythmic"],
     "Suffixes": ["Ballad","Singer","Dancer","Rondo","Waltz","Beau/Belle/Beau","Elegance","Gentleman/Lady/Elegance"],
