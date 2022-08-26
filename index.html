@@ -824,8 +824,7 @@ function FillTaggedConds(entry, list, tag) {
     if (entry.Tags.includes(tag)) {
         var weightCount = entry.Weight;
         while (weightCount > 0) {
-            list.push(entry);
-            console.log("pushing " + entry);
+            list.push(entry.Effect);
             weightCount -= 1;
         }
     }
