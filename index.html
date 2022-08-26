@@ -475,7 +475,7 @@ function RandomiseGrowths(growths, numberOfIterations) {
         var plusStat = ChooseRandom([0, 1, 2, 3, 4]);
         while (plusStat == minusStat) plusStat = ChooseRandom([0, 1, 2, 3, 4]);
         var subtraction = Math.random() * growths[minusStat];
-        console.log(minusStat + " - " + subtraction + " + " + plusStat);
+        //console.log(minusStat + " - " + subtraction + " + " + plusStat);
         growths[minusStat] -= subtraction;
         growths[plusStat] += subtraction;
         numberOfIterations -= 1;
@@ -522,7 +522,7 @@ function GenerateStats(character, rarity, chaosMode) {
         stats = [1, 1, 1, 1, 1];
     }
 
-    console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+    //console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
 
     //Randomise the growths. This is done by taking a randomly sized chunk out of one stat growth and adding it to another. By default, this is done for 5 different stats.
     rates = RandomiseGrowths(rates, 5);
@@ -534,23 +534,21 @@ function GenerateStats(character, rarity, chaosMode) {
         var subtraction = Math.random() * rates[0];
         rates[0] -= subtraction;
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
-        console.log("Reduced HP growth by " + subtraction);
         
         //Increase the atk growth proportional to the unit's rarity
         var statToSiphon = ChooseRandom([0, 2, 3, 4]);
         var addition = Math.random() * rates[statToSiphon] * (rarity+1/5);
         rates[statToSiphon] -= addition;
         rates[1] += addition;
-        console.log("Increased atk growth by " + subtraction);
         
-        console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
+        //console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
     }
 
     //Now we have all the growths, we change it so that instead of all adding up to 1, they incrementally increase from all previous stats to eventually reach 1.
     for (let i = 1; i < rates.length; i++) {
         rates[i] = rates[i] + rates[i - 1];
     }
-    console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
+    //console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
     var uncappedStats = false;
     if(chaosMode && Math.random() > 0.97) uncappedStats = true;
     while (points > 0) {
