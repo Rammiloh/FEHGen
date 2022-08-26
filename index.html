@@ -186,6 +186,18 @@ function ChooseRandom(list) //Get a random item from the list
 {
     return list[Math.floor(Math.random() * list.length)];
 }
+function ChooseRandomEffect(list, points) //Get a random item from the list that fits within the current point limit
+{
+    if(points == 0)
+    {
+        console.log("Error: ChooseRandomEffect called with 0 points remaining");
+        return {Effect:"",PointWorth:0};
+    }
+    var effect = list[Math.floor(Math.random() * list.length)];
+    while(effect.PointWorth > points)
+        effect = list[Math.floor(Math.random() * list.length)];
+    return effect;
+}
 function GetRandom(min, max) //Get random integer between min and max, inclusive
 {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -799,7 +811,10 @@ function FillTaggedList(entry, list, tag) {
     if (entry.Tags.includes(tag)) {
         var weightCount = entry.Weight;
         while (weightCount > 0) {
-            list.push(entry.Effect);
+            list.push({
+                        Effect:entry.Effect,
+                        PointWorth:entry.PointWorth
+                      });
             weightCount -= 1;
         }
     }
@@ -847,9 +862,9 @@ function FillInTags(line, rarity) {
     var bonusAndPenaltyList = bonusList.concat(penaltyList);
 
     var array = Shuffle(grantEffects);
-    line = line.replace(/<GRANT>/g, array[0]);
-    line = line.replace(/<GRANT2>/g, array[1]);
-    line = line.replace(/<GRANT3>/g, array[2]);
+    line = line.replace(/<GRANT>/g, array[0].Effect);
+    line = line.replace(/<GRANT2>/g, array[1].Effect);
+    line = line.replace(/<GRANT3>/g, array[2].Effect);
 
     array = Shuffle(["Atk", "Spd", "Def", "Res"]);
     line = line.replace(/<STAT>/g, array[0]);
@@ -985,60 +1000,60 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     if (theme == "Ninjas" && !chaosMode) {
         var innate1 = ninjaString;
         if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
-        var innate2 = ChooseRandom(innateEffects);
-        while (innate2.includes("nit attacks twice"))
-            innate2 = ChooseRandom(innateEffects);
-        innate2 = FillInTags(innate2, rarity);
-        if (Math.random() < (0.1 + 0.05 * rarity)) {
-            lines.push(innate2 + ".");
+        points -= 1;
+        var innate2 = ChooseRandomEffect(innateEffects,points);
+        while (innate2.Effect.includes("nit attacks twice"))
+            innate2 = ChooseRandomEffect(innateEffects,points);
+        innate2.Effect = FillInTags(innate2.Effect, rarity);
+        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+            lines.push(innate2.Effect + ".");
             usedConditions.push(-1);
-            points -= 1;
+            points -= innate2.PointWorth;
         }
         lines.push(innate1);
         usedConditions.push(-1);
-        points -= 1;
         innatesGiven = true;
         braveWeapon = true;
     }
     else if (theme == "Thieves" && !chaosMode) {
         var innate1 = "enables <CANTO>";
-        var innate2 = ChooseRandom(innateEffects);
-        while (innate2 == innate1)
-            innate2 = ChooseRandom(innateEffects);
+        points -= 1;
+        var innate2 = ChooseRandomEffect(innateEffects,points);
+        while (innate2.Effect == innate1)
+            innate2 = ChooseRandomEffect(innateEffects,points);
 
         innate1 = FillInTags(innate1, rarity);
-        innate2 = FillInTags(innate2, rarity);
+        innate2.Effect = FillInTags(innate2.Effect, rarity);
 
         lines.push(innate1 + ".");
         usedConditions.push(-1);
-        points -= 1;
-        if (Math.random() < (0.1 + 0.05 * rarity)) {
-            lines.push(innate2 + ".");
+        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+            lines.push(innate2.Effect + ".");
             usedConditions.push(-1);
-            points -= 1;
-            if(innate2.includes("nit attacks twice")) braveWeapon = true;
+            points -= innate2.PointWorth;
+            if(innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
         }
         innatesGiven = true;
     }
     else if (Math.random() < (0.2 + 0.1 * rarity)) {
-        var innate1 = ChooseRandom(innateEffects);
-        var innate2 = ChooseRandom(innateEffects);
+        var innate1 = ChooseRandomEffect(innateEffects,points);
+        var innate2 = ChooseRandomEffect(innateEffects,points);
         while (innate2 == innate1)
-            innate2 = ChooseRandom(innateEffects);
+            innate2 = ChooseRandomEffect(innateEffects,points);
 
-        innate1 = FillInTags(innate1, rarity);
-        innate2 = FillInTags(innate2, rarity);
+        innate1.Effect = FillInTags(innate1.Effect, rarity);
+        innate2.Effect = FillInTags(innate2.Effect, rarity);
 
-        lines.push(innate1 + ".");
+        lines.push(innate1.Effect + ".");
         usedConditions.push(-1);
-        points -= 1;
-        if (Math.random() < (0.1 + 0.05 * rarity)) {
-            lines.push(innate2 + ".");
+        points -= innate1.PointWorth;
+        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+            lines.push(innate2.Effect + ".");
             usedConditions.push(-1);
-            points -= 1;
-            if(innate2.includes("nit attacks twice")) braveWeapon = true;
+            points -= innate2.PointWorth;
+            if(innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
         }
-        if(innate1.includes("nit attacks twice")) braveWeapon = true;
+        if(innate1.Effect.includes("nit attacks twice")) braveWeapon = true;
         innatesGiven = true;
     }
     while (points > 0) {
@@ -1179,24 +1194,24 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         rawEffects = [];
         var tempEffect;
         do {
-            points -= 1;
-            tempEffect = ChooseRandom(effectsList);
-            while (rawEffects.includes(tempEffect))
-                tempEffect = ChooseRandom(effectsList);
-            firstHalfEffects.push(tempEffect);
-            rawEffects.push(tempEffect);
+            tempEffect = ChooseRandomEffect(effectsList,points);
+            while (rawEffects.includes(tempEffect.Effect))
+                tempEffect = ChooseRandomEffect(effectsList,points);
+            points -= tempEffect.PointWorth;
+            firstHalfEffects.push(tempEffect.Effect);
+            rawEffects.push(tempEffect.Effect);
 
         } while (points > 0 && Math.random() < (0.4 + rarity*0.1 - firstHalfEffects.length*0.1) && condition != 7);
 
         //second half
         while (points > 0 && Math.random() < (0.4 + rarity*0.05 - secondHalfEffects.length*0.05) && condition != 7 && !ninjaCond) {
 
-            points -= 1;
-            tempEffect = ChooseRandom(effectsList);
-            while (rawEffects.includes(tempEffect))
-                tempEffect = ChooseRandom(effectsList);
-            secondHalfEffects.push(tempEffect);
-            rawEffects.push(tempEffect);
+            tempEffect = ChooseRandomEffect(effectsList,points);
+            while (rawEffects.includes(tempEffect.Effect))
+                tempEffect = ChooseRandomEffect(effectsList,points);
+            points -= tempEffect.PointWorth;
+            secondHalfEffects.push(tempEffect.Effect);
+            rawEffects.push(tempEffect.Effect);
         }
 
         //Negative condition
@@ -1204,12 +1219,12 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         if (points == 0 && (condition >= 2 && condition <= 5) && Math.random() > 0.95) {
             hasNegative = true;
             tempEffect = ChooseRandom(effectsList);
-            while (rawEffects.includes(tempEffect))
+            while (rawEffects.includes(tempEffect.Effect) || tempEffect.PointWorth > 1)
                 tempEffect = ChooseRandom(effectsList);
             if (secondHalfEffects.length > 0)
-                secondHalfEffects.push(tempEffect);
+                secondHalfEffects.push(tempEffect.Effect);
             else
-                firstHalfEffects.push(tempEffect);
+                firstHalfEffects.push(tempEffect.Effect);
         }
 
         for (let i = 0; i < firstHalfEffects.length; i++) {
@@ -1250,7 +1265,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         if (hasNegative) {
             newLine = newLine + ", but after combat, ";
             if (Math.random() > 0.5) newLine = newLine + "if unit attacked, "
-            newLine = newLine + FillInTags(ChooseRandom(negativeEffects), rarity);
+            newLine = newLine + FillInTags(ChooseRandom(negativeEffects).Effect, rarity);
         }
 
         newLine = newLine + ".";
