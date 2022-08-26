@@ -1546,7 +1546,11 @@ function DisplayUnit(unit) {
     document.getElementById("generatedStats").innerHTML = `<b>HP:</b> ${unit.Stats[0]}<br><b>Atk:</b> ${unit.Stats[1]}<br><b>Spd:</b> ${unit.Stats[2]}<br><b>Def:</b> ${unit.Stats[3]}<br><b>Res:</b> ${unit.Stats[4]}`;
     document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
     document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
-    document.getElementById("generatedSkills").innerHTML = `<b>Assist:</b> ${unit.Skills[3]}<br><b>Special:</b> ${unit.Skills[4]}<br><b>A:</b> ${unit.Skills[0]}<br><b>B:</b> ${unit.Skills[1]}<br><b>C:</b> ${unit.Skills[2]}`;
+    document.getElementById("generatedSkills").innerHTML = `<b><span style="color: #96f7f0">Assist:</span></b> ${unit.Skills[3]}<br>
+                                                            <b><span style="color: #fac6ff">Special:</span></b> ${unit.Skills[4]}<br>
+                                                            <b><span style="color: #ffb0af">A:</span></b> ${unit.Skills[0]}<br>
+                                                            <b><span style="color: #64c4f5">B:</span></b> ${unit.Skills[1]}<br>
+                                                            <b><span style="color: #51f086">C:</span></b></span> ${unit.Skills[2]}`;
     document.getElementById("generatedDuoSkill").innerHTML = ``;
     if (unit.Rarity == 4) {
         if (unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> <em>${unit.DuoSkill}</em>`;
