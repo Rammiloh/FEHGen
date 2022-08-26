@@ -820,6 +820,16 @@ function FillTaggedList(entry, list, tag) {
     }
     return list;
 }
+function FillTaggedConds(entry, list, tag) {
+    if (entry.Tags.includes(tag)) {
+        var weightCount = entry.Weight;
+        while (weightCount > 0) {
+            list.push(entry);
+            weightCount -= 1;
+        }
+    }
+    return list;
+}
 
 function SortWeaponJSONIntoLists() {
     effectsJSON.forEach(function (entry) {
@@ -837,10 +847,10 @@ function SortWeaponJSONIntoLists() {
     });
 
     conditionsJSON.forEach(function (entry) {
-        FillTaggedList(entry, startOfTurnConditions, "turn_start");
-        FillTaggedList(entry, startOfCombatConditions, "combat_start");
-        FillTaggedList(entry, duringCombatConditions, "during_combat");
-        FillTaggedList(entry, endOfCombatConditions, "combat_end");
+        FillTaggedConds(entry, startOfTurnConditions, "turn_start");
+        FillTaggedConds(entry, startOfCombatConditions, "combat_start");
+        FillTaggedConds(entry, duringCombatConditions, "during_combat");
+        FillTaggedConds(entry, endOfCombatConditions, "combat_end");
     });
 }
 
