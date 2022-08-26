@@ -195,7 +195,10 @@ function ChooseRandomEffect(list, points) //Get a random item from the list that
     }
     var effect = list[Math.floor(Math.random() * list.length)];
     while(effect.PointWorth > points)
+    {
+        console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
         effect = list[Math.floor(Math.random() * list.length)];
+    }
     return effect;
 }
 function GetRandom(min, max) //Get random integer between min and max, inclusive
