@@ -1140,7 +1140,7 @@
     "PointWorth": 1
   },
   {
-    "Effect": "reduces the percentage of foe's "reduce damage by X%" skills by <PERCENT>",
+    "Effect": "reduces the percentage of foe's \"reduce damage by X%\" skills by <PERCENT>",
     "Tags": "during_combat",
     "Weight": 1,
     "PointWorth": 1
