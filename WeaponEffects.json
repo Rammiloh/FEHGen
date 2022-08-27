@@ -276,7 +276,13 @@
     "PointWorth": 1
   },
   {
-    "Effect": "grants bonus to <STATS> during combat = current penalty on each of unit's stats × 2 (calculates each stat bonus independently)",
+    "Effect": "grants bonus to <STATS> = current penalty on each of unit's stats × 2 (calculates each stat bonus independently)",
+    "Tags": "during_combat,combat_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "inflicts penalty on foe's <STATS> = <INT> + any current penalty on each of those stats (calculates each stat bonus independently)",
     "Tags": "during_combat,combat_start",
     "Weight": 1,
     "PointWorth": 1
@@ -1036,5 +1042,77 @@
     "Tags": "innate,grant,combat_start",
     "Weight": 1,
     "PointWorth": 1
+  },
+  {
+    "Effect": "grants <ADDSTATS> to allies within <ODDINT> rows and <ODDINT2> columns centered on unit during combat",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants <ADDSTATS> to allies within <ODDINT> rows or <ODDINT2> columns centered on unit during combat",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "allies within <INT> spaces can move to a space adjacent to unit",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "allies within <INT> spaces can move to a space within 2 spaces of unit",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "allies within <INT> spaces can move to a space within <INT2> spaces of unit",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "reduces damage from foe's first attack by <PERCENT> and boosts unit's next attack by total damage reduced (by any source, including other skills; resets at end of combat)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "deals <INT> damage to non-<CLASS> foes within <ODDINT> columns centered on unit, and inflicts <PENALTY> on those foes through their next actions",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "skills with 'effective against <CLASS>' are effective against unit",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": -1
+  },
+  {
+    "Effect": "grants bonus to unit's <STATS> and inflicts penalty on foe's <STATS> during combat = current bonus on foe's <STATS> (calculates each stat independently)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "grants bonus to unit's <STATS> and inflicts penalty on foe's <STATS> during combat = current penalty on unit's <STATS> (calculates each stat independently)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "slows Special trigger (cooldown count+1)",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": -1
+  },
+  {
+    "Effect": "the following effects will occur based on the number of allies adjacent to unit: if ≥ 1, '<GRANT>'; and if ≥ 2, '<GRANT2>' and if ≥ 3, '<GRANT3>'",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 3
   }
 ]
