@@ -450,7 +450,7 @@
     "PointWorth": 1
   },
   {
-    "Effect": "inflicts <MINUSSTATS> on foe through their next action",
+    "Effect": "inflicts <MINUSSTATS> on foe",
     "Tags": "during_combat,combat_start",
     "Weight": 1,
     "PointWorth": 1
@@ -1028,6 +1028,12 @@
   {
     "Effect": "if any foes have the highest Atk, Spd, Def, or Res on the enemy team, inflicts -<INT> on those foes' corresponding stat through their next action",
     "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "reverses unit and foe's weapon-triangle advantage and disadvantage",
+    "Tags": "innate,grant,combat_start",
     "Weight": 1,
     "PointWorth": 1
   }
