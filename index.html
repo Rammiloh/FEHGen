@@ -876,7 +876,7 @@ function FillInTags(line, rarity) {
     line = line.replace(/<GRANT>/g, array[0].Effect);
     line = line.replace(/<GRANT2>/g, array[1].Effect);
     line = line.replace(/<GRANT3>/g, array[2].Effect);
-
+    
     array = Shuffle(["Atk", "Spd", "Def", "Res"]);
     line = line.replace(/<STAT>/g, array[0]);
     line = line.replace(/<STAT2>/g, array[1]);
@@ -895,6 +895,11 @@ function FillInTags(line, rarity) {
     if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
     line = line.replace(/<INT>/g, array[0]);
     line = line.replace(/<INT2>/g, array[1]);
+    
+    array = Shuffle(["1", "2", "3"]);
+    if (chaosMode) { array[0] = GetRandom(1, 5).toString(); array[1] = GetRandom(1, 5).toString(); }
+    line = line.replace(/<LOWINT>/g, array[0]);
+    line = line.replace(/<LOWINT2>/g, array[1]);
 
     array = Shuffle(["1", "3", "3", "5", "5", "7", "7", "9"]);
     if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
@@ -919,6 +924,13 @@ function FillInTags(line, rarity) {
     }
     line = line.replace(/<CLASS>/g, array[0]);
     line = line.replace(/<CLASS2>/g, array[1]);
+    
+    array = Shuffle(["Sword","Lance","Axe","Beast","Dragon","Tome","Staff","Bow","Dagger","Sword/Lance/Axe"]);
+    if (chaosMode) {
+        array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast", "Staff","Tome","Dagger","Bow","Sword","Axe","Lance","Melee","Ranged","Magic","Physical"]);
+    }
+    line = line.replace(/<WEAPON>/g, array[0]);
+    line = line.replace(/<WEAPON2>/g, array[1]);
 
     array = Shuffle(penaltyList);
     if (chaosMode) {
@@ -953,6 +965,7 @@ function FillInTags(line, rarity) {
     line = line.replace(/<MINUSSTATS2>/g, array[1] + "-" + val);
 
     line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
+    line = line.replace(/<HIGHLOW>/g, ChooseRandom(["highest", "lowest"]));
 
     array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】", ChooseRandom(["【Canto (Recall)】","【Canto (Unit 3x3)】","【Canto (Ally 2)】"])]);
 
