@@ -48,7 +48,7 @@
     "PointWorth": 1
   },
   {
-    "Effect": "restores <BINT>HP to unit when Special triggers",
+    "Effect": "restores <BINT> HP to unit when Special triggers",
     "Tags": "innate,during_combat,grant",
     "Weight": 1,
     "PointWorth": 1
@@ -120,6 +120,12 @@
     "PointWorth": 1
   },
   {
+    "Effect": "effective against <WEAPON>",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
     "Effect": "enables <CANTO>",
     "Tags": "innate,combat_end",
     "Weight": 4,
@@ -141,6 +147,12 @@
     "Effect": "grants <ADDSTATS> and <BONUS> to target ally for 1 turn",
     "Tags": "assist",
     "Weight": 2,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants bonus to target's <STATS> = highest bonus on target ally for 1 turn",
+    "Tags": "assist",
+    "Weight": 1,
     "PointWorth": 1
   },
   {
@@ -631,8 +643,8 @@
   },
   {
     "Effect": "neutralizes effects that grant \"Special cooldown charge +X\" to foe or inflict \"Special cooldown charge -X\" on unit",
-    "Tags": "during_combat",
-    "Weight": 3,
+    "Tags": "innate,during_combat,grant",
+    "Weight": 2,
     "PointWorth": 1
   },
   {
@@ -708,6 +720,12 @@
     "PointWorth": 1
   },
   {
+    "Effect": "reduces damage from area-of-effect Specials by <PERCENT>",
+    "Tags": "foe_initiates",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
     "Effect": "reduces damage from foe's consecutive attacks by <PERCENT>",
     "Tags": "innate,during_combat,grant",
     "Weight": 1,
@@ -723,6 +741,18 @@
     "Effect": "reduces damage from foe's first attack by X% (X = unit's max Special cooldown count value × <BINT>)",
     "Tags": "during_combat",
     "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "reduces damage from foe's attacks and from area-of-effect Specials by percentage = difference between unit's <STAT> and foe's <STAT> x 4 (max 40%)",
+    "Tags": "innate,during_combat,grant",
+    "Weight": 4,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "reduces damage from foe's attacks during combat to allies within <INT> spaces by <LOWPERCENT>",
+    "Tags": "innate",
+    "Weight": 2,
     "PointWorth": 1
   },
   {
@@ -948,6 +978,12 @@
     "PointWorth": 1
   },
   {
+    "Effect": "restores <BINT> HP to allies within <INT> spaces of unit",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
     "Effect": "restores <BINT> HP to unit and target ally",
     "Tags": "assist",
     "Weight": 1,
@@ -1140,7 +1176,7 @@
     "PointWorth": 1
   },
   {
-    "Effect": "reduces the percentage of foe's \"reduce damage by X%\" skills by <PERCENT>",
+    "Effect": "reduces the percentage of foe's "reduce damage by X%" skills by <PERCENT>",
     "Tags": "during_combat",
     "Weight": 1,
     "PointWorth": 1
@@ -1154,6 +1190,162 @@
   {
     "Effect": "reduces foe's <STAT> by X% of foe's <STAT> at start of combat (X = number of unit's base HP/Atk/Spd/Def/Res stats that are greater than foe's stats at start of combat × 5, + 10)",
     "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "disables foe's skills that \"calculate damage using the lower of foe's Def or Res\"",
+    "Tags": "innate,grant,combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "at the start of turn 1, grants Special cooldown count-1 to unit for each <WEAPON> ally on your team",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "at the start of turn 1, grants Special cooldown count-1 to unit for each <CLASS> ally on your team",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "at the start of turn 1, grants Special cooldown count-1 to all <CLASS> allies on team with <STAT> < unit's <STAT>",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "at the start of turn 1, grants Special cooldown count-1 to all <WEAPON> allies on team with <STAT> < unit's <STAT>",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "deals <INT> damage to unit",
+    "Tags": "combat_end",
+    "Weight": 1,
+    "PointWorth": -1
+  },
+  {
+    "Effect": "inflicts penalty on foe's <STATS> = <PERCENT> of total bonuses on unit",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "neutralizes effects that prevent unit's counterattacks",
+    "Tags": "innate,combat_start,during_combat,grant",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants effects to unit during combat based on the number of allies within <ODDINT> rows or <ODDINT2> columns centered on unit: If ≥ 1 ally, '<GRANT>'; and if ≥ 3 allies, '<GRANT2>'",
+    "Tags": "during_combat",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "deals 1 damage to unit and allies within <INT> spaces of unit",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants bonus to <STATS> = current penalty on each of target's stats (calculates each stat bonus independently)",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants effects based on the number of movement types on the current team during combat (excluding unit): If ≥ 1, '<GRANT>'; and if ≥ 2, '<GRANT2>'; and if ≥ 3, grants '<GRANT3>' to unit and allies within <INT> spaces of unit",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 3
+  },
+  {
+    "Effect": "the following effects will occur based on the value of unit's <STAT> minus foe's <STAT>: If ≥ 1, '<GRANT>'; and if ≥ 5, '<GRANT2>'; and if ≥ 10, '<GRANT3>'",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 3
+  },
+  {
+    "Effect": "unit's <STATS> = highest respective stat from among allies within 2 spaces during combat (Calculates each stat bonus independently at start of combat; if unit's stat is highest, unit's stat will decrease)",
+    "Tags": "innate",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "grants bonus to unit's <STAT> during combat = total bonuses on ally with the highest total bonuses within <INT> spaces",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-<INT> and <BONUS> to unit's support partner (if any)",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "grants <ADDSTATS> to ally with the lowest <STAT> for 1 turn and neutralizes any 【Penalty】 on that ally",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "inflicts <MINUSSTATS> and <PENALTY> on foe on the enemy team with the <HIGHLOW> <STAT> through its next action",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "inflicts <MINUSSTATS> on foe on the enemy team with the <HIGHLOW> <STAT> through its next action",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "inflicts <PENALTY> on foe on the enemy team with the <HIGHLOW> <STAT> through its next action",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "inflicts <MINUSSTATS> and <PENALTY> on foe on the enemy team with the <HIGHLOW> <STAT> and any foes within <LOWINT> spaces of that foe through their next actions",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 3
+  },
+  {
+    "Effect": "inflicts <MINUSSTATS> on foe on the enemy team with the <HIGHLOW> <STAT> and any foes within <LOWINT> spaces of that foe through their next actions",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "inflicts <PENALTY> on foe on the enemy team with the <HIGHLOW> <STAT> and any foes within <LOWINT> spaces of that foe through their next actions",
+    "Tags": "turn_start",
+    "Weight": 1,
+    "PointWorth": 2
+  },
+  {
+    "Effect": "reduces damage from foe's first attack during combat by X% (X = the number of foes within <INT> spaces × <BINT>; max 3 foes)",
+    "Tags": "during_combat,combat_start",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants Special cooldown count-<LOWINT> to unit's support partner (if any)",
+    "Tags": "turn_start,combat_end",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
+    "Effect": "grants allies within <INT> spaces bonus to <STATS> during combat = current bonus on each of unit's stats (calculates each stat bonus independently)",
+    "Tags": "innate",
     "Weight": 1,
     "PointWorth": 1
   }
