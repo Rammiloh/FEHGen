@@ -188,16 +188,18 @@ function ChooseRandom(list) //Get a random item from the list
 }
 function ChooseRandomEffect(list, points, chaosMode) //Get a random item from the list that fits within the current point limit
 {
-    if(points == 0)
+    if(points < 1)
     {
-        console.log("Error: ChooseRandomEffect called with 0 points remaining");
+        console.log("Error: ChooseRandomEffect called with < 1 points remaining");
         return {Effect:"",PointWorth:0};
     }
-    var effect = list[Math.floor(Math.random() * list.length)];
+    var effect = ChooseRandom(list);//[Math.floor(Math.random() * list.length)];
+    if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
     while(effect.PointWorth > points)
     {
         console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
-        effect = list[Math.floor(Math.random() * list.length)];
+        effect = ChooseRandom(list);
+        if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
     }
     return effect;
 }
