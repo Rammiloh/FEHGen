@@ -1734,7 +1734,7 @@
     "PointWorth": 99
   },
   {
-    "Effect": "increases target's chest size by <LOWPERCENT>% per unit's attack",
+    "Effect": "increases target's chest size by <LOWPERCENT> per unit's attack",
     "Tags": "combat_start,during_combat",
     "Weight": 67,
     "PointWorth": 99
