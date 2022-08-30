@@ -1677,78 +1677,78 @@
     "Effect": "bans opponent's Fire Emblem: Heroes account",
     "Tags": "combat_end",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "if target is defeated, permanently converts target unit into a 3* Raigh",
     "Tags": "combat_end",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "removes <INT> orbs from <EITHER>'s account per unit's attack",
     "Tags": "during_combat,combat_start",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "if unit attacks and has weapon-triangle advantage, strips foe's armor",
     "Tags": "during_combat,combat_start",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "grants player an extra action per turn during Summoner Duels",
     "Tags": "innate",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "allows unit to dual-wield a second weapon of the same weapon type",
     "Tags": "innate",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "fatal attacks from unit leave the foe with 1HP",
     "Tags": "innate,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "deals damage = \"dollar value of money user has spent on Fire Emblem: Heroes in the past month\"/<BINT>",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "deals damage = X (X determined by user's current Arena tier; if tier = 21, X = <BINT>; if tier < 21, X = <LOWINT>)",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "deals damage = X (X determined by user's current Aether Raids tier; if tier ≥ 37, X = <BINT>; if tier < 37, X = <LOWINT>)",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "increases target's chest size by <LOWPERCENT> per unit's attack",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "deals damage = X (X determined by target's gender; if male, X = <BINT>; if female, X = <LOWINT>)",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   },
   {
     "Effect": "reduce target to a 4* rarity and disable any of target's inherited skills",
     "Tags": "combat_start",
     "Weight": 1,
-    "PointWorth": 1
+    "PointWorth": 99
   }
 ]
