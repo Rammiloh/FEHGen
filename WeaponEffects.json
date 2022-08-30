@@ -1398,7 +1398,7 @@
     "PointWorth": 1
   },
   {
-    "Effect": "grants <STATS>+X (X = number of <CLASS> allies and allies that have "effective against <CLASS>" within <INT> spaces × <INT2>; max 3 allies)",
+    "Effect": "grants <STATS>+X (X = number of <CLASS> allies and allies that have \"effective against <CLASS>\" within <INT> spaces × <INT2>; max 3 allies)",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
     "PointWorth": 1
