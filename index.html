@@ -186,7 +186,7 @@ function ChooseRandom(list) //Get a random item from the list
 {
     return list[Math.floor(Math.random() * list.length)];
 }
-function ChooseRandomEffect(list, points) //Get a random item from the list that fits within the current point limit
+function ChooseRandomEffect(list, points, chaosMode) //Get a random item from the list that fits within the current point limit
 {
     if(points == 0)
     {
@@ -194,10 +194,12 @@ function ChooseRandomEffect(list, points) //Get a random item from the list that
         return {Effect:"",PointWorth:0};
     }
     var effect = list[Math.floor(Math.random() * list.length)];
+    if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
     while(effect.PointWorth > points)
     {
         console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
         effect = list[Math.floor(Math.random() * list.length)];
+        if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
     }
     return effect;
 }
@@ -968,6 +970,7 @@ function FillInTags(line, rarity, unitClass = "") {
 
     line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
     line = line.replace(/<HIGHLOW>/g, ChooseRandom(["highest", "lowest"]));
+    line = line.replace(/<COLOUR>/g, ChooseRandom(["Red","Green","Blue","Colorless"]));
 
     array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】", ChooseRandom(["【Canto (Recall)】","【Canto (Unit 3x3)】","【Canto (Ally 2)】"])]);
 
@@ -1034,9 +1037,9 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         var innate1 = ninjaString;
         if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
         points -= 1;
-        var innate2 = ChooseRandomEffect(innateEffects,points);
+        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
         while (innate2.Effect.includes("nit attacks twice"))
-            innate2 = ChooseRandomEffect(innateEffects,points);
+            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
         innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
         if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
             lines.push(innate2.Effect + ".");
@@ -1051,9 +1054,9 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     else if (theme == "Thieves" && !chaosMode) {
         var innate1 = "enables <CANTO>";
         points -= 1;
-        var innate2 = ChooseRandomEffect(innateEffects,points);
+        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
         while (innate2.Effect == innate1)
-            innate2 = ChooseRandomEffect(innateEffects,points);
+            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
 
         innate1 = FillInTags(innate1, rarity,unitClass);
         innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
@@ -1069,10 +1072,10 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         innatesGiven = true;
     }
     else if (Math.random() < (0.2 + 0.1 * rarity)) {
-        var innate1 = ChooseRandomEffect(innateEffects,points);
-        var innate2 = ChooseRandomEffect(innateEffects,points);
+        var innate1 = ChooseRandomEffect(innateEffects,points,chaosMode);
+        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
         while (innate2 == innate1)
-            innate2 = ChooseRandomEffect(innateEffects,points);
+            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
 
         innate1.Effect = FillInTags(innate1.Effect, rarity,unitClass);
         innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
@@ -1227,9 +1230,9 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         rawEffects = [];
         var tempEffect;
         do {
-            tempEffect = ChooseRandomEffect(effectsList,points);
+            tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
             while (rawEffects.includes(tempEffect.Effect))
-                tempEffect = ChooseRandomEffect(effectsList,points);
+                tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
             points -= tempEffect.PointWorth;
             firstHalfEffects.push(tempEffect.Effect);
             rawEffects.push(tempEffect.Effect);
@@ -1239,9 +1242,9 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         //second half
         while (points > 0 && Math.random() < (0.4 + rarity*0.05 - secondHalfEffects.length*0.05) && condition != 7 && !ninjaCond) {
 
-            tempEffect = ChooseRandomEffect(effectsList,points);
+            tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
             while (rawEffects.includes(tempEffect.Effect))
-                tempEffect = ChooseRandomEffect(effectsList,points);
+                tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
             points -= tempEffect.PointWorth;
             secondHalfEffects.push(tempEffect.Effect);
             rawEffects.push(tempEffect.Effect);
