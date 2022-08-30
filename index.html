@@ -855,7 +855,7 @@ function SortWeaponJSONIntoLists() {
     });
 }
 
-function FillInTags(line, rarity) {
+function FillInTags(line, rarity, unitClass = "") {
     var chaosMode = document.getElementById("chaosCheck").checked;
 
     var bonusList = ["【Move+1】", "【Guidance】", "【Bonus Doubler】",
@@ -924,6 +924,8 @@ function FillInTags(line, rarity) {
     }
     line = line.replace(/<CLASS>/g, array[0]);
     line = line.replace(/<CLASS2>/g, array[1]);
+    
+    line = line.replace(/<UNITCLASS>/g, unitClass);
     
     array = Shuffle(["Sword","Lance","Axe","Beast","Dragon","Tome","Staff","Bow","Dagger","Sword/Lance/Axe"]);
     if (chaosMode) {
@@ -1007,7 +1009,9 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
     var initialPoints = points;
     //Apply a tax for weapon types with consistently innate effects
     var weapon = unit.Weapon.Weapon;
-
+    var unitClass = unit.Movement.Movement;
+    if((weapon == "Dragon" || weapon == "Beast") && Math.random() > 0.5)
+        unitClass = weapon;
     const lines = [];
     var innatesGiven = false;
     var braveWeapon = false;
@@ -1033,7 +1037,7 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         var innate2 = ChooseRandomEffect(innateEffects,points);
         while (innate2.Effect.includes("nit attacks twice"))
             innate2 = ChooseRandomEffect(innateEffects,points);
-        innate2.Effect = FillInTags(innate2.Effect, rarity);
+        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
         if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
             lines.push(innate2.Effect + ".");
             usedConditions.push(-1);
@@ -1051,8 +1055,8 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         while (innate2.Effect == innate1)
             innate2 = ChooseRandomEffect(innateEffects,points);
 
-        innate1 = FillInTags(innate1, rarity);
-        innate2.Effect = FillInTags(innate2.Effect, rarity);
+        innate1 = FillInTags(innate1, rarity,unitClass);
+        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
 
         lines.push(innate1 + ".");
         usedConditions.push(-1);
@@ -1070,8 +1074,8 @@ function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
         while (innate2 == innate1)
             innate2 = ChooseRandomEffect(innateEffects,points);
 
-        innate1.Effect = FillInTags(innate1.Effect, rarity);
-        innate2.Effect = FillInTags(innate2.Effect, rarity);
+        innate1.Effect = FillInTags(innate1.Effect, rarity,unitClass);
+        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
 
         lines.push(innate1.Effect + ".");
         usedConditions.push(-1);
