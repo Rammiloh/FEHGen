@@ -1392,19 +1392,19 @@
     "PointWorth": 1
   },
   {
-    "Effect": "restores HP to unit = number of foes within <INT> spaces × <INT2>",
+    "Effect": "restores HP to unit = number of foes within <INT> spaces x <INT2>",
     "Tags": "turn_start,combat_end",
     "Weight": 1,
     "PointWorth": 1
   },
   {
-    "Effect": "grants <STATS>+X (X = number of <CLASS> allies and allies that have \"effective against <CLASS>\" within <INT> spaces × <INT2>; max 3 allies)",
+    "Effect": "grants <STATS>+X (X = number of <CLASS> allies and allies that have \"effective against <CLASS>\" within <INT> spaces x <INT2>; max 3 allies)",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
     "PointWorth": 1
   },
   {
-    "Effect": "grants bonus to unit's Atk = total bonuses on unit's <STAT> and <STAT2> × 1.5",
+    "Effect": "grants bonus to unit's Atk = total bonuses on unit's <STAT> and <STAT2> x 1.5",
     "Tags": "combat_start,during_combat",
     "Weight": 1,
     "PointWorth": 1
@@ -1746,7 +1746,7 @@
     "PointWorth": 99
   },
   {
-    "Effect": "reduce target to a 4* rarity and disable any inherited skills",
+    "Effect": "reduce target to a 4* rarity and disable any of target's inherited skills",
     "Tags": "combat_start",
     "Weight": 67,
     "PointWorth": 99
