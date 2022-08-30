@@ -533,7 +533,7 @@ function GenerateStats(character, rarity, chaosMode) {
 
     if (!chaosMode) {
         //Decrease the HP growth since it's normally so large
-        var subtraction = Math.random() * rates[0];
+        var subtraction = Math.random() * rates[0] * (rarity+1/5);
         rates[0] -= subtraction;
         rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
         
