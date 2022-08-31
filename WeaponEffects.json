@@ -1674,6 +1674,12 @@
     "PointWorth": 1
   },
   {
+    "Effect": "prevents out-of-combat specials (like Galeforce or area-of-effect Specials) from triggering against unit",
+    "Tags": "innate,grant",
+    "Weight": 1,
+    "PointWorth": 1
+  },
+  {
     "Effect": "bans opponent's Fire Emblem: Heroes account",
     "Tags": "combat_end",
     "Weight": 1,
