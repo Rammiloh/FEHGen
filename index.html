@@ -1472,7 +1472,12 @@ async function GenerateUnit(rarity, theme, character, character2 = null) {
         if (character.Game == character2.Game) rarityText[4] = "Duo";
         duoSkill = GenerateDuoSkill(character.Game == character2.Game);
     }
-
+    
+    if(unit.Filename.includes("/"))
+    {
+        unit.Filename = ChooseRandom(unit.Filename.split("/"));
+    }
+    
     var gennedUnit = {
         Title: unit.Title,
         Filename: unit.Filename,
