@@ -32,6 +32,15 @@
   border-radius: 1px;
 	z-index: 20;
 }
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
 .overlay_image{
     position: absolute;
     width: 88px;
