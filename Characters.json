@@ -1215,6 +1215,15 @@
     "Gender": "F"
   },
   {
+    "Hero": "Feh: Messenger Owl",
+    "Filename": "Feh.png",
+    "Race": "Beast",
+    "Game": "FE0",
+    "StatMod": "Trainee",
+    "Prfs": ["Special:Eavesdropping Owl","Assist:Feh's Mimicry","A:Feh's Mighty Flap","B:???"],
+    "Gender": "F"
+  },
+  {
     "Hero": "Felicia: Maid Mayhem",
     "Filename": "Felicia.png",
     "Race": "Human",
@@ -2077,6 +2086,15 @@
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
+  },
+  {
+    "Hero": "Kiran: Hero Summoner",
+    "Filename": "Kiran.png/Kiran2.png/Kiran3.png/Kiran4.png/Kiran5.png/Kiran6.png/Kiran7.png/Kiran8.png/Kiran9.png",
+    "Race": "Human",
+    "Game": "FE0",
+    "StatMod": "",
+    "Prfs": [],
+    "Gender": "N"
   },
   {
     "Hero": "Kiria: Cool Façade",
