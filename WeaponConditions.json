@@ -293,5 +293,65 @@
     "Effect": "unit or foe initiates combat after moving 2 or more spaces",
     "Tags": "during_combat",
     "Weight": 1
+  },
+  {
+    "Effect": "unit's special is ready",
+    "Tags": "combat_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe's <STAT> ≥ unit's <STAT>+5",
+    "Tags": "combat_start",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe does not use Beast damage",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "at least one ally has been defeated",
+    "Tags": "turn_start,combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "total bonuses on unit + total penalties on foe ≥ 10",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit is under player's control",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit is under AI's control",
+    "Tags": "turn_start,combat_start,during_combat,combat_end",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe is in a cardinal direction of unit",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit's Special triggered before or during this combat",
+    "Tags": "combat_end,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "foe is <COLOUR>",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit is in combat against a <WEAPON> foe",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
+  },
+  {
+    "Effect": "unit or an ally has already entered combat during the same phase",
+    "Tags": "combat_start,during_combat",
+    "Weight": 1
   }
 ]
