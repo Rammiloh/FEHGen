@@ -256,10 +256,10 @@
 		margin: auto;
     }
     .box-1{
-	font-size: 11px;
+	font-size: 14px;
 	}
 .center-fit {
-    max-width: 100%;
+    max-width: 600px;
 }
 }
 
