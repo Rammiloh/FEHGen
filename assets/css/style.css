@@ -33,12 +33,16 @@
 	z-index: 20;
 }
 .imgbox {
-  display: grid;
-  height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .center-fit {
-  max-height: 100vh;
-  margin: auto;
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 }
 .overlay_image{
     position: absolute;
@@ -254,9 +258,6 @@
     .box-1{
 	font-size: 11px;
 	}
-.center-fit {
-  width: auto;
-}
 }
 
 @media (min-width: 992px) {
@@ -267,9 +268,6 @@
     .box-1{
 	font-size: 16px;
 	}
-.center-fit {
-  max-width: 700px;
-}
 }
 
 @media (min-width: 1200px) {
@@ -280,9 +278,6 @@
     .box-1{
 	font-size: 16px;
 	}
-.center-fit {
-  max-width: 800px;
-}
 }
 
 .goldButton {background-color: rgb(255,217,86);
