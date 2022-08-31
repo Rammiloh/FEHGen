@@ -259,7 +259,7 @@
 	font-size: 14px;
 	}
 .center-fit {
-    max-width: 600px;
+    max-width: 50%;
 }
 }
 
@@ -272,7 +272,7 @@
 	font-size: 16px;
 	}
 .center-fit {
-    max-width: 600px;
+    max-width: 50%;
 }
 }
 
@@ -285,7 +285,7 @@
 	font-size: 16px;
 	}
 .center-fit {
-    max-width: 600px;
+    max-width: 50%;
 }
 }
 
