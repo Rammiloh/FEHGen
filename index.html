@@ -977,6 +977,17 @@ function FillInTags(line, rarity, unitClass = "") {
     if (chaosMode) array = Shuffle(["【Canto (" + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem. + " + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem.) 】",ChooseRandom(["【Canto (Recall)】","【Canto (Unit " + GetRandom(1, 5).toString() + "x" + GetRandom(1, 5).toString() + ")】","【Canto (Ally " + GetRandom(1, 5).toString() + ")】"])]);
     line = line.replace(/<CANTO>/g, array[0]);
 
+    if (chaosMode && Math.random() > 0.99)
+    {
+        line = line.replace(/foe/g, "<TEMP>");
+        line = line.replace(/ally/g, "foe");
+        line = line.replace(/<TEMP>/g, "ally");
+        
+        line = line.replace(/unit/g, "<TEMP>");
+        line = line.replace(/target/g, "unit");
+        line = line.replace(/<TEMP>/g, "target");
+    }
+    if (chaosMode) line = line.replace(/max 3/g, "max " + GetRandom(1, 7).toString());
     return line;
 }
 
