@@ -258,6 +258,9 @@
     .box-1{
 	font-size: 11px;
 	}
+.center-fit {
+    max-width: 100%;
+}
 }
 
 @media (min-width: 992px) {
@@ -268,6 +271,9 @@
     .box-1{
 	font-size: 16px;
 	}
+.center-fit {
+    max-width: 600px;
+}
 }
 
 @media (min-width: 1200px) {
@@ -278,6 +284,9 @@
     .box-1{
 	font-size: 16px;
 	}
+.center-fit {
+    max-width: 600px;
+}
 }
 
 .goldButton {background-color: rgb(255,217,86);
