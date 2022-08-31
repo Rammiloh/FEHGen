@@ -979,13 +979,15 @@ function FillInTags(line, rarity, unitClass = "") {
 
     if (chaosMode && Math.random() > 0.99)
     {
-        line = line.replace(/foe/g, "<TEMP>");
-        line = line.replace(/ally/g, "foe");
-        line = line.replace(/<TEMP>/g, "ally");
+        line = line.replace(/foes/g, "<TEMP>");
+        line = line.replace(/allies/g, "foes");
+        line = line.replace(/<TEMP>/g, "allies");
         
-        line = line.replace(/unit/g, "<TEMP>");
-        line = line.replace(/target/g, "unit");
-        line = line.replace(/<TEMP>/g, "target");
+        line = line.replace(/foe/g, "<TEMP>");
+        line = line.replace(/target/g, "<TEMP>");
+        line = line.replace(/unit/g, "foe");
+        line = line.replace(/ally/g, "foe");
+        line = line.replace(/<TEMP>/g, "unit");
     }
     if (chaosMode) line = line.replace(/max 3/g, "max " + GetRandom(1, 7).toString());
     return line;
