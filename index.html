@@ -1644,21 +1644,12 @@ async function Initialise() {
 }
 Initialise();
 
-var docWidth = document.documentElement.getBoundingClientRect().width;
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.getBoundingClientRect().width > docWidth) {
-      console.log(el);
-    }
-  }
-);
                 </script>
             </section>
         </div>
     </div>
     <!-- FOOTER  -->
-    <div class="footBanner" id="footie">
+    <div class="footBanner" id="footie" style="max-width:100%;">
         <h3 id="support-or-contact">Support or Contact</h3>
         <div id="footer_wrap" class="outer">
             <footer class="inner">
