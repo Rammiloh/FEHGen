@@ -1644,11 +1644,11 @@ async function Initialise() {
 }
 Initialise();
 
-var docWidth = document.documentElement.offsetWidth;
+var docWidth = document.documentElement.getBoundingClientRect().width;
 [].forEach.call(
   document.querySelectorAll('*'),
   function(el) {
-    if (el.offsetWidth > docWidth) {
+    if (el.getBoundingClientRect().width > docWidth) {
       console.log(el);
     }
   }
