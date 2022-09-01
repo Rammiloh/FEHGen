@@ -842,7 +842,7 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": [],
+    "Prfs": ["Special:Circlet of Balance"],
     "Gender": "F"
   },
   {
@@ -1940,7 +1940,7 @@
     "Race": "Human",
     "Game": "FE4",
     "StatMod": "",
-    "Prfs": ["B:Light and Dark"],
+    "Prfs": ["B:Light and Dark","B:Light and Dark II"],
     "Gender": "F"
   },
   {
@@ -3290,7 +3290,7 @@
     "Race": "Human",
     "Game": "FE13",
     "StatMod": "",
-    "Prfs": [],
+    "Prfs": ["Special:Blue Flame"],
     "Gender": "M"
   },
   {
@@ -4145,7 +4145,7 @@
     "Race": "Dragon",
     "Game": "FE16",
     "StatMod": "Trainee",
-    "Prfs": ["Special:Sirius"],
+    "Prfs": ["Special:Sirius","Special:Sirius+"],
     "Gender": "F"
   },
   {
