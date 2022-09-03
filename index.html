@@ -207,12 +207,19 @@
                         }
                         var effect = ChooseRandom(list);
                         if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1; //If chaos mode is enabled, we can bring the chaos-specific effects down to an actual achievable point value.
+                        var breakCond = 0;
                         while (effect.PointWorth > points) 
                         {
                             //If the effect is too expensive, reroll.
                             console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
                             effect = ChooseRandom(list);
                             if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
+                            breakCond += 1;
+                            if(breakCond > 500)
+                            {
+                                console.Log("Break cond pointworth");
+                                break;
+                            }
                         }
                         return effect;
                     }
@@ -224,6 +231,7 @@
                         let currentIndex = array.length, randomIndex;
 
                         // While there remain elements to shuffle.
+                        var breakCond = 0;
                         while (currentIndex != 0) {
 
                             // Pick a remaining element.
@@ -233,6 +241,12 @@
                             // And swap it with the current element.
                             [array[currentIndex], array[randomIndex]] = [
                                 array[randomIndex], array[currentIndex]];
+                            breakCond += 1;
+                            if(breakCond > 500)
+                            {
+                                console.Log("Break cond shuffle");
+                                break;
+                            }
                         }
 
                         return array;
@@ -368,8 +382,18 @@
                                     //Check if the second word in the base subtitle is a two letter word, usually "of"
                                     //If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
                                     //We don't want something like "Hero of of Sand"
+                                    var breakCond = 0;
                                     while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
+                                    {
+                                        
                                         suffix = ChooseRandom(theme.Suffixes);
+                                        breakCond += 1;
+                                        if(breakCond > 500)
+                                        {
+                                            console.Log("Break cond suffix");
+                                            break;
+                                        }
+                                    }
                                     //Create the new title
                                     if (suffix.includes("/")) {
                                         genderArray = suffix.split("/");
@@ -404,7 +428,14 @@
                                     if (heroTitle[1].length == 2) {
                                         //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
                                         suffix = ChooseRandom(theme.Suffixes);
+                                        var breakCond = 0;
                                         while (suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) {
+                                            breakCond += 1;
+                                            if(breakCond > 500)
+                                            {
+                                                console.Log("Break cond suffix2");
+                                                break;
+                                            }
                                             suffix = ChooseRandom(theme.Suffixes);
                                         }
                                         if (suffix.includes("/")) {
@@ -583,6 +614,7 @@
 
                         var uncappedStats = false;
                         if (chaosMode && Math.random() > 0.97) uncappedStats = true; //In chaos mode, there's a 3% chance of upper stat limits getting removed.
+                        var breakCond = 0;
                         while (points > 0) {
                             //For every point, we get a random decimal between 0 and 1. Wherever that decimals falls on the growth scale, that respective stat gets the point (unless that stat is already maxed out).
                             chosenStat = Math.random();
@@ -592,6 +624,13 @@
                                     points -= 1;
                                     break;
                                 }
+                            }
+                            
+                            breakCond += 1;
+                            if(breakCond > 500)
+                            {
+                                console.Log("Break cond growths");
+                                break;
                             }
                         }
                         console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
@@ -623,7 +662,14 @@
                         //For filling the above lists according to the skill's attributes
                         if (entry.Slot == slot && entry.Exclusivity.includes(rarity)) {
                             var weightCount = entry.Weight;
+                            var breakCond = 0;
                             while (weightCount > 0) {
+                                breakCond += 1;
+                                if(breakCond > 500)
+                                {
+                                    console.Log("Break cond weights");
+                                    break;
+                                }
                                 list.push(entry);
                                 weightCount -= 1;
                             }
@@ -1098,10 +1144,17 @@
                             if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
                             points -= 1;
                             var innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            var breakCond = 0;
                             while (innate2.Effect.includes("nit attacks twice"))
                             {
                                 //We can't have a second innate effect that ALSO says unit attacks twice, after all.
                                 innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                                breakCond += 1;
+                                if(breakCond > 500)
+                                {
+                                    console.Log("Break cond brave");
+                                    break;
+                                }
                             }
                             innate2.Effect = FillInTags(innate2.Effect, rarity, unitClass);
                             if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
@@ -1156,7 +1209,14 @@
                             if (innate1.Effect.includes("nit attacks twice")) braveWeapon = true;
                             innatesGiven = true;
                         }
+                        vaar breakCond = 0;
                         while (points > 0) {
+                            breakCond += 1;
+                            if(breakCond > 500)
+                            {
+                                console.Log("Break cond points total");
+                                break;
+                            }
                             var newLine = "";
                             //Certain weapon conditions are more common than others. What each of these numbers represent is explained in the switch statement below.
                             var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
