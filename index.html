@@ -196,17 +196,20 @@
                     {
                         return list[Math.floor(Math.random() * list.length)];
                     }
-                    function ChooseRandomEffect(list, points, chaosMode) //Get a random item from the list that fits within the current point limit
+                    //Get a random item from the list that fits within the current point limit
+                    function ChooseRandomEffect(list, points, chaosMode) 
                     {
-                        if (points < 1) //Whoops, somehow this function got called without the unit having any points remaining! Time to abort.
+                        if (points < 1) 
                         {
+                            //Whoops, somehow this function got called without the unit having any points remaining! Time to abort.
                             console.log("Error: ChooseRandomEffect called with < 1 points remaining");
                             return { Effect: "", PointWorth: 0 };
                         }
                         var effect = ChooseRandom(list);
                         if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1; //If chaos mode is enabled, we can bring the chaos-specific effects down to an actual achievable point value.
-                        while (effect.PointWorth > points) //If the effect is too expensive, reroll.
+                        while (effect.PointWorth > points) 
                         {
+                            //If the effect is too expensive, reroll.
                             console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
                             effect = ChooseRandom(list);
                             if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
@@ -357,7 +360,8 @@
                         //The gender array is specifically for splitting apart prefixes or suffixes with different versions based on the gender of the character.
 
                         if (rarity != 4) {
-                            if (Math.random() > 0.5) //Choose a suffix for the seasonal title
+                            //Choose a suffix for the seasonal title
+                            if (Math.random() > 0.5) 
                             {
                                 if (heroTitle.length > 1) {
                                     var suffix = ChooseRandom(theme.Suffixes);
@@ -378,8 +382,9 @@
                                     }
                                     heroTitle.splice(heroTitle.length - 1, 1, suffix);
                                 }
-                                else //If the subtitle is only a single word long, we can just attach the suffix with no issue
+                                else 
                                 {
+                                    //If the subtitle is only a single word long, we can just attach the suffix with no issue
                                     var suffix = ChooseRandom(theme.Suffixes);
                                     if (suffix.includes("/")) {
                                         genderArray = suffix.split("/");
@@ -391,7 +396,8 @@
                                     heroTitle.splice(heroTitle.length - 1, 0, suffix);
                                 }
                             }
-                            else { //Choose a prefix for the title instead
+                            else { 
+                                //Choose a prefix for the title instead
                                 if (heroTitle.length > 1) {
                                     //Check if the second word in the base subtitle is a two letter word, usually "of"
                                     //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
@@ -422,8 +428,9 @@
                                         heroTitle.splice(0, 1, prefix);
                                     }
                                 }
-                                else //If the subtitle is only a single word long, we can just attach the prefix with no issue
+                                else 
                                 {
+                                    //If the subtitle is only a single word long, we can just attach the prefix with no issue
                                     var prefix = ChooseRandom(theme.Prefixes);
                                     if (prefix.includes("/")) {
                                         genderArray = prefix.split("/");
@@ -436,11 +443,12 @@
                                 }
                             }
                         }
-                        else { //If the hero is a Duo or Harmonic, we combine a Prefix and Suffix for them and just ditch the original title altogether
-
+                        else { 
+                            //If the hero is a Duo or Harmonic, we combine a Prefix and Suffix for them and just ditch the original title altogether
                             var prefix = ChooseRandom(theme.Prefixes);
-                            if (prefix.includes("/")) //In this case, gender splitting will also yield the gender-neutral term if both characters are different genders (or both non-binary)
+                            if (prefix.includes("/")) 
                             {
+                                //In this case, gender splitting will also yield the gender-neutral term if both characters are different genders (or both non-binary)
                                 genderArray = prefix.split("/");
                                 if (hero.Gender == "M" && hero2.Gender == "M") prefix = genderArray[0];
                                 else if (hero.Gender == "F" && hero2.Gender == "F") prefix = genderArray[1];
@@ -476,8 +484,9 @@
 
                         //In chaos mode, classes are not limited by the character's race.
                         if (chaosMode) wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8])];
-
-                        if (wpn.Tags[0] == "Random") //If the chosen weapon type doesn't have a specific colour, we choose one randomly
+                        
+                        //If the chosen weapon type doesn't have a specific colour, we choose one randomly
+                        if (wpn.Tags[0] == "Random") 
                             wpn.Tags[0] = ChooseRandom(["Red", "Blue", "Green", "Colorless"]);
                         var gennedCharacter = {
                             Title: fullTitle,
@@ -501,7 +510,6 @@
                             var plusStat = ChooseRandom([0, 1, 2, 3, 4]);
                             while (plusStat == minusStat) plusStat = ChooseRandom([0, 1, 2, 3, 4]);
                             var subtraction = Math.random() * growths[minusStat];
-                            //console.log(minusStat + " - " + subtraction + " + " + plusStat);
                             growths[minusStat] -= subtraction;
                             growths[plusStat] += subtraction;
                             numberOfIterations -= 1;
@@ -791,14 +799,17 @@
                             }
                             unitSkills[GetRandom(3, 4)] = "";
                         }
-                        if (character.Prfs.length > 0 && !chaosMode) {//Add prf skills if they exist
+                        if (character.Prfs.length > 0 && !chaosMode) {
+                            //Add prf skills if they exist
                             prfs = Shuffle(character.Prfs);
                             usedPrfSlots = [];
                             prfOdds = 1.0;
-                            for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
+                            for (let i = 0; i < prfs.length; i++) {
+                                //For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
                                 slot = prfs[i].substring(0, prfs[i].indexOf(":"));
                                 skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
-                                if (!usedPrfSlots.includes(slot) && Math.random() < (prfOdds / (usedPrfSlots.length + 1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+                                if (!usedPrfSlots.includes(slot) && Math.random() < (prfOdds / (usedPrfSlots.length + 1))) {
+                                    //Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
                                     usedPrfSlots.push(slot);
                                     if (slot == "A") unitSkills[0] = skillName;
                                     if (slot == "B") unitSkills[1] = skillName;
@@ -1087,8 +1098,11 @@
                             if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
                             points -= 1;
                             var innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
-                            while (innate2.Effect.includes("nit attacks twice"))//We can't have a second innate effect that ALSO says unit attacks twice, after all.
+                            while (innate2.Effect.includes("nit attacks twice"))
+                            {
+                                //We can't have a second innate effect that ALSO says unit attacks twice, after all.
                                 innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            }
                             innate2.Effect = FillInTags(innate2.Effect, rarity, unitClass);
                             if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
                                 lines.push(innate2.Effect + ".");
@@ -1163,46 +1177,54 @@
                             var effectsList;
                             grantEffect = false;
                             switch (condition) {
-                                case 0: //Start of any turn
+                                case 0: 
+                                    //Start of any turn
                                     conditionsList = startOfTurnConditions;
                                     effectsList = startOfTurnEffects;
                                     newLine = "At start of turn, ";
                                     break;
-                                case 1: //Start of odd, even, or first 4 turns
+                                case 1: 
+                                    //Start of odd, even, or first 4 turns
                                     conditionsList = startOfTurnConditions;
                                     effectsList = startOfTurnEffects;
                                     newLine = ChooseRandom(["At start of odd-numbered turns, ", "At start of even-numbered turns, ", "At start of turns 1 through 4, "]);
                                     break;
-                                case 2: //Unit initiates
+                                case 2: 
+                                    //Unit initiates
                                     effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
                                     conditionsList = startOfCombatConditions;
                                     newLine = "If unit initiates combat, ";
                                     currentlyHasCondition = true;
                                     break;
 
-                                case 3: //Foe initiates
+                                case 3: 
+                                    //Foe initiates
                                     effectsList = startOfCombatEffects.concat(foeInitiatesEffects);
                                     conditionsList = startOfCombatConditions;
                                     newLine = "If foe initiates combat, ";
                                     currentlyHasCondition = true;
                                     break;
 
-                                case 4: //Start of combat
+                                case 4: 
+                                    //Start of combat
                                     effectsList = startOfCombatEffects;
                                     conditionsList = startOfCombatConditions;
                                     newLine = "At start of combat, ";
                                     break;
 
-                                case 5: //During combat
+                                case 5: 
+                                    //During combat
                                     conditionsList = duringCombatConditions;
                                     effectsList = duringCombatEffects;
                                     break;
-                                case 6: //After combat
+                                case 6: 
+                                    //After combat
                                     conditionsList = endOfCombatConditions;
                                     effectsList = endOfCombatEffects;
                                     newLine = "After combat, ";
                                     break;
-                                case 7: //Assist skill is used. The text will change to reflect the user's default assist skill.
+                                case 7: 
+                                    //Assist skill is used. The text will change to reflect the user's default assist skill.
                                     effectsList = assistEffects;
                                     var assistString = "";
                                     if (assist.includes("Rally") || assist.includes("Harsh")) assistString = "Rally";
@@ -1213,7 +1235,8 @@
                                     newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
                                     newLine = newLine.replace(/<ASSIST>/g, assistString);
                                     break;
-                                case 8: //"Grant" effects. This is for stuff like 'Grants "Unit can counter-attack before foe's first attack" to allies within 2 spaces'
+                                case 8: 
+                                    //"Grant" effects. This is for stuff like 'Grants "Unit can counter-attack before foe's first attack" to allies within 2 spaces'
                                     grantEffect = true;
                                     break;
                                 default:
@@ -1252,7 +1275,8 @@
                                     ninjaExtraCond = true;
                                 }
                             }
-                            else if (Math.random() < 0.75 && condition != 7) { //75% chance that the unit gets one or more conditions associated with this set of effects. Cannot occur if it's an assist-based effect.
+                            else if (Math.random() < 0.75 && condition != 7) { 
+                                //75% chance that the unit gets one or more conditions associated with this set of effects. Cannot occur if it's an assist-based effect.
                                 if (currentlyHasCondition == true)
                                     newLine = newLine.slice(0, -2) + ChooseRandom([" or ", " and "]);
 
@@ -1321,7 +1345,8 @@
                                     //This is the worst condition I've ever written but it's 12:40am, I'm exhausted, and it's for dealing with one specific edge case
                                     newLine = newLine + ", ";
                                 }
-                                if (i != 0 && firstHalfEffects.length != 2)//If there are more than two entries, comma between them
+                                //If there are more than two entries, comma between them
+                                if (i != 0 && firstHalfEffects.length != 2)
                                     newLine = newLine + ", ";
                                 if (i == 1 && firstHalfEffects.length == 2 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//If there are only two entries, no comma between first and second
                                     newLine = newLine + " ";
@@ -1332,7 +1357,8 @@
 
                             if (condition == 5)
                                 newLine = newLine + " during combat";
-                            if (secondHalfEffects.length > 0) { //If the second half of our line has effects, continue filling out the line with grammatical correctyness.
+                            if (secondHalfEffects.length > 0) { 
+                                //If the second half of our line has effects, continue filling out the line with grammatical correctyness.
                                 newLine = newLine + ", and also, if ";
                                 tempCondition = ChooseRandom(conditionsList);
                                 while (rawConds.includes(tempCondition))
@@ -1361,7 +1387,8 @@
                             newLine = newLine + ".";
                             if (!ninjaCond)
                                 lines.push(newLine);
-                            else { //Final part of the Ninja condition handler. This makes the 'unit initiates combat' line make grammatical sense by combining it with the ninja effect.
+                            else { 
+                                //Final part of the Ninja condition handler. This makes the 'unit initiates combat' line make grammatical sense by combining it with the ninja effect.
                                 if (lines[0] == ninjaString) {
                                     lines[0] = ninjaString.slice(0, -1) + newLine;
                                 }
@@ -1418,7 +1445,7 @@
 
                         if (!innatesGiven && !inheritable) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk", "Spd", "Def", "Res"]) + "+3. ");
                         lines.splice(0, 0, mtText);
-                        //console.log(lines);
+                        
                         return lines.join('\n');
                     }
                     function FillInDuoTags(line) {
@@ -1450,7 +1477,8 @@
                         return line;
                     }
 
-                    function GenerateDuoSkill(duo) { //Generates randomised duo/harmonic effects
+                    function GenerateDuoSkill(duo) { 
+                        //Generates randomised duo/harmonic effects
                         var duoText = ChooseRandom(["Deals <BINT> damage to foes<POSITION>.",
                             "Inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
                             "Inflicts <PENALTY> on foes<POSITION> through their next action.",
