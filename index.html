@@ -624,6 +624,16 @@
                                     points -= 1;
                                     break;
                                 }
+                                else if(chosenStat < rates[i] && stats[i] == thisClass.MaxStats[i])
+                                {
+                                    let j = ChooseRandom([0,1,2,3,4]);
+                                    if(stats[j] != thisClass.MaxStats[j])
+                                    {
+                                        stats[j] += 1;
+                                        points -= 1;
+                                    }
+                                    break;
+                                }
                             }
                             
                             breakCond += 1;
