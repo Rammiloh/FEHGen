@@ -5,9 +5,10 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="/FEH-Alt-Generator/assets/css/style.css?v=8bc45d64c9c0ed235811c433a275f64430b963ee">
-    <link rel="stylesheet" href="/FEH-Alt-Generator/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/FEHGen/assets/css/style.css?v=8bc45d64c9c0ed235811c433a275f64430b963ee">
+    <link rel="stylesheet" href="/FEHGen/bootstrap.css" />
     <style>
+
 
 
         body {
@@ -23,20 +24,20 @@
     <meta property="og:locale" content="en_US" />
     <meta name="description" content="Generate random seasonal alts for Fire Emblem Heroes" />
     <meta property="og:description" content="Generate random seasonal alts for Fire Emblem Heroes" />
-    <link rel="canonical" href="https://rammiloh.github.io/FEH-Alt-Generator/" />
-    <meta property="og:url" content="https://rammiloh.github.io/FEH-Alt-Generator/" />
+    <link rel="canonical" href="https://rammiloh.github.io/FEHGen/" />
+    <meta property="og:url" content="https://rammiloh.github.io/FEHGen/" />
     <meta property="og:site_name" content="FEHGen" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
     <meta property="twitter:title" content="FEHGen" />
     <script type="application/ld+json">
-        {"@context":"https://schema.org","@type":"WebSite","description":"Generate random seasonal alts for Fire Emblem Heroes","headline":"FEHGen","name":"FEHGen","url":"https://rammiloh.github.io/FEH-Alt-Generator/"}
+        {"@context":"https://schema.org","@type":"WebSite","description":"Generate random seasonal alts for Fire Emblem Heroes","headline":"FEHGen","name":"FEHGen","url":"https://rammiloh.github.io/FEHGen/"}
     </script>
     <!-- End Jekyll SEO tag -->
     <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
     <!-- Setup Google Analytics -->
     <!-- You can set your favicon here -->
-    <link rel="shortcut icon" type="image/x-icon" href="/FEH-Alt-Generator/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/FEHGen/favicon.ico">
     <!-- end custom head snippets -->
 </head>
 <body>
@@ -45,73 +46,73 @@
         <div class="banner" id="headie" style="max-width:100%;">
             <header class="inner">
                 <div class="imgbox">
-                    <img class="center-fit" src='/FEH-Alt-Generator/Backgrounds/newbanner.png'>
+                    <img class="center-fit" src='/FEHGen/Backgrounds/newbanner.png'>
                 </div>
                 <div style="max-width:600px; margin:0 auto;">
-                <!-- h1 id="project_title">FEHGen</h1 -->
-                <!-- h2 id="project_tagline">Generate random seasonal alts for Fire Emblem Heroes</h2 -->
-                <label for="gameDropdown1">Game 1:</label>
-                <select name="gameDropdown1" id="gameDropdown1">
-                    <option value="random">Random</option>
-                    <option value="FE0">Heroes</option>
-                    <option value="FE1">Shadow Dragon</option>
-                    <option value="FE2">Gaiden/SoV</option>
-                    <option value="FE4">Genealogy of the Holy War</option>
-                    <option value="FE5">Thracia 776</option>
-                    <option value="FE6">Binding Blade</option>
-                    <option value="FE7">Blazing Blade</option>
-                    <option value="FE8">Sacred Stones</option>
-                    <option value="FE9">Path of Radiance</option>
-                    <option value="FE10">Radiant Dawn</option>
-                    <option value="FE13">Awakening</option>
-                    <option value="FE14">Fates</option>
-                    <option value="FE16">Three Houses</option>
-                    <option value="FEE">Tokyo Mirage Sessions</option>
-                </select>
-                <label for="gameDropdown2">Game 2:</label>
-                <select name="gameDropdown2" id="gameDropdown2">
-                    <option value="random">Random</option>
-                    <option value="none">None</option>
-                    <option value="FE0">Heroes</option>
-                    <option value="FE1">Shadow Dragon</option>
-                    <option value="FE2">Gaiden/SoV</option>
-                    <option value="FE4">Genealogy of the Holy War</option>
-                    <option value="FE5">Thracia 776</option>
-                    <option value="FE6">Binding Blade</option>
-                    <option value="FE7">Blazing Blade</option>
-                    <option value="FE8">Sacred Stones</option>
-                    <option value="FE9">Path of Radiance</option>
-                    <option value="FE10">Radiant Dawn</option>
-                    <option value="FE13">Awakening</option>
-                    <option value="FE14">Fates</option>
-                    <option value="FE16">Three Houses</option>
-                    <option value="FEE">Tokyo Mirage Sessions</option>
-                </select>
-                <label for="themeDropdown">Theme:</label>
-                <select name="themeDropdown" id="themeDropdown">
-                    <option value=-1>Random</option>
-                    <option value=0>New Years</option>
-                    <option value=1>Desert</option>
-                    <option value=2>Hot Springs</option>
-                    <option value=3>Valentines</option>
-                    <option value=4>Easter</option>
-                    <option value=5>Picnic</option>
-                    <option value=6>Child</option>
-                    <option value=7>Fallen</option>
-                    <option value=8>Bridal</option>
-                    <option value=9>Summer</option>
-                    <option value=10>Pirates</option>
-                    <option value=11>Thieves</option>
-                    <option value=12>Dancers</option>
-                    <option value=13>Halloween</option>
-                    <option value=14>Ninjas</option>
-                    <option value=15>Christmas</option>
-                </select>
-                
-                <input type="checkbox" id="chaosCheck" name="chaosCheck">
-                <label for="chaosCheck">Chaos Mode</label>
-                <button id="generateButton" class="button">Generate</button>
-            </div>
+                    <!-- h1 id="project_title">FEHGen</h1 -->
+                    <!-- h2 id="project_tagline">Generate random seasonal alts for Fire Emblem Heroes</h2 -->
+                    <label for="gameDropdown1">Game 1:</label>
+                    <select name="gameDropdown1" id="gameDropdown1">
+                        <option value="random">Random</option>
+                        <option value="FE0">Heroes</option>
+                        <option value="FE1">Shadow Dragon</option>
+                        <option value="FE2">Gaiden/SoV</option>
+                        <option value="FE4">Genealogy of the Holy War</option>
+                        <option value="FE5">Thracia 776</option>
+                        <option value="FE6">Binding Blade</option>
+                        <option value="FE7">Blazing Blade</option>
+                        <option value="FE8">Sacred Stones</option>
+                        <option value="FE9">Path of Radiance</option>
+                        <option value="FE10">Radiant Dawn</option>
+                        <option value="FE13">Awakening</option>
+                        <option value="FE14">Fates</option>
+                        <option value="FE16">Three Houses</option>
+                        <option value="FEE">Tokyo Mirage Sessions</option>
+                    </select>
+                    <label for="gameDropdown2">Game 2:</label>
+                    <select name="gameDropdown2" id="gameDropdown2">
+                        <option value="random">Random</option>
+                        <option value="none">None</option>
+                        <option value="FE0">Heroes</option>
+                        <option value="FE1">Shadow Dragon</option>
+                        <option value="FE2">Gaiden/SoV</option>
+                        <option value="FE4">Genealogy of the Holy War</option>
+                        <option value="FE5">Thracia 776</option>
+                        <option value="FE6">Binding Blade</option>
+                        <option value="FE7">Blazing Blade</option>
+                        <option value="FE8">Sacred Stones</option>
+                        <option value="FE9">Path of Radiance</option>
+                        <option value="FE10">Radiant Dawn</option>
+                        <option value="FE13">Awakening</option>
+                        <option value="FE14">Fates</option>
+                        <option value="FE16">Three Houses</option>
+                        <option value="FEE">Tokyo Mirage Sessions</option>
+                    </select>
+                    <label for="themeDropdown">Theme:</label>
+                    <select name="themeDropdown" id="themeDropdown">
+                        <option value=-1>Random</option>
+                        <option value=0>New Years</option>
+                        <option value=1>Desert</option>
+                        <option value=2>Hot Springs</option>
+                        <option value=3>Valentines</option>
+                        <option value=4>Easter</option>
+                        <option value=5>Picnic</option>
+                        <option value=6>Child</option>
+                        <option value=7>Fallen</option>
+                        <option value=8>Bridal</option>
+                        <option value=9>Summer</option>
+                        <option value=10>Pirates</option>
+                        <option value=11>Thieves</option>
+                        <option value=12>Dancers</option>
+                        <option value=13>Halloween</option>
+                        <option value=14>Ninjas</option>
+                        <option value=15>Christmas</option>
+                    </select>
+
+                    <input type="checkbox" id="chaosCheck" name="chaosCheck">
+                    <label for="chaosCheck">Chaos Mode</label>
+                    <button id="generateButton" class="button">Generate</button>
+                </div>
             </header>
         </div>
         <!-- MAIN CONTENT -->
@@ -145,7 +146,7 @@
                     <div id="unitFrameBack" class="px-0 py-0"></div>
                 </div>
                 <!--div class="row">
-                <div class="col-1"-->
+    <div class="col-1"-->
                 <div class="title-and-weapon-container">
                     <div id="generatedWepIcon" class="align-middle"></div>
                     <!--/div-->
@@ -174,1477 +175,1493 @@
                         </div>
                     </div>
                 </div>
-                <!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEH-Alt-Generator/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
+                <!-- p>Your Pages site will use the layout and styles from the Jekyll theme you have selected in your <a href="https://github.com/Rammiloh/FEHGen/settings/pages">repository settings</a>. The name of this theme is saved in the Jekyll <code class="language-plaintext highlighter-rouge">_config.yml</code> configuration file.</p-->
                 <script>
+    // JavaScript source code
+                    //Oh Jesus, you're actually looking at the source code? How embarrassing for me.
+                    //Well, Github necessitates that this stuff be public, so you're within your right to peep at what I've been doing.
+                    //Just, y'know, bear in mind that this was the first program I've written in Javascript in like 10 years.
+                    //It's a massive string of spaghetti code, and is full of bad programming practices.
+                    //Also, this may be the first time I've written code for HTML... ever? So that's no better.
+                    //Please don't use this code as an example of anything other than how *not* to write a program.
+                    var charactersJSON;
+                    var themesJSON;
+                    var extrasJSON;
+                    var skillsJSON;
+                    var statsJSON;
+                    var conditionsJSON;
+                    var effectsJSON;
 
-// JavaScript source code
-var charactersJSON;
-var themesJSON;
-var extrasJSON;
-var skillsJSON;
-var statsJSON;
-var conditionsJSON;
-var effectsJSON;
-
-function ChooseRandom(list) //Get a random item from the list
-{
-    return list[Math.floor(Math.random() * list.length)];
-}
-function ChooseRandomEffect(list, points, chaosMode) //Get a random item from the list that fits within the current point limit
-{
-    if(points < 1)
-    {
-        console.log("Error: ChooseRandomEffect called with < 1 points remaining");
-        return {Effect:"",PointWorth:0};
-    }
-    var effect = ChooseRandom(list);//[Math.floor(Math.random() * list.length)];
-    if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
-    while(effect.PointWorth > points)
-    {
-        console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
-        effect = ChooseRandom(list);
-        if(effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
-    }
-    return effect;
-}
-function GetRandom(min, max) //Get random integer between min and max, inclusive
-{
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-function Shuffle(array) {
-    let currentIndex = array.length, randomIndex;
-
-    // While there remain elements to shuffle.
-    while (currentIndex != 0) {
-
-        // Pick a remaining element.
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        // And swap it with the current element.
-        [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
-    }
-
-    return array;
-}
-
-function Capitalise(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-//I could make both of these into JSONs too but can't be fucked since they're so small
-const moveTypes = [
-    {
-        Movement: "Infantry",
-        Tag: "Inf",
-        Index: 0
-    },
-    {
-        Movement: "Armor",
-        Tag: "Arm",
-        Index: 1
-    },
-    {
-        Movement: "Cavalry",
-        Tag: "Cav",
-        Index: 2
-    },
-    {
-        Movement: "Flier",
-        Tag: "Fly",
-        Index: 3
-    }
-];
-
-const weaponTypes = [
-    {
-        Weapon: "Sword",
-        Tags: ["Red", "Close", "Melee"],
-        Index: 0
-    },
-    {
-        Weapon: "Lance",
-        Tags: ["Blue", "Close", "Melee"],
-        Index: 0
-    },
-    {
-        Weapon: "Axe",
-        Tags: ["Green", "Close", "Melee"],
-        Index: 0
-    },
-    {
-        Weapon: "Dragon",
-        Tags: ["Random", "Close", "Dragon"],
-        Index: 4
-    },
-    {
-        Weapon: "Beast",
-        Tags: ["Random", "Close", "Beast"],
-        Index: 5
-    },
-    {
-        Weapon: "Tome",
-        Tags: ["Random", "Tome", "Ranged"],
-        Index: 1
-    },
-    {
-        Weapon: "Bow",
-        Tags: ["Random", "Bow", "Missile", "Ranged"],
-        Index: 2
-    },
-    {
-        Weapon: "Dagger",
-        Tags: ["Random", "Dagger", "Missile", "Ranged"],
-        Index: 2
-    },
-    {
-        Weapon: "Staff",
-        Tags: ["Colorless", "Staff", "Ranged"],
-        Index: 3
-    }
-];
-
-async function getJSON(jsonFile) {
-    return fetch(jsonFile)
-        .then((response) => response.json())
-        .then((responseJson) => { return responseJson });
-}
-async function caller(jsonFile) {
-    var json = await this.getJSON(jsonFile);
-    return json;
-}
-
-async function loadAllJSONs() {
-    console.log("Loading JSON files");
-    console.log("Characters");
-    charactersJSON = await caller("./Characters.json");
-    console.log("SeasonalThemes");
-    themesJSON = await caller("./SeasonalThemes.json");
-    console.log("Extras");
-    extrasJSON = await caller("./GameIcons/new_file.json");
-    console.log("Skills");
-    skillsJSON = await caller("./Skills.json");
-    console.log("Classes");
-    statsJSON = await caller("./Classes.json");
-    console.log("WeaponConditions");
-    conditionsJSON = await caller("./WeaponConditions.json");
-    console.log("WeaponEffects");
-    effectsJSON = await caller("./WeaponEffects.json");
-    console.log("Loading JSONs complete");
-
-}
-
-//=================================GENERATE CHARACTER================================
-
-function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
-    //The character's name and subtitle get separated here, so we can manipulate the title without affecting the name
-    heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
-    heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
-    var statmod = hero.StatMod;
-    if (theme.Event == "Dancers" && !chaosMode) statmod = "Dancer";
-    var genderArray;
-    if (rarity != 4) {
-        if (Math.random() > 0.5) //Choose either to use a prefix for a suffix for the seasonal title
-        {
-            if (heroTitle.length > 1) {
-                var suffix = ChooseRandom(theme.Suffixes);
-                //Check if the second word in the base subtitle is a two letter word, usually "of"
-                //If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
-                //We don't want something like "Hero of of Beach"
-                while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
-                    suffix = ChooseRandom(theme.Suffixes);
-                //Create the new title
-                if(suffix.includes("/"))
-                {
-                    genderArray = suffix.split("/");
-                    if(hero.Gender == "M") suffix = genderArray[0];
-                    else if(hero.Gender == "F") suffix = genderArray[1];
-                    else suffix = genderArray[2];
-                    if(chaosMode) suffix = ChooseRandom(genderArray);
-                }
-                heroTitle.splice(heroTitle.length - 1, 1, suffix);
-            }
-            else //If the subtitle is only a single word long, we can just attach the suffix with no issue
-            {
-                var suffix = ChooseRandom(theme.Suffixes);
-                if(suffix.includes("/"))
-                {
-                    genderArray = suffix.split("/");
-                    if(hero.Gender == "M") suffix = genderArray[0];
-                    else if(hero.Gender == "F") suffix = genderArray[1];
-                    else suffix = genderArray[2];
-                    if(chaosMode) suffix = ChooseRandom(genderArray);
-                }
-                heroTitle.splice(heroTitle.length - 1, 0, suffix);
-            }
-        }
-        else {
-            if (heroTitle.length > 1) {
-                //Check if the second word in the base subtitle is a two letter word, usually "of"
-                //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
-                if (heroTitle[1].length == 2) {
-                    //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
-                    suffix = ChooseRandom(theme.Suffixes);
-                    while (suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) {
-                        suffix = ChooseRandom(theme.Suffixes);
-                    }
-                    if(suffix.includes("/"))
+                    function ChooseRandom(list) //Get a random item from the list
                     {
-                        genderArray = suffix.split("/");
-                        if(hero.Gender == "M") suffix = genderArray[0];
-                        else if(hero.Gender == "F") suffix = genderArray[1];
-                        else suffix = genderArray[2];
-                        if(chaosMode) suffix = ChooseRandom(genderArray);
+                        return list[Math.floor(Math.random() * list.length)];
                     }
-                    heroTitle.splice(0, 1, suffix);
-                }
-                else
-                {
-                    var prefix = ChooseRandom(theme.Prefixes);
-                    if(prefix.includes("/"))
+                    function ChooseRandomEffect(list, points, chaosMode) //Get a random item from the list that fits within the current point limit
                     {
-                        genderArray = prefix.split("/");
-                        if(hero.Gender == "M") prefix = genderArray[0];
-                        else if(hero.Gender == "F") prefix = genderArray[1];
-                        else prefix = genderArray[2];
-                        if(chaosMode) prefix = ChooseRandom(genderArray);
+                        if (points < 1) //Whoops, somehow this function got called without the unit having any points remaining! Time to abort.
+                        {
+                            console.log("Error: ChooseRandomEffect called with < 1 points remaining");
+                            return { Effect: "", PointWorth: 0 };
+                        }
+                        var effect = ChooseRandom(list);
+                        if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1; //If chaos mode is enabled, we can bring the chaos-specific effects down to an actual achievable point value.
+                        while (effect.PointWorth > points) //If the effect is too expensive, reroll.
+                        {
+                            console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
+                            effect = ChooseRandom(list);
+                            if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
+                        }
+                        return effect;
                     }
-                    heroTitle.splice(0, 1, prefix);
-                }
-            }
-            else //If the subtitle is only a single word long, we can just attach the prefix with no issue
-            {
-                var prefix = ChooseRandom(theme.Prefixes);
-                if(prefix.includes("/"))
-                {
-                    genderArray = prefix.split("/");
-                    if(hero.Gender == "M") prefix = genderArray[0];
-                    else if(hero.Gender == "F") prefix = genderArray[1];
-                    else prefix = genderArray[2];
-                    if(chaosMode) prefix = ChooseRandom(genderArray);
-                }
-                heroTitle.splice(0, 0, prefix);
-            }
-        }
-    }
-    else {
-        
-        var prefix = ChooseRandom(theme.Prefixes);
-        if(prefix.includes("/"))
-        {
-            genderArray = prefix.split("/");
-            if(hero.Gender == "M" && hero2.Gender == "M") prefix = genderArray[0];
-            else if(hero.Gender == "F" && hero2.Gender == "F") prefix = genderArray[1];
-            else prefix = genderArray[2];
-            if(chaosMode) prefix = ChooseRandom(genderArray);
-        }
-        var suffix = ChooseRandom(theme.Duos);
-        if(suffix.includes("/"))
-        {
-            genderArray = suffix.split("/");
-            if(hero.Gender == "M" && hero2.Gender == "M") suffix = genderArray[0];
-            else if(hero.Gender == "F" && hero2.Gender == "F") suffix = genderArray[1];
-            else suffix = genderArray[2];
-            if(chaosMode) suffix = ChooseRandom(genderArray);
-        }
-        heroTitle = [prefix, suffix];
-    }
-
-    var fullTitle = heroName + ": " + heroTitle.join(" ");
-    var mvmnt = ChooseRandom(moveTypes);
-    var wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7, 8])];
-    if (hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
-    if (hero.Race == "Beast") wpn = weaponTypes[4];
-
-    if (chaosMode) wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8])];
-
-    if (wpn.Tags[0] == "Random")
-        wpn.Tags[0] = ChooseRandom(["Red", "Blue", "Green", "Colorless"]);
-    var gennedCharacter = {
-        Title: fullTitle,
-        Filename: hero.Filename,
-        Game: hero.Game,
-        Movement: mvmnt,
-        Weapon: wpn,
-        StatMod: statmod,
-        Prfs: hero.Prfs
-    }
-    return gennedCharacter;
-}
-
-//=================================GENERATE CLASS================================
-
-function RandomiseGrowths(growths, numberOfIterations) {
-    while (numberOfIterations > 0) {
-        var minusStat = ChooseRandom([0, 1, 2, 3, 4]);
-        var plusStat = ChooseRandom([0, 1, 2, 3, 4]);
-        while (plusStat == minusStat) plusStat = ChooseRandom([0, 1, 2, 3, 4]);
-        var subtraction = Math.random() * growths[minusStat];
-        //console.log(minusStat + " - " + subtraction + " + " + plusStat);
-        growths[minusStat] -= subtraction;
-        growths[plusStat] += subtraction;
-        numberOfIterations -= 1;
-    }
-    return growths;
-}
-
-function GenerateStats(character, rarity, chaosMode) {
-    var wpnIndex = character.Weapon.Index;
-    var mvmIndex = character.Movement.Index;
-
-    var classIndex = wpnIndex + (mvmIndex * 6);
-    var thisClass = JSON.parse(JSON.stringify(statsJSON[classIndex]));
-
-    let sum = 0;
-
-    //We get the number of 'points' each character has for stat allocation by subtracting the starting stats from their bst
-    for (let i = 0; i < thisClass.MinStats.length; i++) {
-        sum += thisClass.MinStats[i];
-    }
-    if (chaosMode) sum = 5;
-    let points = ChooseRandom(thisClass.BST) - sum;
-
-    //If the character is a Dancer or Trainee, we need to adjust their points to accomodate
-    if (character.StatMod == "Dancer") {
-        points -= 11;
-    }
-    if (character.StatMod == "Trainee") points += 5;
-
-    //Generate the character's base growth rates based on their class' average change in stats from min to max
-    var rates = [0, 0, 0, 0, 0];
-    var stats = thisClass.MinStats;
-    var ratesMax = 0;
-    for (let i = 0; i < rates.length; i++) {
-        rates[i] = thisClass.MaxStats[i] - thisClass.MinStats[i];
-        ratesMax += rates[i];
-    }
-    //The final growth rates are 5 decimal numbers that all add up to 1
-    for (let i = 0; i < rates.length; i++) {
-        rates[i] = rates[i] / ratesMax;
-    }
-    if (chaosMode) {
-        rates = [0.2, 0.2, 0.2, 0.2, 0.2];
-        stats = [1, 1, 1, 1, 1];
-    }
-
-    //console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
-
-    //Randomise the growths. This is done by taking a randomly sized chunk out of one stat growth and adding it to another. By default, this is done for 5 different stats.
-    rates = RandomiseGrowths(rates, 5);
-    //In chaos mode, we do it twice
-    if (chaosMode) rates = RandomiseGrowths(rates, 5);
-
-    if (!chaosMode) {
-        //Decrease the HP growth since it's normally so large
-        var subtraction = Math.random() * rates[0];
-        rates[0] -= subtraction;
-        rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
-        
-        //Increase the atk growth proportional to the unit's rarity
-        var statToSiphon = ChooseRandom([0, 2, 3, 4]);
-        var addition = Math.random() * rates[statToSiphon] * (rarity+1/5);
-        rates[statToSiphon] -= addition;
-        rates[1] += addition;
-        
-        //console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + rates);
-    }
-
-    //Now we have all the growths, we change it so that instead of all adding up to 1, they incrementally increase from all previous stats to eventually reach 1.
-    for (let i = 1; i < rates.length; i++) {
-        rates[i] = rates[i] + rates[i - 1];
-    }
-    //console.log(thisClass.Weapon + "/" + thisClass.Class + ": (adjusted) " + rates);
-    var uncappedStats = false;
-    if(chaosMode && Math.random() > 0.97) uncappedStats = true;
-    while (points > 0) {
-        //For every point, we get a random decimal between 0 and 1. Wherever that decimals falls on the growth scale, that respective stat gets the point (unless that stat is already maxed out).
-        chosenStat = Math.random();
-        for (let i = 0; i < rates.length; i++) {
-            if (chosenStat < rates[i] && (stats[i] < thisClass.MaxStats[i] || uncappedStats)) {
-                stats[i] += 1;
-                points -= 1;
-                break;
-            }
-        }
-    }
-    console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
-    return stats;
-}
-
-//=================================GENERATE SKILLS================================
-const rareASkills = [];
-const commonASkills = [];
-const allASkills = [];
-
-const rareBSkills = [];
-const commonBSkills = [];
-const allBSkills = [];
-
-const rareCSkills = [];
-const commonCSkills = [];
-const allCSkills = [];
-
-const rareAssistSkills = [];
-const commonAssistSkills = [];
-const allAssistSkills = [];
-
-const rareSpecialSkills = [];
-const commonSpecialSkills = [];
-const allSpecialSkills = [];
-
-function FillList(entry, list, slot, rarity) {
-    if (entry.Slot == slot && entry.Exclusivity.includes(rarity)) {
-        var weightCount = entry.Weight;
-        while (weightCount > 0) {
-            list.push(entry);
-            weightCount -= 1;
-        }
-    }
-    return list;
-}
-
-function SortSkillJSONIntoLists() {
-    skillsJSON.forEach(function (entry) {
-        FillList(entry, rareASkills, "A", "R");
-        FillList(entry, commonASkills, "A", "C");
-        FillList(entry, allASkills, "A", "");
-
-        FillList(entry, rareBSkills, "B", "R");
-        FillList(entry, commonBSkills, "B", "C");
-        FillList(entry, allBSkills, "B", "");
-
-        FillList(entry, rareCSkills, "C", "R");
-        FillList(entry, commonCSkills, "C", "C");
-        FillList(entry, allCSkills, "C", "");
-
-        FillList(entry, rareAssistSkills, "Assist", "R");
-        FillList(entry, commonAssistSkills, "Assist", "C");
-        FillList(entry, allAssistSkills, "Assist", "");
-
-        FillList(entry, rareSpecialSkills, "Special", "R");
-        FillList(entry, commonSpecialSkills, "Special", "C");
-        FillList(entry, allSpecialSkills, "Special", "");
-    });
-}
-
-function CheckSkillForTags(skill, tags) {
-    //console.log("CheckSkillForTags: " + skill + ", " + tags);
-    var invalid = false;
-    for (let i = 0; i < tags.length; i++) {
-        //console.log("Skill: " + skill + ", tags: " + tags);
-        if (skill.includes(tags[i]))
-            invalid = true;
-    };
-    return invalid;
-}
-
-function FillInWords(skill, colour, weapon, move) {
-    skill = skill.replace(/<1STAT>/g, ChooseRandom(["Atk", "Spd", "Def", "Res"]));
-
-    skill = skill.replace(/<2STATS>/g, ChooseRandom(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]));
-
-    skill = skill.replace(/<2S>/g, ChooseRandom(["A/S", "A/D", "A/R", "S/D", "S/R", "D/R"]));
-
-    skill = skill.replace(/<2NAMEEP>/g, ChooseRandom(["Kestrel", "Sturdy", "Mirror", "Steady", "Swift", "Bracing"]));
-    skill = skill.replace(/Steady Stance/g, "Steady Posture");
-
-    skill = skill.replace(/<1NAMEEP>/g, ChooseRandom(["Fierce", "Darting", "Steady", "Warding"]));
-
-    skill = skill.replace(/<1NAMEPP>/g, ChooseRandom(["Death", "Darting", "Warding", "Armored"]));
-
-    skill = skill.replace(/<ELEMENT>/g, ChooseRandom(["Fire", "Wind", "Water", "Earth"]));
-
-    skill = skill.replace(/<CLASSDUEL>/g, colour.charAt(0) + " Duel " + move.Movement);
-
-    if (move == "Flying")
-        skill = skill.replace(/<MISSILE>/g, "Dagger");
-    else
-        skill = skill.replace(/<MISSILE>/g, ChooseRandom(["Bow", "Dagger"]));
-
-    if (colour == "Red") {
-        skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Axe"]));
-        skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "G. Tome"]));
-    }
-    else if (colour == "Blue") {
-        skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Lance"]));
-        skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "B. Tome"]));
-    }
-    else if (colour == "Green") {
-        skill = skill.replace(/<MELEE>/g, ChooseRandom(["Axe", "Lance"]));
-        skill = skill.replace(/<TOME>/g, ChooseRandom(["G. Tome", "B. Tome"]));
-    }
-    else if (colour == "Colorless") {
-        skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Axe", "Lance"]));
-        skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "G. Tome", "B. Tome"]));
-    }
-
-    skill = skill.replace(/<DANCE>/g, ChooseRandom(["Caldera Dance 2", "Blaze Dance 3", "Deluge Dance 2", "Earth Dance 3", "Fireflood Dance 2", "Firestorm Dance 2", "Gale Dance 3", "Geyser Dance 2", "Rockslide Dance 2", "Torrent Dance 3"]));
-
-    skill = skill.replace(/<WEAPON>/g, weapon.Weapon);
-
-    return skill;
-}
-
-function GenerateSkills(character, rarityInt, chaosMode) {
-    var move = character.Movement;
-    var weapon = character.Weapon;
-    var rarity = "C";
-    if (rarityInt > 1) rarity = "R";
-    var tags = weapon.Tags;
-
-    tags.push(move.Tag);
-
-    var skills;
-    var skill;
-    var unitSkills = [];
-
-    skills = (rarity == "C") ? commonASkills : rareASkills;
-    if (chaosMode) skills = allASkills;
-    do {
-        skill = ChooseRandom(skills);
-    } while (CheckSkillForTags(skill.Restrictions, tags));
-    unitSkills.push(skill.Skill);
-
-    skills = (rarity == "C") ? commonBSkills : rareBSkills;
-    if(rarityInt == 1 && Math.random() > 0.5) skills = rareBSkills;
-    if (chaosMode) skills = allBSkills;
-    do {
-        skill = ChooseRandom(skills);
-    } while (CheckSkillForTags(skill.Restrictions, tags));
-    //Non dancers shouldnt get dancer skills but there's no in built restriction for that so here we are
-    while (character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>")) && !chaosMode)
-    {
-        skill = ChooseRandom(skills);
-        while(CheckSkillForTags(skill.Restrictions, tags)) skill = ChooseRandom(skills);
-    }
-    unitSkills.push(skill.Skill);
-
-    skills = (rarity == "C") ? commonCSkills : rareCSkills;
-    if (chaosMode) skills = allCSkills;
-    do {
-        skill = ChooseRandom(skills);
-    } while (CheckSkillForTags(skill.Restrictions, tags));
-    unitSkills.push(skill.Skill);
-
-    skills = (rarity == "C") ? commonAssistSkills : rareAssistSkills;
-    if(rarityInt == 1 && Math.random() > 0.5) skills = rareAssistSkills;
-    if (chaosMode) skills = allAssistSkills;
-    do {
-        skill = ChooseRandom(skills);
-    } while (CheckSkillForTags(skill.Restrictions, tags));
-    unitSkills.push(skill.Skill);
-
-    skills = (rarity == "C") ? commonSpecialSkills : rareSpecialSkills;
-    if (chaosMode) skills = allSpecialSkills;
-    do {
-        skill = ChooseRandom(skills);
-    } while (CheckSkillForTags(skill.Restrictions, tags));
-    unitSkills.push(skill.Skill);
-
-    for (let i = 0; i < unitSkills.length; i++) {
-        unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
-    }
-    if (weapon.Weapon == "Staff" && !chaosMode) {
-        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
-            unitSkills[GetRandom(0, 2)] = "";
-        }
-        else {
-            unitSkills[4] = "";
-        }
-        if (character.StatMod == "Dancer") {
-            unitSkills[3] = "Anew";
-        }
-    }
-    else if (character.StatMod == "Dancer" && !chaosMode) {
-        unitSkills[3] = ChooseRandom(["Dance", "Sing", "Play"]);
-        unitSkills[4] = "";
-        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
-            unitSkills[GetRandom(0, 2)] = "";
-        }
-    }
-    else {
-        if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
-            unitSkills[GetRandom(0, 2)] = "";
-        }
-        unitSkills[GetRandom(3, 4)] = "";
-    }
-    if (character.Prfs.length > 0 && !chaosMode) {//Add prf skills if they exist
-        prfs = Shuffle(character.Prfs);
-        usedPrfSlots = [];
-        prfOdds = 1.0;
-        for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
-            slot = prfs[i].substring(0, prfs[i].indexOf(":"));
-            skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
-            if (!usedPrfSlots.includes(slot) && Math.random() < (prfOdds / (usedPrfSlots.length + 1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
-                usedPrfSlots.push(slot);
-                if (slot == "A") unitSkills[0] = skillName;
-                if (slot == "B") unitSkills[1] = skillName;
-                if (slot == "C") unitSkills[2] = skillName;
-                if (slot == "Assist") 
-                {
-                    if(character.StatMod != "Dancer")
-                        unitSkills[3] = skillName;
-                    else if(character.StatMod == "Dancer" && (skillName.includes("Gray Waves") || skillName.includes("Dream") || skillName.includes("Call to Flame")))
-                        unitSkills[3] = skillName;
-                }
-                if (slot == "Special") unitSkills[4] = skillName;
-            }
-
-        }
-    }
-    return unitSkills;
-}
-
-
-//=================================GENERATE WEAPON================================
-const innateEffects = [];
-const startOfTurnEffects = [];
-const startOfCombatEffects = [];
-const duringCombatEffects = [];
-const endOfCombatEffects = [];
-const foeInitiatesEffects = [];
-const unitInitiatesEffects = [];
-const grantEffects = [];
-const assistEffects = [];
-const negativeEffects = [];
-
-const startOfTurnConditions = [];
-const startOfCombatConditions = [];
-const duringCombatConditions = [];
-const endOfCombatConditions = [];
-
-function FillTaggedList(entry, list, tag) {
-    if (entry.Tags.includes(tag)) {
-        var weightCount = entry.Weight;
-        while (weightCount > 0) {
-            list.push({
-                        Effect:entry.Effect,
-                        PointWorth:entry.PointWorth
-                      });
-            weightCount -= 1;
-        }
-    }
-    return list;
-}
-function FillTaggedConds(entry, list, tag) {
-    if (entry.Tags.includes(tag)) {
-        var weightCount = entry.Weight;
-        while (weightCount > 0) {
-            list.push(entry.Effect);
-            weightCount -= 1;
-        }
-    }
-    return list;
-}
-
-function SortWeaponJSONIntoLists() {
-    effectsJSON.forEach(function (entry) {
-        FillTaggedList(entry, innateEffects, "innate");
-        FillTaggedList(entry, grantEffects, "grant");
-        FillTaggedList(entry, startOfTurnEffects, "turn_start");
-        FillTaggedList(entry, startOfCombatEffects, "combat_start");
-        FillTaggedList(entry, duringCombatEffects, "during_combat");
-        FillTaggedList(entry, endOfCombatEffects, "combat_end");
-
-        FillTaggedList(entry, foeInitiatesEffects, "foe_initiates");
-        FillTaggedList(entry, unitInitiatesEffects, "unit_initiates");
-        FillTaggedList(entry, assistEffects, "assist");
-        FillTaggedList(entry, negativeEffects, "negative");
-    });
-
-    conditionsJSON.forEach(function (entry) {
-        FillTaggedConds(entry, startOfTurnConditions, "turn_start");
-        FillTaggedConds(entry, startOfCombatConditions, "combat_start");
-        FillTaggedConds(entry, duringCombatConditions, "during_combat");
-        FillTaggedConds(entry, endOfCombatConditions, "combat_end");
-    });
-}
-
-function FillInTags(line, rarity, unitClass = "") {
-    var chaosMode = document.getElementById("chaosCheck").checked;
-
-    var bonusList = ["【Move+1】", "【Guidance】", "【Bonus Doubler】",
-        "【Neutralize <CLASS> Effectiveness】",
-        "【Dominance】", "【Desperation】", "【Vantage】",
-        "【Deny Follow-ups】", "【Dodge】", "【Guaranteed Follow-ups】",
-        "【Triangle Attack】", "【Null Panic】", "【Cancel Affinity】",
-        "【Null Follow-up】", "【Pathfinder】", "【Fallen Star】",
-        "【Neutralize Foe Bonuses】", "【Grand Strategy】",
-        "【En Garde】", "【Accelerate Special】", "【Treachery】",
-        "【Warp Bubble】", "【Charge】"];
-    var penaltyList = ["【Gravity】", "【Panic】", "【Flash】", "【Triangle Adept】",
-        "【Guard】", "【Isolation】", "【Deep Wounds】", "【Stall】",
-        "【Canto Control】", "【Exposure】"];
-    var bonusAndPenaltyList = bonusList.concat(penaltyList);
-
-    var array = Shuffle(grantEffects);
-    line = line.replace(/<GRANT>/g, array[0].Effect);
-    line = line.replace(/<GRANT2>/g, array[1].Effect);
-    line = line.replace(/<GRANT3>/g, array[2].Effect);
-    
-    array = Shuffle(["Atk", "Spd", "Def", "Res"]);
-    line = line.replace(/<STAT>/g, array[0]);
-    line = line.replace(/<STAT2>/g, array[1]);
-
-    array = Shuffle(["75%", "50%", "25%", "40%", "60%", "80%"]);
-    if (chaosMode) { array[0] = GetRandom(1, 99).toString() + "%"; array[1] = GetRandom(1, 99).toString() + "%"; }
-    line = line.replace(/<PERCENT>/g, array[0]);
-    line = line.replace(/<PERCENT2>/g, array[1]);
-
-    array = Shuffle(["10%", "15%", "20%", "25%", "30%"]);
-    if (chaosMode) { array[0] = GetRandom(1, 35).toString() + "%"; array[1] = GetRandom(1, 35).toString() + "%"; }
-    line = line.replace(/<LOWPERCENT>/g, array[0]);
-    line = line.replace(/<LOWPERCENT2>/g, array[1]);
-
-    array = Shuffle(["1", "2", "2", "3", "3", "3", "4", "4", "5", "6", "7"]);
-    if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
-    line = line.replace(/<INT>/g, array[0]);
-    line = line.replace(/<INT2>/g, array[1]);
-    
-    array = Shuffle(["1", "2", "3"]);
-    if (chaosMode) { array[0] = GetRandom(1, 5).toString(); array[1] = GetRandom(1, 5).toString(); }
-    line = line.replace(/<LOWINT>/g, array[0]);
-    line = line.replace(/<LOWINT2>/g, array[1]);
-
-    array = Shuffle(["1", "3", "3", "5", "5", "7", "7", "9"]);
-    if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
-    line = line.replace(/<ODDINT>/g, array[0]);
-    line = line.replace(/<ODDINT2>/g, array[1]);
-
-    array = Shuffle(["7", "10", "15", "20", "25"]);
-    if (chaosMode) { array[0] = GetRandom(1, 30).toString(); array[1] = GetRandom(1, 30).toString(); }
-    line = line.replace(/<BINT>/g, array[0]);
-    line = line.replace(/<BINT2>/g, array[1]);
-
-    array = Shuffle(bonusList);
-    if (chaosMode) {
-        array = Shuffle(bonusAndPenaltyList);
-    }
-    line = line.replace(/<BONUS>/g, array[0]);
-    line = line.replace(/<BONUS2>/g, array[1]);
-
-    array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast"]);
-    if (chaosMode) {
-        array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast", "Staff","Tome","Dagger","Bow","Sword","Axe","Lance","Melee","Ranged","Magic","Physical"]);
-    }
-    line = line.replace(/<CLASS>/g, array[0]);
-    line = line.replace(/<CLASS2>/g, array[1]);
-    
-    line = line.replace(/<UNITCLASS>/g, unitClass);
-    
-    array = Shuffle(["Sword","Lance","Axe","Beast","Dragon","Tome","Staff","Bow","Dagger","Sword/Lance/Axe"]);
-    if (chaosMode) {
-        array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast", "Staff","Tome","Dagger","Bow","Sword","Axe","Lance","Melee","Ranged","Magic","Physical"]);
-    }
-    line = line.replace(/<WEAPON>/g, array[0]);
-    line = line.replace(/<WEAPON2>/g, array[1]);
-
-    array = Shuffle(penaltyList);
-    if (chaosMode) {
-        array = Shuffle(bonusAndPenaltyList);
-    }
-    line = line.replace(/<PENALTY>/g, array[0]);
-    line = line.replace(/<PENALTY2>/g, array[1]);
-
-    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
-    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
-    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
-    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
-    line = line.replace(/<STATS>/g, array[0]);
-    line = line.replace(/<STATS2>/g, array[1]);
-
-    val = GetRandom(2, 5) + Math.ceil(rarity / 2);
-    if (chaosMode) val = GetRandom(1, 10);
-    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
-    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
-    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
-    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
-    line = line.replace(/<ADDSTATS>/g, array[0] + "+" + val);
-    line = line.replace(/<ADDSTATS2>/g, array[1] + "+" + val);
-
-    val = GetRandom(2, 5) + Math.ceil(rarity / 2);
-    if (chaosMode) val = GetRandom(1, 10);
-    array = Shuffle(["Atk", "Def", "Spd", "Res"]);
-    if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
-    else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
-    else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
-    line = line.replace(/<MINUSSTATS>/g, array[0] + "-" + val);
-    line = line.replace(/<MINUSSTATS2>/g, array[1] + "-" + val);
-
-    line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
-    line = line.replace(/<HIGHLOW>/g, ChooseRandom(["highest", "lowest"]));
-    line = line.replace(/<COLOUR>/g, ChooseRandom(["Red","Green","Blue","Colorless"]));
-
-    array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】", ChooseRandom(["【Canto (Recall)】","【Canto (Unit 3x3)】","【Canto (Ally 2)】"])]);
-
-    if (chaosMode) array = Shuffle(["【Canto (" + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem. + " + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem.) 】",ChooseRandom(["【Canto (Recall)】","【Canto (Unit " + GetRandom(1, 5).toString() + "x" + GetRandom(1, 5).toString() + ")】","【Canto (Ally " + GetRandom(1, 5).toString() + ")】"])]);
-    line = line.replace(/<CANTO>/g, array[0]);
-
-    if (chaosMode && Math.random() > 0.99)
-    {
-        line = line.replace(/foes/g, "<TEMP>");
-        line = line.replace(/allies/g, "foes");
-        line = line.replace(/<TEMP>/g, "allies");
-        
-        line = line.replace(/foe/g, "<TEMP>");
-        line = line.replace(/target/g, "<TEMP>");
-        line = line.replace(/unit/g, "foe");
-        line = line.replace(/ally/g, "foe");
-        line = line.replace(/<TEMP>/g, "unit");
-    }
-    if (chaosMode) line = line.replace(/max 3/g, "max " + GetRandom(1, 7).toString());
-    return line;
-}
-
-function SortTwoLists(orderedList, affectedList) {
-    //https://stackoverflow.com/questions/11499268/sort-two-arrays-the-same-way
-
-    //1) combine the arrays:
-    var list = [];
-    for (var j = 0; j < orderedList.length; j++)
-        list.push({ 'ord': orderedList[j], 'aff': affectedList[j] });
-
-    //2) sort:
-    list.sort(function (a, b) {
-        return ((a.ord < b.ord) ? -1 : ((a.ord == b.ord) ? 0 : 1));
-    });
-
-    //3) separate them back out:
-    for (var k = 0; k < list.length; k++) {
-        orderedList[k] = list[k].ord;
-        affectedList[k] = list[k].aff;
-    }
-    //Whoops, Javascript can't return multiple variables because it's a shitty language.
-    //We only need the affected list anyway, so let's just return that instead of fiddling with objects.
-
-    return affectedList;
-}
-function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
-    var assist = skills[3];
-    var points = 1 + rarity;
-    if (points > 1)
-        points += ChooseRandom([-1, 0, 0, 0, 1]);
-    if (points == 1) points += 1;
-    var initialPoints = points;
-    //Apply a tax for weapon types with consistently innate effects
-    var weapon = unit.Weapon.Weapon;
-    var unitClass = unit.Movement.Movement;
-    if((weapon == "Dragon" || weapon == "Beast") && Math.random() > 0.5)
-        unitClass = weapon;
-    const lines = [];
-    var innatesGiven = false;
-    var braveWeapon = false;
-    var inheritable = false;
-    
-    if(rarity <= 2)
-    {
-        if(initialPoints == 2 || rarity == 0)
-            inheritable = true;
-        if(initialPoints == 3 && Math.random() < 0.2)
-            inheritable = true;
-    }
-    if ((weapon == "Staff" && !inheritable) || weapon == "Beast" || weapon == "Dragon") points -= 1;
-    
-    var rawConds;
-    var rawEffects;
-    var usedConditions = [];
-    var ninjaString = "Grants Spd+4. Inflicts Def/Res-4. If unit initiates combat, unit attacks twice.";
-    if (theme == "Ninjas" && !chaosMode) {
-        var innate1 = ninjaString;
-        if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
-        points -= 1;
-        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-        while (innate2.Effect.includes("nit attacks twice"))
-            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
-        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
-            lines.push(innate2.Effect + ".");
-            usedConditions.push(-1);
-            points -= innate2.PointWorth;
-        }
-        lines.push(innate1);
-        usedConditions.push(-1);
-        innatesGiven = true;
-        braveWeapon = true;
-    }
-    else if (theme == "Thieves" && !chaosMode) {
-        var innate1 = "enables <CANTO>";
-        points -= 1;
-        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-        while (innate2.Effect == innate1)
-            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-
-        innate1 = FillInTags(innate1, rarity,unitClass);
-        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
-
-        lines.push(innate1 + ".");
-        usedConditions.push(-1);
-        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
-            lines.push(innate2.Effect + ".");
-            usedConditions.push(-1);
-            points -= innate2.PointWorth;
-            if(innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
-        }
-        innatesGiven = true;
-    }
-    else if (Math.random() < (0.2 + 0.1 * rarity)) {
-        var innate1 = ChooseRandomEffect(innateEffects,points,chaosMode);
-        var innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-        while (innate2 == innate1)
-            innate2 = ChooseRandomEffect(innateEffects,points,chaosMode);
-
-        innate1.Effect = FillInTags(innate1.Effect, rarity,unitClass);
-        innate2.Effect = FillInTags(innate2.Effect, rarity,unitClass);
-
-        lines.push(innate1.Effect + ".");
-        usedConditions.push(-1);
-        points -= innate1.PointWorth;
-        if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
-            lines.push(innate2.Effect + ".");
-            usedConditions.push(-1);
-            points -= innate2.PointWorth;
-            if(innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
-        }
-        if(innate1.Effect.includes("nit attacks twice")) braveWeapon = true;
-        innatesGiven = true;
-    }
-    while (points > 0) {
-        var newLine = "";
-        var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
-        if ((unit.StatMod == "Dancer" || weapon == "Staff") && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
-
-        var condition = ChooseRandom(distribution);
-        while (usedConditions.includes(condition)) {
-            condition = ChooseRandom(distribution);
-        }
-
-        usedConditions.push(condition);
-        //start of turn, start of turn 1, start of combat, during combat, outside of combat, after combat, positional/rally skill used
-
-        currentlyHasCondition = false;
-        unitInitiation = false;
-        foeInitiation = false;
-        var conditionsList;
-        var effectsList;
-        grantEffect = false;
-        switch (condition) {
-            case 0:
-                conditionsList = startOfTurnConditions;
-                effectsList = startOfTurnEffects;
-                newLine = "At start of turn, ";
-                break;
-            case 1:
-                conditionsList = startOfTurnConditions;
-                effectsList = startOfTurnEffects;
-                newLine = ChooseRandom(["At start of odd-numbered turns, ", "At start of even-numbered turns, ", "At start of turns 1 through 4, "]);
-                break;
-            case 2:
-                effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
-                conditionsList = startOfCombatConditions;
-                newLine = "If unit initiates combat, ";
-                currentlyHasCondition = true;
-                break;
-
-            case 3:
-                effectsList = startOfCombatEffects.concat(foeInitiatesEffects);
-                conditionsList = startOfCombatConditions;
-                newLine = "If foe initiates combat, ";
-                currentlyHasCondition = true;
-                break;
-
-            case 4:
-                effectsList = startOfCombatEffects;
-                conditionsList = startOfCombatConditions;
-                newLine = "At start of combat, ";
-                break;
-
-            case 5:
-                conditionsList = duringCombatConditions;
-                effectsList = duringCombatEffects;
-                break;
-            case 6:
-                conditionsList = endOfCombatConditions;
-                effectsList = endOfCombatEffects;
-                newLine = "After combat, ";
-                break;
-            case 7:
-                effectsList = assistEffects;
-                var assistString = "";
-                if (assist.includes("Rally") || assist.includes("Harsh")) assistString = "Rally";
-                else if (unit.StatMod == "Dancer") assistString = "Dance";
-                else if (weapon == "Staff") assistString = "healing";
-                else assistString = "movement"
-                if (chaosMode) assistString = ChooseRandom(["Rally","Dance","healing","movement","300sp or greater","150sp or lower"]);
-                newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
-                newLine = newLine.replace(/<ASSIST>/g, assistString);
-                break;
-            case 8:
-                grantEffect = true;
-                break;
-            default:
-                console.log("whoops");
-                break;
-        }
-        if (grantEffect) {
-            newLine = FillInTags(ChooseRandom(["grants <ADDSTATS> to allies within 2 spaces of unit during combat.",
-                "grants <ADDSTATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                "grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                "grants <ADDSTATS> to unit and allies within 2 spaces of unit during combat.",
-                "grants <ADDSTATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                "grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
-                "grants <ADDSTATS> to allies within <INT> spaces of unit during combat.",
-                "grants <ADDSTATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
-                "grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
-                "grants <ADDSTATS> to unit and allies within <INT> spaces of unit during combat.",
-                "grants <ADDSTATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\".",
-                "grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"."]), rarity);
-            points -= 1;
-            lines.push(newLine);
-            continue;
-        }
-        rawConds = [];
-        //This entire block is just dedicated to dealing with the "Ninja initiates" clause
-        var ninjaCond = (theme == "Ninjas" && condition == 2 && (lines[0] == ninjaString || lines[1] == ninjaString));
-        console.log("NinjaCond: " + ninjaCond + " (" + condition + ", " + lines[0] + ", " + lines[1] + ", " + ninjaString);
-        var ninjaExtraCond = false;
-        if (ninjaCond) {
-            currentlyHasCondition = true;
-            newLine = "";
-            if (Math.random() < 0.6) {
-                var tempCondition = ChooseRandom(conditionsList);
-                rawConds.push(tempCondition);
-                newLine = ", and also, if " + FillInTags(tempCondition, rarity) + ", ";
-                ninjaExtraCond = true;
-            }
-        }
-        else if (Math.random() < 0.75 && condition != 7) {
-            if (currentlyHasCondition == true)
-                newLine = newLine.slice(0, -2) + ChooseRandom([" or ", " and "]);
-
-            var tempCondition = ChooseRandom(conditionsList);
-            rawConds.push(tempCondition);
-            //The following condition prevents us from getting situations where our HP needs to be below and above certain thresholds, which can be impossible to meet
-            if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
-            else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
-            newLine = newLine + "if " + FillInTags(tempCondition, rarity);
-            //randomly choose new condition for initial condition
-            if (currentlyHasCondition == false && Math.random() < 0.6) {
-                newLine = newLine + ChooseRandom([" or ", " and "]);
-                tempCondition = ChooseRandom(conditionsList);
-                while (rawConds.includes(tempCondition))
-                    tempCondition = ChooseRandom(conditionsList);
-                rawConds.push(tempCondition);
-                if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
-                else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
-                newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
-            }
-            else
-                newLine = newLine + ", ";
-        }
-        var firstHalfEffects = [];
-        var secondHalfEffects = [];
-        rawEffects = [];
-        var tempEffect;
-        do {
-            tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
-            while (rawEffects.includes(tempEffect.Effect))
-                tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
-            points -= tempEffect.PointWorth;
-            firstHalfEffects.push(tempEffect.Effect);
-            rawEffects.push(tempEffect.Effect);
-
-        } while (points > 0 && Math.random() < (0.4 + rarity*0.1 - firstHalfEffects.length*0.1) && condition != 7);
-
-        //second half
-        while (points > 0 && Math.random() < (0.4 + rarity*0.05 - secondHalfEffects.length*0.05) && condition != 7 && !ninjaCond) {
-
-            tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
-            while (rawEffects.includes(tempEffect.Effect))
-                tempEffect = ChooseRandomEffect(effectsList,points,chaosMode);
-            points -= tempEffect.PointWorth;
-            secondHalfEffects.push(tempEffect.Effect);
-            rawEffects.push(tempEffect.Effect);
-        }
-
-        //Negative condition
-        var hasNegative = false;
-        if (points == 0 && (condition >= 2 && condition <= 5) && Math.random() > 0.95) {
-            hasNegative = true;
-            tempEffect = ChooseRandom(effectsList);
-            while (rawEffects.includes(tempEffect.Effect) || tempEffect.PointWorth > 1)
-                tempEffect = ChooseRandom(effectsList);
-            if (secondHalfEffects.length > 0)
-                secondHalfEffects.push(tempEffect.Effect);
-            else
-                firstHalfEffects.push(tempEffect.Effect);
-        }
-
-        for (let i = 0; i < firstHalfEffects.length; i++) {
-            if (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 2 && i == 0) {
-                //This is the worst condition I've ever written but it's 12:40am, I'm exhausted, and it's for dealing with one specific edge case
-                newLine = newLine + ", ";
-            }
-            if (i != 0 && firstHalfEffects.length != 2)//If there are more than two entries, comma between them
-                newLine = newLine + ", ";
-            if (i == 1 && firstHalfEffects.length == 2 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//If there are only two entries, no comma between first and second
-                newLine = newLine + " ";
-            if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//Last entry, add an and
-                newLine = newLine + "and ";
-            newLine = newLine + FillInTags(firstHalfEffects[i], rarity);
-        }
-        if (condition == 5)
-            newLine = newLine + " during combat";
-        if (secondHalfEffects.length > 0) {
-            newLine = newLine + ", and also, if ";
-            tempCondition = ChooseRandom(conditionsList);
-            while (rawConds.includes(tempCondition))
-                tempCondition = ChooseRandom(conditionsList);
-            rawConds.push(tempCondition);
-            if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
-            else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
-            newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
-
-            for (let i = 0; i < secondHalfEffects.length; i++) {
-                if (i != 0 && secondHalfEffects.length != 2)
-                    newLine = newLine + ", ";
-                if (i == 1 && secondHalfEffects.length == 2)
-                    newLine = newLine + " ";
-                if (i == secondHalfEffects.length - 1 && secondHalfEffects.length != 1)
-                    newLine = newLine + "and ";
-                newLine = newLine + FillInTags(secondHalfEffects[i], rarity);
-            }
-        }
-        if (hasNegative) {
-            newLine = newLine + ", but after combat, ";
-            if (Math.random() > 0.5) newLine = newLine + "if unit attacked, "
-            newLine = newLine + FillInTags(ChooseRandom(negativeEffects).Effect, rarity);
-        }
-
-        newLine = newLine + ".";
-        if (!ninjaCond)
-            lines.push(newLine);
-        else {
-            console.log("Ninjacond met");
-            if (lines[0] == ninjaString) {
-                console.log("Replacing " + lines[0]);
-                lines[0] = ninjaString.slice(0, -1) + newLine;
-            }
-            else if (lines[1] == ninjaString) {
-                console.log("Replacing " + lines[1]);
-                lines[1] = ninjaString.slice(0, -1) + newLine;
-            }
-        }
-    }
-
-    SortTwoLists(usedConditions, lines);
-    for (index = 0; index < lines.length; index++) {
-        console.log("LINE: " + lines[index]);
-        if (lines[index] == null) lines[index] = "";
-        lines[index] = Capitalise(lines[index]);
-    }
-    var mtVal = 16;
-    if (weapon == "Staff") {
-        mtVal -= 2;
-        if(!inheritable)
-            lines.splice(0, 0, ChooseRandom(["Foe cannot counterattack. ", "Calculates damage from staff like other weapons. "]));
-        
-    }
-    if (weapon == "Beast") {
-        lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】 ");
-        mtVal -= 2;
-    }
-    if (weapon == "Dagger") {
-        lines.push("Effect: 【Dagger 7】 ");
-        mtVal -= 2;
-    }
-    if (weapon == "Dragon") {
-        lines.push("If foe's Range = 2, calculates damage using the lower of foe's Def or Res. ");
-    }
-    if (weapon == "Bow") {
-        lines.splice(0, 0, "Effective against Fliers. ");
-        mtVal -= 2;
-    }
-    
-    if(weapon == "Tome") mtVal -= 2;
-    if(braveWeapon) mtVal -= 5;
-    
-    if(chaosMode)
-    {
-        mtVal = ChooseRandom([7,8,9,10,11,12,12,13,14,14,14,15,16,16,16,17,18,19,20]);
-        if(Math.random() < Math.pow(1-0.2*rarity,2)) inheritable = true;
-    }
-    
-    var mtText = "Mt " + mtVal.toString() + "<br>";
-    if(inheritable)
-    {
-        mtVal -= 2;
-        mtText = "Mt " + mtVal.toString() + " (Inheritable)<br>";
-    }
-    
-    if (!innatesGiven && !inheritable) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk", "Spd", "Def", "Res"]) + "+3. ");
-    lines.splice(0, 0, mtText);
-    //console.log(lines);
-    return lines.join('\n');
-    /*for each line in lines
-{
-//innate and "outside of combat" are set by default
-if "start of turn" move to end
-    '' if "start of odd/even numbered turns"
-    '' if "start of combat"
-    '' if "during combat"
-    '' if "after combat"
-    final text = all lines[] in this order
-    if innatesGiven = False
-        final text = "Grants [Atk/Spd/Def/Res]+3. " + final text
-    return final text
-}*/
-}
-function FillInDuoTags(line) {
-    var array = Shuffle(["unit and allies from the same titles as unit", "allies from the same titles as unit"]);
-    line = line.replace(/<HALLIES>/g, array[0]);
-
-    array = Shuffle(["unit and allies",
-        "unit, as well as <CLASS> and <CLASS2> allies",
-        "allies",
-        "<CLASS> and <CLASS2> allies",
-        "<CLASS> allies",
-        "unit and <CLASS> allies",
-        "ally with the highest <STAT>",
-        "closest allies"]);
-    line = line.replace(/<ALLIES>/g, array[0]);
-
-    array = Shuffle([" within <INT> spaces of unit",
-        " within 3 columns centered on unit",
-        " within 3 rows centered on unit",
-        " within 3 rows and 3 columns centered on unit",
-        " within 5 columns centered on unit",
-        " within 5 rows centered on unit",
-        " within 5 rows and 5 columns centered on unit",
-        " adjacent to unit",
-        ""]);
-    line = line.replace(/<POSITION>/g, array[0]);
-
-    line = line.replace(/<RESONANCE>/g, ChooseRandom(["【Resonance: Blades】", "【Resonance: Shields】"]));
-    return line;
-}
-
-function GenerateDuoSkill(duo) {
-    var duoText = ChooseRandom(["Deals <BINT> damage to foes<POSITION>.",
-        "Inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
-        "Inflicts <PENALTY> on foes<POSITION> through their next action.",
-        "Inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
-        "Inflicts Special cooldown count+<INT> on foes<POSITION>.",
-        "Inflicts Special cooldown count+<INT> and <MINUSSTATS> on foes<POSITION> through their next action.",
-        "Deals <BINT> damage and inflicts <PENALTY> on foes<POSITION> through their next action.",
-        "Deals <BINT> damage and inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
-        "Deals <BINT> damage and inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
-        "Grants <BONUS> to <ALLIES><POSITION> for one turn.",
-        "Grants <ADDSTATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
-        "Restores <BINT> HP and grants <ADDSTATS> to <ALLIES><POSITION> for one turn.",
-        "Restores <BINT> HP and grants <BONUS> to <ALLIES><POSITION> for one turn.",
-        "Grants <ADDSTATS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
-        "Grants <BONUS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
-        "Grants <ADDSTATS>, <BONUS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
-        "Grants Special cooldown count-<INT> to <ALLIES><POSITION>.",
-        "Grants another action, <ADDSTATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
-        "Grants another action, <ADDSTATS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
-        "Grants unit another action. (May be used only if unit has already entered combat during the current turn.)",
-        "Moves allies adjacent to unit to opposite side of unit. If an ally cannot move to the target space (if another ally or foe is occupying the space) ally will not move."]);
-
-    var harmonicText = ChooseRandom(["Grants <RESONANCE> to <HALLIES> for one turn. Grants another action to ally with the highest <STAT> that is within <INT> spaces, has already acted, and is from the same titles as unit (excluding unit).",
-        "Grants <RESONANCE> to <HALLIES> for one turn. Grants <BONUS> to unit.",
-        "Grants <RESONANCE> and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
-        "Grants <RESONANCE> and <BONUS> to <HALLIES> for one turn.",
-        "Grants <RESONANCE> and <ADDSTATS> to <HALLIES> for one turn.",
-        "Grants <RESONANCE>, <ADDSTATS>, and <BONUS> to <HALLIES> for one turn.",
-        "Grants <RESONANCE>, <ADDSTATS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
-        "Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
-        "Grants <RESONANCE>, <ADDSTATS>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\"."]);
-    var text = "";
-    if (duo) text = FillInTags(FillInDuoTags(duoText), 4);
-    else text = FillInTags(FillInDuoTags(harmonicText), 4);
-    if (Math.random() < 0.1 && duo) text += " At start of odd-numbered turns, if Duo Skill has already been used, unit can use Duo Skill again.";
-    if (Math.random() < 0.1 && !duo) text += " At start of odd-numbered turns, if Harmonized Skill has already been used, unit can use Harmonized Skill again.";
-    return text;
-}
-
-
-//=================================PUT IT ALL TOGETHER================================
-
-async function GenerateUnit(rarity, theme, character, character2 = null) {
-    var chaosMode = document.getElementById("chaosCheck").checked;
-    var unit = GenerateCharacter(character, character2, theme, rarity, chaosMode);
-    var stats = GenerateStats(unit, rarity, chaosMode);
-    var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
-    var character2Filename = "";
-    if (character2 != null)
-        character2Filename = character2.Filename;
-
-    var skills = GenerateSkills(unit, rarity, chaosMode);
-    var weaponText = GenerateWeapon(rarity, unit, skills, theme.Event, chaosMode);
-    var duoSkill = "";
-
-    if (rarity == 4) {
-        if (character.Game == character2.Game) rarityText[4] = "Duo";
-        duoSkill = GenerateDuoSkill(character.Game == character2.Game);
-    }
-    
-    if(unit.Filename.includes("/"))
-    {
-        unit.Filename = ChooseRandom(unit.Filename.split("/"));
-    }
-    
-    var gennedUnit = {
-        Title: unit.Title,
-        Filename: unit.Filename,
-        Filename2: character2Filename,
-        Game: unit.Game,
-        Movement: unit.Movement.Movement,
-        Weapon: unit.Weapon.Weapon,
-        Colour: unit.Weapon.Tags[0],
-        WeaponText: weaponText,
-        Stats: stats,
-        Skills: skills,
-        RarityText: rarityText[rarity],
-        Rarity: rarity,
-        Theme: theme,
-        DuoSkill: duoSkill
-    }
-
-    return gennedUnit;
-}
-
-async function GenerateBanner() {
-    var themeInt = document.getElementById("themeDropdown").value;
-    var theme;
-    if (themeInt != -1)
-        theme = themesJSON[themeInt];
-    else if(Math.random() < 0.02)
-    {
-        theme = ChooseRandom(extrasJSON);
-    }
-    else theme = ChooseRandom(themesJSON);
-    
-    document.body.style.backgroundImage = "url('/FEH-Alt-Generator/Backgrounds/" + theme.Background + "')";
-
-    document.getElementById("headie").style.backgroundColor = theme.Header;
-    document.getElementById("footie").style.backgroundColor = theme.Footer;
-    var charsList = Shuffle(charactersJSON);
-    var bannerCharacters = [];
-
-    var game1 = document.getElementById("gameDropdown1").value;
-    if (game1 == "random")
-        game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
-    var game2 = document.getElementById("gameDropdown2").value;
-    if (game2 == "none")
-        game2 = game1;
-    else if (game2 == "random")
-        game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
-    var duoUnit = true;
-    if (game1 != game2 && Math.random() > 0.5) duoUnit = false;
-
-    for (let i = 0; i < charsList.length; i++) {
-        if (bannerCharacters.length == 5) {
-            if (duoUnit && charsList[i].Game == bannerCharacters[4].Game)
-                bannerCharacters.push(charsList[i]);
-            else if (!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
-                bannerCharacters.push(charsList[i]);
-        }
-        if (bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
-            bannerCharacters.push(charsList[i]);
-        if (bannerCharacters.length == 6) break;
-    }
-
-    console.log("banner characters: " + bannerCharacters[0].Hero);
-    console.log(bannerCharacters[1].Hero);
-    console.log(bannerCharacters[2].Hero);
-    console.log(bannerCharacters[3].Hero);
-    console.log(bannerCharacters[4].Hero);
-    console.log(bannerCharacters[5].Hero);
-    var unitP1 = await GenerateUnit(3, theme, bannerCharacters[0]);
-    var unitP2 = await GenerateUnit(2, theme, bannerCharacters[1]);
-    var unitDemote = await GenerateUnit(1, theme, bannerCharacters[2]);
-    var unitDuo = await GenerateUnit(4, theme, bannerCharacters[4], bannerCharacters[5]);
-    var unitTT = await GenerateUnit(0, theme, bannerCharacters[3]);
-
-    DisplayUnit(unitP1);
-
-    document.getElementById("premiumButton1").addEventListener('click', function () {
-        DisplayUnit(unitP1);
-    });
-    document.getElementById("premiumButton2").addEventListener('click', function () {
-        DisplayUnit(unitP2);
-    });
-    document.getElementById("demoteButton").addEventListener('click', function () {
-        DisplayUnit(unitDemote);
-    });
-    document.getElementById("duoButton").addEventListener('click', function () {
-        DisplayUnit(unitDuo);
-    });
-    document.getElementById("TTButton").addEventListener('click', function () {
-        DisplayUnit(unitTT);
-    });
-
-}
-
-function DisplayUnit(unit) {
-
-    var frontFrames = ["Face_Bronze_Front.png", "Face_Silver_Front.png", "Face_Gold_Front.png", "Face_Gold_Front.png", "Face_Duo_Front.png"];
-    var backFrames = ["Face_Bronze_Back.png", "Face_Silver_Back.png", "Face_Gold_Back.png", "Face_Gold_Back.png", "Face_Duo_Back.png"];
-    if (unit.Rarity == 4) {
-        //        document.getElementById("generatedUnit").innerHTML = `  <div class="unit-row"><div class="unit-column"><img src="./${unit.Filename}" /></div><div class="unit-column"><img src="./${unit.Filename2}" /> </div> </div><div class="clearfix"></div>`;
-        document.getElementById("generatedFrontpack").innerHTML = `  <img src="/FEH-Alt-Generator/CharacterIcons/${unit.Filename}" z-index=20/>`;
-        document.getElementById("frontpackFrameFront").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
-        document.getElementById("frontpackFrameBack").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
-        document.getElementById("generatedBackpack").innerHTML = `  <img src="/FEH-Alt-Generator/CharacterIcons/${unit.Filename2}" z-index=20/>`;
-        document.getElementById("backpackFrameFront").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Face_Duo_Front.png" class="overlay_image"/>`;
-        document.getElementById("backpackFrameBack").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Face_Duo_Back.png" class="underlay_image"/>`;
-        document.getElementById("twoUnitDisplay").style.display = "block";
-        document.getElementById("oneUnitDisplay").style.display = "none";
-    }
-    else {
-        document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="/FEH-Alt-Generator/CharacterIcons/${unit.Filename}" z-index=20/></div>`;
-        document.getElementById("unitFrameFront").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
-        document.getElementById("unitFrameBack").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
-        document.getElementById("generatedBackpack").innerHTML = ` `;
-        document.getElementById("backpackFrameFront").innerHTML = `  `;
-        document.getElementById("backpackFrameBack").innerHTML = `  `;
-        document.getElementById("twoUnitDisplay").style.display = "none";
-        document.getElementById("oneUnitDisplay").style.display = "block";
-    }
-    document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
-    document.getElementById("generatedWepIcon").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" />`;
-    document.getElementById("generatedMove").innerHTML = `  <img src="/FEH-Alt-Generator/GameIcons/Icon_Move_${unit.Movement}.png" />`;
-    document.getElementById("generatedStats").innerHTML = `<b>HP:</b> ${unit.Stats[0]}<br><b>Atk:</b> ${unit.Stats[1]}<br><b>Spd:</b> ${unit.Stats[2]}<br><b>Def:</b> ${unit.Stats[3]}<br><b>Res:</b> ${unit.Stats[4]}`;
-    document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
-    document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
-    document.getElementById("generatedSkills").innerHTML = `<b><span style="color: #96f7f0">Assist:</span></b> ${unit.Skills[3]}<br>
-                                                            <b><span style="color: #fac6ff">Special:</span></b> ${unit.Skills[4]}<br>
-                                                            <b><span style="color: #ffb0af">A:</span></b> ${unit.Skills[0]}<br>
-                                                            <b><span style="color: #64c4f5">B:</span></b> ${unit.Skills[1]}<br>
-                                                            <b><span style="color: #51f086">C:</span></b></span> ${unit.Skills[2]}`;
-    document.getElementById("generatedDuoSkill").innerHTML = ``;
-    if (unit.Rarity == 4) {
-        if (unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> <em>${unit.DuoSkill}</em>`;
-        else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> <em>${unit.DuoSkill}</em>`;
-    }
-
-}
-
-async function Initialise() {
-    await loadAllJSONs();
-    SortSkillJSONIntoLists();
-    SortWeaponJSONIntoLists();
-    GenerateBanner();
-    document.getElementById("generateButton").addEventListener('click', function () {
-        GenerateBanner();
-    });
-
-}
-Initialise();
-
-                </script>
+                    function GetRandom(min, max) //Get random integer between min and max, inclusive
+                    {
+                        return Math.floor(Math.random() * (max - min + 1)) + min;
+                    }
+                    function Shuffle(array) {
+                        let currentIndex = array.length, randomIndex;
+
+                        // While there remain elements to shuffle.
+                        while (currentIndex != 0) {
+
+                            // Pick a remaining element.
+                            randomIndex = Math.floor(Math.random() * currentIndex);
+                            currentIndex--;
+
+                            // And swap it with the current element.
+                            [array[currentIndex], array[randomIndex]] = [
+                                array[randomIndex], array[currentIndex]];
+                        }
+
+                        return array;
+                    }
+
+                    function Capitalise(string) { //Is this seriously not a base Javascript function? Jeez.
+                        return string.charAt(0).toUpperCase() + string.slice(1);
+                    }
+
+                    //I could make both of these into JSONs too but can't be fucked since they're so small
+                    const moveTypes = [
+                        {
+                            Movement: "Infantry",
+                            Tag: "Inf",
+                            Index: 0
+                        },
+                        {
+                            Movement: "Armor",
+                            Tag: "Arm",
+                            Index: 1
+                        },
+                        {
+                            Movement: "Cavalry",
+                            Tag: "Cav",
+                            Index: 2
+                        },
+                        {
+                            Movement: "Flier",
+                            Tag: "Fly",
+                            Index: 3
+                        }
+                    ];
+
+                    const weaponTypes = [
+                        {
+                            Weapon: "Sword",
+                            Tags: ["Red", "Close", "Melee"],
+                            Index: 0
+                        },
+                        {
+                            Weapon: "Lance",
+                            Tags: ["Blue", "Close", "Melee"],
+                            Index: 0
+                        },
+                        {
+                            Weapon: "Axe",
+                            Tags: ["Green", "Close", "Melee"],
+                            Index: 0
+                        },
+                        {
+                            Weapon: "Dragon",
+                            Tags: ["Random", "Close", "Dragon"],
+                            Index: 4
+                        },
+                        {
+                            Weapon: "Beast",
+                            Tags: ["Random", "Close", "Beast"],
+                            Index: 5
+                        },
+                        {
+                            Weapon: "Tome",
+                            Tags: ["Random", "Tome", "Ranged"],
+                            Index: 1
+                        },
+                        {
+                            Weapon: "Bow",
+                            Tags: ["Random", "Bow", "Missile", "Ranged"],
+                            Index: 2
+                        },
+                        {
+                            Weapon: "Dagger",
+                            Tags: ["Random", "Dagger", "Missile", "Ranged"],
+                            Index: 2
+                        },
+                        {
+                            Weapon: "Staff",
+                            Tags: ["Colorless", "Staff", "Ranged"],
+                            Index: 3
+                        }
+                    ];
+
+                    //Pretty sure I found these functions on StackOverflow, but I lost the link. Very sorry.
+                    async function getJSON(jsonFile) {
+                        return fetch(jsonFile)
+                            .then((response) => response.json())
+                            .then((responseJson) => { return responseJson });
+                    }
+                    async function caller(jsonFile) {
+                        var json = await this.getJSON(jsonFile);
+                        return json;
+                    }
+
+                    async function loadAllJSONs() {
+                        console.log("Loading JSON files");
+                        console.log("Characters");
+                        charactersJSON = await caller("./Characters.json");
+                        console.log("SeasonalThemes");
+                        themesJSON = await caller("./SeasonalThemes.json");
+                        console.log("Extras");
+                        extrasJSON = await caller("./GameIcons/new_file.json");
+                        console.log("Skills");
+                        skillsJSON = await caller("./Skills.json");
+                        console.log("Classes");
+                        statsJSON = await caller("./Classes.json");
+                        console.log("WeaponConditions");
+                        conditionsJSON = await caller("./WeaponConditions.json");
+                        console.log("WeaponEffects");
+                        effectsJSON = await caller("./WeaponEffects.json");
+                        console.log("Loading JSONs complete");
+
+                    }
+
+                    //=================================GENERATE CHARACTER================================
+
+                    function GenerateCharacter(hero, hero2, theme, rarity, chaosMode) {
+                        //The character's name and subtitle get separated here, so we can manipulate the title without affecting the character's name
+                        heroName = hero.Hero.substring(0, hero.Hero.indexOf(":"));
+                        heroTitle = hero.Hero.substring(hero.Hero.indexOf(":") + 2).split(" ");
+                        var statmod = hero.StatMod;
+
+                        if (theme.Event == "Dancers" && !chaosMode) statmod = "Dancer";
+                        //This won't come into play until later, but we do it now so we can access it any time we want.
+
+                        var genderArray;
+                        //The gender array is specifically for splitting apart prefixes or suffixes with different versions based on the gender of the character.
+
+                        if (rarity != 4) {
+                            if (Math.random() > 0.5) //Choose a suffix for the seasonal title
+                            {
+                                if (heroTitle.length > 1) {
+                                    var suffix = ChooseRandom(theme.Suffixes);
+                                    //Check if the second word in the base subtitle is a two letter word, usually "of"
+                                    //If it is, we don't want to use a subtitle that has a space in it since those are usually formatted as "of <PLACE /TIME>"
+                                    //We don't want something like "Hero of of Sand"
+                                    while (heroTitle[heroTitle.length - 2].length == 2 && suffix.includes(" "))
+                                        suffix = ChooseRandom(theme.Suffixes);
+                                    //Create the new title
+                                    if (suffix.includes("/")) {
+                                        genderArray = suffix.split("/");
+
+                                        //Yeah, I know there's a better way to do this, but I'm lazy and it's functional.
+                                        if (hero.Gender == "M") suffix = genderArray[0];
+                                        else if (hero.Gender == "F") suffix = genderArray[1];
+                                        else suffix = genderArray[2];
+                                        if (chaosMode) suffix = ChooseRandom(genderArray);
+                                    }
+                                    heroTitle.splice(heroTitle.length - 1, 1, suffix);
+                                }
+                                else //If the subtitle is only a single word long, we can just attach the suffix with no issue
+                                {
+                                    var suffix = ChooseRandom(theme.Suffixes);
+                                    if (suffix.includes("/")) {
+                                        genderArray = suffix.split("/");
+                                        if (hero.Gender == "M") suffix = genderArray[0];
+                                        else if (hero.Gender == "F") suffix = genderArray[1];
+                                        else suffix = genderArray[2];
+                                        if (chaosMode) suffix = ChooseRandom(genderArray);
+                                    }
+                                    heroTitle.splice(heroTitle.length - 1, 0, suffix);
+                                }
+                            }
+                            else { //Choose a prefix for the title instead
+                                if (heroTitle.length > 1) {
+                                    //Check if the second word in the base subtitle is a two letter word, usually "of"
+                                    //If it is, we choose to put a suffix at the start of the subtitle instead of a prefix so it can make grammatical sense
+                                    if (heroTitle[1].length == 2) {
+                                        //Check if the suffix starts with a lower case letter, implying it's something like 'of' or 'at'
+                                        suffix = ChooseRandom(theme.Suffixes);
+                                        while (suffix.substring(0, 1) != suffix.substring(0, 1).toUpperCase()) {
+                                            suffix = ChooseRandom(theme.Suffixes);
+                                        }
+                                        if (suffix.includes("/")) {
+                                            genderArray = suffix.split("/");
+                                            if (hero.Gender == "M") suffix = genderArray[0];
+                                            else if (hero.Gender == "F") suffix = genderArray[1];
+                                            else suffix = genderArray[2];
+                                            if (chaosMode) suffix = ChooseRandom(genderArray);
+                                        }
+                                        heroTitle.splice(0, 1, suffix);
+                                    }
+                                    else {
+                                        var prefix = ChooseRandom(theme.Prefixes);
+                                        if (prefix.includes("/")) {
+                                            genderArray = prefix.split("/");
+                                            if (hero.Gender == "M") prefix = genderArray[0];
+                                            else if (hero.Gender == "F") prefix = genderArray[1];
+                                            else prefix = genderArray[2];
+                                            if (chaosMode) prefix = ChooseRandom(genderArray);
+                                        }
+                                        heroTitle.splice(0, 1, prefix);
+                                    }
+                                }
+                                else //If the subtitle is only a single word long, we can just attach the prefix with no issue
+                                {
+                                    var prefix = ChooseRandom(theme.Prefixes);
+                                    if (prefix.includes("/")) {
+                                        genderArray = prefix.split("/");
+                                        if (hero.Gender == "M") prefix = genderArray[0];
+                                        else if (hero.Gender == "F") prefix = genderArray[1];
+                                        else prefix = genderArray[2];
+                                        if (chaosMode) prefix = ChooseRandom(genderArray);
+                                    }
+                                    heroTitle.splice(0, 0, prefix);
+                                }
+                            }
+                        }
+                        else { //If the hero is a Duo or Harmonic, we combine a Prefix and Suffix for them and just ditch the original title altogether
+
+                            var prefix = ChooseRandom(theme.Prefixes);
+                            if (prefix.includes("/")) //In this case, gender splitting will also yield the gender-neutral term if both characters are different genders (or both non-binary)
+                            {
+                                genderArray = prefix.split("/");
+                                if (hero.Gender == "M" && hero2.Gender == "M") prefix = genderArray[0];
+                                else if (hero.Gender == "F" && hero2.Gender == "F") prefix = genderArray[1];
+                                else prefix = genderArray[2];
+                                if (chaosMode) prefix = ChooseRandom(genderArray);
+                            }
+                            var suffix = ChooseRandom(theme.Duos);
+                            if (suffix.includes("/")) {
+                                genderArray = suffix.split("/");
+                                if (hero.Gender == "M" && hero2.Gender == "M") suffix = genderArray[0];
+                                else if (hero.Gender == "F" && hero2.Gender == "F") suffix = genderArray[1];
+                                else suffix = genderArray[2];
+                                if (chaosMode) suffix = ChooseRandom(genderArray);
+                            }
+                            heroTitle = [prefix, suffix];
+                        }
+
+                        var fullTitle = heroName + ": " + heroTitle.join(" ");
+                        var mvmnt = ChooseRandom(moveTypes);
+                        /* 0 = Sword
+                         * 1 = Lance
+                         * 2 = Axe
+                         * 3 = Dragon
+                         * 4 = Beast
+                         * 5 = Tome
+                         * 6 = Bow
+                         * 7 = Dagger
+                         * 8 = Staff
+                        */
+                        var wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 5, 5, 6, 6, 7, 7, 8])];
+                        if (hero.Race == "Dragon" && Math.random() > 0.3) wpn = weaponTypes[3];
+                        if (hero.Race == "Beast") wpn = weaponTypes[4];
+
+                        //In chaos mode, classes are not limited by the character's race.
+                        if (chaosMode) wpn = weaponTypes[ChooseRandom([0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8])];
+
+                        if (wpn.Tags[0] == "Random") //If the chosen weapon type doesn't have a specific colour, we choose one randomly
+                            wpn.Tags[0] = ChooseRandom(["Red", "Blue", "Green", "Colorless"]);
+                        var gennedCharacter = {
+                            Title: fullTitle,
+                            Filename: hero.Filename,
+                            Game: hero.Game,
+                            Movement: mvmnt,
+                            Weapon: wpn,
+                            StatMod: statmod,
+                            Prfs: hero.Prfs
+                        }
+                        return gennedCharacter;
+                    }
+
+                    //=================================GENERATE CLASS================================
+
+                    function RandomiseGrowths(growths, numberOfIterations) {
+                        //For each iteration, two random stats are chosen to give and receive growth rates.
+                        //The moved amount is a random percentage of the giving stat's original growth rate.
+                        while (numberOfIterations > 0) {
+                            var minusStat = ChooseRandom([0, 1, 2, 3, 4]);
+                            var plusStat = ChooseRandom([0, 1, 2, 3, 4]);
+                            while (plusStat == minusStat) plusStat = ChooseRandom([0, 1, 2, 3, 4]);
+                            var subtraction = Math.random() * growths[minusStat];
+                            //console.log(minusStat + " - " + subtraction + " + " + plusStat);
+                            growths[minusStat] -= subtraction;
+                            growths[plusStat] += subtraction;
+                            numberOfIterations -= 1;
+                        }
+                        return growths;
+                    }
+
+                    function GenerateStats(character, rarity, chaosMode) {
+                        var wpnIndex = character.Weapon.Index;
+                        var mvmIndex = character.Movement.Index;
+
+                        //The class is based off of the movement and weapon type. These factors affect the base stats and growth rates of the class.
+                        var classIndex = wpnIndex + (mvmIndex * 6);
+                        var thisClass = JSON.parse(JSON.stringify(statsJSON[classIndex]));
+
+                        let sum = 0;
+
+                        //We get the number of 'points' each character has for stat allocation by subtracting the starting stats from their BST
+                        for (let i = 0; i < thisClass.MinStats.length; i++) {
+                            sum += thisClass.MinStats[i];
+                        }
+                        if (chaosMode) sum = 5; //In chaos mode, every stat starts at 1 instead of the class' respective minimum.
+                        let points = ChooseRandom(thisClass.BST) - sum;
+
+                        //If the character is a Dancer or Trainee, we need to adjust their points to accomodate
+                        if (character.StatMod == "Dancer") {
+                            points -= 11;
+                        }
+                        if (character.StatMod == "Trainee") points += 5;
+
+                        //Generate the character's base growth rates based on their class' average change in stats from min to max
+                        var rates = [0, 0, 0, 0, 0];
+                        var stats = thisClass.MinStats;
+                        var ratesMax = 0;
+                        for (let i = 0; i < rates.length; i++) {
+                            rates[i] = thisClass.MaxStats[i] - thisClass.MinStats[i];
+                            ratesMax += rates[i];
+                        }
+                        //The final growth rates are 5 decimal numbers that all add up to 1
+                        for (let i = 0; i < rates.length; i++) {
+                            rates[i] = rates[i] / ratesMax;
+                        }
+                        if (chaosMode) {
+                            rates = [0.2, 0.2, 0.2, 0.2, 0.2];
+                            stats = [1, 1, 1, 1, 1];
+                        }
+
+
+                        //Randomise the growths. This is done by taking a randomly sized chunk out of one stat growth and adding it to another. By default, this is done for 5 different stats.
+                        rates = RandomiseGrowths(rates, 5);
+                        //In chaos mode, we do it twice
+                        if (chaosMode) rates = RandomiseGrowths(rates, 5);
+
+                        if (!chaosMode) {
+                            //Decrease the HP growth proportional to the unit's rarity since it's normally so large
+                            var subtraction = Math.random() * rates[0] * (rarity + 1 / 5) * 0.5;
+                            rates[0] -= subtraction;
+                            rates[ChooseRandom([1, 2, 3, 4])] += subtraction;
+
+                            //Increase the atk growth proportional to the unit's rarity since rarer units typically have higher attack stats
+                            var statToSiphon = ChooseRandom([0, 2, 3, 4]);
+                            var addition = Math.random() * rates[statToSiphon] * (rarity + 1 / 5) * 0.5;
+                            rates[statToSiphon] -= addition;
+                            rates[1] += addition;
+                        }
+
+                        //Now we have all the growths, we change it so that instead of all adding up to 1, they incrementally increase from all previous stats to eventually reach 1.
+                        for (let i = 1; i < rates.length; i++) {
+                            rates[i] = rates[i] + rates[i - 1];
+                        }
+
+                        var uncappedStats = false;
+                        if (chaosMode && Math.random() > 0.97) uncappedStats = true; //In chaos mode, there's a 3% chance of upper stat limits getting removed.
+                        while (points > 0) {
+                            //For every point, we get a random decimal between 0 and 1. Wherever that decimals falls on the growth scale, that respective stat gets the point (unless that stat is already maxed out).
+                            chosenStat = Math.random();
+                            for (let i = 0; i < rates.length; i++) {
+                                if (chosenStat < rates[i] && (stats[i] < thisClass.MaxStats[i] || uncappedStats)) {
+                                    stats[i] += 1;
+                                    points -= 1;
+                                    break;
+                                }
+                            }
+                        }
+                        console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
+                        return stats;
+                    }
+
+                    //=================================GENERATE SKILLS================================
+                    const rareASkills = [];
+                    const commonASkills = [];
+                    const allASkills = [];
+
+                    const rareBSkills = [];
+                    const commonBSkills = [];
+                    const allBSkills = [];
+
+                    const rareCSkills = [];
+                    const commonCSkills = [];
+                    const allCSkills = [];
+
+                    const rareAssistSkills = [];
+                    const commonAssistSkills = [];
+                    const allAssistSkills = [];
+
+                    const rareSpecialSkills = [];
+                    const commonSpecialSkills = [];
+                    const allSpecialSkills = [];
+
+                    function FillList(entry, list, slot, rarity) {
+                        //For filling the above lists according to the skill's attributes
+                        if (entry.Slot == slot && entry.Exclusivity.includes(rarity)) {
+                            var weightCount = entry.Weight;
+                            while (weightCount > 0) {
+                                list.push(entry);
+                                weightCount -= 1;
+                            }
+                        }
+                        return list;
+                    }
+
+                    function SortSkillJSONIntoLists() {
+                        skillsJSON.forEach(function (entry) {
+                            FillList(entry, rareASkills, "A", "R");
+                            FillList(entry, commonASkills, "A", "C");
+                            FillList(entry, allASkills, "A", "");
+
+                            FillList(entry, rareBSkills, "B", "R");
+                            FillList(entry, commonBSkills, "B", "C");
+                            FillList(entry, allBSkills, "B", "");
+
+                            FillList(entry, rareCSkills, "C", "R");
+                            FillList(entry, commonCSkills, "C", "C");
+                            FillList(entry, allCSkills, "C", "");
+
+                            FillList(entry, rareAssistSkills, "Assist", "R");
+                            FillList(entry, commonAssistSkills, "Assist", "C");
+                            FillList(entry, allAssistSkills, "Assist", "");
+
+                            FillList(entry, rareSpecialSkills, "Special", "R");
+                            FillList(entry, commonSpecialSkills, "Special", "C");
+                            FillList(entry, allSpecialSkills, "Special", "");
+                        });
+                    }
+
+                    function CheckSkillForTags(skill, tags) {
+                        //Each skill has tags that dictate what unit types cannot have this skill equipped
+                        var invalid = false;
+                        for (let i = 0; i < tags.length; i++) {
+                            if (skill.includes(tags[i]))
+                                invalid = true;
+                        };
+                        return invalid;
+                    }
+
+                    function FillInWords(skill, colour, weapon, move) {
+                        skill = skill.replace(/<1STAT>/g, ChooseRandom(["Atk", "Spd", "Def", "Res"]));
+
+                        skill = skill.replace(/<2STATS>/g, ChooseRandom(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]));
+
+                        skill = skill.replace(/<2S>/g, ChooseRandom(["A/S", "A/D", "A/R", "S/D", "S/R", "D/R"]));
+
+                        skill = skill.replace(/<2NAMEEP>/g, ChooseRandom(["Kestrel", "Sturdy", "Mirror", "Steady", "Swift", "Bracing"]));
+                        skill = skill.replace(/Steady Stance/g, "Steady Posture");
+
+                        skill = skill.replace(/<1NAMEEP>/g, ChooseRandom(["Fierce", "Darting", "Steady", "Warding"]));
+
+                        skill = skill.replace(/<1NAMEPP>/g, ChooseRandom(["Death", "Darting", "Warding", "Armored"]));
+
+                        skill = skill.replace(/<ELEMENT>/g, ChooseRandom(["Fire", "Wind", "Water", "Earth"]));
+
+                        skill = skill.replace(/<CLASSDUEL>/g, colour.charAt(0) + " Duel " + move.Movement);
+
+                        if (move == "Flying")
+                            skill = skill.replace(/<MISSILE>/g, "Dagger");
+                        else
+                            skill = skill.replace(/<MISSILE>/g, ChooseRandom(["Bow", "Dagger"]));
+
+                        if (colour == "Red") {
+                            skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Axe"]));
+                            skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "G. Tome"]));
+                        }
+                        else if (colour == "Blue") {
+                            skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Lance"]));
+                            skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "B. Tome"]));
+                        }
+                        else if (colour == "Green") {
+                            skill = skill.replace(/<MELEE>/g, ChooseRandom(["Axe", "Lance"]));
+                            skill = skill.replace(/<TOME>/g, ChooseRandom(["G. Tome", "B. Tome"]));
+                        }
+                        else if (colour == "Colorless") {
+                            skill = skill.replace(/<MELEE>/g, ChooseRandom(["Sword", "Axe", "Lance"]));
+                            skill = skill.replace(/<TOME>/g, ChooseRandom(["R. Tome", "G. Tome", "B. Tome"]));
+                        }
+
+                        skill = skill.replace(/<DANCE>/g, ChooseRandom(["Caldera Dance 2", "Blaze Dance 3", "Deluge Dance 2", "Earth Dance 3", "Fireflood Dance 2", "Firestorm Dance 2", "Gale Dance 3", "Geyser Dance 2", "Rockslide Dance 2", "Torrent Dance 3"]));
+
+                        skill = skill.replace(/<WEAPON>/g, weapon.Weapon);
+
+                        return skill;
+                    }
+
+                    function GenerateSkills(character, rarityInt, chaosMode) {
+                        var move = character.Movement;
+                        var weapon = character.Weapon;
+                        var rarity = "C";
+                        if (rarityInt > 1) rarity = "R"; //Premium units get rare skills
+                        var tags = weapon.Tags;
+
+                        tags.push(move.Tag);
+
+                        var skills;
+                        var skill;
+                        var unitSkills = [];
+
+                        //A list of skills is chosen based on the unit's rarity
+                        skills = (rarity == "C") ? commonASkills : rareASkills;
+                        //In chaos mode, all skills are on the table
+                        if (chaosMode) skills = allASkills;
+                        do {
+                            skill = ChooseRandom(skills);
+                        } while (CheckSkillForTags(skill.Restrictions, tags));
+                        unitSkills.push(skill.Skill);
+
+                        skills = (rarity == "C") ? commonBSkills : rareBSkills;
+                        if (rarityInt == 1 && Math.random() > 0.5) skills = rareBSkills;
+                        if (chaosMode) skills = allBSkills;
+                        do {
+                            skill = ChooseRandom(skills);
+                        } while (CheckSkillForTags(skill.Restrictions, tags));
+
+                        //Non dancers shouldnt get dancer skills but there's no in-built restriction for that so I had to make a specific case to handle it
+                        while (character.StatMod != "Dancer" && (skill.Skill.includes("Cantrip") || skill.Skill.includes("<DANCE>")) && !chaosMode) {
+                            skill = ChooseRandom(skills);
+                            while (CheckSkillForTags(skill.Restrictions, tags)) skill = ChooseRandom(skills);
+                        }
+                        unitSkills.push(skill.Skill);
+
+                        skills = (rarity == "C") ? commonCSkills : rareCSkills;
+                        if (chaosMode) skills = allCSkills;
+                        do {
+                            skill = ChooseRandom(skills);
+                        } while (CheckSkillForTags(skill.Restrictions, tags));
+                        unitSkills.push(skill.Skill);
+
+                        skills = (rarity == "C") ? commonAssistSkills : rareAssistSkills;
+                        if (rarityInt == 1 && Math.random() > 0.5) skills = rareAssistSkills;
+                        if (chaosMode) skills = allAssistSkills;
+                        do {
+                            skill = ChooseRandom(skills);
+                        } while (CheckSkillForTags(skill.Restrictions, tags));
+                        unitSkills.push(skill.Skill);
+
+                        skills = (rarity == "C") ? commonSpecialSkills : rareSpecialSkills;
+                        if (chaosMode) skills = allSpecialSkills;
+                        do {
+                            skill = ChooseRandom(skills);
+                        } while (CheckSkillForTags(skill.Restrictions, tags));
+                        unitSkills.push(skill.Skill);
+
+                        for (let i = 0; i < unitSkills.length; i++) {
+                            unitSkills[i] = FillInWords(unitSkills[i], tags[0], weapon, move);
+                        }
+
+                        //Staff units should always have an assist skill
+                        if (weapon.Weapon == "Staff" && !chaosMode) {
+                            if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+                                unitSkills[GetRandom(0, 2)] = "";
+                            }
+                            else {
+                                unitSkills[4] = "";
+                            }
+                            if (character.StatMod == "Dancer") {
+                                unitSkills[3] = "Anew";
+                            }
+                        }
+                        else if (character.StatMod == "Dancer" && !chaosMode) { //Dancers should always have their dance skill
+                            unitSkills[3] = ChooseRandom(["Dance", "Sing", "Play"]);
+                            unitSkills[4] = "";
+                            if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+                                unitSkills[GetRandom(0, 2)] = "";
+                            }
+                        }
+                        else {
+                            if (rarityInt <= 1 || (rarityInt == 2 && Math.random() > 0.5)) {
+                                unitSkills[GetRandom(0, 2)] = "";
+                            }
+                            unitSkills[GetRandom(3, 4)] = "";
+                        }
+                        if (character.Prfs.length > 0 && !chaosMode) {//Add prf skills if they exist
+                            prfs = Shuffle(character.Prfs);
+                            usedPrfSlots = [];
+                            prfOdds = 1.0;
+                            for (let i = 0; i < prfs.length; i++) {//For each prf skill in the character's skills, we want a chance at adding each of them. Obviously no overlap with other prf skills in the same slot
+                                slot = prfs[i].substring(0, prfs[i].indexOf(":"));
+                                skillName = prfs[i].substring(prfs[i].indexOf(":") + 1);
+                                if (!usedPrfSlots.includes(slot) && Math.random() < (prfOdds / (usedPrfSlots.length + 1))) {//Odds start at 80%, then 40%, then 27%, 20%, and 16% for the hypothetical character with a prf skill in each slot.
+                                    usedPrfSlots.push(slot);
+                                    if (slot == "A") unitSkills[0] = skillName;
+                                    if (slot == "B") unitSkills[1] = skillName;
+                                    if (slot == "C") unitSkills[2] = skillName;
+                                    if (slot == "Assist") {
+                                        if (character.StatMod != "Dancer")
+                                            unitSkills[3] = skillName;
+                                        else if (character.StatMod == "Dancer" && (skillName.includes("Gray Waves") || skillName.includes("Dream") || skillName.includes("Call to Flame")))
+                                            unitSkills[3] = skillName;
+                                    }
+                                    if (slot == "Special") unitSkills[4] = skillName;
+                                }
+
+                            }
+                        }
+                        return unitSkills;
+                    }
+
+
+                    //=================================GENERATE WEAPON================================
+                    const innateEffects = [];
+                    const startOfTurnEffects = [];
+                    const startOfCombatEffects = [];
+                    const duringCombatEffects = [];
+                    const endOfCombatEffects = [];
+                    const foeInitiatesEffects = [];
+                    const unitInitiatesEffects = [];
+                    const grantEffects = [];
+                    const assistEffects = [];
+                    const negativeEffects = [];
+
+                    const startOfTurnConditions = [];
+                    const startOfCombatConditions = [];
+                    const duringCombatConditions = [];
+                    const endOfCombatConditions = [];
+
+                    //These functions fill the above lists with the appropriate effects and conditions
+                    function FillTaggedList(entry, list, tag) {
+                        if (entry.Tags.includes(tag)) {
+                            var weightCount = entry.Weight;
+                            while (weightCount > 0) {
+                                list.push({
+                                    Effect: entry.Effect,
+                                    PointWorth: entry.PointWorth
+                                });
+                                weightCount -= 1;
+                            }
+                        }
+                        return list;
+                    }
+                    function FillTaggedConds(entry, list, tag) {
+                        if (entry.Tags.includes(tag)) {
+                            var weightCount = entry.Weight;
+                            while (weightCount > 0) {
+                                list.push(entry.Effect);
+                                weightCount -= 1;
+                            }
+                        }
+                        return list;
+                    }
+
+                    function SortWeaponJSONIntoLists() {
+                        effectsJSON.forEach(function (entry) {
+                            FillTaggedList(entry, innateEffects, "innate");
+                            FillTaggedList(entry, grantEffects, "grant");
+                            FillTaggedList(entry, startOfTurnEffects, "turn_start");
+                            FillTaggedList(entry, startOfCombatEffects, "combat_start");
+                            FillTaggedList(entry, duringCombatEffects, "during_combat");
+                            FillTaggedList(entry, endOfCombatEffects, "combat_end");
+
+                            FillTaggedList(entry, foeInitiatesEffects, "foe_initiates");
+                            FillTaggedList(entry, unitInitiatesEffects, "unit_initiates");
+                            FillTaggedList(entry, assistEffects, "assist");
+                            FillTaggedList(entry, negativeEffects, "negative");
+                        });
+
+                        conditionsJSON.forEach(function (entry) {
+                            FillTaggedConds(entry, startOfTurnConditions, "turn_start");
+                            FillTaggedConds(entry, startOfCombatConditions, "combat_start");
+                            FillTaggedConds(entry, duringCombatConditions, "during_combat");
+                            FillTaggedConds(entry, endOfCombatConditions, "combat_end");
+                        });
+                    }
+
+                    function FillInTags(line, rarity, unitClass = "") {
+                        //Weapons effects and conditions have a LOT of tags that need to be filled in. This function handles most of them, with some extra cases handled elsewhere for some reason or another
+                        var chaosMode = document.getElementById("chaosCheck").checked;
+
+                        var bonusList = ["【Move+1】", "【Guidance】", "【Bonus Doubler】",
+                            "【Neutralize <CLASS> Effectiveness】",
+                            "【Dominance】", "【Desperation】", "【Vantage】",
+                            "【Deny Follow-ups】", "【Dodge】", "【Guaranteed Follow-ups】",
+                            "【Triangle Attack】", "【Null Panic】", "【Cancel Affinity】",
+                            "【Null Follow-up】", "【Pathfinder】", "【Fallen Star】",
+                            "【Neutralize Foe Bonuses】", "【Grand Strategy】",
+                            "【En Garde】", "【Accelerate Special】", "【Treachery】",
+                            "【Warp Bubble】", "【Charge】"];
+                        var penaltyList = ["【Gravity】", "【Panic】", "【Flash】", "【Triangle Adept】",
+                            "【Guard】", "【Isolation】", "【Deep Wounds】", "【Stall】",
+                            "【Canto Control】", "【Exposure】"];
+                        var bonusAndPenaltyList = bonusList.concat(penaltyList);
+
+                        var array = Shuffle(grantEffects);
+                        line = line.replace(/<GRANT>/g, array[0].Effect);
+                        line = line.replace(/<GRANT2>/g, array[1].Effect);
+                        line = line.replace(/<GRANT3>/g, array[2].Effect);
+
+                        array = Shuffle(["Atk", "Spd", "Def", "Res"]);
+                        line = line.replace(/<STAT>/g, array[0]);
+                        line = line.replace(/<STAT2>/g, array[1]);
+
+                        array = Shuffle(["75%", "50%", "25%", "40%", "60%", "80%"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 99).toString() + "%"; array[1] = GetRandom(1, 99).toString() + "%"; }
+                        line = line.replace(/<PERCENT>/g, array[0]);
+                        line = line.replace(/<PERCENT2>/g, array[1]);
+
+                        array = Shuffle(["10%", "15%", "20%", "25%", "30%"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 35).toString() + "%"; array[1] = GetRandom(1, 35).toString() + "%"; }
+                        line = line.replace(/<LOWPERCENT>/g, array[0]);
+                        line = line.replace(/<LOWPERCENT2>/g, array[1]);
+
+                        array = Shuffle(["1", "2", "2", "3", "3", "3", "4", "4", "5", "6", "7"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
+                        line = line.replace(/<INT>/g, array[0]);
+                        line = line.replace(/<INT2>/g, array[1]);
+
+                        array = Shuffle(["1", "2", "3"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 5).toString(); array[1] = GetRandom(1, 5).toString(); }
+                        line = line.replace(/<LOWINT>/g, array[0]);
+                        line = line.replace(/<LOWINT2>/g, array[1]);
+
+                        array = Shuffle(["1", "3", "3", "5", "5", "7", "7", "9"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 10).toString(); array[1] = GetRandom(1, 10).toString(); }
+                        line = line.replace(/<ODDINT>/g, array[0]);
+                        line = line.replace(/<ODDINT2>/g, array[1]);
+
+                        array = Shuffle(["7", "10", "15", "20", "25"]);
+                        if (chaosMode) { array[0] = GetRandom(1, 30).toString(); array[1] = GetRandom(1, 30).toString(); }
+                        line = line.replace(/<BINT>/g, array[0]);
+                        line = line.replace(/<BINT2>/g, array[1]);
+
+                        array = Shuffle(bonusList);
+                        if (chaosMode) {
+                            array = Shuffle(bonusAndPenaltyList);
+                        }
+                        line = line.replace(/<BONUS>/g, array[0]);
+                        line = line.replace(/<BONUS2>/g, array[1]);
+
+                        array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast"]);
+                        if (chaosMode) {
+                            array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast", "Staff", "Tome", "Dagger", "Bow", "Sword", "Axe", "Lance", "Melee", "Ranged", "Magic", "Physical"]);
+                        }
+                        line = line.replace(/<CLASS>/g, array[0]);
+                        line = line.replace(/<CLASS2>/g, array[1]);
+
+                        line = line.replace(/<UNITCLASS>/g, unitClass);
+
+                        array = Shuffle(["Sword", "Lance", "Axe", "Beast", "Dragon", "Tome", "Staff", "Bow", "Dagger", "Sword/Lance/Axe"]);
+                        if (chaosMode) {
+                            array = Shuffle(["Infantry", "Armor", "Cavalry", "Flying", "Dragon", "Beast", "Staff", "Tome", "Dagger", "Bow", "Sword", "Axe", "Lance", "Melee", "Ranged", "Magic", "Physical"]);
+                        }
+                        line = line.replace(/<WEAPON>/g, array[0]);
+                        line = line.replace(/<WEAPON2>/g, array[1]);
+
+                        array = Shuffle(penaltyList);
+                        if (chaosMode) {
+                            array = Shuffle(bonusAndPenaltyList);
+                        }
+                        line = line.replace(/<PENALTY>/g, array[0]);
+                        line = line.replace(/<PENALTY2>/g, array[1]);
+
+                        //Higher rarity units have a higher chance of getting effects with a large number of stat bonuses/penalties
+                        array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+                        if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+                        else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+                        else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+                        line = line.replace(/<STATS>/g, array[0]);
+                        line = line.replace(/<STATS2>/g, array[1]);
+
+                        val = GetRandom(2, 5) + Math.ceil(rarity / 2);
+                        if (chaosMode) val = GetRandom(1, 10);
+                        array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+                        if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+                        else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+                        else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+                        line = line.replace(/<ADDSTATS>/g, array[0] + "+" + val);
+                        line = line.replace(/<ADDSTATS2>/g, array[1] + "+" + val);
+
+                        val = GetRandom(2, 5) + Math.ceil(rarity / 2);
+                        if (chaosMode) val = GetRandom(1, 10);
+                        array = Shuffle(["Atk", "Def", "Spd", "Res"]);
+                        if (Math.random() < 0.1 + 0.1 * rarity) array = ["Atk/Spd/Def/Res", "Atk/Spd/Def/Res"];
+                        else if (Math.random() < 0.2 + 0.1 * rarity) array = Shuffle(["Atk/Spd/Def", "Atk/Spd/Res", "Atk/Def/Res", "Spd/Def/Res"]);
+                        else if (Math.random() < 0.3 + 0.1 * rarity) array = Shuffle(["Atk/Spd", "Atk/Def", "Atk/Res", "Spd/Def", "Spd/Res", "Def/Res"]);
+                        line = line.replace(/<MINUSSTATS>/g, array[0] + "-" + val);
+                        line = line.replace(/<MINUSSTATS2>/g, array[1] + "-" + val);
+
+                        line = line.replace(/<EITHER>/g, ChooseRandom(["unit", "foe"]));
+                        line = line.replace(/<HIGHLOW>/g, ChooseRandom(["highest", "lowest"]));
+                        line = line.replace(/<COLOUR>/g, ChooseRandom(["Red", "Green", "Blue", "Colorless"]));
+
+                        array = Shuffle(["【Canto (3)】", "【Canto (2)】", "【Canto (1)】", "【Canto (Rem. +1)】", "【Canto (Rem.)】", ChooseRandom(["【Canto (Recall)】", "【Canto (Unit 3x3)】", "【Canto (Ally 2)】"])]);
+
+                        if (chaosMode) array = Shuffle(["【Canto (" + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem. + " + GetRandom(1, 5).toString() + ") 】", "【Canto(Rem.) 】", ChooseRandom(["【Canto (Recall)】", "【Canto (Unit " + GetRandom(1, 5).toString() + "x" + GetRandom(1, 5).toString() + ")】", "【Canto (Ally " + GetRandom(1, 5).toString() + ")】"])]);
+                        line = line.replace(/<CANTO>/g, array[0]);
+
+                        if (chaosMode && Math.random() > 0.99) //I don't actually know if this code works lol, I forgot to test it and it's such a rare case to happen naturally. It prooobably works?
+                        {
+                            line = line.replace(/foes/g, "<TEMP>");
+                            line = line.replace(/allies/g, "foes");
+                            line = line.replace(/<TEMP>/g, "allies");
+
+                            line = line.replace(/foe/g, "<TEMP>");
+                            line = line.replace(/target/g, "<TEMP>");
+                            line = line.replace(/unit/g, "foe");
+                            line = line.replace(/ally/g, "foe");
+                            line = line.replace(/<TEMP>/g, "unit");
+                        }
+                        if (chaosMode) line = line.replace(/max 3/g, "max " + GetRandom(1, 7).toString());
+                        return line;
+                    }
+
+                    function SortTwoLists(orderedList, affectedList) {
+                        //https://stackoverflow.com/questions/11499268/sort-two-arrays-the-same-way
+
+                        //1) combine the arrays:
+                        var list = [];
+                        for (var j = 0; j < orderedList.length; j++)
+                            list.push({ 'ord': orderedList[j], 'aff': affectedList[j] });
+
+                        //2) sort:
+                        list.sort(function (a, b) {
+                            return ((a.ord < b.ord) ? -1 : ((a.ord == b.ord) ? 0 : 1));
+                        });
+
+                        //3) separate them back out:
+                        for (var k = 0; k < list.length; k++) {
+                            orderedList[k] = list[k].ord;
+                            affectedList[k] = list[k].aff;
+                        }
+                        //Whoops, Javascript can't return multiple variables because it's a shitty language.
+                        //We only need the affected list anyway, so let's just return that instead of fiddling with objects.
+
+                        return affectedList;
+                    }
+                    function GenerateWeapon(rarity, unit, skills, theme, chaosMode) {
+                        var assist = skills[3];
+                        //Points refer to how many effects the unit's weapon can include. Higher rarities get more points, obviously
+                        var points = 1 + rarity;
+                        if (points > 1)
+                            points += ChooseRandom([-1, 0, 0, 0, 1]);
+                        if (points == 1) points += 1;
+                        var initialPoints = points;
+                        var weapon = unit.Weapon.Weapon;
+                        var unitClass = unit.Movement.Movement;
+                        if ((weapon == "Dragon" || weapon == "Beast") && Math.random() > 0.5)
+                            unitClass = weapon;
+                        const lines = [];
+                        var innatesGiven = false;
+                        var braveWeapon = false;
+                        var inheritable = false;
+
+                        //Weapon inheritability is guaranteed for tempest trial units, and weapons with only two points
+                        //If the weapon has 3 points and is on any of the TT, demote, or premium 2 unit, then it has a 20% chance of being inheritable
+                        if (rarity <= 2) {
+                            if (initialPoints == 2 || rarity == 0)
+                                inheritable = true;
+                            if (initialPoints == 3 && Math.random() < 0.2)
+                                inheritable = true;
+                        }
+                        //Apply a tax for weapon types with consistently innate effects
+                        if ((weapon == "Staff" && !inheritable) || weapon == "Beast" || weapon == "Dragon") points -= 1;
+
+                        var rawConds;
+                        var rawEffects;
+                        var usedConditions = [];
+
+                        //Ohhhh, the ninja condition. Fuck YOU, ninja condition! This fucking condition is the result of a bunch of edge cases that has made a massive mess out of this function.
+                        //Basically, ninjas attacks twice. That either happens when the unit initiates, or on either phase.
+                        //But if we get the unit initiating one, we need to handle the situation where the unit could ALSO happen to roll an effect that occurs when the unit initiates!
+                        //So we need to handle the case specifically by taking the end of the following string and turning it into the *beginning* of the sentence that explains what happens when the unit initiates combat.
+                        //Fuuuucking hell.
+                        var ninjaString = "Grants Spd+4. Inflicts Def/Res-4. If unit initiates combat, unit attacks twice.";
+                        if (theme == "Ninjas" && !chaosMode) {
+                            var innate1 = ninjaString;
+                            if (Math.random() < 0.25) innate1 = "Inflicts Spd-5. Unit attacks twice.";
+                            points -= 1;
+                            var innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            while (innate2.Effect.includes("nit attacks twice"))//We can't have a second innate effect that ALSO says unit attacks twice, after all.
+                                innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            innate2.Effect = FillInTags(innate2.Effect, rarity, unitClass);
+                            if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+                                lines.push(innate2.Effect + ".");
+                                usedConditions.push(-1);
+                                points -= innate2.PointWorth;
+                            }
+                            lines.push(innate1);
+                            usedConditions.push(-1);
+                            innatesGiven = true;
+                            braveWeapon = true;
+                        }
+                        else if (theme == "Thieves" && !chaosMode) {//The thief canto effect is much easier to handle, since it doesn't have that 'unit initiates combat' nonsense.
+                            var innate1 = "enables <CANTO>";
+                            points -= 1;
+                            var innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            while (innate2.Effect == innate1)
+                                innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+
+                            innate1 = FillInTags(innate1, rarity, unitClass);
+                            innate2.Effect = FillInTags(innate2.Effect, rarity, unitClass);
+
+                            lines.push(innate1 + ".");
+                            usedConditions.push(-1);
+                            if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+                                lines.push(innate2.Effect + ".");
+                                usedConditions.push(-1);
+                                points -= innate2.PointWorth;
+                                if (innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
+                            }
+                            innatesGiven = true;
+                        }
+                        else if (Math.random() < (0.2 + 0.1 * rarity)) { //Innate effects come first. A unit has a higher chance of getting an innate effect at high rarities
+                            var innate1 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            var innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+                            while (innate2 == innate1)
+                                innate2 = ChooseRandomEffect(innateEffects, points, chaosMode);
+
+                            innate1.Effect = FillInTags(innate1.Effect, rarity, unitClass);
+                            innate2.Effect = FillInTags(innate2.Effect, rarity, unitClass);
+
+                            lines.push(innate1.Effect + ".");
+                            usedConditions.push(-1);
+                            points -= innate1.PointWorth;
+                            //Random chance of including the second innate effect, which was already decided upon earlier.
+                            if (Math.random() < (0.1 + 0.05 * rarity) && innate2.PointWorth <= points && innate2.PointWorth != 0) {
+                                lines.push(innate2.Effect + ".");
+                                usedConditions.push(-1);
+                                points -= innate2.PointWorth;
+                                if (innate2.Effect.includes("nit attacks twice")) braveWeapon = true;
+                            }
+                            if (innate1.Effect.includes("nit attacks twice")) braveWeapon = true;
+                            innatesGiven = true;
+                        }
+                        while (points > 0) {
+                            var newLine = "";
+                            //Certain weapon conditions are more common than others. What each of these numbers represent is explained in the switch statement below.
+                            var distribution = [0, 0, 0, 0, 1, 2, 2, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 7, 8, 8];
+                            if ((unit.StatMod == "Dancer" || weapon == "Staff") && !chaosMode) distribution = [0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7, 7, 7, 8, 8, 8];
+
+                            var condition = ChooseRandom(distribution);
+                            while (usedConditions.includes(condition)) {
+                                condition = ChooseRandom(distribution);
+                            }
+
+                            usedConditions.push(condition);
+                            //start of turn, start of turn 1, start of combat, during combat, outside of combat, after combat, positional/rally skill used
+
+                            currentlyHasCondition = false;
+                            unitInitiation = false;
+                            foeInitiation = false;
+                            var conditionsList;
+                            var effectsList;
+                            grantEffect = false;
+                            switch (condition) {
+                                case 0: //Start of any turn
+                                    conditionsList = startOfTurnConditions;
+                                    effectsList = startOfTurnEffects;
+                                    newLine = "At start of turn, ";
+                                    break;
+                                case 1: //Start of odd, even, or first 4 turns
+                                    conditionsList = startOfTurnConditions;
+                                    effectsList = startOfTurnEffects;
+                                    newLine = ChooseRandom(["At start of odd-numbered turns, ", "At start of even-numbered turns, ", "At start of turns 1 through 4, "]);
+                                    break;
+                                case 2: //Unit initiates
+                                    effectsList = startOfCombatEffects.concat(unitInitiatesEffects);
+                                    conditionsList = startOfCombatConditions;
+                                    newLine = "If unit initiates combat, ";
+                                    currentlyHasCondition = true;
+                                    break;
+
+                                case 3: //Foe initiates
+                                    effectsList = startOfCombatEffects.concat(foeInitiatesEffects);
+                                    conditionsList = startOfCombatConditions;
+                                    newLine = "If foe initiates combat, ";
+                                    currentlyHasCondition = true;
+                                    break;
+
+                                case 4: //Start of combat
+                                    effectsList = startOfCombatEffects;
+                                    conditionsList = startOfCombatConditions;
+                                    newLine = "At start of combat, ";
+                                    break;
+
+                                case 5: //During combat
+                                    conditionsList = duringCombatConditions;
+                                    effectsList = duringCombatEffects;
+                                    break;
+                                case 6: //After combat
+                                    conditionsList = endOfCombatConditions;
+                                    effectsList = endOfCombatEffects;
+                                    newLine = "After combat, ";
+                                    break;
+                                case 7: //Assist skill is used. The text will change to reflect the user's default assist skill.
+                                    effectsList = assistEffects;
+                                    var assistString = "";
+                                    if (assist.includes("Rally") || assist.includes("Harsh")) assistString = "Rally";
+                                    else if (unit.StatMod == "Dancer") assistString = "Dance";
+                                    else if (weapon == "Staff") assistString = "healing";
+                                    else assistString = "movement"
+                                    if (chaosMode) assistString = ChooseRandom(["Rally", "Dance", "healing", "movement", "300sp or greater", "150sp or lower"]);
+                                    newLine = ChooseRandom(["If a <ASSIST> Assist skill is used by unit or targets unit, ", "If a <ASSIST> Assist skill is used by unit, "]);
+                                    newLine = newLine.replace(/<ASSIST>/g, assistString);
+                                    break;
+                                case 8: //"Grant" effects. This is for stuff like 'Grants "Unit can counter-attack before foe's first attack" to allies within 2 spaces'
+                                    grantEffect = true;
+                                    break;
+                                default:
+                                    console.log("whoops");
+                                    break;
+                            }
+                            if (grantEffect) {
+                                newLine = FillInTags(ChooseRandom(["grants <ADDSTATS> to allies within 2 spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                    "grants the following effect to allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to unit and allies within 2 spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                    "grants the following effect to unit and allies within 2 spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to allies within <INT> spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+                                    "grants the following effect to allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+                                    "grants <ADDSTATS> to unit and allies within <INT> spaces of unit during combat.",
+                                    "grants <ADDSTATS> and the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\".",
+                                    "grants the following effect to unit and allies within <INT> spaces of unit during combat: \"<GRANT>\"."]), rarity);
+                                points -= 1;
+                                lines.push(newLine);
+                                continue;
+                            }
+                            rawConds = [];
+                            //This entire block is just dedicated to dealing with the "Ninja initiates" clause. Good luck deciphering it, lol.
+                            var ninjaCond = (theme == "Ninjas" && condition == 2 && (lines[0] == ninjaString || lines[1] == ninjaString));
+                            console.log("NinjaCond: " + ninjaCond + " (" + condition + ", " + lines[0] + ", " + lines[1] + ", " + ninjaString);
+                            var ninjaExtraCond = false;
+                            if (ninjaCond) {
+                                currentlyHasCondition = true;
+                                newLine = "";
+                                if (Math.random() < 0.6) {
+                                    var tempCondition = ChooseRandom(conditionsList);
+                                    rawConds.push(tempCondition);
+                                    newLine = ", and also, if " + FillInTags(tempCondition, rarity) + ", ";
+                                    ninjaExtraCond = true;
+                                }
+                            }
+                            else if (Math.random() < 0.75 && condition != 7) { //75% chance that the unit gets one or more conditions associated with this set of effects. Cannot occur if it's an assist-based effect.
+                                if (currentlyHasCondition == true)
+                                    newLine = newLine.slice(0, -2) + ChooseRandom([" or ", " and "]);
+
+                                var tempCondition = ChooseRandom(conditionsList);
+                                rawConds.push(tempCondition);
+                                //The following condition hopefully prevents us from getting situations where our HP needs to be below and above certain thresholds, which can be impossible to meet
+                                if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
+                                else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
+                                newLine = newLine + "if " + FillInTags(tempCondition, rarity);
+                                //60% chance of having a second condition
+                                if (currentlyHasCondition == false && Math.random() < 0.6) {
+                                    newLine = newLine + ChooseRandom([" or ", " or ", " and "]);
+                                    tempCondition = ChooseRandom(conditionsList);
+                                    while (rawConds.includes(tempCondition))
+                                        tempCondition = ChooseRandom(conditionsList);
+                                    rawConds.push(tempCondition);
+                                    if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
+                                    else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
+                                    newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
+                                }
+                                else
+                                    newLine = newLine + ", ";
+                            }
+                            var firstHalfEffects = [];
+                            var secondHalfEffects = [];
+                            rawEffects = [];
+                            var tempEffect;
+                            //Generate a list of weapon effects for as long as the points satisfy the effect, and random chance dictates it.
+                            do {
+                                tempEffect = ChooseRandomEffect(effectsList, points, chaosMode);
+                                while (rawEffects.includes(tempEffect.Effect))
+                                    tempEffect = ChooseRandomEffect(effectsList, points, chaosMode);
+                                points -= tempEffect.PointWorth;
+                                firstHalfEffects.push(tempEffect.Effect);
+                                rawEffects.push(tempEffect.Effect);
+
+                            } while (points > 0 && Math.random() < (0.4 + rarity * 0.1 - firstHalfEffects.length * 0.1) && condition != 7);
+
+                            //Generate another list for the second half of the line, assuming we have the points for it.
+                            while (points > 0 && Math.random() < (0.4 + rarity * 0.05 - secondHalfEffects.length * 0.05) && condition != 7 && !ninjaCond) {
+
+                                tempEffect = ChooseRandomEffect(effectsList, points, chaosMode);
+                                while (rawEffects.includes(tempEffect.Effect))
+                                    tempEffect = ChooseRandomEffect(effectsList, points, chaosMode);
+                                points -= tempEffect.PointWorth;
+                                secondHalfEffects.push(tempEffect.Effect);
+                                rawEffects.push(tempEffect.Effect);
+                            }
+
+                            //Negative conditions have a low chance of happening, but they can give the weapon an additional point at the cost of a negative effect being inflicted on the user and/or their allies after combat.
+                            var hasNegative = false;
+                            if (points == 0 && (condition >= 2 && condition <= 5) && Math.random() > 0.95) {
+                                hasNegative = true;
+                                tempEffect = ChooseRandom(effectsList);
+                                while (rawEffects.includes(tempEffect.Effect) || tempEffect.PointWorth > 1)
+                                    tempEffect = ChooseRandom(effectsList);
+                                if (secondHalfEffects.length > 0)
+                                    secondHalfEffects.push(tempEffect.Effect);
+                                else
+                                    firstHalfEffects.push(tempEffect.Effect);
+                            }
+
+                            //Surprise! It's MORE FUCKING HANDLING of the ninja condition!
+                            for (let i = 0; i < firstHalfEffects.length; i++) {
+                                if (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 2 && i == 0) {
+                                    //This is the worst condition I've ever written but it's 12:40am, I'm exhausted, and it's for dealing with one specific edge case
+                                    newLine = newLine + ", ";
+                                }
+                                if (i != 0 && firstHalfEffects.length != 2)//If there are more than two entries, comma between them
+                                    newLine = newLine + ", ";
+                                if (i == 1 && firstHalfEffects.length == 2 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//If there are only two entries, no comma between first and second
+                                    newLine = newLine + " ";
+                                if (i == firstHalfEffects.length - 1 && firstHalfEffects.length != 1 || (ninjaCond && !ninjaExtraCond && firstHalfEffects.length == 1))//Last entry, add an and
+                                    newLine = newLine + "and ";
+                                newLine = newLine + FillInTags(firstHalfEffects[i], rarity);
+                            }
+
+                            if (condition == 5)
+                                newLine = newLine + " during combat";
+                            if (secondHalfEffects.length > 0) { //If the second half of our line has effects, continue filling out the line with grammatical correctyness.
+                                newLine = newLine + ", and also, if ";
+                                tempCondition = ChooseRandom(conditionsList);
+                                while (rawConds.includes(tempCondition))
+                                    tempCondition = ChooseRandom(conditionsList);
+                                rawConds.push(tempCondition);
+                                if (tempCondition.includes("≥")) rawConds.push(tempCondition.replace(/≥/g, "≤"));
+                                else if (tempCondition.includes("≤")) rawConds.push(tempCondition.replace(/≤/g, "≥"));
+                                newLine = newLine + FillInTags(tempCondition, rarity) + ", ";
+
+                                for (let i = 0; i < secondHalfEffects.length; i++) {
+                                    if (i != 0 && secondHalfEffects.length != 2)
+                                        newLine = newLine + ", ";
+                                    if (i == 1 && secondHalfEffects.length == 2)
+                                        newLine = newLine + " ";
+                                    if (i == secondHalfEffects.length - 1 && secondHalfEffects.length != 1)
+                                        newLine = newLine + "and ";
+                                    newLine = newLine + FillInTags(secondHalfEffects[i], rarity);
+                                }
+                            }
+                            if (hasNegative) {
+                                newLine = newLine + ", but after combat, ";
+                                if (Math.random() > 0.5) newLine = newLine + "if unit attacked, "
+                                newLine = newLine + FillInTags(ChooseRandom(negativeEffects).Effect, rarity);
+                            }
+
+                            newLine = newLine + ".";
+                            if (!ninjaCond)
+                                lines.push(newLine);
+                            else { //Final part of the Ninja condition handler. This makes the 'unit initiates combat' line make grammatical sense by combining it with the ninja effect.
+                                if (lines[0] == ninjaString) {
+                                    lines[0] = ninjaString.slice(0, -1) + newLine;
+                                }
+                                else if (lines[1] == ninjaString) {
+                                    lines[1] = ninjaString.slice(0, -1) + newLine;
+                                }
+                            }
+                        }
+
+                        //Weapon text in feh generally follows a natural order. This block rearranges all the generated lines to roughly fit that order.
+                        SortTwoLists(usedConditions, lines);
+                        for (index = 0; index < lines.length; index++) {
+                            console.log("LINE: " + lines[index]);
+                            if (lines[index] == null) lines[index] = "";
+                            lines[index] = Capitalise(lines[index]);
+                        }
+                        //Weapon might is 16 by default. We gradually take away might for specific cases.
+                        var mtVal = 16;
+                        if (weapon == "Staff") {
+                            mtVal -= 2;
+                            if (!inheritable)
+                                lines.splice(0, 0, ChooseRandom(["Foe cannot counterattack. ", "Calculates damage from staff like other weapons. "]));
+
+                        }
+                        if (weapon == "Beast") {
+                            lines.push("Effect: 【Beast (" + unit.Movement.Movement + ")】 ");
+                            mtVal -= 2;
+                        }
+                        if (weapon == "Dagger") {
+                            lines.push("Effect: 【Dagger 7】 ");
+                            mtVal -= 2;
+                        }
+                        if (weapon == "Dragon") {
+                            lines.push("If foe's Range = 2, calculates damage using the lower of foe's Def or Res. ");
+                        }
+                        if (weapon == "Bow") {
+                            lines.splice(0, 0, "Effective against Fliers. ");
+                            mtVal -= 2;
+                        }
+
+                        if (weapon == "Tome") mtVal -= 2;
+                        if (braveWeapon) mtVal -= 5;
+
+                        if (chaosMode) {
+                            mtVal = ChooseRandom([7, 8, 9, 10, 11, 12, 12, 13, 14, 14, 14, 15, 16, 16, 16, 17, 18, 19, 20]);
+                            if (Math.random() < Math.pow(1 - 0.2 * rarity, 2)) inheritable = true;
+                        }
+
+                        var mtText = "Mt " + mtVal.toString() + "<br>";
+                        if (inheritable) {
+                            mtVal -= 2;
+                            mtText = "Mt " + mtVal.toString() + " (Inheritable)<br>";
+                        }
+
+                        if (!innatesGiven && !inheritable) lines.splice(0, 0, "Grants " + ChooseRandom(["Atk", "Spd", "Def", "Res"]) + "+3. ");
+                        lines.splice(0, 0, mtText);
+                        //console.log(lines);
+                        return lines.join('\n');
+                    }
+                    function FillInDuoTags(line) {
+                        var array = Shuffle(["unit and allies from the same titles as unit", "allies from the same titles as unit"]);
+                        line = line.replace(/<HALLIES>/g, array[0]);
+
+                        array = Shuffle(["unit and allies",
+                            "unit, as well as <CLASS> and <CLASS2> allies",
+                            "allies",
+                            "<CLASS> and <CLASS2> allies",
+                            "<CLASS> allies",
+                            "unit and <CLASS> allies",
+                            "ally with the highest <STAT>",
+                            "closest allies"]);
+                        line = line.replace(/<ALLIES>/g, array[0]);
+
+                        array = Shuffle([" within <INT> spaces of unit",
+                            " within 3 columns centered on unit",
+                            " within 3 rows centered on unit",
+                            " within 3 rows and 3 columns centered on unit",
+                            " within 5 columns centered on unit",
+                            " within 5 rows centered on unit",
+                            " within 5 rows and 5 columns centered on unit",
+                            " adjacent to unit",
+                            ""]);
+                        line = line.replace(/<POSITION>/g, array[0]);
+
+                        line = line.replace(/<RESONANCE>/g, ChooseRandom(["【Resonance: Blades】", "【Resonance: Shields】"]));
+                        return line;
+                    }
+
+                    function GenerateDuoSkill(duo) { //Generates randomised duo/harmonic effects
+                        var duoText = ChooseRandom(["Deals <BINT> damage to foes<POSITION>.",
+                            "Inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
+                            "Inflicts <PENALTY> on foes<POSITION> through their next action.",
+                            "Inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
+                            "Inflicts Special cooldown count+<INT> on foes<POSITION>.",
+                            "Inflicts Special cooldown count+<INT> and <MINUSSTATS> on foes<POSITION> through their next action.",
+                            "Deals <BINT> damage and inflicts <PENALTY> on foes<POSITION> through their next action.",
+                            "Deals <BINT> damage and inflicts <MINUSSTATS> on foes<POSITION> through their next action.",
+                            "Deals <BINT> damage and inflicts <MINUSSTATS> and <PENALTY> on foes<POSITION> through their next action.",
+                            "Grants <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Grants <ADDSTATS> and <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Restores <BINT> HP and grants <ADDSTATS> to <ALLIES><POSITION> for one turn.",
+                            "Restores <BINT> HP and grants <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Grants <ADDSTATS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants <BONUS> and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants <ADDSTATS>, <BONUS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants Special cooldown count-<INT> to <ALLIES><POSITION>.",
+                            "Grants another action, <ADDSTATS>, and <BONUS> to <ALLIES><POSITION> for one turn.",
+                            "Grants another action, <ADDSTATS>, and the following effect to <ALLIES><POSITION> for one turn: \"<GRANT>\".",
+                            "Grants unit another action. (May be used only if unit has already entered combat during the current turn.)",
+                            "Moves allies adjacent to unit to opposite side of unit. If an ally cannot move to the target space (if another ally or foe is occupying the space) ally will not move."]);
+
+                        var harmonicText = ChooseRandom(["Grants <RESONANCE> to <HALLIES> for one turn. Grants another action to ally with the highest <STAT> that is within <INT> spaces, has already acted, and is from the same titles as unit (excluding unit).",
+                            "Grants <RESONANCE> to <HALLIES> for one turn. Grants <BONUS> to unit.",
+                            "Grants <RESONANCE> and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
+                            "Grants <RESONANCE> and <BONUS> to <HALLIES> for one turn.",
+                            "Grants <RESONANCE> and <ADDSTATS> to <HALLIES> for one turn.",
+                            "Grants <RESONANCE>, <ADDSTATS>, and <BONUS> to <HALLIES> for one turn.",
+                            "Grants <RESONANCE>, <ADDSTATS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
+                            "Grants <RESONANCE>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\".",
+                            "Grants <RESONANCE>, <ADDSTATS>, <BONUS>, and the following effect to <HALLIES> for one turn: \"<GRANT>\"."]);
+                        var text = "";
+                        if (duo) text = FillInTags(FillInDuoTags(duoText), 4);
+                        else text = FillInTags(FillInDuoTags(harmonicText), 4);
+                        if (Math.random() < 0.1 && duo) text += " At start of odd-numbered turns, if Duo Skill has already been used, unit can use Duo Skill again.";
+                        if (Math.random() < 0.1 && !duo) text += " At start of odd-numbered turns, if Harmonized Skill has already been used, unit can use Harmonized Skill again.";
+                        return text;
+                    }
+
+
+                    //=================================PUT IT ALL TOGETHER================================
+
+                    async function GenerateUnit(rarity, theme, character, character2 = null) {
+                        var chaosMode = document.getElementById("chaosCheck").checked;
+                        var unit = GenerateCharacter(character, character2, theme, rarity, chaosMode);
+                        var stats = GenerateStats(unit, rarity, chaosMode);
+                        var rarityText = ["Tempest Trial", "Demote", "Premium", "Premium", "Harmonic"];
+                        var character2Filename = "";
+                        if (character2 != null)
+                            character2Filename = character2.Filename;
+
+                        var skills = GenerateSkills(unit, rarity, chaosMode);
+                        var weaponText = GenerateWeapon(rarity, unit, skills, theme.Event, chaosMode);
+                        var duoSkill = "";
+
+                        if (rarity == 4) {
+                            if (character.Game == character2.Game) rarityText[4] = "Duo";
+                            duoSkill = GenerateDuoSkill(character.Game == character2.Game);
+                        }
+
+                        if (unit.Filename.includes("/")) {
+                            unit.Filename = ChooseRandom(unit.Filename.split("/"));
+                        }
+
+                        var gennedUnit = {
+                            Title: unit.Title,
+                            Filename: unit.Filename,
+                            Filename2: character2Filename,
+                            Game: unit.Game,
+                            Movement: unit.Movement.Movement,
+                            Weapon: unit.Weapon.Weapon,
+                            Colour: unit.Weapon.Tags[0],
+                            WeaponText: weaponText,
+                            Stats: stats,
+                            Skills: skills,
+                            RarityText: rarityText[rarity],
+                            Rarity: rarity,
+                            Theme: theme,
+                            DuoSkill: duoSkill
+                        }
+
+                        return gennedUnit;
+                    }
+
+                    async function GenerateBanner() {
+                        var themeInt = document.getElementById("themeDropdown").value;
+                        var theme;
+                        if (themeInt != -1)
+                            theme = themesJSON[themeInt];
+                        else if (Math.random() < 0.02) {
+                            theme = ChooseRandom(extrasJSON);
+                        }
+                        else theme = ChooseRandom(themesJSON);
+
+                        document.body.style.backgroundImage = "url('/FEHGen/Backgrounds/" + theme.Background + "')";
+
+                        document.getElementById("headie").style.backgroundColor = theme.Header;
+                        document.getElementById("footie").style.backgroundColor = theme.Footer;
+                        var charsList = Shuffle(charactersJSON);
+                        var bannerCharacters = [];
+
+                        var game1 = document.getElementById("gameDropdown1").value;
+                        if (game1 == "random")
+                            game1 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+                        var game2 = document.getElementById("gameDropdown2").value;
+                        if (game2 == "none")
+                            game2 = game1;
+                        else if (game2 == "random")
+                            game2 = ChooseRandom(["FE1", "FE2", "FE4", "FE5", "FE6", "FE7", "FE8", "FE9", "FE10", "FE13", "FE14", "FE16", "FE0", "FEE"]);
+                        var duoUnit = true;
+                        if (game1 != game2 && Math.random() > 0.5) duoUnit = false;
+
+                        for (let i = 0; i < charsList.length; i++) {
+                            if (bannerCharacters.length == 5) {
+                                if (duoUnit && charsList[i].Game == bannerCharacters[4].Game)
+                                    bannerCharacters.push(charsList[i]);
+                                else if (!duoUnit && (charsList[i].Game == game1 || charsList[i].Game == game2) && charsList[i].Game != bannerCharacters[4].Game)
+                                    bannerCharacters.push(charsList[i]);
+                            }
+                            if (bannerCharacters.length < 5 && (charsList[i].Game == game1 || charsList[i].Game == game2))
+                                bannerCharacters.push(charsList[i]);
+                            if (bannerCharacters.length == 6) break;
+                        }
+
+                        console.log("banner characters: " + bannerCharacters[0].Hero);
+                        console.log(bannerCharacters[1].Hero);
+                        console.log(bannerCharacters[2].Hero);
+                        console.log(bannerCharacters[3].Hero);
+                        console.log(bannerCharacters[4].Hero);
+                        console.log(bannerCharacters[5].Hero);
+                        var unitP1 = await GenerateUnit(3, theme, bannerCharacters[0]);
+                        var unitP2 = await GenerateUnit(2, theme, bannerCharacters[1]);
+                        var unitDemote = await GenerateUnit(1, theme, bannerCharacters[2]);
+                        var unitDuo = await GenerateUnit(4, theme, bannerCharacters[4], bannerCharacters[5]);
+                        var unitTT = await GenerateUnit(0, theme, bannerCharacters[3]);
+
+                        DisplayUnit(unitP1);
+
+                        document.getElementById("premiumButton1").addEventListener('click', function () {
+                            DisplayUnit(unitP1);
+                        });
+                        document.getElementById("premiumButton2").addEventListener('click', function () {
+                            DisplayUnit(unitP2);
+                        });
+                        document.getElementById("demoteButton").addEventListener('click', function () {
+                            DisplayUnit(unitDemote);
+                        });
+                        document.getElementById("duoButton").addEventListener('click', function () {
+                            DisplayUnit(unitDuo);
+                        });
+                        document.getElementById("TTButton").addEventListener('click', function () {
+                            DisplayUnit(unitTT);
+                        });
+
+                    }
+
+                    function DisplayUnit(unit) {
+
+                        var frontFrames = ["Face_Bronze_Front.png", "Face_Silver_Front.png", "Face_Gold_Front.png", "Face_Gold_Front.png", "Face_Duo_Front.png"];
+                        var backFrames = ["Face_Bronze_Back.png", "Face_Silver_Back.png", "Face_Gold_Back.png", "Face_Gold_Back.png", "Face_Duo_Back.png"];
+                        if (unit.Rarity == 4) {
+                            //        document.getElementById("generatedUnit").innerHTML = `  <div class="unit-row"><div class="unit-column"><img src="./${unit.Filename}" /></div><div class="unit-column"><img src="./${unit.Filename2}" /> </div> </div><div class="clearfix"></div>`;
+                            document.getElementById("generatedFrontpack").innerHTML = `  <img src="/FEHGen/CharacterIcons/${unit.Filename}" z-index=20/>`;
+                            document.getElementById("frontpackFrameFront").innerHTML = `  <img src="/FEHGen/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
+                            document.getElementById("frontpackFrameBack").innerHTML = `  <img src="/FEHGen/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
+                            document.getElementById("generatedBackpack").innerHTML = `  <img src="/FEHGen/CharacterIcons/${unit.Filename2}" z-index=20/>`;
+                            document.getElementById("backpackFrameFront").innerHTML = `  <img src="/FEHGen/GameIcons/Face_Duo_Front.png" class="overlay_image"/>`;
+                            document.getElementById("backpackFrameBack").innerHTML = `  <img src="/FEHGen/GameIcons/Face_Duo_Back.png" class="underlay_image"/>`;
+                            document.getElementById("twoUnitDisplay").style.display = "block";
+                            document.getElementById("oneUnitDisplay").style.display = "none";
+                        }
+                        else {
+                            document.getElementById("generatedUnit").innerHTML = `  <div class="row"><img src="/FEHGen/CharacterIcons/${unit.Filename}" z-index=20/></div>`;
+                            document.getElementById("unitFrameFront").innerHTML = `  <img src="/FEHGen/GameIcons/${frontFrames[unit.Rarity]}" class="overlay_image"/>`;
+                            document.getElementById("unitFrameBack").innerHTML = `  <img src="/FEHGen/GameIcons/${backFrames[unit.Rarity]}" class="underlay_image"/>`;
+                            document.getElementById("generatedBackpack").innerHTML = ` `;
+                            document.getElementById("backpackFrameFront").innerHTML = `  `;
+                            document.getElementById("backpackFrameBack").innerHTML = `  `;
+                            document.getElementById("twoUnitDisplay").style.display = "none";
+                            document.getElementById("oneUnitDisplay").style.display = "block";
+                        }
+                        document.getElementById("generatedTitle").innerHTML = `${unit.Title}`;
+                        document.getElementById("generatedWepIcon").innerHTML = `  <img src="/FEHGen/GameIcons/Icon_Class_${unit.Colour}_${unit.Weapon}.png" />`;
+                        document.getElementById("generatedMove").innerHTML = `  <img src="/FEHGen/GameIcons/Icon_Move_${unit.Movement}.png" />`;
+                        document.getElementById("generatedStats").innerHTML = `<b>HP:</b> ${unit.Stats[0]}<br><b>Atk:</b> ${unit.Stats[1]}<br><b>Spd:</b> ${unit.Stats[2]}<br><b>Def:</b> ${unit.Stats[3]}<br><b>Res:</b> ${unit.Stats[4]}`;
+                        document.getElementById("seasonal-theme").innerHTML = `${unit.Theme.Event}`;
+                        document.getElementById("generatedWeapon").innerHTML = `<b>Weapon:</b> <em>${unit.WeaponText}</em>\n`;
+                        document.getElementById("generatedSkills").innerHTML = `<b><span style="color: #96f7f0">Assist:</span></b> ${unit.Skills[3]}<br>
+                                                                            <b><span style="color: #fac6ff">Special:</span></b> ${unit.Skills[4]}<br>
+                                                                            <b><span style="color: #ffb0af">A:</span></b> ${unit.Skills[0]}<br>
+                                                                            <b><span style="color: #64c4f5">B:</span></b> ${unit.Skills[1]}<br>
+                                                                            <b><span style="color: #51f086">C:</span></b></span> ${unit.Skills[2]}`;
+                        document.getElementById("generatedDuoSkill").innerHTML = ``;
+                        if (unit.Rarity == 4) {
+                            if (unit.RarityText == "Duo") document.getElementById("generatedDuoSkill").innerHTML = `<b>Duo skill:</b> <em>${unit.DuoSkill}</em>`;
+                            else document.getElementById("generatedDuoSkill").innerHTML = `<b>Harmonized skill:</b> <em>${unit.DuoSkill}</em>`;
+                        }
+
+                    }
+
+                    async function Initialise() {
+                        await loadAllJSONs();
+                        SortSkillJSONIntoLists();
+                        SortWeaponJSONIntoLists();
+                        GenerateBanner();
+                        document.getElementById("generateButton").addEventListener('click', function () {
+                            GenerateBanner();
+                        });
+
+                    }
+                    Initialise();</script>
             </section>
         </div>
     </div>
@@ -1653,7 +1670,7 @@ Initialise();
         <h3 id="support-or-contact">Support or Contact</h3>
         <div id="footer_wrap" class="outer">
             <footer class="inner">
-                <a id="forkme_banner" href="https://github.com/Rammiloh/FEH-Alt-Generator">View on GitHub</a>
+                <a id="forkme_banner" href="https://github.com/Rammiloh/FEHGen">View on GitHub</a>
                 <p class="copyright">FEHGen maintained by Rammiloh | <a href="https://github.com/Rammiloh">Github</a> | <a href="https://reddit.com/r/FEHGen">Reddit</a> | <a href="https://twitter.com/Rammiloh">Twitter</a></p>
                 <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
             </footer>
