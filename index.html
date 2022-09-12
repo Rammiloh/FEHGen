@@ -210,7 +210,7 @@
                         while (effect.PointWorth > points) 
                         {
                             //If the effect is too expensive, reroll.
-                            console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
+                            //console.log(effect.Effect + " is too expensive (" + effect.PointWorth.toString() + " vs " + points.toString() + ")");
                             effect = ChooseRandom(list);
                             if (effect.PointWorth == 99 && chaosMode) effect.PointWorth = 1;
                         }
@@ -607,7 +607,7 @@
                                 }
                             }
                         }
-                        console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
+                        //console.log(thisClass.Weapon + "/" + thisClass.Class + ": " + stats);
                         return stats;
                     }
 
@@ -1346,7 +1346,6 @@
                                     let temp = firstHalfEffects[FHELast];
                                     firstHalfEffects[FHELast] = firstHalfEffects[i];
                                     firstHalfEffects[i] = temp;
-                                    console.log("Moved " + firstHalfEffects[FHELast] + " to the back");
                                 }
                             }
                             for (let i = 0; i < secondHalfEffects.length; i++)
@@ -1356,7 +1355,6 @@
                                     let temp = secondHalfEffects[SHELast];
                                     secondHalfEffects[SHELast] = secondHalfEffects[i];
                                     secondHalfEffects[i] = temp;
-                                    console.log("Moved " + secondHalfEffects[SHELast] + " to the back");
                                 }
                             }
 
@@ -1435,7 +1433,7 @@
                         //Weapon text in feh generally follows a natural order. This block rearranges all the generated lines to roughly fit that order.
                         SortTwoLists(usedConditions, lines);
                         for (index = 0; index < lines.length; index++) {
-                            console.log("LINE: " + lines[index]);
+                            //console.log("LINE: " + lines[index]);
                             if (lines[index] == null) lines[index] = "";
                             lines[index] = Capitalise(lines[index]);
                         }
@@ -1637,12 +1635,12 @@
                             if (bannerCharacters.length == 6) break;
                         }
 
-                        console.log("banner characters: " + bannerCharacters[0].Hero);
+                        /*console.log("banner characters: " + bannerCharacters[0].Hero);
                         console.log(bannerCharacters[1].Hero);
                         console.log(bannerCharacters[2].Hero);
                         console.log(bannerCharacters[3].Hero);
                         console.log(bannerCharacters[4].Hero);
-                        console.log(bannerCharacters[5].Hero);
+                        console.log(bannerCharacters[5].Hero);*/
                         var unitP1 = await GenerateUnit(3, theme, bannerCharacters[0]);
                         var unitP2 = await GenerateUnit(2, theme, bannerCharacters[1]);
                         var unitDemote = await GenerateUnit(1, theme, bannerCharacters[2]);
