@@ -720,6 +720,14 @@
     "Restrictions": ""
   },
   {
+    "Skill": "Verdict of Sacae",
+    "Slot": "A",
+    "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Life and Death 3",
     "Slot": "A",
     "Exclusivity": "C",
@@ -1265,6 +1273,14 @@
   },
   {
     "Skill": "Dragon's Wrath 3",
+    "Slot": "B",
+    "Exclusivity": "C",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Melee,Beast,Ranged"
+  },
+  {
+    "Skill": "Dragon's Wrath 4",
     "Slot": "B",
     "Exclusivity": "R",
     "Description": "",
@@ -3344,6 +3360,14 @@
     "Restrictions": ""
   },
   {
+    "Skill": "Circlet of Balance",
+    "Slot": "Special",
+    "Exclusivity": "Prf",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": ""
+  },
+  {
     "Skill": "Deadeye",
     "Slot": "Special",
     "Exclusivity": "R",
@@ -3817,6 +3841,14 @@
   },
   {
     "Skill": "Vital Astra",
+    "Slot": "Special",
+    "Exclusivity": "R",
+    "Description": "",
+    "Weight": 1,
+    "Restrictions": "Arm,Cav,Fly,Ranged,Dragon,Beast"
+  },
+  {
+    "Skill": "Godlike Reflexes",
     "Slot": "Special",
     "Exclusivity": "R",
     "Description": "",
