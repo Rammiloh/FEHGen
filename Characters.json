@@ -237,7 +237,7 @@
     "Hero": "Athena: Borderland Sword",
     "Filename": "Athena.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -696,7 +696,7 @@
     "Hero": "Clarisse: Sniper in the Dark",
     "Filename": "Clarisse.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -1101,7 +1101,7 @@
     "Hero": "Eremiya: Bishop of Woe",
     "Filename": "Eremiya.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -2046,7 +2046,7 @@
     "Hero": "Katarina: Wayward One",
     "Filename": "Katarina.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -2145,7 +2145,7 @@
     "Hero": "Kris: Unknown Hero",
     "Filename": "Kris.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
@@ -2154,7 +2154,7 @@
     "Hero": "Kris: Unsung Hero",
     "Filename": "Kris2.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -2271,7 +2271,7 @@
     "Hero": "Legion: Masked Maniac",
     "Filename": "Legion.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
@@ -2550,7 +2550,7 @@
     "Hero": "Luke: Rowdy Squire",
     "Filename": "Luke.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
@@ -2631,7 +2631,7 @@
     "Hero": "Malice: Deft Sellsword",
     "Filename": "Malice.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -2982,7 +2982,7 @@
     "Hero": "Nagi: Dragon Avatar",
     "Filename": "Nagi.png",
     "Race": "Dragon",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -3144,7 +3144,7 @@
     "Hero": "Norne: The Volunteer",
     "Filename": "Norne.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "F"
@@ -3639,7 +3639,7 @@
     "Hero": "Roderick: Steady Squire",
     "Filename": "Roderick.png",
     "Race": "Human",
-    "Game": "FE3",
+    "Game": "FE1",
     "StatMod": "",
     "Prfs": [],
     "Gender": "M"
