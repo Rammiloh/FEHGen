@@ -3741,7 +3741,7 @@
     "Exclusivity": "R",
     "Description": "",
     "Weight": 1,
-    "Restrictions": ""
+    "Restrictions": "Staff"
   },
   {
     "Skill": "Sacred Cowl",
